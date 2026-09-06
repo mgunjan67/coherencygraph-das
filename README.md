@@ -6,7 +6,7 @@ Authors: Gunjan Kumar Mishra and Badri Raj Lamichhane. Corresponding author: Bad
 
 ## Public release scope
 
-This repository publishes the reviewed analysis source, configurations, tests, documentation and generated scientific figures. Manuscript files and cover letters are intentionally not included in this initial code release. Large data/model assets are not stored in Git. A public asset-download location will be added after those assets are separately released; until then, only the data-free example and unit-test subset below can be reproduced from this repository alone.
+This repository publishes the reviewed analysis source, configurations, tests, documentation and generated scientific figures. Manuscript files and cover letters are intentionally private. Large data/model assets are distributed in the [versioned release](https://github.com/mgunjan67/coherencygraph-das/releases/tag/v2026.09.06), not stored in Git. Download `CoherencyGraph_DAS_assets_20260906.zip`, verify its SHA-256 against the accompanying checksum, and extract it into the repository root. The ZIP contains processed data, checkpoints, numerical results and a per-file checksum manifest. Raw HDF5 files and manuscript-dependent build/test inputs are not included; commands requiring those inputs need their separately documented sources.
 
 The associated study remains subject to final author review. Code availability is not a claim of journal acceptance or submission readiness.
 
