@@ -1,0 +1,87 @@
+amendment:
+  id: '07'
+  recorded_utc: '2026-09-06T03:46:00Z'
+  status: retrospective critical-review revision
+  prior_exposure: >-
+    All architecture-test and consistency outcomes from Amendments 01-06 were
+    inspected. No existing cohort is fresh confirmation. Historical outputs are
+    preserved in revisions/20260906_pre_review. This amendment is recorded before
+    generating its new outcomes, but is not a prospective registration.
+task:
+  name: retrospective early-to-late coherency prediction conditional on arrival estimates
+  historical_primary: local-state PSD versus per-block ridge at the frozen reliable cells
+  revised_primary: all 32 band-lag cells; mean complete-earthquake NRMSE
+  revised_comparator: full-context ridge selected using development source-group folds
+  no_online_claim: public arrival-pick computation support is undocumented
+  q_bins: 257
+  lags: [3, 5, 8, 13, 21, 34, 55, 89]
+  inference_seed: 20260906
+  bootstrap_replicates: 5000
+models:
+  candidates: [block_ridge, full_ridge, full_mlp_direct, full_mlp_psd, state_direct, state_psd, residual_ridge]
+  ridge_alphas: [0.1, 1.0, 10.0, 100.0]
+  mlp_width: 128
+  sequence_width: 96
+  layers: 2
+  dropout: 0.1
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  maximum_epochs: 110
+  patience: 16
+  batch_events: 12
+  seeds: [19, 43, 71]
+  tuning: deterministic source-group internal training/validation, fold-fitted scaling
+  final_refit: locked epochs on all 93 model-development events
+  loss: mean squared real/imaginary component error on all 32 cells
+  mask_selection: report historical mask, development-only mask, and all-cell endpoint separately
+estimator:
+  primary: historical pair-normalize-then-average estimator
+  sensitivities: [equal_7s_context, pool_before_normalize, block_250, block_500]
+  sensitivity_models: [full_ridge, full_mlp_direct, state_psd]
+  support_audit: every selected event and route; exact sample boundaries and block clocks
+  cutoff_test: replace samples after each declared raw-input cutoff with independent noise
+  pick_support: unknown; conditional-cutoff test is not end-to-end causal validation
+dependence:
+  historical_groups: audit actual source_group_id algorithm; do not assume connected clusters
+  sensitivity_components_km: 25
+  bootstrap: resample whole components, retain all earthquakes and both routes; preserve event weighting
+  internal_validation: 4 deterministic connected-source-group folds and chronological stress
+  no_new_cohort_without_freeze: true
+identifiability:
+  examples: [positive_spectral_counterexample, real_target_feasible_ranges, seed_spectrum_variability]
+  unseen_lags: [1, 2, 4, 10]
+  real_population: all architecture-test event-route means and four bands
+  solver: nonnegative simplex-constrained least-squares; linear-program extrema
+  tolerance: maximum component residual of best simplex fit plus 0.01
+  remedy: >-
+    Use feasible-range sign agreement as an abstention diagnostic for two-channel
+    summation; validate on stationary known-spectrum synthetic families. Do not
+    introduce a larger architecture or choose a regularizer by test ranking.
+missingness:
+  masks: exhaustive combinations of 8 blocks with 1, 2, or 4 removed
+  endpoints: [all_blocks, missing_only, retained_only]
+  hidden_features: indices 0:134, all waveform/pick-derived inputs
+  retained_features: block coordinate, route, gauge metadata
+  controls: [historical_unaugmented, historical_mask_dropout, indicator_no_dropout, full_mlp_imputation]
+  evaluation_unit: average unique masks inside event-route before inference
+uncertainty:
+  score: maximum route NRMSE per earthquake
+  coverages: [0.8, 0.9, 0.95]
+  report: joint earthquake success counts, route margins, exact binomial intervals, source-component sensitivity
+  ranking_reference: negative context-to-noise power ratio
+downstream:
+  original_geometry: retain actual 32 linspace anchor channels
+  covariance_sign: gamma_upper(d)=E[X_i conj(X_i+d)]; matrix_ij=gamma_upper(r_j-r_i)
+  diagonals: early context power only
+  noise_frame: apply same fitted phase correction to context, target, and noise snapshots
+  evaluation: full-window diagnostic plus two-way target-half cross-fit
+  target_informed: oracle fitted on evaluation target is in-sample only
+  loading: 0.0001
+  predicted_shrinkage: 0.75
+  classical_shrinkage: 0.75
+  compare: learned minus classical and diagonal; preserve original values as superseded diagnostics
+release:
+  software_license: BSD-3-Clause
+  derived_data_license: CC BY-NC-SA 4.0 with source attribution
+  raw_waveforms: reference rather than redistribute
+  public_status: verify actual published repository; do not invent DOI

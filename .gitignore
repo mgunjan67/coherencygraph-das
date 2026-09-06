@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+demo_output/
+.env
+.env.*
+*.pem
+*.key
+data/
+models/
+releases/
+manuscript/

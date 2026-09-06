@@ -1,0 +1,51 @@
+amendment:
+  id: "02"
+  frozen_utc: "2026-08-30T12:30:00Z"
+  purpose: "Retrospective nested comparison of recent graph, attention, and state-space backbones"
+  literature_cutoff: "2026-08-30"
+  claim_boundary: >-
+    This amendment is exploratory model development. The architecture-test events are
+    source-group-disjoint from all new training and tuning but were drawn retrospectively
+    from the original development period; they are not represented as an external or
+    preregistered confirmation cohort. Singleton source groups are used so that the
+    frozen test has exactly 24 complete earthquakes without partial-cluster leakage.
+
+split:
+  architecture_test_events: 24
+  architecture_test_seed: 20260831
+  source_group_disjoint: true
+  architecture_test_singleton_groups: true
+  search_folds: 3
+  search_seeds: [19, 43, 71]
+  final_seeds: [19, 43, 71, 101, 137]
+
+search:
+  candidates:
+    - chain_psd
+    - gatv2_psd
+    - transformer_psd
+    - graphgps_psd
+    - bissm_psd
+  hidden_dim: 96
+  layers: 2
+  attention_heads: 4
+  dropout: 0.10
+  train_epochs: 110
+  early_stopping_patience: 16
+  batch_events: 12
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  selection_metric: normalized_complex_rmse
+  selection_rule: >-
+    Lowest mean grouped-CV normalized complex RMSE; calibration RMSE is a
+    prespecified tie-breaker only when CV means differ by less than 0.005.
+
+stress_tests:
+  feature_noise_standard_deviations: [0.05, 0.10, 0.20]
+  missing_block_fractions: [0.125, 0.25, 0.50]
+  bootstrap_replicates: 5000
+  bootstrap_seed: 20260902
+
+outputs:
+  directory: "reports/hybrid_search"
+  model_directory: "models/hybrid_search"

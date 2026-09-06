@@ -1,0 +1,129 @@
+amendment:
+  id: "06"
+  frozen_utc: "2026-08-31T04:28:48Z"
+  purpose: "Decoder-coordinate correction, classical baselines, information ceiling, and decisive robustness audits"
+  transparency: >-
+    The architecture-test outcomes and Amendments 04--05 were known before this
+    amendment. All new analyses are retrospective methodological audits, not fresh
+    confirmation. Candidate sets and endpoints below were frozen before Amendment-06
+    outcomes were generated. No parameter may be selected using architecture-test
+    results.
+  parent_protocol_sha256: "788f538544a22dd53e45f720fbb0c682d5f37fd11b6aec7eb34290bf2f39bce7"
+  amendment_04_sha256: "6084f8072b390bf2ec315b22b09ceea0868171a33d002c963efeabd2c2474670"
+  amendment_05_sha256: "deb94387905b121ba15fe224b4ca70bcf1a570ea7fe7f96c014fa33f8ae80447"
+
+data_boundary:
+  model_development_events: 93
+  calibration_events: 24
+  architecture_test_events: 24
+  architecture_test_status: "source-group-disjoint retrospective test; already inspected"
+  calibration_rule: >-
+    Development-only grouped cross-validation is used where selection is needed.
+    Calibration is used once for final epoch or shrinkage locking. Architecture-test
+    outcomes are evaluation-only.
+
+decoder_audit:
+  legacy_coordinate: "integer channel lag with q=-pi+2*pi*m/M"
+  corrected_grid: "FFT-centred integer harmonics q=2*pi*k/M"
+  channel_spacing_m: 9.5714288
+  maximum_supervised_lag_channels: 89
+  diagnostic_q_bins: [33, 65, 129, 257]
+  final_q_bins: 257
+  final_choice_rule: "smallest tested odd M satisfying M > 2*maximum_supervised_lag"
+  coordinate_parameterizations:
+    - channel_lag
+    - metres_nyquist
+    - normalized_max_lag
+    - physical_rad_per_m
+  equivalence_tolerance: 1.0e-5
+  psd_tolerance: 1.0e-6
+  unit_diagonal_tolerance: 1.0e-6
+
+training:
+  hidden_dim: 96
+  layers: 2
+  attention_heads: 4
+  dropout: 0.10
+  train_epochs: 110
+  early_stopping_patience: 16
+  batch_events: 12
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  final_seeds: [19, 43, 71]
+  learned_families: [conv1d_psd, bigru_psd, bissm_psd, gat_bissm_psd]
+  linear_family: linear_psd
+  block_dropout_probability: 0.8
+  maximum_missing_blocks: 2
+
+classical_baselines:
+  ridge_alpha: 1.0
+  nearest_psd_iterations: 8
+  spectral_nnls_bins: 257
+  low_rank_candidates: [2, 4, 8, 16]
+  shrinkage_candidates: [0.25, 0.5, 0.75]
+  selection_endpoint: "development grouped-CV complex NRMSE"
+
+reliability_ceiling:
+  estimators: [split_half, taper_subset]
+  metrics: [complex_nrmse, real_mae, imaginary_mae, real_sign_agreement]
+  interpretation: >-
+    Repeated-target disagreement is an empirical finite-window reproducibility
+    bound, not ground-truth model error.
+
+withheld_separation:
+  patterns:
+    alternating_a: {train_lag_indices: [0, 2, 4, 6], test_lag_indices: [1, 3, 5, 7]}
+    alternating_b: {train_lag_indices: [1, 3, 5, 7], test_lag_indices: [0, 2, 4, 6]}
+    train_short_test_long: {train_lag_indices: [0, 1, 2, 3], test_lag_indices: [4, 5, 6, 7]}
+    train_long_test_short: {train_lag_indices: [4, 5, 6, 7], test_lag_indices: [0, 1, 2, 3]}
+    hold_middle: {train_lag_indices: [0, 1, 6, 7], test_lag_indices: [2, 3, 4, 5]}
+  models: [linear_psd, gat_bissm_psd]
+  interpolation: [linear_complex, cubic_spline, exponential_phase]
+  final_q_bins: 257
+
+missingness:
+  random_masks_per_level: 100
+  random_levels: [1, 2, 4]
+  deterministic_scenarios:
+    - contiguous_1
+    - contiguous_2
+    - route_end
+    - alternating
+    - highest_noise
+    - lowest_snr
+    - natural_quality_mask
+  families: [linear_psd, conv1d_psd, bigru_psd, bissm_psd, gat_bissm_psd]
+  metrics: [mean_nrmse, bootstrap_interval, worst_case_nrmse, median_degradation, route]
+
+uncertainty:
+  methods: [pooled_grouped_conformal, route_conditional_conformal, maximum_route_grouped_conformal]
+  nominal_coverages: [0.80, 0.90, 0.95]
+  calibration_unit: "complete earthquake"
+  diagnostics: [coverage, interval_width, calibration_error, spread_error_correlation, selective_risk, coverage_risk, missingness_shift]
+
+downstream_oracle:
+  channels: 32
+  loading_candidates: [0.0001, 0.001, 0.01]
+  predicted_shrinkage_candidates: [0.0, 0.25, 0.5, 0.75]
+  classical_shrinkage_candidates: [0.25, 0.5, 0.75]
+  low_rank_candidates: [2, 4, 8, 16]
+  comparators: [diagonal, persistence, classical_shrinkage, low_rank, predicted, oracle]
+  selection_unit: calibration
+  evaluation_unit: complete_earthquake
+
+bootstrap:
+  seed: 20260906
+  replicates: 5000
+
+provenance:
+  git_commit: null
+  git_status: "workspace is not a Git worktree; record a deterministic source-tree manifest instead"
+  environment_source: "pyproject.toml plus runtime package inventory"
+  save_predictions: true
+  save_training_history: true
+  save_bootstrap_seed: true
+
+outputs:
+  directory: "reports/methodological_audit"
+  model_directory: "models/methodological_audit"
+  figure_directory: "reports/figures_methodological_audit"

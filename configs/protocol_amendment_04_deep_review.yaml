@@ -1,0 +1,114 @@
+amendment:
+  id: "04"
+  frozen_utc: "2026-08-30T15:42:00Z"
+  purpose: "Post-review analytical strengthening and claim correction"
+  transparency: >-
+    The architecture-test outcomes and the reviewer report were known before this
+    amendment. Every experiment below is therefore a retrospective strengthening
+    analysis, not a new external confirmation. Candidate sets, calibration rules,
+    stress scenarios and reporting endpoints were written before their Amendment-04
+    outputs were generated.
+
+data_boundary:
+  model_development_events: 93
+  calibration_events: 24
+  architecture_test_events: 24
+  architecture_test_status: "source-group-disjoint but retrospectively selected"
+  older_consistency_events: 30
+  temporal_2024_status: >-
+    Official 2024 HTML indexes are readable, but direct waveform objects returned
+    HTTP 403 on 2026-08-30; KKFL-S is not listed in the inspected second-season index.
+
+baseline_benchmark:
+  statistical_models:
+    - route_gauge_block_climatology
+    - early_window_persistence
+    - ridge
+    - extra_trees
+  sequence_models: [conv1d_psd, bigru_psd]
+  ridge_alpha_grid: [0.01, 0.1, 1.0, 10.0, 100.0]
+  extra_trees_candidates:
+    - {min_samples_leaf: 2, max_features: 0.7}
+    - {min_samples_leaf: 5, max_features: 0.7}
+    - {min_samples_leaf: 5, max_features: 1.0}
+  extra_trees_estimators: 400
+  selection_endpoint: "calibration event-route NRMSE"
+  skill_baseline_rule: "best calibration-ranked non-neural baseline"
+
+neural:
+  hidden_dim: 96
+  layers: 2
+  attention_heads: 4
+  dropout: 0.10
+  train_epochs: 110
+  early_stopping_patience: 16
+  batch_events: 12
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  search_seed: 19
+  final_seeds: [19, 43, 71, 101, 137]
+
+withheld_separation:
+  patterns:
+    alternating_a:
+      train_lag_indices: [0, 2, 4, 6]
+      test_lag_indices: [1, 3, 5, 7]
+    alternating_b:
+      train_lag_indices: [1, 3, 5, 7]
+      test_lag_indices: [0, 2, 4, 6]
+  mask_same_lag_context_and_noise_features: true
+  family: bissm_psd
+  q_bins: [33, 65, 129]
+  smoothness_weights: [0.0, 0.0001, 0.001]
+  selection_endpoint: "mean calibration held-lag NRMSE across both patterns"
+  final_seeds: [19, 43, 71]
+  matrix_endpoints:
+    - off_diagonal_frobenius_nrmse
+    - dominant_eigenspace_angle_deg
+    - effective_rank_absolute_error
+    - held_lag_real_sign_accuracy
+
+matched_rank:
+  cohort_role: architecture_test
+  equal_width_hz: 0.5
+  frequency_range_hz: [0.5, 8.0]
+  fourier_bins_per_band: 3
+  tapers: 3
+  endpoint: "complete-earthquake high-minus-low frequency effective rank"
+
+missingness:
+  family: gat_bissm_psd
+  append_observation_mask: true
+  candidates:
+    - {dropout_probability: 0.5, maximum_missing_blocks: 1}
+    - {dropout_probability: 0.5, maximum_missing_blocks: 2}
+    - {dropout_probability: 0.8, maximum_missing_blocks: 2}
+  selection_endpoint: "mean calibration NRMSE over zero, one and two missing blocks"
+  final_seeds: [19, 43, 71, 101, 137]
+  test_missing_blocks: [0, 1, 2, 4]
+
+uncertainty:
+  conformal_coverages: [0.80, 0.90, 0.95]
+  selective_coverages: [1.0, 0.8, 0.6, 0.4]
+  calibration_unit: "complete event-route"
+  shift_checks: [route, missing_blocks]
+
+downstream:
+  method: "shrinkage generalized-eigenvalue weights"
+  shrinkage_grid: [0.0, 0.25, 0.5, 0.75, 1.0]
+  diagonal_loading_grid: [0.0001, 0.001, 0.01]
+  select_on: calibration
+  evaluate_on: architecture_test
+  comparators:
+    - equal_all_channels
+    - early_power_ranked_8_channels
+    - early_context_generalized_eigenvector
+    - target_window_oracle
+
+bootstrap:
+  seed: 20260904
+  replicates: 5000
+
+outputs:
+  directory: "reports/review_revision"
+  model_directory: "models/review_revision"

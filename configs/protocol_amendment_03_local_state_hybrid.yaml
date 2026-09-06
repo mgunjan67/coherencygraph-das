@@ -1,0 +1,33 @@
+amendment:
+  id: "03"
+  frozen_utc: "2026-08-30T13:30:00Z"
+  purpose: "Prespecified local-attention plus ordered-state hybrid extension"
+  transparency: >-
+    Amendment 03 was frozen after the Amendment 02 BiSSM and chain-baseline
+    architecture-test results were computed, but before any GAT-BiSSM hybrid output
+    was generated. Promotion depends only on the previously defined grouped-CV folds
+    and calibration cohort. Any later architecture-test result is secondary.
+
+split:
+  search_folds: 3
+  search_seeds: [19, 43, 71]
+  final_seeds: [19, 43, 71, 101, 137]
+
+search:
+  candidates: [gat_bissm_psd]
+  hidden_dim: 96
+  layers: 2
+  attention_heads: 4
+  dropout: 0.10
+  train_epochs: 110
+  early_stopping_patience: 16
+  batch_events: 12
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  promotion_rule: >-
+    Promote only if mean grouped-CV NRMSE is below the locked BiSSM winner and
+    the five-seed calibration mean is also below the locked BiSSM calibration mean.
+
+outputs:
+  directory: "reports/hybrid_search"
+  model_directory: "models/hybrid_search"

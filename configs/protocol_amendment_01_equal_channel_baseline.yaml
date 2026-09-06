@@ -1,0 +1,22 @@
+amendment:
+  id: CGDAS-A01
+  frozen_utc: "2026-08-30T10:15:00Z"
+  status: corrective_before_manuscript
+  reason: >-
+    The first automated evaluation compared calibration-selected methods with
+    unequal retained-channel counts (adaptive K=8 versus fixed K=4). This makes
+    the processing contrast resource-inequivalent. The result is superseded and
+    retained for audit. Every adaptive primary comparison must use an evenly
+    spaced fixed subset containing exactly the same K channels.
+  changes:
+    - select K using development/calibration outcomes only
+    - compare adaptive K against fixed evenly spaced K
+    - carry the selected K and uncertainty threshold unchanged to confirmation
+  unchanged:
+    - cohort and source-group split
+    - causal and target windows
+    - label factory
+    - model architecture and trained weights
+    - matrix prediction endpoints
+    - bootstrap seed and replicate count
+

@@ -1,0 +1,80 @@
+study:
+  name: CoherencyGraph-DAS
+  version: 1.0
+  frozen_utc: "2026-08-30T09:00:00Z"
+  source_archive: "../das-paired-route-invariance"
+  source_manifest: "../das-paired-route-invariance/data/processed/manifests/paired_event_manifest.parquet"
+  source_split_table: "../das-paired-route-invariance/data/processed/splits/analysis_event_splits.csv"
+  raw_license: "CC BY-NC-SA 4.0"
+  raw_unit: "Radians"
+
+quality_control:
+  require_complete_pair: true
+  minimum_s_pick_coverage: 0.35
+  minimum_finite_fraction: 0.999
+  sample_rate_hz: 25.0
+  minimum_s_time_sec: 15.0
+  maximum_s_time_sec: 107.0
+
+split:
+  seed: 20260830
+  confirmation_month: "2023-12"
+  confirmation_events: 30
+  calibration_start: "2023-10-01"
+  calibration_end: "2023-11-30"
+  calibration_events: 24
+  group_column: source_group_id
+  group_disjoint: true
+  legacy_2024_target_unavailable: true
+
+windows:
+  noise_sec: [0.5, 5.5]
+  context_relative_to_s_sec: [-12.0, 2.0]
+  target_relative_to_s_sec: [3.0, 10.0]
+
+spectral:
+  bands_hz:
+    - [0.5, 1.0]
+    - [1.0, 2.0]
+    - [2.0, 4.0]
+    - [4.0, 8.0]
+  dpss_time_bandwidth: 2.5
+  dpss_tapers: 3
+  channel_lags: [3, 5, 8, 13, 21, 34, 55, 89]
+  block_starts: [200, 1200, 2200, 3200, 4200, 5200, 6200, 7200]
+  block_channels: 1000
+  anchor_channels: 32
+  spatial_wavenumber_bins: 65
+  diagonal_loading: 0.001
+
+model:
+  hidden_dim: 128
+  graph_layers: 3
+  dropout: 0.10
+  pretrain_epochs: 40
+  train_epochs: 160
+  batch_events: 8
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  ensemble_seeds: [19, 43, 71, 101, 137]
+  early_stopping_patience: 25
+  reliability_floor: 0.35
+
+evaluation:
+  bootstrap_seed: 20260901
+  bootstrap_replicates: 5000
+  primary_endpoint: delta_snr_star_db
+  primary_matrix_endpoint: normalized_complex_rmse
+  confirmation_rule: "lower complete-earthquake 95% bootstrap bound > 0 on each route"
+  sparse_channel_counts: [4, 8, 16, 24, 32]
+  uncertainty_fallback_quantile: 0.90
+
+paths:
+  audit: "reports/audit"
+  labels: "data/processed/operators"
+  models: "models/frozen"
+  results: "reports/results"
+  figures: "reports/figures"
+  tables: "reports/tables"
+  manuscript: "manuscript"
+  output_pdf: "output/pdf"

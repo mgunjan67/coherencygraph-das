@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coherencygraph-das"
+version = "1.1.0rc1"
+description = "Retrospective sparse DAS coherency prediction and covariance identifiability audits"
+requires-python = ">=3.12"
+license = {text = "BSD-3-Clause"}
+dependencies = [
+  "h5py>=3.16",
+  "matplotlib>=3.9",
+  "numpy>=2.0",
+  "pandas>=2.2",
+  "pyarrow>=18",
+  "pyyaml>=6.0",
+  "scikit-learn>=1.5",
+  "scipy>=1.14",
+  "torch>=2.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

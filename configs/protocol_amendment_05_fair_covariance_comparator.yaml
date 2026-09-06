@@ -1,0 +1,23 @@
+amendment:
+  id: "05"
+  frozen_utc: "2026-08-30T15:55:00Z"
+  purpose: "Fair same-channel, same-optimizer audit of predicted off-diagonal covariance"
+  transparency: >-
+    Amendment 04 selected complete diagonal shrinkage while comparing a 32-channel
+    generalized-eigenvalue processor with an eight-channel power-ranking rule. That
+    outcome was known before this correction. Amendment 05 therefore supersedes the
+    unequal comparison for claims about model utility and is explicitly post hoc.
+
+comparison:
+  predicted_candidates_shrinkage: [0.0, 0.25, 0.5, 0.75]
+  diagonal_reference_shrinkage: 1.0
+  loading_grid: [0.0001, 0.001, 0.01]
+  equal_channels: 32
+  identical_noise_matrix: true
+  identical_generalized_eigenvalue_solver: true
+  selection_endpoint: "calibration predicted-minus-diagonal event-route dB"
+  test_endpoint: "complete-earthquake predicted-minus-diagonal event-route dB"
+
+bootstrap:
+  seed: 20260905
+  replicates: 5000
