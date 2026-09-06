@@ -1,0 +1,53 @@
+amendment:
+  id: '08'
+  status: retrospective amendment; not preregistration or fresh confirmation
+  date: '2026-09-06'
+  freeze_before_new_comparisons: true
+  prior_exposure: All existing test results have been inspected. No roles change.
+  public_write_authorized: false
+scope: retrospective prediction and target-informed measurement-design audit
+inference:
+  bootstrap_replicates: 5000
+  seed: 20260906
+  unit: equal-earthquake means after averaging routes; resample complete 25-km components
+baseline:
+  reproduce_saved_predictions_first: true
+  ridge_alphas: [0.1, 1, 10, 100, 1000, 10000]
+  correction: one extension of the original boundary-limited grid, all ridge endpoints
+  folds: 4 development-only source-bin folds; fold-fitted feature scaling
+  persistence: direct context coherency, no training
+  controls: [primary, equal_7s, global_cutoff, pool_before_normalize]
+identifiability:
+  input: measured later-window coherency averaged over eight blocks per event-route-band
+  historical_lags: [3, 5, 8, 13, 21, 34, 55, 89]
+  same_budget_lags: [1, 2, 3, 5, 8, 13, 21, 34]
+  augmented_lags: [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+  evaluation_lags: [1, 2, 4, 10]
+  default_grid: 257
+  grid_sensitivity: [129, 257, 513]
+  default_offset: 0.01
+  offset_sensitivity: [0.005, 0.01, 0.03]
+  factorial: one factor at a time, not a search for a preferred condition
+  numerical_sign_margin: 0.0000001
+  dual_gap_limit: 0.000001
+  truth_comparison: additional lags directly re-estimated from raw data; half-window disagreement is descriptive, not population coverage
+  synthetic_seed: 20260908
+  synthetic_replicates_per_condition: 20
+  synthetic_conditions: [on_grid_white, on_grid_smooth, on_grid_narrow, on_grid_multimode, off_grid, nonstationary]
+downstream:
+  geometries: [historical_32_linspace_0_999, central_32_consecutive_484_515]
+  expanded_target_lags: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  expanded_features: unchanged 137 historical context-only block features for all models
+  target_estimation: pair-normalized over the same 1000-channel block
+  models: [state_psd, block_ridge, full_ridge]
+  neural_seed: 19
+  neural_training: same 96-wide two-layer recurrence and development-only epoch selection as amendment 07
+  historical_processing: preserve original ensemble; matched seed-19 comparison also reported
+  loading: 0.0001
+  diagonal_shrinkage: 0.75
+  endpoint: target-to-reference-noise power relative to diagonal, not detector SNR
+reporting:
+  preserve_unfavorable_results: true
+  no_predictive_certificate_claim: true
+  no_operational_claim: true
+  source_role_manifest_immutable: true

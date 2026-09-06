@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "coherencygraph-das"
-version = "1.1.0rc1"
-description = "Retrospective sparse DAS coherency prediction and covariance identifiability audits"
+version = "1.2.0"
+description = "Geometry-explicit measurement-support audits for submarine DAS covariance learning"
 requires-python = ">=3.12"
 license = {text = "BSD-3-Clause"}
 dependencies = [

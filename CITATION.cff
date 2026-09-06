@@ -1,8 +1,10 @@
 cff-version: 1.2.0
-message: "CoherencyGraph-DAS review revision: software prepared for public release; associated manuscript is not published."
+message: "Please cite this research software; the associated manuscript is not a published journal article."
 title: "CoherencyGraph-DAS"
 type: software
-version: 1.1.0-rc1
+version: 1.2.0
+date-released: 2026-09-07
+repository-code: "https://github.com/mgunjan67/coherencygraph-das"
 license: BSD-3-Clause
 authors:
   - family-names: Mishra

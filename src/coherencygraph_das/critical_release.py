@@ -60,9 +60,13 @@ def verify():
         assert sha256(paper/'output'/f'{doc["document"]}.pdf')==doc['pdf_sha256']
     public=OUT/'public_repository_verification.json'
     verified=public.exists() and json.loads(public.read_text()).get('verified_public_browsable_source') is True
+    approval=OUT/'author_approval.json'
+    approved=approval.exists() and json.loads(approval.read_text()).get('both_authors_approved') is True
+    linked=all('https://github.com/mgunjan67/coherencygraph-das' in (paper/f'{name}.tex').read_text() for name in ['main','supplement','cover_letter'])
+    ready=verified and approved and linked
     result=dict(unit_tests=test.strip().splitlines()[-1],numerical_checks=len(rows),inventory=inventory,
-        public_repository_verified=verified,author_approval_verified=False,decision='NOT READY',
-        reason='Public browsable repository and final author approvals are not verified.',pdf_build=build,
+        public_repository_verified=verified,author_approval_verified=approved,public_links_in_submission=linked,decision='READY' if ready else 'NOT READY',
+        reason='Verified public source and assets; both author approvals reported by the user; rebuilt PDFs and numerical checks pass. Live journal declarations remain the corresponding author\'s responsibility.' if ready else 'Public source, author approval or submission links remain unverified.',pdf_build=build,
         visually_inspected_pages=sum(d['pages'] for d in visual['documents']))
     write_json(OUT/'final_verification.json',result)
     print(json.dumps(result,indent=2))

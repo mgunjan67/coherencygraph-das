@@ -1,0 +1,53 @@
+amendment:
+  id: '09'
+  date: '2026-09-07'
+  status: retrospective revision, not preregistration or fresh confirmation
+  purpose: measurement support, geometry and conditional covariance identifiability
+  preserve_historical_roles_and_results: true
+  test_outcomes_previously_inspected: true
+training:
+  seeds: [19, 43, 71]
+  maximum_epochs: 110
+  patience: 16
+  architecture: unchanged 96-wide two-layer state spectral recurrence
+  ridge_alphas: [0.1, 1, 10, 100, 1000, 10000]
+  selection: development source groups only; refit all development events
+  features: unchanged 137 features, except audited shared-cutoff waveform features
+experiments:
+  waveform_safe: existing common cutoff, seven seconds ending one second before earliest target
+  waveform_safe_limitation: picks and moveout remain retrospectively supplied
+  dense_block: 31 lags estimated over the containing 1000-channel block
+  local_geometry: exact 32 consecutive channels at block indices 484 through 515
+  local_sparse_lags: [3, 5, 8, 13, 21]
+  local_dense_lags: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+  local_target: remove known 0.001 trace-diagonal loading, normalize pairs, average same-lag diagonals
+  local_limitation: stationary lag supervision, not every nonstationary covariance entry
+identifiability:
+  grid: 257
+  historical_lags: [3, 5, 8, 13, 21, 34, 55, 89]
+  manual_lags: [1, 2, 3, 5, 8, 13, 21, 34]
+  candidate_pool: [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+  budget: 8
+  evaluation_lags: [4, 10]
+  tolerance: absolute fit residual by component plus development 90th-percentile absolute half-window disagreement
+  disagreement_aggregation: blocks averaged first, then equal earthquake-route observations
+  tolerance_floor: 0.005
+  tolerance_is_confidence_interval: false
+  selection_events: 8
+  selection_event_rule: first eight development IDs ranked by SHA256 of 20260907:event_id
+  selection_objective: minimum average real-part bound width across two routes, four bands and evaluation lags
+  selection_search: exhaustive 45 eight-of-ten designs, lexicographic tie break
+  freeze_selection_before_test_evaluation: true
+  report_complex_components: [real, imaginary]
+processing:
+  diagonal_shrinkage: 0.75
+  loading: 0.0001
+  preserve_classical_comparator: true
+  inferential_unit: earthquake, paired routes and all blocks averaged
+  random_seeds_are_not_observations: true
+  endpoint: target to reference-noise power, not detection SNR
+reporting:
+  seed_variation: individual-seed results and seed-averaged earthquake effects, no best-seed selection
+  source_dependence: existing complete 25-km components and leave-component-out sensitivity
+  primary_inference: 5000 complete-component bootstrap replicates, historical seed 20260906
+  no_external_or_operational_claim: true

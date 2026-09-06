@@ -1,4 +1,6 @@
-# Claims ledger — Amendment 07
+# Historical claims ledger — Amendment 07
+
+Historical record, not the current release status. Version 1.2.0 adds the explicitly separated results in `docs/CURRENT_RESULTS.md` and `reports/submission_revision`. Original numerical claims and historical blocks below are retained for provenance.
 
 This ledger distinguishes a verified calculation from a general scientific claim. All existing test analyses are retrospective. Artifact paths are relative to this repository; R = `reports/critical_review/`.
 
