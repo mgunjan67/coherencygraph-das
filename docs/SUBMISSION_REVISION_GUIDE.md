@@ -6,7 +6,7 @@ This is a retrospective computational study, not an operational earthquake warni
 
 Use Python 3.12 and the scientific dependencies in `requirements-revision.lock.txt`. Install with `python -m pip install -e ".[dev]"`. The exact recorded PyTorch wheel is CUDA-specific; use its CPU counterpart on CPU-only hosts. No ChatGPT or Codex API is needed.
 
-Download the versioned scientific assets, verify SHA-256, and extract at the repository root. Source code remains browsable in Git; the asset ZIP is not a substitute for source distribution. Raw HDF5 waveforms are not redistributed. Caches and original pick/role metadata support offline numerical reproduction.
+Download the versioned scientific assets from release `v2026.09.07` (base commit `1cd1548fef28d0dece6182bb02bc3ff59505a882`), verify SHA-256, and extract at the repository root. Overlay the same release's `CoherencyGraph_DAS_reporting_correction_20260907.zip` after verifying its companion checksum. Its manifest pins the reporting-source commit. The base science and original tag are unchanged. Source code remains browsable in Git; the asset ZIP is not a substitute for source distribution. Raw HDF5 waveforms are not redistributed. Caches and original pick/role metadata support offline numerical reproduction.
 
 Commands below use `python scripts/run_submission_revision.py STAGE`:
 
@@ -26,6 +26,8 @@ Commands below use `python scripts/run_submission_revision.py STAGE`:
 Run stages in the table's dependency order. Training and candidate selection resume from completed outputs. Processing regenerates the full table. The frozen protocol is `configs/protocol_amendment_09_submission.yaml`; do not change it silently in an existing run. New experiments belong in separately named configurations/output directories.
 
 Run `python scripts/build_submission_revision_outputs.py` for six scientific figures in PDF/SVG/PNG and numerical tables. When private manuscript sources are absent, generated tables go to `reports/submission_revision/generated_tables`. No manuscript text is required for public figure regeneration.
+
+Run `python scripts/verify_reporting_correction.py` to reconstruct both named ridge contrasts from complete event/route scores and independently re-express the unchanged 5,000-draw component bootstrap. It checks Table 2/Figure 3 values and the architecture dataflow. The strongest observed ridge is a descriptive reporting choice, not development selection. Historical seed-19 Amendment-08 results are precursor provenance; final Amendment-09 experiments use all seeds 19, 43 and 71.
 
 ## Data conventions
 

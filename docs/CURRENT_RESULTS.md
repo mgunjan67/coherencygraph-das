@@ -6,6 +6,8 @@ All claims refer to retrospective test earthquakes whose earlier outcomes had be
 |---|---|---|
 | Historical all-cell neural superiority | Unresolved versus blockwise ridge; the original -0.0152 difference and component interval [-0.0226, 0.0069] are preserved. | `reports/final_revision/baseline_reproduction.csv` |
 | Earlier-waveform prediction | Ensemble NRMSE 0.3346; difference from blockwise ridge -0.0144 [-0.0320, 0.0499], unresolved. Supplied picks remain retrospective. | `reports/submission_revision/prediction_comparisons.csv` |
+| Exact-local five-lag prediction | Ensemble minus full-context ridge +0.0101 [-0.0001, 0.0132]: numerically worse; difference unresolved. | `reports/submission_revision/prediction_both_ridge_comparisons.csv` |
+| Exact-local 31-lag prediction | Ensemble minus full-context ridge -0.0001 [-0.0150, 0.0045]: nearly tied, not an equivalence test. | same |
 | Finite measurement selection | Development-only search of 45 designs selects lags 1,2,3,5,8,13,21,34, identical to the manual set. | `locked_design.json`, `development_design_candidates.csv` |
 | Conditional unseen signs | Real signs: 2/384 historical versus 26/384 selected; imaginary signs: 0/384 for both. These are component-specific sensitivity ranges, not confidence intervals. | `conditional_ranges_summary.csv` |
 | Fixed-aperture block-target supervision | Three-seed dense-minus-sparse processing difference +2.1653 dB [2.0168, 2.5573]. | `processing_comparisons.csv` |
@@ -16,4 +18,4 @@ All claims refer to retrospective test earthquakes whose earlier outcomes had be
 
 The geometry-support processing experiment intentionally retains historical context inputs. It is a retrospective support comparison, not a waveform-availability-safe operational processor. All processing values are target/reference-noise power differences, not detection SNR or earthquake prediction skill.
 
-Optional new acquisitions, architectures or prospective warning tasks are separate studies. Public software availability does not imply journal acceptance.
+Both named ridge contrasts are retained. The lower observed ridge error determines the displayed comparator descriptively after inspection; its named-contrast interval is not selection-adjusted. No new model fitting or tuning was performed for this reporting correction. Public software availability does not imply journal acceptance.

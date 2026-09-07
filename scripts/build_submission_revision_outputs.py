@@ -10,6 +10,7 @@ from matplotlib.patches import FancyBboxPatch
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
 from coherencygraph_das.critical_paper import latex_table
+from draw_submission_architecture import draw_architecture
 R=ROOT/'reports/submission_revision'; G=ROOT/'manuscript/cageo_submission/generated'; F=R/'figures'
 F.mkdir(exist_ok=True)
 if not G.parent.exists():G=R/'generated_tables'
@@ -62,43 +63,35 @@ for y,title,positions,color in [(.78,'Historical processor: 32 channels',np.lins
 ax.text(.5,.13,'Exact local targets use the same\n32 consecutive processing channels.\nSchematic only; no cable route is inferred.',ha='center',va='center',fontsize=9,linespacing=1.5)
 save(fig,'fig01_setting_geometry')
 
-fig,ax=plt.subplots(figsize=(7.3,4.6));fig.subplots_adjust(left=.02,right=.98,bottom=.02,top=.98);ax.set(xlim=(0,1),ylim=(0,1));ax.axis('off')
-boxes=[]
-def box(x,y,w,h,title,body,color):
-    rect=FancyBboxPatch((x,y),w,h,boxstyle='round,pad=0.008',facecolor=color+'12',edgecolor=color,lw=1.4);ax.add_patch(rect)
-    a=ax.text(x+w/2,y+h-.035,title,ha='center',va='top',weight='bold',fontsize=10,color=color)
-    b=ax.text(x+w/2,y+h/2-.035,body,ha='center',va='center',fontsize=9,linespacing=1.45)
-    boxes.append((rect,a,b))
-box(.025,.62,.44,.33,'Prediction branch','Context features + supplied picks\nHistorical / earlier-waveform variants\nDevelopment-only fitting; later-lag scoring',BLUE)
-box(.535,.62,.44,.33,'Measurement-audit branch','Measured later-window lag moments\nDevelopment-selected lag design\nFit a stationary spectral feasible set',GREEN)
-box(.535,.18,.44,.32,'Validated conditional ranges','Bound real and imaginary cross-terms\nCheck optimisation residuals and dual gaps\nIdentify a sign or explicitly abstain',GREEN)
-box(.025,.18,.44,.32,'Fixed-geometry processing','Historical-context predictors only\nShared channels, powers and noise frame\nCompare sparse, dense and classical inputs',BLUE)
-for x in [.245,.755]:ax.annotate('',xy=(x,.51),xytext=(x,.61),arrowprops={'arrowstyle':'->','lw':1.5,'color':'.3'})
-ax.text(.5,.05,'Separate outputs: prediction error | conditional ambiguity | processing utility',ha='center',fontsize=10)
-fig.canvas.draw();renderer=fig.canvas.get_renderer()
-for rect,*texts in boxes:
-    boundary=rect.get_window_extent(renderer)
-    for t in texts:
-        extent=t.get_window_extent(renderer)
-        assert extent.x0>=boundary.x0 and extent.x1<=boundary.x1 and extent.y0>=boundary.y0 and extent.y1<=boundary.y1,t.get_text()
-save(fig,'fig02_audit_workflow')
+draw_architecture(F)
 
 pred=pd.read_csv(R/'prediction_comparisons.csv'); frames=[]
+inference=pd.read_csv(R/'prediction_inference.csv')
+both=inference[(inference.model=='state_psd_seed_mean')&(inference.inference=='component')].copy()
+scores=pred.set_index(['endpoint','model']).score
+both['ensemble_score']=[scores.loc[e,'state_psd_seed_mean'] for e in both.endpoint]
+both['reference_score']=[scores.loc[e,m] for e,m in zip(both.endpoint,both.reference)]
+both['strongest_observed_ridge']=[min(['block_ridge','full_ridge'],key=lambda m:scores.loc[e,m]) for e in both.endpoint]
+both['is_strongest_observed_ridge']=both.reference==both.strongest_observed_ridge
+both.to_csv(R/'prediction_both_ridge_comparisons.csv',index=False)
+strongest=both[both.is_strongest_observed_ridge].set_index('endpoint')
 labels={'waveform_safe':'Earlier-waveform input','block_dense':'Block-averaged 31 lags','local_sparse':'Exact local 5 lags','local_dense':'Exact local 31 lags'}
 for endpoint,label in labels.items():
     g=pred[pred.endpoint==endpoint].set_index('model');r=g.loc['state_psd_seed_mean']
-    frames.append([label,f'{g.loc["block_ridge","score"]:.4f}',f'{g.loc["full_ridge","score"]:.4f}',f'{r.score:.4f}',ci(r)])
+    best=strongest.loc[endpoint]
+    frames.append([label,'Block' if best.reference=='block_ridge' else 'Full',f'{best.reference_score:.4f}',f'{r.score:.4f}',ci(best)])
     macros(''.join(x.title() for x in endpoint.split('_')),r)
     numbers['Rev'+''.join(x.title() for x in endpoint.split('_'))+'Score']=f'{r.score:.4f}'
-latex_table(G/'revision_prediction.tex',['Target/input','Block ridge','Full ridge','Ensemble',r'$\Delta$ vs block ridge [95\% CI]'],frames)
+    macros('Strong'+''.join(x.title() for x in endpoint.split('_')),best)
+latex_table(G/'revision_prediction.tex',['Target/input','Ridge','Ridge NRMSE','Ensemble',r'$\Delta$ vs ridge [95\% CI]'],frames)
 seed=pd.read_csv(R/'seed_variation.csv')
 latex_table(G/'revision_seeds.tex',['Endpoint','Seed 19','Seed 43','Seed 71','Across-seed SD'],[[labels[r.endpoint]]+[f'{pred[(pred.endpoint==r.endpoint)&(pred.model==f"state_psd_seed{s}")].iloc[0].score:.4f}' for s in [19,43,71]]+[f'{r.seed_sample_sd:.4f}'] for r in seed.itertuples()])
-fig,axs=plt.subplots(1,2,figsize=(7.3,3.4),layout='constrained')
+fig,axs=plt.subplots(1,2,figsize=(7.3,3.7),layout='constrained')
 for i,endpoint in enumerate(['waveform_safe','block_dense','local_sparse','local_dense']):
-    g=pred[pred.endpoint==endpoint].set_index('model');r=g.loc['state_psd_seed_mean']
+    g=pred[pred.endpoint==endpoint].set_index('model');r=strongest.loc[endpoint]
     axs[0].errorbar(r['mean'],i,xerr=[[r['mean']-r.low],[r.high-r['mean']]],fmt='o',color=BLUE,capsize=3)
     for offset,s in zip([-.13,0,.13],[19,43,71]):axs[1].scatter(g.loc[f'state_psd_seed{s}','score'],i+offset,color=[BLUE,ORANGE,GREEN][[19,43,71].index(s)],marker='os^'[[19,43,71].index(s)],s=30,label=f'Seed {s}' if i==0 else None)
-axs[0].set_yticks(range(4),[labels[x] for x in labels]);axs[0].invert_yaxis();axs[0].axvline(0,color='.5',ls='--');axs[0].set(xlabel='Ensemble minus ridge NRMSE',title='(a) Paired prediction error')
+axs[0].set_yticks(range(4),[labels[x]+'\nvs '+('block ridge' if strongest.loc[x,'reference']=='block_ridge' else 'full ridge') for x in labels]);axs[0].tick_params(axis='y',labelsize=9);axs[0].invert_yaxis();axs[0].axvline(0,color='.5',ls='--');axs[0].set(xlabel='Ensemble minus strongest ridge',title='(a) Paired NRMSE difference')
 axs[1].set_yticks(range(4),['']*4);axs[1].invert_yaxis();axs[1].set(xlabel='Individual-seed NRMSE',title='(b) Training seeds');axs[1].legend(loc='upper center',bbox_to_anchor=(.5,-.22),ncol=3,fontsize=8,frameon=False)
 save(fig,'fig03_prediction')
 
@@ -145,7 +138,9 @@ for j,(method,reference,label,color) in enumerate([('block_dense / recurrence','
     g=delete[(delete.endpoint=='full')&(delete.method==method)&(delete.reference==reference)]
     axs[1].scatter(g['mean'],np.full(len(g),j),color=color,s=27,alpha=.65)
 axs[0].axhline(0,color='.5',ls='--');axs[0].set(xlabel='Training seed',ylabel='Dense minus sparse (dB)',title='(a) Every fixed seed');axs[0].set_xticks([19,43,71]);axs[0].legend(loc='upper center',bbox_to_anchor=(.5,-.23),frameon=False,fontsize=8)
-axs[1].set_yticks([0,1],['Block','Local']);axs[1].axvline(0,color='.5',ls='--');axs[1].set(xlabel='Dense minus sparse (dB)',title='(b) Component deletion')
+axs[1].set_yticks([]);axs[1].set_ylim(-.6,1.6)
+for y,label in [(0,'Block targets'),(1,'Exact local targets')]:axs[1].text(.10,y+.19,label,transform=axs[1].get_yaxis_transform(),fontsize=9,ha='left',va='bottom')
+axs[1].axvline(0,color='.5',ls='--');axs[1].set(xlabel='Dense minus sparse (dB)',title='(b) Component deletion')
 save(fig,'fig06_robustness')
 audit=json.loads((R/'starting_audit.json').read_text());numbers['RevMinimumLead']=f'{audit["minimum_lead_seconds"]:.2f}'
 raw=pd.read_csv(R/'direct_raw_local_validation.csv');numbers['RevRawLocalMax']=f'{raw.max_complex_difference.max():.2e}'
