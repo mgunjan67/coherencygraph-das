@@ -1,0 +1,35 @@
+{
+  "analysis": "Narrow measurement-design utility validation",
+  "date": "2026-09-07",
+  "status": "Freeze before calculating all-design retrospective rankings; historical outcomes already exposed",
+  "candidate_pool": [1, 2, 3, 5, 8, 13, 21, 34, 55, 89],
+  "budget": 8,
+  "evaluation_lags": [4, 10],
+  "selection": "Use existing eight-event development scores and locked design only; no reselection using retrospective data",
+  "objective": "Real compatible-range width, lower is better; invalid cases contribute width 2 exactly as the existing selection code",
+  "aggregation": "Average eight blocks before bounds; average bands/lags within route then paired routes within earthquake then equal earthquakes",
+  "descriptive_metrics": ["imaginary width", "real identified fraction", "imaginary identified fraction", "validity and fit-failure fractions"],
+  "heuristics": {
+    "H0": {"definition": "count of evaluation lags directly present", "use": "descriptive only; preserve constant results"},
+    "H1": {"definition": "mean absolute distance from each target lag to nearest observed lag", "direction": "minimise", "tie_break": "ascending numeric lexicographic lag tuple"},
+    "H2": {"definition": "maximum absolute distance from a target lag to its nearest observed lag", "direction": "minimise", "tie_break": "ascending numeric lexicographic lag tuple"},
+    "H3": {"definition": "maximum observed lag", "use": "descriptive association only, no preferred direction or selected design"},
+    "H4": {"use": "omitted", "reason": "No existing exact near-neighbour set {1,2,3,5,8,13} is defined as a selection rule; do not introduce it now"},
+    "H5": {"use": "omitted", "reason": "Optional structural baseline is not needed; no new condition-number/rank convention"}
+  },
+  "rank": {"direction": "ascending objective", "tie_break": "ascending numeric lexicographic lag tuple", "spearman_ties": "average ranks, descriptive rho only, no p-values", "top_quartile": "rank <= ceil(45/4) = 12", "percentile": "100*(45-rank)/44; 100 is best and 0 is worst"},
+  "inference": "No conventional p-values or independent-design sample-size claim; no new bootstrap or uncertainty formulation",
+  "classification": {
+    "order": "B first for same/similar selection, then A, else C; D only for a central scientific contradiction",
+    "B": "Audit rank <= 5 and development-retrospective rho >= 0.5 and at least one H1/H2 choice identical or within 1% absolute relative J of audit; no superior selection claim",
+    "A": "Audit rank <= 5 and rho >= 0.5 and BOTH H1/H2 select distinct designs with J at least 5% larger than audit; H0 constancy alone is insufficient",
+    "C": "All remaining outcomes: incremental utility not demonstrated",
+    "threshold_note": "Transparent operational definitions for the review's qualitative high-rank/material-difference terms, frozen before new retrospective comparison; not new fitted thresholds"
+  },
+  "sensitivity": "Lag-4 and lag-10 retrospective ranks only; same locked design, no reselection, no extra bandwise section",
+  "processing_connection": "Not evaluated: saved fixed-geometry processing has support classes rather than a matched output for each of the 45 lag designs",
+  "outputs": ["all45_designs.csv", "selection_summary.csv", "all_design_ranges.parquet", "ranking_receipt.json", "validation.json", "one supplementary two-panel PDF/SVG/PNG figure", "one compact supplementary table"],
+  "numerics": "Unchanged submission_revision.conditional_ranges, allowances, grid, fit and LP validation; width 2 penalty for invalid cases, validity reported separately",
+  "selected_designs_for_independent_check": "numeric-lexicographic first, middle and last plus audit/H1/H2/historical designs",
+  "protected": "All pre-existing configs, models, predictions, numerical tables and conditional ranges remain byte-identical"
+}

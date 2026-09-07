@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "unique_eight_lag_designs": 45,
+  "targets_absent": true,
+  "development_scores_preserved": true,
+  "all_sources_unchanged": true,
+  "lower_level_checks": [
+    {
+      "design_id": "D01",
+      "J_retro_recomputed": 1.2505923262559535,
+      "passed": true
+    },
+    {
+      "design_id": "D23",
+      "J_retro_recomputed": 1.343233238031156,
+      "passed": true
+    },
+    {
+      "design_id": "D45",
+      "J_retro_recomputed": 1.6279668740416133,
+      "passed": true
+    }
+  ],
+  "existing_range_checks": [
+    {
+      "design": "algorithmic",
+      "max_width_difference": 0.0
+    },
+    {
+      "design": "historical",
+      "max_width_difference": 0.0
+    }
+  ],
+  "cases": 46080,
+  "invalid_cases": 0,
+  "frozen_before_evaluation": true
+}

@@ -1,0 +1,166 @@
+Verification replay UTC 2026-09-07T05:57:05.706734+00:00
+The initial guard rejected an evaluation attempt while the freeze receipt was still being written; no outcomes were computed by that failed attempt. The recorded evaluation started after the completed freeze. This replay uses all 45 completed cached design files.
+$ python scripts/evaluate_audit_design_utility.py evaluate --workers 8
+1 /45 ('D02', 'cached')
+2 /45 ('D01', 'cached')
+3 /45 ('D03', 'cached')
+4 /45 ('D07', 'cached')
+5 /45 ('D08', 'cached')
+6 /45 ('D09', 'cached')
+7 /45 ('D04', 'cached')
+8 /45 ('D05', 'cached')
+9 /45 ('D06', 'cached')
+10 /45 ('D12', 'cached')
+11 /45 ('D13', 'cached')
+12 /45 ('D15', 'cached')
+13 /45 ('D14', 'cached')
+14 /45 ('D16', 'cached')
+15 /45 ('D17', 'cached')
+16 /45 ('D18', 'cached')
+17 /45 ('D19', 'cached')
+18 /45 ('D10', 'cached')
+19 /45 ('D11', 'cached')
+20 /45 ('D20', 'cached')
+21 /45 ('D21', 'cached')
+22 /45 ('D23', 'cached')
+23 /45 ('D24', 'cached')
+24 /45 ('D22', 'cached')
+25 /45 ('D25', 'cached')
+26 /45 ('D26', 'cached')
+27 /45 ('D27', 'cached')
+28 /45 ('D28', 'cached')
+29 /45 ('D30', 'cached')
+30 /45 ('D29', 'cached')
+31 /45 ('D31', 'cached')
+32 /45 ('D32', 'cached')
+33 /45 ('D33', 'cached')
+34 /45 ('D34', 'cached')
+35 /45 ('D35', 'cached')
+36 /45 ('D36', 'cached')
+37 /45 ('D37', 'cached')
+38 /45 ('D38', 'cached')
+39 /45 ('D39', 'cached')
+40 /45 ('D40', 'cached')
+41 /45 ('D41', 'cached')
+42 /45 ('D44', 'cached')
+43 /45 ('D42', 'cached')
+44 /45 ('D45', 'cached')
+45 /45 ('D43', 'cached')
+
+$ python scripts/evaluate_audit_design_utility.py summarise
+{
+  "outcome": "B",
+  "selected_design": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    13,
+    21,
+    34
+  ],
+  "dev_rank": 1,
+  "retro_rank": 1,
+  "retro_percentile": 100.0,
+  "J_retro": 1.2505923262559533,
+  "best_J_retro": 1.2505923262559533,
+  "gap_to_best": 0.0,
+  "relative_gap_percent": 0.0,
+  "median_candidate_J": 1.3932301938573615,
+  "rho_descriptive": 0.9972332015810277,
+  "top5_overlap": 5,
+  "top10_overlap": 10,
+  "selected_in_top": {
+    "1": true,
+    "5": true,
+    "10": true,
+    "12": true
+  },
+  "heuristic_associations": {
+    "H0_direct_count": {
+      "unique_values": 1,
+      "rho": null,
+      "interpretation": "descriptive; no p-value"
+    },
+    "H1_mean_nearest_distance": {
+      "unique_values": 3,
+      "rho": 0.3635287957574818,
+      "interpretation": "descriptive; no p-value"
+    },
+    "H2_max_nearest_distance": {
+      "unique_values": 3,
+      "rho": 0.33559170661779963,
+      "interpretation": "descriptive; no p-value"
+    },
+    "H3_max_lag": {
+      "unique_values": 3,
+      "rho": 0.40680656156834144,
+      "interpretation": "descriptive; no p-value"
+    }
+  },
+  "selected_comparisons": [
+    {
+      "selection_rule": "Audit",
+      "design_id": "D01",
+      "lag_set": "1,2,3,5,8,13,21,34",
+      "J_retro": 1.2505923262559533,
+      "retro_rank": 1,
+      "gap_to_best": 0.0
+    },
+    {
+      "selection_rule": "H1",
+      "design_id": "D01",
+      "lag_set": "1,2,3,5,8,13,21,34",
+      "J_retro": 1.2505923262559533,
+      "retro_rank": 1,
+      "gap_to_best": 0.0
+    },
+    {
+      "selection_rule": "H2",
+      "design_id": "D01",
+      "lag_set": "1,2,3,5,8,13,21,34",
+      "J_retro": 1.2505923262559533,
+      "retro_rank": 1,
+      "gap_to_best": 0.0
+    },
+    {
+      "selection_rule": "Retrospective best",
+      "design_id": "D01",
+      "lag_set": "1,2,3,5,8,13,21,34",
+      "J_retro": 1.2505923262559533,
+      "retro_rank": 1,
+      "gap_to_best": 0.0
+    },
+    {
+      "selection_rule": "Historical",
+      "design_id": "D45",
+      "lag_set": "3,5,8,13,21,34,55,89",
+      "J_retro": 1.6279668740416133,
+      "retro_rank": 44,
+      "gap_to_best": 0.37737454778566004
+    }
+  ],
+  "lag_sensitivity": [
+    {
+      "lag": 4,
+      "selected_design": "D01",
+      "rank": 1,
+      "J": 0.960883242922398
+    },
+    {
+      "lag": 10,
+      "selected_design": "D01",
+      "rank": 1,
+      "J": 1.5403014095895091
+    }
+  ],
+  "invalid_cases": 0,
+  "processing_connection": "Not evaluated: saved fixed-geometry processing has support classes rather than a matched output for each of the 45 lag designs"
+}
+
+$ python scripts/build_audit_design_utility.py
+One figure PDF/SVG/PNG and compact result-linked table generated; outcome B
+
+$ python -m pytest -q
+................................................                         [100%]

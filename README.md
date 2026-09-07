@@ -49,6 +49,12 @@ See [the complete revision guide](docs/SUBMISSION_REVISION_GUIDE.md) for every s
 
 ## Scientific boundaries
 
+### Frozen audit-utility addendum
+
+After the base and reporting-correction assets, extract `CoherencyGraph_DAS_audit_utility_20260907.zip` from the same `v2026.09.07` release. Its manifest pins the source commit and every added file. See the revision guide for deterministic evaluation and figure-generation commands.
+
+All 45 existing designs were evaluated without retraining or reselection. The development-selected design ranks 1/45 retrospectively (descriptive Spearman rho 0.997233; complete top-five and top-ten overlap). Both nearest-lag geometry rules select exactly the same design. This is partial utility: conditional ambiguity is quantified, but superior measurement selection over simple geometry is not demonstrated. These overlapping designs are not independent statistical observations. No matched 45-design processing endpoint exists, so no forced processing correlation is reported.
+
 - Whole earthquakes retain their routes, blocks and windows across splits and inference.
 - Test outcomes were inspected historically; retrospective comparisons are not pristine external validation.
 - The earlier-waveform benchmark precedes targets but still uses retrospectively supplied picks.

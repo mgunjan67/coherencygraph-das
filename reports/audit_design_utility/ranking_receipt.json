@@ -1,0 +1,110 @@
+{
+  "outcome": "B",
+  "selected_design": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    13,
+    21,
+    34
+  ],
+  "dev_rank": 1,
+  "retro_rank": 1,
+  "retro_percentile": 100.0,
+  "J_retro": 1.2505923262559533,
+  "best_J_retro": 1.2505923262559533,
+  "gap_to_best": 0.0,
+  "relative_gap_percent": 0.0,
+  "median_candidate_J": 1.3932301938573615,
+  "rho_descriptive": 0.9972332015810277,
+  "top5_overlap": 5,
+  "top10_overlap": 10,
+  "selected_in_top": {
+    "1": true,
+    "5": true,
+    "10": true,
+    "12": true
+  },
+  "heuristic_associations": {
+    "H0_direct_count": {
+      "unique_values": 1,
+      "rho": null,
+      "interpretation": "descriptive; no p-value"
+    },
+    "H1_mean_nearest_distance": {
+      "unique_values": 3,
+      "rho": 0.3635287957574818,
+      "interpretation": "descriptive; no p-value"
+    },
+    "H2_max_nearest_distance": {
+      "unique_values": 3,
+      "rho": 0.33559170661779963,
+      "interpretation": "descriptive; no p-value"
+    },
+    "H3_max_lag": {
+      "unique_values": 3,
+      "rho": 0.40680656156834144,
+      "interpretation": "descriptive; no p-value"
+    }
+  },
+  "selected_comparisons": [
+    {
+      "selection_rule": "Audit",
+      "design_id": "D01",
+      "lag_set": "1,2,3,5,8,13,21,34",
+      "J_retro": 1.2505923262559533,
+      "retro_rank": 1,
+      "gap_to_best": 0.0
+    },
+    {
+      "selection_rule": "H1",
+      "design_id": "D01",
+      "lag_set": "1,2,3,5,8,13,21,34",
+      "J_retro": 1.2505923262559533,
+      "retro_rank": 1,
+      "gap_to_best": 0.0
+    },
+    {
+      "selection_rule": "H2",
+      "design_id": "D01",
+      "lag_set": "1,2,3,5,8,13,21,34",
+      "J_retro": 1.2505923262559533,
+      "retro_rank": 1,
+      "gap_to_best": 0.0
+    },
+    {
+      "selection_rule": "Retrospective best",
+      "design_id": "D01",
+      "lag_set": "1,2,3,5,8,13,21,34",
+      "J_retro": 1.2505923262559533,
+      "retro_rank": 1,
+      "gap_to_best": 0.0
+    },
+    {
+      "selection_rule": "Historical",
+      "design_id": "D45",
+      "lag_set": "3,5,8,13,21,34,55,89",
+      "J_retro": 1.6279668740416133,
+      "retro_rank": 44,
+      "gap_to_best": 0.37737454778566004
+    }
+  ],
+  "lag_sensitivity": [
+    {
+      "lag": 4,
+      "selected_design": "D01",
+      "rank": 1,
+      "J": 0.960883242922398
+    },
+    {
+      "lag": 10,
+      "selected_design": "D01",
+      "rank": 1,
+      "J": 1.5403014095895091
+    }
+  ],
+  "invalid_cases": 0,
+  "processing_connection": "Not evaluated: saved fixed-geometry processing has support classes rather than a matched output for each of the 45 lag designs"
+}

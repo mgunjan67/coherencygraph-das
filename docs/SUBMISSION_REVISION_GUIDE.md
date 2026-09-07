@@ -31,6 +31,23 @@ Run `python scripts/verify_reporting_correction.py` to reconstruct both named ri
 
 ## Data conventions
 
+### Frozen all-candidate utility addendum (7 September 2026)
+
+This addendum evaluates the existing 45 designs, eight hash-selected development earthquakes and 24 retrospective earthquakes without retraining or changing the objective. After extracting the base, reporting-correction and audit-utility assets in that order:
+
+```sh
+python scripts/evaluate_audit_design_utility.py evaluate --workers 8
+python scripts/evaluate_audit_design_utility.py summarise
+python scripts/build_audit_design_utility.py
+python -m pytest tests/test_audit_design_utility.py -q
+```
+
+Evaluation is resumable: supplied lower-level range files are cached. To recompute optimisations, copy the repository/assets to a new working directory and move its `reports/audit_design_utility/ranges` directory aside, then run the same commands. Do not overwrite the original frozen receipt. The `freeze` stage was run once before the all-design comparison; it deliberately refuses to replace that receipt. The spec and source/input SHA-256 hashes allow the computation to be audited without a hosted AI service.
+
+Outputs in `reports/audit_design_utility`: all45_designs.csv, selection_summary.csv, all_design_ranges.parquet, individual range files, ranking_receipt.json, validation.json, frozen_receipt.json and evaluation_started.json; the generated table/macros and one PDF/SVG/PNG figure accompany them. Primary J is mean real compatible-range width, with original equal-route/equal-event aggregation and invalid-width fallback 2. All 46,080 numerical cases are valid. H0 is constant zero; H1/H2 minimise mean/worst nearest-target distance with numeric-lexicographic ties; H3 is descriptive only. H4/H5 are omitted, not tuned. All correlations are descriptive, without p-values.
+
+Outcome B: the audit design is retrospective rank 1/45, rho=0.997233, with complete top-5/top-10 overlap, but H1 and H2 select exactly the same design. The result quantifies a geometry preference without demonstrating superior selection. The existing processing experiments do not supply matched outputs for all 45 candidates, so no forced processing correlation is reported.
+
 - Complex arrays store real/imaginary components on the final axis where indicated. Targets have route-record, eight-block, four-band, lag, component dimensions.
 - Lag reversal conjugates the moment. Kernel assembly uses `C[i,j] = gamma(x[j]-x[i])`.
 - Local targets remove the recorded trace-diagonal loading before pair normalisation. They use precisely channels 484–515 inside each block. The direct raw and synthetic tests verify this operation.

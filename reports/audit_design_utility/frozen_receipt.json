@@ -1,0 +1,1267 @@
+{
+  "frozen_utc": "2026-09-07T05:43:40.431958+00:00",
+  "specification_sha256": "d480f997ba1b24bae143f50f06e7534a307441130a5d76c9a9e4f0cff7ad3090",
+  "script_sha256": "cb523f6fa7555c97ba3e98583e6b3d7e269f5ef2ad0064eaee73262e2ad4b48c",
+  "candidate_count": 45,
+  "candidates": [
+    {
+      "design_id": "D01",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 34
+    },
+    {
+      "design_id": "D02",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        55
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 55
+    },
+    {
+      "design_id": "D03",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D04",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        34,
+        55
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 55
+    },
+    {
+      "design_id": "D05",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        34,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D06",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D07",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        21,
+        34,
+        55
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 55
+    },
+    {
+      "design_id": "D08",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        21,
+        34,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D09",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        21,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D10",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D11",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        13,
+        21,
+        34,
+        55
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 2.0,
+      "H2_max_nearest_distance": 3,
+      "H3_max_lag": 55
+    },
+    {
+      "design_id": "D12",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        13,
+        21,
+        34,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 2.0,
+      "H2_max_nearest_distance": 3,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D13",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        13,
+        21,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 2.0,
+      "H2_max_nearest_distance": 3,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D14",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        13,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 2.0,
+      "H2_max_nearest_distance": 3,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D15",
+      "lags": [
+        1,
+        2,
+        3,
+        5,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 3.0,
+      "H2_max_nearest_distance": 5,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D16",
+      "lags": [
+        1,
+        2,
+        3,
+        8,
+        13,
+        21,
+        34,
+        55
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 55
+    },
+    {
+      "design_id": "D17",
+      "lags": [
+        1,
+        2,
+        3,
+        8,
+        13,
+        21,
+        34,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D18",
+      "lags": [
+        1,
+        2,
+        3,
+        8,
+        13,
+        21,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D19",
+      "lags": [
+        1,
+        2,
+        3,
+        8,
+        13,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D20",
+      "lags": [
+        1,
+        2,
+        3,
+        8,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D21",
+      "lags": [
+        1,
+        2,
+        3,
+        13,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 2.0,
+      "H2_max_nearest_distance": 3,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D22",
+      "lags": [
+        1,
+        2,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 55
+    },
+    {
+      "design_id": "D23",
+      "lags": [
+        1,
+        2,
+        5,
+        8,
+        13,
+        21,
+        34,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D24",
+      "lags": [
+        1,
+        2,
+        5,
+        8,
+        13,
+        21,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D25",
+      "lags": [
+        1,
+        2,
+        5,
+        8,
+        13,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D26",
+      "lags": [
+        1,
+        2,
+        5,
+        8,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D27",
+      "lags": [
+        1,
+        2,
+        5,
+        13,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 2.0,
+      "H2_max_nearest_distance": 3,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D28",
+      "lags": [
+        1,
+        2,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 2.0,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D29",
+      "lags": [
+        1,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 55
+    },
+    {
+      "design_id": "D30",
+      "lags": [
+        1,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D31",
+      "lags": [
+        1,
+        3,
+        5,
+        8,
+        13,
+        21,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D32",
+      "lags": [
+        1,
+        3,
+        5,
+        8,
+        13,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D33",
+      "lags": [
+        1,
+        3,
+        5,
+        8,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D34",
+      "lags": [
+        1,
+        3,
+        5,
+        13,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 2.0,
+      "H2_max_nearest_distance": 3,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D35",
+      "lags": [
+        1,
+        3,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D36",
+      "lags": [
+        1,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D37",
+      "lags": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 55
+    },
+    {
+      "design_id": "D38",
+      "lags": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D39",
+      "lags": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D40",
+      "lags": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D41",
+      "lags": [
+        2,
+        3,
+        5,
+        8,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D42",
+      "lags": [
+        2,
+        3,
+        5,
+        13,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 2.0,
+      "H2_max_nearest_distance": 3,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D43",
+      "lags": [
+        2,
+        3,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D44",
+      "lags": [
+        2,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    },
+    {
+      "design_id": "D45",
+      "lags": [
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89
+      ],
+      "H0_direct_count": 0,
+      "H1_mean_nearest_distance": 1.5,
+      "H2_max_nearest_distance": 2,
+      "H3_max_lag": 89
+    }
+  ],
+  "selection_event_ids": [
+    "11741048",
+    "11751913",
+    "11746899",
+    "11747236",
+    "11707192",
+    "11710588",
+    "11712849",
+    "11759746"
+  ],
+  "evaluation_lags": [
+    4,
+    10
+  ],
+  "selected_design": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    13,
+    21,
+    34
+  ],
+  "selected_by_audit": "D01",
+  "heuristic_selected": {
+    "H1": "D01",
+    "H2": "D01"
+  },
+  "allowance_sha256": "b06ddcdb9e1ba1834180a5a26c51e063ba83ab19b7edf3dcb7feff2216ec2859",
+  "protocol_sha256": "4a27ec9f71d5df9e2b3880c122815772ce0ac3b430378e0dbe17835fb1570184",
+  "sources": {
+    "configs/protocol_amendment_09_submission.yaml": "4a27ec9f71d5df9e2b3880c122815772ce0ac3b430378e0dbe17835fb1570184",
+    "reports/submission_revision/locked_design.json": "70ed9eef33cc6480ca20400c422bdb14558bb4e87e0183d3badbcadd517ed01e",
+    "reports/submission_revision/development_design_candidates.csv": "9653bf53c41cf38db3b11f6e7ac17ca033b82d360ff6719dc2198516ec3fcc2f",
+    "reports/submission_revision/conditional_ranges.parquet": "a3a287c95e5f5de3e2489826c46c8de2ac1531daa1f18cc645db0b97016792c6",
+    "reports/submission_revision/prediction_event_scores.csv": "a9f152bb207d2b0f60bc6f2ab3eb445d60c5e95fefe0834641e2ff0a264a921f",
+    "reports/submission_revision/processing_comparisons.csv": "404f3fd13a886d68298cdb9b74be2d867a45d7d8b4ca2fca8f54bf998fe9952a",
+    "reports/submission_revision/unchanged_event_roles.csv": "68916ba1b47280ff3a20f4f6d995831e8540a89482df9bf4e39671ce5aaedd21",
+    "models/submission_revision/development_component_tolerance.npy": "b06ddcdb9e1ba1834180a5a26c51e063ba83ab19b7edf3dcb7feff2216ec2859",
+    "src/coherencygraph_das/submission_revision.py": "5ba0c182a4cd84b3822d46c63e5e45021a5e6ef81441e14f90c556791cfae7b4",
+    "src/coherencygraph_das/final_revision.py": "d6de180ba15e7d73f5faf8b562fe7686782afdd55287fae6d8d86e2df155d76b",
+    "data/processed/final_revision/11707192_KKFLS.npz": "a8c0ed85f7f22f84c9c74d194af98d1f730bc3c03f4703a687e460eb0ec5a9c4",
+    "data/processed/final_revision/11707192_TERRA.npz": "0fc99de60ee62eb37a948d7cb84f5991d9df70d3930f702ec6d80b81f9c2f4a3",
+    "data/processed/final_revision/11710081_KKFLS.npz": "90a86a8b273833f106e7e3f270e3b6abb3ee9c62db689c00471dfc295fdcdb4b",
+    "data/processed/final_revision/11710081_TERRA.npz": "1126490e2a6c7c3ed898cd19697d1ed76fa953f9e6d1c792319d137241d4cb50",
+    "data/processed/final_revision/11710588_KKFLS.npz": "d1cd52842c937e9e1357e76212cc6c3e6ab12344b32a4db2c8db9c5f697382db",
+    "data/processed/final_revision/11710588_TERRA.npz": "abd70900fef7923492a89ef63bacea0a687416734a4e3d012bbebc7d1f842b89",
+    "data/processed/final_revision/11712336_KKFLS.npz": "0bdc06d21820438a116cc8dae696851c1cb23357e263156e6ebeab242f70f88e",
+    "data/processed/final_revision/11712336_TERRA.npz": "e405f3aae2f45331cb81440717802989162749fc30b28f5a7b81e2292ca1b448",
+    "data/processed/final_revision/11712849_KKFLS.npz": "a4d2f396b635a184c06fc0baa3f4aef0fbb5ca429123fac25a0972696b9ed39b",
+    "data/processed/final_revision/11712849_TERRA.npz": "a840bbf687c89f2db722562c65f8481459d32b1b7841cd5e8892a2def3219f3a",
+    "data/processed/final_revision/11712900_KKFLS.npz": "68356f0e4e4aa8ee2131e50e30a30c64e4a3f5939e6e5a2fe6b26052cf1772e4",
+    "data/processed/final_revision/11712900_TERRA.npz": "abdb8479607a10942cc13988c51964120598efce117d44710b9e56d9d8441615",
+    "data/processed/final_revision/11715536_KKFLS.npz": "7201361ad3e9cea8439668c9633def36ea171ac1d42e3929aa18f4f0e0e96115",
+    "data/processed/final_revision/11715536_TERRA.npz": "0b260d59296e7c12c520209c6182c965f7447ce360b918a5c6429b4671b1c13a",
+    "data/processed/final_revision/11718683_KKFLS.npz": "85b78e97847abdd0a1d09f2addf8f7b57bd86d9c1d285e7ac2936b155c2ffbab",
+    "data/processed/final_revision/11718683_TERRA.npz": "d4e5f5662b73642633b8f10c541c7a1c843d050c810a5debb29221e3ca6a4fe2",
+    "data/processed/final_revision/11718685_KKFLS.npz": "6f003d7fafed78caaac05a8400a6d78964c3fb1f3cdbd50e85b5b43a770820ac",
+    "data/processed/final_revision/11718685_TERRA.npz": "f33c78221dfbe65b912fb0b2b57af36d713fd54e07ca39557b66fa5f55826931",
+    "data/processed/final_revision/11722343_KKFLS.npz": "7f8bda08b4946e56c040c3b12e35459ade7bd85c313f92483bfc7f907c190da0",
+    "data/processed/final_revision/11722343_TERRA.npz": "926ddabee3864beaf5e344cd1baf36d5b7383ade37dbda4a5a070169b38febcb",
+    "data/processed/final_revision/11726839_KKFLS.npz": "1c0f67ca5357a65d06b029584c809cdf8d97f80ba4f1db0f8ef942b7337a190d",
+    "data/processed/final_revision/11726839_TERRA.npz": "60124c158eb23952b7d87b099bde712fbdff4af69c58b25b288050398ef24477",
+    "data/processed/final_revision/11727169_KKFLS.npz": "ee691432738d40c8cddf9cd82660acc91b03dab0f0dfa6ada8edf2a4561bdd2f",
+    "data/processed/final_revision/11727169_TERRA.npz": "8639d1c99771393b0bca6383a5c898c46a778006b1b9654276384ee79309051c",
+    "data/processed/final_revision/11729062_KKFLS.npz": "6bdecdee7828c656e7c42baa68a2173a156c29588e5003b02e8338b4e1f6f01c",
+    "data/processed/final_revision/11729062_TERRA.npz": "6b425d5d0a89b836fbce34f6271f1f17ed5cc596ed06f9689aa366341c2e1f89",
+    "data/processed/final_revision/11729554_KKFLS.npz": "1eef9dd34c36bd66f55bd0f639bbac938ba0e792e1b88d5698b0962150df334b",
+    "data/processed/final_revision/11729554_TERRA.npz": "9e834f34e854a3f79097418119cf94bca417523d35e549d985870756c978408c",
+    "data/processed/final_revision/11731085_KKFLS.npz": "035a61539036aea00c3e4adab00dd028c167bcd638e6b2ab1c35360f2162698b",
+    "data/processed/final_revision/11731085_TERRA.npz": "3936c0ad03816e48027d1544d804e02c0faf6f161e6ebe812c6a1a4431ef24f0",
+    "data/processed/final_revision/11732070_KKFLS.npz": "0c36b7afe9c3966d0954829a354cc332510db9eb603454136ab65f40b53fb418",
+    "data/processed/final_revision/11732070_TERRA.npz": "601bbe48b7a21bf9dd81367d100cec9ec42b4f90a5659c4a9a447f0d4b341951",
+    "data/processed/final_revision/11732390_KKFLS.npz": "1ce789315d3778b3c1b01180eadd7c581a08bc4986bee3792c1b9329db65878e",
+    "data/processed/final_revision/11732390_TERRA.npz": "a0f08eba7ac4e5cc65ba4e5f4b25aca9cb5b59df6bebc89d766207746f3c5a96",
+    "data/processed/final_revision/11733356_KKFLS.npz": "5e55151b6aa3b271e187fa5d8056681f0fb7026c5ea5905a7783d53fd0954a6c",
+    "data/processed/final_revision/11733356_TERRA.npz": "16d77526dc69d178b40c60d3e67a7eed8cbea1946173cf185b99ecc16f95a808",
+    "data/processed/final_revision/11734537_KKFLS.npz": "1e7a7b74979ad0ce12eec8ac549f0c9c8ffd2a35d66abf03ec2f9df141054c30",
+    "data/processed/final_revision/11734537_TERRA.npz": "e4e3d58fed6e9861ba8a4fe9ffc45127d7cbba2b2d42ca3512c29b73e29eeb37",
+    "data/processed/final_revision/11734818_KKFLS.npz": "5bc4e9920bcff90bb2fbbfc04cdad4427a4405ce5456930648f0a6e1c1fd585b",
+    "data/processed/final_revision/11734818_TERRA.npz": "db905676c9b77272ef05e9feb0214668ac5bd28c8733ff079dc6acdf1acb74d0",
+    "data/processed/final_revision/11736595_KKFLS.npz": "adae6018f004e75db5ec3137b0f09e6d4757714ed804483ee5014e32244f8c50",
+    "data/processed/final_revision/11736595_TERRA.npz": "64de3dbe963913110a2b855eb355cc76a160cdd9df239469ff3e9f6131f280df",
+    "data/processed/final_revision/11738151_KKFLS.npz": "de0ba2097c4de66cc69c497ae4b582c7090e32fdd46422ffcc8491eb83844aa5",
+    "data/processed/final_revision/11738151_TERRA.npz": "885c9724ef451bffd16cda07e346cb5670904d20c5e049470cd8626d3ca08b44",
+    "data/processed/final_revision/11741048_KKFLS.npz": "3e8d3701fd2d255ab3c46b0b0f2e49310d89037f1b843c57d8dc4c0721bd1e55",
+    "data/processed/final_revision/11741048_TERRA.npz": "3b423513e3a7d006dd2654d1076c8342e6eb8c117899cbb1c279531bfc4e8c65",
+    "data/processed/final_revision/11744580_KKFLS.npz": "2da1788a067ddbfbede4a4492c408811c2685ca282327108b083a5259ffb222b",
+    "data/processed/final_revision/11744580_TERRA.npz": "56cb71df4789440ad250a4caa11a309a1120f68b72d62b0440cc056dcf5ed345",
+    "data/processed/final_revision/11744588_KKFLS.npz": "8ed976128357c226449fab7e7552e4417215447d93cf4b1c2e7dc4d8925e5bdd",
+    "data/processed/final_revision/11744588_TERRA.npz": "4c1e2ac1d3aa7829b3735b6da20d692d0737de8fbe54ea38fcfba4c0bd32268b",
+    "data/processed/final_revision/11746245_KKFLS.npz": "e7022c7fa5423fc6b79bd46343971ae3d51fec87aec5915867ce078596219590",
+    "data/processed/final_revision/11746245_TERRA.npz": "933cdc213788ece7f9c495e739714bfd803679f31a5bfd277ed49ca375babd10",
+    "data/processed/final_revision/11746899_KKFLS.npz": "4bbccdfd886a7db64dec6c7f1781e580282585a652ed78a302168f4c49b4d0fd",
+    "data/processed/final_revision/11746899_TERRA.npz": "96fc1a9119df542b0cd33ceba02a2e3aaa6b2fbd9ff1039088be8a28b2ad2668",
+    "data/processed/final_revision/11747236_KKFLS.npz": "f484bd52ef27e7551610ed06f41202a062549a0f2f113e275775cb98c8e34331",
+    "data/processed/final_revision/11747236_TERRA.npz": "69ddc2595a1751ec3bbd321af45268fbd5e4830a5a1a7334cdfc1640a6c66421",
+    "data/processed/final_revision/11750367_KKFLS.npz": "36ef178924694990ce67a1acb2b7945114b10159221cbc9bbb9b3ce5192a671d",
+    "data/processed/final_revision/11750367_TERRA.npz": "2b226e1321ddc25170b95c36e9479314776bd2174cf9739d692ef2b0066f9337",
+    "data/processed/final_revision/11751913_KKFLS.npz": "28e96cea0bc28759a966e72c0eef1f2346c948ec1a1dee47be9dd5bfd6b9ed28",
+    "data/processed/final_revision/11751913_TERRA.npz": "ff603463df82bb8299cf1c1f8b2068f2509ccffbf4cd18a74ccfc5f7468b99d7",
+    "data/processed/final_revision/11754408_KKFLS.npz": "b75ff8f2cac4999749f700026e606d243976b2571cd5dd290260d475740d3479",
+    "data/processed/final_revision/11754408_TERRA.npz": "b13d902ee7623bf056f83ecad8fed7af955449ea5467122ee8c84bd24d3c8ede",
+    "data/processed/final_revision/11759746_KKFLS.npz": "c5d7055025d4416d40ea05d37273f8a5bfee3d299e7252ebe8653e85696e3c5f",
+    "data/processed/final_revision/11759746_TERRA.npz": "48c955441210fec9c5125c86ba9fedfc18bf1d00b910ccf9a84db0d5b8b40bf5"
+  },
+  "records": [
+    {
+      "event_id": "11707192",
+      "route": "KKFL-S",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11707192_KKFLS.npz"
+    },
+    {
+      "event_id": "11707192",
+      "route": "TERRA",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11707192_TERRA.npz"
+    },
+    {
+      "event_id": "11710081",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11710081_KKFLS.npz"
+    },
+    {
+      "event_id": "11710081",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11710081_TERRA.npz"
+    },
+    {
+      "event_id": "11710588",
+      "route": "KKFL-S",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11710588_KKFLS.npz"
+    },
+    {
+      "event_id": "11710588",
+      "route": "TERRA",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11710588_TERRA.npz"
+    },
+    {
+      "event_id": "11712336",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11712336_KKFLS.npz"
+    },
+    {
+      "event_id": "11712336",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11712336_TERRA.npz"
+    },
+    {
+      "event_id": "11712849",
+      "route": "KKFL-S",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11712849_KKFLS.npz"
+    },
+    {
+      "event_id": "11712849",
+      "route": "TERRA",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11712849_TERRA.npz"
+    },
+    {
+      "event_id": "11712900",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11712900_KKFLS.npz"
+    },
+    {
+      "event_id": "11712900",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11712900_TERRA.npz"
+    },
+    {
+      "event_id": "11715536",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11715536_KKFLS.npz"
+    },
+    {
+      "event_id": "11715536",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11715536_TERRA.npz"
+    },
+    {
+      "event_id": "11718683",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11718683_KKFLS.npz"
+    },
+    {
+      "event_id": "11718683",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11718683_TERRA.npz"
+    },
+    {
+      "event_id": "11718685",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11718685_KKFLS.npz"
+    },
+    {
+      "event_id": "11718685",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11718685_TERRA.npz"
+    },
+    {
+      "event_id": "11722343",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11722343_KKFLS.npz"
+    },
+    {
+      "event_id": "11722343",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11722343_TERRA.npz"
+    },
+    {
+      "event_id": "11726839",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11726839_KKFLS.npz"
+    },
+    {
+      "event_id": "11726839",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11726839_TERRA.npz"
+    },
+    {
+      "event_id": "11727169",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11727169_KKFLS.npz"
+    },
+    {
+      "event_id": "11727169",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11727169_TERRA.npz"
+    },
+    {
+      "event_id": "11729062",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11729062_KKFLS.npz"
+    },
+    {
+      "event_id": "11729062",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11729062_TERRA.npz"
+    },
+    {
+      "event_id": "11729554",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11729554_KKFLS.npz"
+    },
+    {
+      "event_id": "11729554",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11729554_TERRA.npz"
+    },
+    {
+      "event_id": "11731085",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11731085_KKFLS.npz"
+    },
+    {
+      "event_id": "11731085",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11731085_TERRA.npz"
+    },
+    {
+      "event_id": "11732070",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11732070_KKFLS.npz"
+    },
+    {
+      "event_id": "11732070",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11732070_TERRA.npz"
+    },
+    {
+      "event_id": "11732390",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11732390_KKFLS.npz"
+    },
+    {
+      "event_id": "11732390",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11732390_TERRA.npz"
+    },
+    {
+      "event_id": "11733356",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11733356_KKFLS.npz"
+    },
+    {
+      "event_id": "11733356",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11733356_TERRA.npz"
+    },
+    {
+      "event_id": "11734537",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11734537_KKFLS.npz"
+    },
+    {
+      "event_id": "11734537",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11734537_TERRA.npz"
+    },
+    {
+      "event_id": "11734818",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11734818_KKFLS.npz"
+    },
+    {
+      "event_id": "11734818",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11734818_TERRA.npz"
+    },
+    {
+      "event_id": "11736595",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11736595_KKFLS.npz"
+    },
+    {
+      "event_id": "11736595",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11736595_TERRA.npz"
+    },
+    {
+      "event_id": "11738151",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11738151_KKFLS.npz"
+    },
+    {
+      "event_id": "11738151",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11738151_TERRA.npz"
+    },
+    {
+      "event_id": "11741048",
+      "route": "KKFL-S",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11741048_KKFLS.npz"
+    },
+    {
+      "event_id": "11741048",
+      "route": "TERRA",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11741048_TERRA.npz"
+    },
+    {
+      "event_id": "11744580",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11744580_KKFLS.npz"
+    },
+    {
+      "event_id": "11744580",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11744580_TERRA.npz"
+    },
+    {
+      "event_id": "11744588",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11744588_KKFLS.npz"
+    },
+    {
+      "event_id": "11744588",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11744588_TERRA.npz"
+    },
+    {
+      "event_id": "11746245",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11746245_KKFLS.npz"
+    },
+    {
+      "event_id": "11746245",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11746245_TERRA.npz"
+    },
+    {
+      "event_id": "11746899",
+      "route": "KKFL-S",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11746899_KKFLS.npz"
+    },
+    {
+      "event_id": "11746899",
+      "route": "TERRA",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11746899_TERRA.npz"
+    },
+    {
+      "event_id": "11747236",
+      "route": "KKFL-S",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11747236_KKFLS.npz"
+    },
+    {
+      "event_id": "11747236",
+      "route": "TERRA",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11747236_TERRA.npz"
+    },
+    {
+      "event_id": "11750367",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11750367_KKFLS.npz"
+    },
+    {
+      "event_id": "11750367",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11750367_TERRA.npz"
+    },
+    {
+      "event_id": "11751913",
+      "route": "KKFL-S",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11751913_KKFLS.npz"
+    },
+    {
+      "event_id": "11751913",
+      "route": "TERRA",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11751913_TERRA.npz"
+    },
+    {
+      "event_id": "11754408",
+      "route": "KKFL-S",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11754408_KKFLS.npz"
+    },
+    {
+      "event_id": "11754408",
+      "route": "TERRA",
+      "cohort": "retrospective",
+      "path": "data/processed/final_revision/11754408_TERRA.npz"
+    },
+    {
+      "event_id": "11759746",
+      "route": "KKFL-S",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11759746_KKFLS.npz"
+    },
+    {
+      "event_id": "11759746",
+      "route": "TERRA",
+      "cohort": "development",
+      "path": "data/processed/final_revision/11759746_TERRA.npz"
+    }
+  ],
+  "retrospective_ranking_calculated": false
+}
