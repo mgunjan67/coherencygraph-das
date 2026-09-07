@@ -1,5 +1,7 @@
 # Revision command reference
 
+This is the historical Amendment-07 command reference. Single-seed sensitivities here are not the final three-seed dense/local experiments. Current commands and release instructions are in `SUBMISSION_REVISION_GUIDE.md`.
+
 All commands run from the repository root. Paths inside portable caches are resolved beside the operator index before legacy absolute paths are considered. No private credentials are needed for the offline workflows.
 
 | Stage | Inputs | Outputs and expected behaviour |

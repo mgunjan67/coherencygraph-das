@@ -1,5 +1,7 @@
 # Critical review revision, 6 September 2026
 
+> Historical Amendment-07 status retained for provenance, superseded by the Amendment-09 release `v2026.09.07` and its reporting correction. The BLOCKED/NOT READY statements below describe the earlier state, not the current public software. See `SUBMISSION_REVISION_GUIDE.md` and `CURRENT_RESULTS.md` for current computations.
+
 **Overall decision: NOT READY for submission.** The local scientific revision is complete within an explicitly retrospective task. Public browsable source and both authors' final approval remain unverified.
 
 The protected original is `revisions/20260906_pre_review`. This is not a Git branch and no unavailable commit is asserted. Amendment 07 records the new analysis rules after earlier test exposure; it is not prospective registration or fresh confirmation.
