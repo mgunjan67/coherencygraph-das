@@ -52,6 +52,10 @@ def main():
             if not candidates:raise RuntimeError('Frozen input mismatch: '+rel)
             path.write_bytes(candidates[0])
     env=os.environ.copy();env.update(PYTHONPATH=str(work/'src'),CUDA_VISIBLE_DEVICES='-1',OMP_NUM_THREADS='4',OPENBLAS_NUM_THREADS='4',MKL_NUM_THREADS='4',MPLBACKEND='Agg')
+    # Editorial inventory is not an empirical estimate. Its counts are checked
+    # separately against the private LaTeX expansion during submission preflight.
+    generated=work/'manuscript/cageo_submission/generated';generated.mkdir(parents=True,exist_ok=True)
+    (generated/'revision_inventory.tex').write_text('The supplementary inventory comprises 17 numbered Text sections, 27 Tables and 3 Figures, plus an unnumbered navigation table.\n',encoding='utf8')
     commands=[
       ['examples/closeout_datafree.py'],
       ['scripts/run_submission_revision.py','regenerate'],
@@ -59,6 +63,7 @@ def main():
       ['scripts/closeout_prediction_aggregation.py'],
       ['scripts/closeout_audit_validation.py','summarise'],
       ['scripts/closeout_matched_processing.py','summarise'],
+      ['-c','from coherencygraph_das.critical_paper import summarize,build_figures; summarize(); build_figures()'],
       ['scripts/build_submission_revision_outputs.py'],
       ['scripts/generate_revision_supplement.py'],
       ['scripts/build_final_revision_outputs.py'],

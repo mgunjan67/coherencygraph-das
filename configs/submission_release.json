@@ -42,7 +42,7 @@
       "id": "september10",
       "name": "CoherencyGraph_DAS_scientific_closeout_20260910.zip",
       "url": "https://github.com/mgunjan67/coherencygraph-das/releases/download/v2026.09.10/CoherencyGraph_DAS_scientific_closeout_20260910.zip",
-      "sha256": "2102971a0162475621db6c571087d1d43266fc3e4d225b42d743f64d42c876da",
+      "sha256": "16cdee3155dde2e52ab262dcec36f7846ba838020fea7621322f90df52e86419",
       "manifest": "SUBMISSION_ASSET_MANIFEST.json",
       "local_candidate": "releases/20260910_final_submission/CoherencyGraph_DAS_scientific_closeout_20260910.zip"
     }

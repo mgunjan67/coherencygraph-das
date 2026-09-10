@@ -51,7 +51,7 @@ for prefix,field in [('One','H1_mean_nearest_distance'),('Two','H2_max_nearest_d
 (G/'audit_utility_numbers.tex').write_text('\n'.join('\\newcommand{\\'+k+'}{'+v+'}' for k,v in numbers.items())+'\n')
 # Structural inventory is generated without touching any historical result table.
 paper=ROOT/'manuscript/cageo_submission'
-if paper.exists():
+if (paper/'supplement.tex').exists():
     import re
     def expanded(path):
         def include(m):

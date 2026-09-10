@@ -1,6 +1,6 @@
 """Fail-closed numerical checks on the final released diagnostic tables."""
 from pathlib import Path
-import json
+import json,re
 import numpy as np
 import pandas as pd
 
@@ -22,6 +22,7 @@ def main():
     require((p.after_first_order_gap<1e-8).all(),'Gap threshold')
     require((p.after_simplex_sum_error<=1e-10).all(),'Simplex sum')
     require((p.after_minimum_mass>=-1e-12).all(),'Negative mass')
+    require((p.after_squared_objective<=p.before_squared_objective+1e-12).all(),'Fallback worsened objective')
     good=p[p.historical_case & p.before_accepted]
     for suffix in ['first_order_gap','simplex_sum_error','minimum_mass','squared_objective','moment_residual']:
         require(np.array_equal(good['before_'+suffix],good['after_'+suffix]),'Successful historical fit altered: '+suffix)
@@ -43,7 +44,28 @@ def main():
         require(current[side+'_primal_violation']<=1e-7,'Primal feasibility')
         require(current[side+'_dual_violation']<=1e-12,'Dual feasibility')
         require(current[side+'_gap']<=1e-7,'Outer bound gap')
-    receipt=dict(status='PASS',projections=9216,historical_initial_failures=417,new_initial_failures=107,unchanged_successful_historical_fits=len(good),empirical_cases=6144,empirical_exclusions=0,numerical_maxima=current.to_dict(),scope='Recomputed summaries and full-row diagnostic checks; tolerances unchanged')
+        require(current[side+'_rounding_margin']>0,'Missing outward rounding')
+    syn=pd.read_parquet(R/'audit_validation/current_synthetic_recomputed.parquet')
+    require(len(syn)==320 and syn.valid.all() and syn.covered.all() and not syn.incorrect.any(),'Known-truth component validation mismatch')
+    require(syn[syn.family!='off_grid'].identified.sum()==38,'On-grid sign count changed')
+    require(syn[syn.family=='off_grid'].identified.sum()==37,'Off-grid sign count changed')
+    residual=pd.read_parquet(R/'audit_validation/moment_residuals.parquet')
+    require(abs(residual.residual.max()-3.106142e-9)<1e-15,'Reported fitted residual maximum mismatch')
+    require(abs(residual.residual_to_delta.max()-3.044864e-7)<1e-13,'Reported residual/allowance maximum mismatch')
+    cfgpath=ROOT/'configs/submission_numeric_contract.json'
+    table_checks=[]
+    if cfgpath.exists():
+        cfg=json.loads(cfgpath.read_text())
+        for name,tokens in cfg['table_numeric_tokens'].items():
+            candidates=[ROOT/'manuscript/cageo_closeout/generated'/name,ROOT/'manuscript/cageo_submission/generated'/name]
+            paths=[p for p in candidates if p.exists()]
+            require(bool(paths),'Generated table missing: '+name)
+            content=paths[0].read_text(encoding='utf8')
+            if '\\midrule' in content:content=content.split('\\midrule',1)[1].split('\\bottomrule',1)[0]
+            actual=re.findall(r'(?<![A-Za-z])[-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?',content)
+            require(actual==tokens,'Generated table numeric mismatch: '+name)
+            table_checks.append(dict(name=name,numeric_tokens=len(tokens),passed=True))
+    receipt=dict(status='PASS',projections=9216,historical_initial_failures=417,new_initial_failures=107,unchanged_successful_historical_fits=len(good),empirical_cases=6144,empirical_exclusions=0,numerical_maxima=current.to_dict(),table_checks=table_checks,scope='Recomputed summaries and full-row diagnostic checks; tolerances unchanged')
     (ROOT/'reports/submission_closeout/FINAL_NUMERICAL_VERIFICATION.json').write_text(json.dumps(receipt,indent=2),encoding='utf8')
     print(json.dumps(receipt,indent=2))
 
