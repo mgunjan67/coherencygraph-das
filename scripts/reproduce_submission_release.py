@@ -40,7 +40,9 @@ def main():
     for p in specifications:
         receipt=json.loads(p.read_text())
         expected_sources=receipt.get('input_sha256',receipt.get('sources',{})).copy()
-        if 'script_sha256' in receipt:expected_sources['scripts/evaluate_audit_design_utility.py']=receipt['script_sha256']
+        if 'script_sha256' in receipt:
+            script='scripts/evaluate_audit_design_utility.py' if p.name=='frozen_receipt.json' else 'scripts/closeout_audit_validation.py'
+            expected_sources[script]=receipt['script_sha256']
         if p.name=='frozen_receipt.json':expected_sources['configs/audit_design_utility.json']=receipt['specification_sha256']
         for rel,digest in expected_sources.items():
             path=work/rel
