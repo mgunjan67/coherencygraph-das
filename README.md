@@ -1,5 +1,21 @@
 # CoherencyGraph-DAS
 
+## Final submission scientific release — v2026.09.10
+
+Start with [the final workflow](docs/FINAL_RELEASE_WORKFLOW.md). Install the
+package, check out the release tag, and run:
+
+```sh
+python scripts/reproduce_submission_release.py
+```
+
+This verifies and applies all four immutable scientific asset layers, including
+the September 10 corrected projections, full-context ridge processing and
+empirical audit checks. The September 7 instructions below are retained as
+historical provenance, not the final submission workflow. No hosted AI service
+is required, and neural superiority or operational earthquake warning is not
+claimed.
+
 Geometry-explicit measurement-support audits for submarine DAS covariance learning. Version 1.2.0 distinguishes observed-lag prediction, covariance admissibility, conditional identification and processing utility. It is not an earthquake-forecasting or operational early-warning system.
 
 Authors: Gunjan Kumar Mishra and Badri Raj Lamichhane. Corresponding author: Badri Raj Lamichhane, d6622300231@g.siit.tu.ac.th.

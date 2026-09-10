@@ -1,0 +1,426 @@
+{
+  "used": [
+    "BeyondLagCount",
+    "BlockRidge",
+    "ClassicalDb",
+    "ClassicalDbHigh",
+    "ClassicalDbLow",
+    "CloseoutAcceptedFits",
+    "CloseoutBlockRidgeGainHigh",
+    "CloseoutBlockRidgeGainLow",
+    "CloseoutBlockRidgeGainMean",
+    "CloseoutFullRidgeGainHigh",
+    "CloseoutFullRidgeGainLow",
+    "CloseoutFullRidgeGainMean",
+    "CloseoutFullSigns",
+    "CloseoutFullVersusContextHigh",
+    "CloseoutFullVersusContextLow",
+    "CloseoutFullVersusContextMean",
+    "CloseoutFullVersusNeuralHigh",
+    "CloseoutFullVersusNeuralLow",
+    "CloseoutFullVersusNeuralMean",
+    "CloseoutHalfSigns",
+    "CloseoutHistoricalFailed",
+    "CloseoutHistoricalFits",
+    "CloseoutParameters",
+    "CloseoutPeakMemory",
+    "CloseoutProjectionMeanChange",
+    "CloseoutResidualMax",
+    "CloseoutResidualRatio",
+    "CloseoutScipy",
+    "DeltaBlock",
+    "DeltaBlockHigh",
+    "DeltaBlockLow",
+    "FinalBoundCases",
+    "FinalBoundSigns",
+    "FinalEqualHigh",
+    "FinalEqualLow",
+    "FinalEqualMean",
+    "FinalNearCases",
+    "FinalNearSigns",
+    "FinalOracleWideHigh",
+    "FinalOracleWideLow",
+    "FinalOracleWideMean",
+    "LateBlocks",
+    "LearnedDb",
+    "LearnedDbHigh",
+    "LearnedDbLow",
+    "NearestDistance",
+    "OffDiagonalCount",
+    "OracleDb",
+    "RevAlgorithmicCases",
+    "RevAlgorithmicSigns",
+    "RevBlockDenseGainHigh",
+    "RevBlockDenseGainLow",
+    "RevBlockDenseGainMean",
+    "RevDesignSignsHigh",
+    "RevDesignSignsLow",
+    "RevDesignSignsMean",
+    "RevDesignWidthHigh",
+    "RevDesignWidthLow",
+    "RevDesignWidthMean",
+    "RevHistoricalCases",
+    "RevHistoricalSigns",
+    "RevLocalDenseGainHigh",
+    "RevLocalDenseGainLow",
+    "RevLocalDenseGainMean",
+    "RevMinimumLead",
+    "RevRawLocalMax",
+    "RevSelectedLags",
+    "RevStrongLocalDenseHigh",
+    "RevStrongLocalDenseLow",
+    "RevStrongLocalDenseMean",
+    "RevStrongLocalSparseHigh",
+    "RevStrongLocalSparseLow",
+    "RevStrongLocalSparseMean",
+    "RevWaveformSafeHigh",
+    "RevWaveformSafeLow",
+    "RevWaveformSafeMean",
+    "RevWaveformSafeScore",
+    "StatePsd",
+    "TestComponents",
+    "TimingBlocks",
+    "UtilityJ",
+    "UtilityMedian",
+    "UtilityRank",
+    "UtilityRho"
+  ],
+  "definitions": {
+    "BeyondLagCount": [
+      "870",
+      "reports/submission_release/tables/additional_numbers.tex"
+    ],
+    "BlockRidge": [
+      "0.3234",
+      "reports/submission_release/tables/numbers.tex"
+    ],
+    "ClassicalDb": [
+      "0.1699",
+      "reports/submission_release/tables/numbers.tex"
+    ],
+    "ClassicalDbHigh": [
+      "0.2527",
+      "reports/submission_release/tables/numbers.tex"
+    ],
+    "ClassicalDbLow": [
+      "0.0913",
+      "reports/submission_release/tables/numbers.tex"
+    ],
+    "CloseoutAcceptedFits": [
+      "9216",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutBlockRidgeGainHigh": [
+      "3.1918",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutBlockRidgeGainLow": [
+      "2.4981",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutBlockRidgeGainMean": [
+      "2.7031",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutFullRidgeGainHigh": [
+      "3.2588",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutFullRidgeGainLow": [
+      "2.5741",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutFullRidgeGainMean": [
+      "2.7935",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutFullSigns": [
+      "26",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutFullVersusContextHigh": [
+      "0.1977",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutFullVersusContextLow": [
+      "-0.1995",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutFullVersusContextMean": [
+      "0.1045",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutFullVersusNeuralHigh": [
+      "0.2071",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutFullVersusNeuralLow": [
+      "0.1027",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutFullVersusNeuralMean": [
+      "0.1622",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutHalfSigns": [
+      "23",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutHistoricalFailed": [
+      "417",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutHistoricalFits": [
+      "6144",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutParameters": [
+      "227012",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutPeakMemory": [
+      "630.3",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutProjectionMeanChange": [
+      "\\ensuremath{4.21\\times10^{-5}}",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutResidualMax": [
+      "\\ensuremath{3.11\\times10^{-9}}",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutResidualRatio": [
+      "\\ensuremath{3.04\\times10^{-7}}",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "CloseoutScipy": [
+      "1.18.0",
+      "reports/submission_release/tables/closeout_numbers.tex"
+    ],
+    "DeltaBlock": [
+      "-0.0152",
+      "reports/submission_release/tables/numbers.tex"
+    ],
+    "DeltaBlockHigh": [
+      "0.0069",
+      "reports/submission_release/tables/numbers.tex"
+    ],
+    "DeltaBlockLow": [
+      "-0.0226",
+      "reports/submission_release/tables/numbers.tex"
+    ],
+    "FinalBoundCases": [
+      "768",
+      "reports/submission_release/tables/final_numbers.tex"
+    ],
+    "FinalBoundSigns": [
+      "8",
+      "reports/submission_release/tables/final_numbers.tex"
+    ],
+    "FinalEqualHigh": [
+      "0.0368",
+      "reports/submission_release/tables/final_numbers.tex"
+    ],
+    "FinalEqualLow": [
+      "0.0115",
+      "reports/submission_release/tables/final_numbers.tex"
+    ],
+    "FinalEqualMean": [
+      "0.0189",
+      "reports/submission_release/tables/final_numbers.tex"
+    ],
+    "FinalNearCases": [
+      "384",
+      "reports/submission_release/tables/final_numbers.tex"
+    ],
+    "FinalNearSigns": [
+      "45",
+      "reports/submission_release/tables/final_numbers.tex"
+    ],
+    "FinalOracleWideHigh": [
+      "0.6876",
+      "reports/submission_release/tables/final_numbers.tex"
+    ],
+    "FinalOracleWideLow": [
+      "0.0314",
+      "reports/submission_release/tables/final_numbers.tex"
+    ],
+    "FinalOracleWideMean": [
+      "0.3898",
+      "reports/submission_release/tables/final_numbers.tex"
+    ],
+    "LateBlocks": [
+      "1807",
+      "reports/submission_release/tables/additional_numbers.tex"
+    ],
+    "LearnedDb": [
+      "0.0063",
+      "reports/submission_release/tables/numbers.tex"
+    ],
+    "LearnedDbHigh": [
+      "0.0358",
+      "reports/submission_release/tables/numbers.tex"
+    ],
+    "LearnedDbLow": [
+      "-0.0308",
+      "reports/submission_release/tables/numbers.tex"
+    ],
+    "NearestDistance": [
+      "6.73",
+      "reports/submission_release/tables/additional_numbers.tex"
+    ],
+    "OffDiagonalCount": [
+      "992",
+      "reports/submission_release/tables/additional_numbers.tex"
+    ],
+    "OracleDb": [
+      "4.3677",
+      "reports/submission_release/tables/numbers.tex"
+    ],
+    "RevAlgorithmicCases": [
+      "384",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevAlgorithmicSigns": [
+      "26",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevBlockDenseGainHigh": [
+      "2.5573",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevBlockDenseGainLow": [
+      "2.0168",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevBlockDenseGainMean": [
+      "2.1653",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevDesignSignsHigh": [
+      "0.1023",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevDesignSignsLow": [
+      "0.0341",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevDesignSignsMean": [
+      "0.0625",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevDesignWidthHigh": [
+      "-0.3371",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevDesignWidthLow": [
+      "-0.4649",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevDesignWidthMean": [
+      "-0.3774",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevHistoricalCases": [
+      "384",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevHistoricalSigns": [
+      "2",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevLocalDenseGainHigh": [
+      "2.5438",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevLocalDenseGainLow": [
+      "1.9157",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevLocalDenseGainMean": [
+      "2.0943",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevMinimumLead": [
+      "0.96",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevRawLocalMax": [
+      "\\ensuremath{5.84\\times10^{-8}}",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevSelectedLags": [
+      "1,2,3,5,8,13,21,34",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevStrongLocalDenseHigh": [
+      "0.0045",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevStrongLocalDenseLow": [
+      "-0.0150",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevStrongLocalDenseMean": [
+      "-0.0001",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevStrongLocalSparseHigh": [
+      "0.0132",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevStrongLocalSparseLow": [
+      "-0.0001",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevStrongLocalSparseMean": [
+      "0.0101",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevWaveformSafeHigh": [
+      "0.0499",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevWaveformSafeLow": [
+      "-0.0320",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevWaveformSafeMean": [
+      "-0.0144",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "RevWaveformSafeScore": [
+      "0.3346",
+      "reports/submission_release/tables/revision_numbers.tex"
+    ],
+    "StatePsd": [
+      "0.3082",
+      "reports/submission_release/tables/numbers.tex"
+    ],
+    "TestComponents": [
+      "11",
+      "reports/submission_release/tables/additional_numbers.tex"
+    ],
+    "TimingBlocks": [
+      "2256",
+      "reports/submission_release/tables/additional_numbers.tex"
+    ],
+    "UtilityJ": [
+      "1.2506",
+      "reports/submission_release/tables/audit_utility_numbers.tex"
+    ],
+    "UtilityMedian": [
+      "1.3932",
+      "reports/submission_release/tables/audit_utility_numbers.tex"
+    ],
+    "UtilityRank": [
+      "1",
+      "reports/submission_release/tables/audit_utility_numbers.tex"
+    ],
+    "UtilityRho": [
+      "0.997",
+      "reports/submission_release/tables/audit_utility_numbers.tex"
+    ]
+  }
+}

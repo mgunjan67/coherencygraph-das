@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "purpose": "Read-only public-release reconstruction and cached numerical verification; no new training or publication",
+  "repository": "https://github.com/mgunjan67/coherencygraph-das.git",
+  "source_commit": null,
+  "base_commit": "1cd1548fef28d0dece6182bb02bc3ff59505a882",
+  "reporting_commit": "6703d5649dd20a3ca8a7cab92dab2d17ec6efe12",
+  "release": "v2026.09.10",
+  "overlay_order": [
+    "base",
+    "reporting_correction",
+    "audit_utility",
+    "september10"
+  ],
+  "source_enforcement": "Export pinned Git source, apply assets in order, then restore tracked files from the same pinned source. Asset manifests are checked immediately after each extraction; subsequent overlays intentionally replace earlier snapshots.",
+  "assets": [
+    {
+      "id": "base",
+      "name": "CoherencyGraph_DAS_assets_20260907.zip",
+      "url": "https://github.com/mgunjan67/coherencygraph-das/releases/download/v2026.09.07/CoherencyGraph_DAS_assets_20260907.zip",
+      "sha256": "235ca979bb7739eab36f2b1d2bfa9165ce0c62b5571beb551f7225b43d696fca",
+      "manifest": "SCIENTIFIC_ASSET_MANIFEST.json",
+      "local_candidate": "publication/github/CoherencyGraph_DAS_assets_20260907.zip"
+    },
+    {
+      "id": "reporting_correction",
+      "name": "CoherencyGraph_DAS_reporting_correction_20260907.zip",
+      "url": "https://github.com/mgunjan67/coherencygraph-das/releases/download/v2026.09.07/CoherencyGraph_DAS_reporting_correction_20260907.zip",
+      "sha256": "5801bc6f0dfcb754d0199aa8578adb79db739651969015ce4b882bf24983abc9",
+      "manifest": "REPORTING_CORRECTION_MANIFEST.json",
+      "local_candidate": "publication/github/CoherencyGraph_DAS_reporting_correction_20260907.zip"
+    },
+    {
+      "id": "audit_utility",
+      "name": "CoherencyGraph_DAS_audit_utility_20260907.zip",
+      "url": "https://github.com/mgunjan67/coherencygraph-das/releases/download/v2026.09.07/CoherencyGraph_DAS_audit_utility_20260907.zip",
+      "sha256": "4e22fe9ce26c9ac2f1d37a16c1abd57a432824f817df3af5884222bba5afe702",
+      "manifest": "AUDIT_UTILITY_MANIFEST.json",
+      "local_candidate": "releases/20260907_audit_utility_submission/CoherencyGraph_DAS_audit_utility_20260907.zip"
+    },
+    {
+      "id": "september10",
+      "name": "CoherencyGraph_DAS_scientific_closeout_20260910.zip",
+      "url": "https://github.com/mgunjan67/coherencygraph-das/releases/download/v2026.09.10/CoherencyGraph_DAS_scientific_closeout_20260910.zip",
+      "sha256": "2102971a0162475621db6c571087d1d43266fc3e4d225b42d743f64d42c876da",
+      "manifest": "SUBMISSION_ASSET_MANIFEST.json",
+      "local_candidate": "releases/20260910_final_submission/CoherencyGraph_DAS_scientific_closeout_20260910.zip"
+    }
+  ],
+  "commands": [
+    [
+      "scripts/demo_revision.py",
+      "--output",
+      "closeout_data_free_demo"
+    ],
+    [
+      "scripts/run_submission_revision.py",
+      "audit"
+    ],
+    [
+      "scripts/run_submission_revision.py",
+      "regenerate"
+    ],
+    [
+      "scripts/run_submission_revision.py",
+      "verify"
+    ],
+    [
+      "scripts/build_submission_revision_outputs.py"
+    ],
+    [
+      "scripts/verify_reporting_correction.py"
+    ],
+    [
+      "scripts/evaluate_audit_design_utility.py",
+      "summarise"
+    ],
+    [
+      "scripts/build_audit_design_utility.py"
+    ],
+    [
+      "-m",
+      "pytest",
+      "-o",
+      "addopts=",
+      "-rA",
+      "--junitxml=closeout_test_results.xml",
+      "tests"
+    ]
+  ],
+  "level_1": "Existing deterministic data-free audit demonstration",
+  "level_2": "Source/caches/parameters to 32 CPU saved-output checks, 35 scientific invariants, result-linked figures/tables and exact retrospective contrasts",
+  "level_3": "Raw-data re-extraction is not performed: original HDF5 records and supplied picks required; raw waveforms are excluded from the public scientific assets",
+  "scope_limit": "Final cached scientific workflow; raw HDF5 extraction and new training excluded."
+}
