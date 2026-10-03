@@ -1,5 +1,15 @@
 # CoherencyGraph-DAS
 
+## Current fixed-window validation release
+
+The **v2026.10.03** release adds the locked 30-earthquake fixed-window validation,
+matched dense/sparse training, non-neural comparisons, and dataset/QC products.
+See [installation, asset download, replay checks and scientific boundaries](docs/FIXED_WINDOW_VALIDATION.md).
+Code is browsable here; the derived data and model assets are a separate
+checksummed release ZIP. Manuscripts and submission files remain private.
+The sections below describe the historical measurement-support releases, not
+the new validation protocol. No operational earthquake prediction is claimed.
+
 ## Final submission scientific release — v2026.09.10
 
 Start with [the final workflow](docs/FINAL_RELEASE_WORKFLOW.md). Install the
