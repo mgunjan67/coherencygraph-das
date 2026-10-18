@@ -1,0 +1,84 @@
+{
+  "status": "PASS_PORTABLE_TWO_PANEL_SAVED_TABLE_REPLAY",
+  "checks": {
+    "ricker": {
+      "status": "PASS",
+      "old_rows": 777600,
+      "new_rows": 86400,
+      "combined_rows": 864000,
+      "date_condition_method_rows": 200,
+      "frontier_count_rows": 40,
+      "formula_maximum_scaled_difference": 0.0,
+      "csv_comparisons": [
+        {
+          "file": "expanded_date_condition_table.csv",
+          "rows": 200,
+          "maximum_scaled_difference": 3.4359387623781764e-16
+        },
+        {
+          "file": "expanded_ricker_frontier_all_dates.csv",
+          "rows": 200,
+          "maximum_scaled_difference": 3.866900505709095e-16
+        },
+        {
+          "file": "expanded_ricker_frontier_counts.csv",
+          "rows": 40,
+          "maximum_scaled_difference": 0.0
+        }
+      ],
+      "original_rows_replaced": false
+    },
+    "recorded": {
+      "status": "PASS",
+      "rows": 23040,
+      "source_events": 2,
+      "source_recording_dates": 1,
+      "background_dates": 4,
+      "hour_method_rows": 96,
+      "date_method_rows": 48,
+      "source_method_rows": 12,
+      "cancellation_rows": 16,
+      "paired_contrast_rows": 40,
+      "formula_maximum_scaled_difference": 0.0,
+      "maximum_retained_linearity_scaled_error": 1.6423338989019761e-15,
+      "csv_comparisons": [
+        {
+          "file": "recorded_source_hour_method.csv",
+          "rows": 96,
+          "maximum_scaled_difference": 2.3887740384166384e-16
+        },
+        {
+          "file": "recorded_source_date_method.csv",
+          "rows": 48,
+          "maximum_scaled_difference": 2.1359857136985814e-16
+        },
+        {
+          "file": "recorded_source_method.csv",
+          "rows": 12,
+          "maximum_scaled_difference": 2.3303391191961955e-16
+        },
+        {
+          "file": "all_reference_cancellation_diagnostics.csv",
+          "rows": 16,
+          "maximum_scaled_difference": 2.2018158290334677e-16
+        },
+        {
+          "file": "recorded_neural_paired_date_contrasts.csv",
+          "rows": 40,
+          "maximum_scaled_difference": 2.1826908458815859e-16
+        }
+      ],
+      "interpretation": "Known added recorded-wavefield component relative to conventional output, not clean earthquake recovery or independent eight-event evidence."
+    }
+  },
+  "tolerance": 1e-10,
+  "elapsed_seconds": 2.1190779999597,
+  "scorer_or_summary_imported": false,
+  "raw_or_processed_waveforms_read": false,
+  "filters_reexecuted": false,
+  "new_training": false,
+  "new_acquisition": false,
+  "heldout_assessment": false,
+  "independent_human_replication": false,
+  "scope": "Recompute derived statistics/formulas/frontiers from saved scalar Parquets; waveform-to-case replay is separate and was not rerun."
+}

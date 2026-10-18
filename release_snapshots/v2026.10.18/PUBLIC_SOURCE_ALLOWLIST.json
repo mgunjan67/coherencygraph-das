@@ -1,0 +1,863 @@
+{
+  "release_version": "v2026.10.18",
+  "scientific_archive_sha256": "97fa609a70fe0c6691c0e74e0eb6c8d933cff16708efa93209eac05f1eacaa3c",
+  "source_extension_manifest_sha256": "14f8633758826a66b697010621d7d1f77bfecfd5c6b6ac8a054dc487f222f0cc",
+  "selection": "Only approved UTF-8 human-readable source/results from the 98-entry extension allowlist, plus named portable replay/environment/rights helpers",
+  "selected_files": 93,
+  "selected_total_bytes": 1303210,
+  "excluded_extensions": [
+    ".log",
+    ".npz",
+    ".parquet"
+  ],
+  "exclusions": "No private prose-bearing generator, TEX/PDF/manuscript directory, raw/decoded waveform, credentials, binary/model/checkpoint file or submission asset",
+  "files": [
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/build_recorded_display.py",
+      "sha256": "f17c5919323cc2cf9b079c926a8eeb880b0482f17c43b319b382f4b39b7e8595",
+      "bytes": 5743,
+      "archive_member": "revisions/20261018_no_human_closeout/build_recorded_display.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/evidence_audit/audit_zip_headers.py",
+      "sha256": "e6e0e993388ae6ecaf6e27a172b757d1998b8833f058cae766cf194f5c1850d0",
+      "bytes": 7251,
+      "archive_member": "revisions/20261018_no_human_closeout/evidence_audit/audit_zip_headers.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/evidence_audit/derive_eligibility.py",
+      "sha256": "561f7d53a8bc4cdcbbc108ce4780c67c7a6c95f4178ac85568fc62eec2206d5f",
+      "bytes": 6922,
+      "archive_member": "revisions/20261018_no_human_closeout/evidence_audit/derive_eligibility.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/evidence_audit/EVIDENCE_PATH_AUDIT.txt",
+      "sha256": "92995f4ac1ac07dd82031aac9a88bb243db2bc8dfab8826bd61dbd024907896a",
+      "bytes": 17080,
+      "archive_member": "revisions/20261018_no_human_closeout/evidence_audit/EVIDENCE_PATH_AUDIT.txt",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/evidence_audit/hdf_header_audit.json",
+      "sha256": "10892a9745553dec227036f4d219e9a3fb98e1b0609963f7b28ecadae8f20ee1",
+      "bytes": 43065,
+      "archive_member": "revisions/20261018_no_human_closeout/evidence_audit/hdf_header_audit.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/evidence_audit/prepare_source_components.py",
+      "sha256": "a9293dd08ad1ba2bda04e90a695f86b2cdbd00cee48d2b1ed2767ee83c112aeb",
+      "bytes": 18597,
+      "archive_member": "revisions/20261018_no_human_closeout/evidence_audit/prepare_source_components.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/evidence_audit/source_eligibility.json",
+      "sha256": "ec4cb24db9e86f8ae15e9e6bf21116c55137e53137d9a5a00dbcdc3e138d42ca",
+      "bytes": 13455,
+      "archive_member": "revisions/20261018_no_human_closeout/evidence_audit/source_eligibility.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/evidence_audit/source_seal.json",
+      "sha256": "47e18458a65399d735a1f8786a2764807f821e7b78f7688e2c32127171165b22",
+      "bytes": 320,
+      "archive_member": "revisions/20261018_no_human_closeout/evidence_audit/source_seal.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/evidence_audit/source_spec.json",
+      "sha256": "3a8bdd4575afa9f8573c74a903f1db50b2d7bce51055d793ad282c757c2757fb",
+      "bytes": 24994,
+      "archive_member": "revisions/20261018_no_human_closeout/evidence_audit/source_spec.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/evidence_audit/test_evidence_audit.py",
+      "sha256": "33e5b7816c53e7fd695144e4ea4588807c44a03dd61b669327d237a3f8489f99",
+      "bytes": 4184,
+      "archive_member": "revisions/20261018_no_human_closeout/evidence_audit/test_evidence_audit.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/freeze_scope.py",
+      "sha256": "ca90338819234b47d36a2947a7a9422ba811183c7e1a35550ab3612374222e1b",
+      "bytes": 2836,
+      "archive_member": "revisions/20261018_no_human_closeout/freeze_scope.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/benchmark_math_and_cache_metadata.py",
+      "sha256": "63c62ab1c70e043f90fca21d46a13378e1871d7cf4727a71fc79644ffe05776d",
+      "bytes": 4732,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/benchmark_math_and_cache_metadata.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/benchmark_synthetic_pipeline.py",
+      "sha256": "a4a7a7f3ca6cb92c6a3c7f052984694b3a7d2f5418f149f4319dac4830b3bab8",
+      "bytes": 4190,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/benchmark_synthetic_pipeline.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/derivative_lcmv.py",
+      "sha256": "d8ca2860bb4d3c0dad98750f66ce9d7909137eb36e6b021223ea151f701c3491",
+      "bytes": 7792,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/derivative_lcmv.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/derivative_lcmv_tests.xml",
+      "sha256": "9498bab3c839fc9e74ce812089437be55e0f96c31498fd8ecb4050c90365fab8",
+      "bytes": 3831,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/derivative_lcmv_tests.xml",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/DIRECT_DFT_V1_FAILURE.json",
+      "sha256": "0f47b2d00ad8c7cf2ac9738f9c5eba36ea3dc514b4b0b9fd7ab0b410b52af9aa",
+      "bytes": 1106,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/DIRECT_DFT_V1_FAILURE.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/execution_guard.py",
+      "sha256": "d24fa085aee993ca4443b2086af497f6744e13465e2d4349ab2892a8484fb9ef",
+      "bytes": 1888,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/execution_guard.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/finite_panel_summary/all_reference_cancellation_diagnostics.csv",
+      "sha256": "3b2e6208faf14a3e9ca32da6e928495e7d8b1378bb11a65aecced8666de2b098",
+      "bytes": 1531,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/all_reference_cancellation_diagnostics.csv",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/finite_panel_summary/expanded_ricker_frontier_all_dates.csv",
+      "sha256": "36859888c920183ab5cdf4442887f6649f80fab758bdda3f02a81b17e3441e13",
+      "bytes": 26015,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/expanded_ricker_frontier_all_dates.csv",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/finite_panel_summary/expanded_ricker_frontier_counts.csv",
+      "sha256": "ccbff0de550cee96f8e0de8a42334870f6f2f59c7c016672c6688563e7b13c52",
+      "bytes": 1306,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/expanded_ricker_frontier_counts.csv",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_neural_paired_date_contrasts.csv",
+      "sha256": "b8cf4930923b608e1d253d121fcf1a59f2eb6bbc9da082a230a76bcd11b000c1",
+      "bytes": 2988,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_neural_paired_date_contrasts.csv",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_source_date_method.csv",
+      "sha256": "90858ae4f0f5904638db84efea3457d756813ea560f0831361356b0b053fbc2f",
+      "bytes": 6991,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_source_date_method.csv",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_source_hour_method.csv",
+      "sha256": "8b56cb66ad989e8da5dbf38ef4fca9ff56e64b54f51aa60f28577a1a9cac11cb",
+      "bytes": 15108,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_source_hour_method.csv",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_source_method.csv",
+      "sha256": "1713273c5953e6e30fb7552b60baee35a9250f92dd754bbb1d26cb918e6ee663",
+      "bytes": 1767,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_source_method.csv",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/finite_panel_summary/SCIENTIFIC_SUMMARY.txt",
+      "sha256": "988be2eddf7facbc2be967700eb83e8cfb19b1aec24ae75d43354d4106e601dd",
+      "bytes": 1476,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/SCIENTIFIC_SUMMARY.txt",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/finite_panel_summary/SUMMARY_RECEIPT.json",
+      "sha256": "2b54c2563b8c2664c01df527e8c7e96e22609effa2b3fe37b21efd9bb02e4528",
+      "bytes": 1507,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/SUMMARY_RECEIPT.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-04_00_receipt.json",
+      "sha256": "ae6608c14ae3d80eb37e7c264b93551f318bb1933da0f3d33e6ee73fb1bd4e50",
+      "bytes": 632,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-04_00_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-04_12_receipt.json",
+      "sha256": "0ec278c872d97ca108f000f9ab94e3ee79aca8a7f29d897a42d762c7343619eb",
+      "bytes": 631,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-04_12_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-05_00_receipt.json",
+      "sha256": "97357ac56b4f89fe35de72832d92e35f7fb57d88a6cb984ce9470ecf09b97de5",
+      "bytes": 629,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-05_00_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-05_12_receipt.json",
+      "sha256": "f051ef2268d0e4c73b7fd6cd49c62afa69cc31ef052ad93af3fded23c1637761",
+      "bytes": 633,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-05_12_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-06_00_receipt.json",
+      "sha256": "2497b327c537c6936070318e5c03af8faf697ec3b770abb900fd9e77eaa37066",
+      "bytes": 632,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-06_00_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-06_12_receipt.json",
+      "sha256": "5993f614eb3c7088e14bd0d276b4dedbb7c2de6717052ba844ae4867e943d538",
+      "bytes": 633,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-06_12_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-07_00_receipt.json",
+      "sha256": "e2271d72d905faa99f0ca24b25a2d4215f7b233b80949bc73b0ff3fc66d4587e",
+      "bytes": 630,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-07_00_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-07_12_receipt.json",
+      "sha256": "7c98843e5d6550ffdfdd537046298dd273d7c486719d291133e486fd3d3ee285",
+      "bytes": 628,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-07_12_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/expanded_date_condition_table.csv",
+      "sha256": "230fe82783905bda392f42f2592ab03aee39b4af1a34007819fa4d33ae6b42a4",
+      "bytes": 24401,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/expanded_date_condition_table.csv",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/receipt.json",
+      "sha256": "fbf01b2e5ea69f36d6e3a714a7f9820bd49ed9919545268093221442b7dd19a0",
+      "bytes": 7677,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/math_benchmark_and_cache_inventory.json",
+      "sha256": "5c06db19c935c54a414524da86fd615aa83e7b1c0f7e30998f02e88d656264f8",
+      "bytes": 23501,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/math_benchmark_and_cache_inventory.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/prepare_ricker_execution_protocol.py",
+      "sha256": "e6096f5ad1abd808a994bfaaafee2071ef52b6044e25d53d6456ab4f68e12dd8",
+      "bytes": 1471,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/prepare_ricker_execution_protocol.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/processing_math_tests.xml",
+      "sha256": "98da83c1cf3a942dd9b1a9af348bbcccadf45a17b65ea69c94417b2e617f02c1",
+      "bytes": 7376,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/processing_math_tests.xml",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/recorded_component_metrics.py",
+      "sha256": "93513e8d1f9504a8c0b2da8b2f7b5bc0d392ab345a61bf01cfc2af5154c9a7c3",
+      "bytes": 3445,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/recorded_component_metrics.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-04_00_receipt.json",
+      "sha256": "0f65c7cf355406ddc097002b4f0a5e89652895c481ad1c2e9bd1ceb81f418f73",
+      "bytes": 199,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-04_00_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-04_12_receipt.json",
+      "sha256": "2183bcac2a9719679781d1b4ccc3e739fad0b0d2bb8f2b9c9369cb876fc84a7d",
+      "bytes": 199,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-04_12_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-05_00_receipt.json",
+      "sha256": "5a68c26266e36c95fcb2029963eeea388bb533ee50cd3cfd67c4e34577b3d6f2",
+      "bytes": 200,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-05_00_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-05_12_receipt.json",
+      "sha256": "d9483fe6404811515ecc93dc20b7851aff82276a8526d0ee25a0c14085243947",
+      "bytes": 197,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-05_12_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-06_00_receipt.json",
+      "sha256": "f01d344957b926b06a299a2605ca4a51448b3dafe5eb28af5e0d533b12a29b38",
+      "bytes": 199,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-06_00_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-06_12_receipt.json",
+      "sha256": "132c74b595649f0248f879869f4ee7363a9b78ee8563ecc849fea0a6e5f1c8b8",
+      "bytes": 200,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-06_12_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-07_00_receipt.json",
+      "sha256": "2be3c98bd85775f4ac18a2a68b224bea9c28c282590736465a5bdc60cb6f2d15",
+      "bytes": 200,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-07_00_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-07_12_receipt.json",
+      "sha256": "b2ff30baaeccf96c6884e8698ee593fd10a8b22a414a80924d7704efa3557cc8",
+      "bytes": 199,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-07_12_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/recorded_component_results/DIRECT_DFT_VERIFICATION.json",
+      "sha256": "849bfe9c23885f16d75d8ce259e144a20e8fc9ccbea67e46b61da4bb5377cb69",
+      "bytes": 1973,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/DIRECT_DFT_VERIFICATION.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/recorded_component_results/receipt.json",
+      "sha256": "912eca6ba089715a8256edc3f3b053edaaad1bb450374e77fe1f4c428d5a0569",
+      "bytes": 3203,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/ricker_protocol.json",
+      "sha256": "5f8a7be5367d6dc1779b74b2687b3314321a902fd730566c64edc6d6c55ac211",
+      "bytes": 5644,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/ricker_protocol.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/ROBUST_COMPARATOR_RECOMMENDATION.txt",
+      "sha256": "f0fd032841de0b8f9130dfb9a5c91a37b71f260366c2c0170fb1bea8687ca655",
+      "bytes": 13766,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/ROBUST_COMPARATOR_RECOMMENDATION.txt",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/run_lcmv_ricker_extension.py",
+      "sha256": "669899e2e9fe29e1026a4ffb5d1f330b45b526880f2d5892d2dccaea6ae019df",
+      "bytes": 11806,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/run_lcmv_ricker_extension.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/run_recorded_extension.py",
+      "sha256": "0bf7286f04a30681ded9ed6e0e54732755f602b44219f030a13017a1c8479cf5",
+      "bytes": 10184,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/run_recorded_extension.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/SAVED_COMPONENT_COMPARATOR_PROTOCOL_PROPOSAL.json",
+      "sha256": "5d84f1ef4a50ee10521ffa6f4740e797257cbf22e9d7d83c677affd71c0f5db2",
+      "bytes": 4476,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/SAVED_COMPONENT_COMPARATOR_PROTOCOL_PROPOSAL.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/summarize_finite_panels.py",
+      "sha256": "e7b533619996f69813f1d558152c8d697bda6599b36e386184778de8a479cad4",
+      "bytes": 8471,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/summarize_finite_panels.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/synthetic_pipeline_resource_receipt.json",
+      "sha256": "e3f383c0c62272370131bc61d388c994864bdf7a4c0287f9eff57be97e1dc149",
+      "bytes": 1492,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/synthetic_pipeline_resource_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/test_derivative_lcmv.py",
+      "sha256": "981f5077837144afb5c8b6ad2de1fd8d861bbec0b6d4624cb817ca53b8185334",
+      "bytes": 5949,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/test_derivative_lcmv.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/test_extension_gate.py",
+      "sha256": "e46828cc01f7daa9bf4e7f1992e1be7c619b4e19e8a9daa2cc52beb475170b72",
+      "bytes": 1489,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/test_extension_gate.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/test_new_execution_guards.py",
+      "sha256": "cd04b28dd14541c42a1828b5dc1b14f966cca241cac7623b914846dc0e6a5d8e",
+      "bytes": 942,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/test_new_execution_guards.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/test_recorded_component_metrics.py",
+      "sha256": "f9a6bdab9f3e4b4349c2beefd37a68d49381abd855d9c6a14870b6b016c81f4d",
+      "bytes": 3573,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/test_recorded_component_metrics.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/verify_recorded_direct_dft.py",
+      "sha256": "ad87c4a49a36c04df83cbd8e16ef96de15890ac81bb4b4be14ac8ddbce1e9fd7",
+      "bytes": 7282,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/verify_recorded_direct_dft.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/verify_recorded_direct_dft_v2.py",
+      "sha256": "53e5d03ff0e095c74c33a9fd73d3632c74dbb71dbe5c4cf37c091d09eac9e8a7",
+      "bytes": 2461,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/verify_recorded_direct_dft_v2.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/watch_finite_panels.py",
+      "sha256": "811073de3c14a4a234639ae688e16f580ff1e06b4d84b6ebe4e7f28767666613",
+      "bytes": 5148,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/watch_finite_panels.py",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/watchdog_recorded_receipt.json",
+      "sha256": "5f17305f03e36f84e7c83e546178446cde87b58aee8eb609e4e98540e80734bd",
+      "bytes": 882,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/watchdog_recorded_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/implementation/watchdog_ricker_receipt.json",
+      "sha256": "1a4195e2ae76edb3b3405003d2455915a05ec4ec691b0a9822288dee2d1a507f",
+      "bytes": 867,
+      "archive_member": "revisions/20261018_no_human_closeout/implementation/watchdog_ricker_receipt.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/independent_review/DFT_PRECISION_DIAGNOSIS.md",
+      "sha256": "737b87334ac0d9abd1c50e58d169186506a495ab37cb9d8f5a85988e8899e3b4",
+      "bytes": 2687,
+      "archive_member": "revisions/20261018_no_human_closeout/independent_review/DFT_PRECISION_DIAGNOSIS.md",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/independent_review/OUTCOME_NUMERICAL_REVIEW.md",
+      "sha256": "3161b961c7b7d7eb5f9b4f139294018d0e934d103062bf3ed910916342141c93",
+      "bytes": 4603,
+      "archive_member": "revisions/20261018_no_human_closeout/independent_review/OUTCOME_NUMERICAL_REVIEW.md",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/independent_review/PRE_RESULT_SCIENTIFIC_GATE.md",
+      "sha256": "2e1029314defe5077db96d8bb70716369e46dd5887dd7281d4353332c23509a3",
+      "bytes": 7590,
+      "archive_member": "revisions/20261018_no_human_closeout/independent_review/PRE_RESULT_SCIENTIFIC_GATE.md",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/protocol.json",
+      "sha256": "cfef679230d0fd47dee36f0914def5e9fc01e68a35e8da2c137ae48612a397a3",
+      "bytes": 6840,
+      "archive_member": "revisions/20261018_no_human_closeout/protocol.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/scope_seal.json",
+      "sha256": "2ed44b7fa8faf786e6578644b97c40278a2f3124341bcc5c84ace0f3f16ea969",
+      "bytes": 38553,
+      "archive_member": "revisions/20261018_no_human_closeout/scope_seal.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/verification/finite_extension/ORIGINAL_WORKSPACE_REPLAY_RECEIPT.json",
+      "sha256": "483bc47d1dc0f4524d98a493cdff47c43e60b32b90cf33f7fcc4302128cdadd3",
+      "bytes": 2847,
+      "archive_member": "verification/finite_extension/ORIGINAL_WORKSPACE_REPLAY_RECEIPT.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/FINAL_DISPLAY_INVENTORY.json",
+      "sha256": "594aa0b14705d6bc02c5c7899cc9a05d3a4fbd689214725b2237f0cfbfbea067",
+      "bytes": 14864,
+      "archive_member": "revisions/20261018_no_human_closeout/FINAL_DISPLAY_INVENTORY.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/FINAL_MANUSCRIPT_GENERATION_RECEIPT.json",
+      "sha256": "7e447d8bba38fe47c90025974352b0f3c839888b29694773c1bf531660b1cab3",
+      "bytes": 6214,
+      "archive_member": "revisions/20261018_no_human_closeout/FINAL_MANUSCRIPT_GENERATION_RECEIPT.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/reproducibility/extension_clean__rvefwoh/CLEAN_EXTENSION_RECEIPT.json",
+      "sha256": "122f66c2a44e17f32a39af3b616c473789fac57aa7fb521c6be75248c09aab1b",
+      "bytes": 7828,
+      "archive_member": "revisions/20261018_no_human_closeout/reproducibility/extension_clean__rvefwoh/CLEAN_EXTENSION_RECEIPT.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/SOURCE_PROTECTION_FINAL_RECEIPT.json",
+      "sha256": "575cd5b606ec7bee0dd852f56519adc047b75360c1f6889c905646e2f14cfce3",
+      "bytes": 104436,
+      "archive_member": "revisions/20261018_no_human_closeout/SOURCE_PROTECTION_FINAL_RECEIPT.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/revisions/20261018_no_human_closeout/FINAL_TEST_VERIFICATION_RECEIPT.json",
+      "sha256": "95340454e42b6341463882f28d3fa9bf847d743756cb87adbda1d94760a2785f",
+      "bytes": 1099,
+      "archive_member": "revisions/20261018_no_human_closeout/FINAL_TEST_VERIFICATION_RECEIPT.json",
+      "origin": "Frozen 98-entry extension allowlist",
+      "rights": "AUTHOR_CODE_OR_DERIVED_STATISTICS"
+    },
+    {
+      "path": "repository/replay.py",
+      "sha256": "01a980b421ce3b8297c17a70887e7ac26832c66299bdd0fb9efa1a22a160aa17",
+      "bytes": 17363,
+      "archive_member": "replay.py",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/replay_all.py",
+      "sha256": "50c5a2ff21f1dc463fccecf72aa57ff55684f8ea0dc9fbf542877539b9587d9f",
+      "bytes": 3210,
+      "archive_member": "replay_all.py",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/portable_frontier_replay.py",
+      "sha256": "77156de23d4112c2b4461c65e1ed460b887a39616de605bdc0844c2bd299bc8f",
+      "bytes": 7905,
+      "archive_member": "portable_frontier_replay.py",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/portable_extension_replay.py",
+      "sha256": "f08c8690c8da628b8061c80732a8457b0a00ffa8d3769efb6809de86f3144c32",
+      "bytes": 11438,
+      "archive_member": "portable_extension_replay.py",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/smoke_archived_inference.py",
+      "sha256": "6b8f53fbfeee06a8242a72fa5671f3b9faadb442833880af2152cfbd05b1a292",
+      "bytes": 3998,
+      "archive_member": "smoke_archived_inference.py",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/pyproject.toml",
+      "sha256": "23da66d70b54c233f7b7e804d4acb5952bfc917fb341798526a9f9bd14154a4a",
+      "bytes": 656,
+      "archive_member": "pyproject.toml",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/requirements-revision.lock.txt",
+      "sha256": "5168a658c9cb557ed3488c247e1a3401d921c8d872f112e3cc107521af17af8a",
+      "bytes": 344,
+      "archive_member": "requirements-revision.lock.txt",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/README.md",
+      "sha256": "29dcb6df0e0ab337093cf8ffe15defe20f12f98f2e99f3d3dd6de9a50e97e2c7",
+      "bytes": 5649,
+      "archive_member": "README.md",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/LICENSE",
+      "sha256": "01dc4795b4e02300757a7403a20d9f030201c3f5aafe90d990c85034d8b462e8",
+      "bytes": 1556,
+      "archive_member": "LICENSE",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/RIGHTS_AND_ACCESS.txt",
+      "sha256": "286bac875ad5964dcd34c36f0caf490b150182bf6277f933aaf88fa7b29f167b",
+      "bytes": 675,
+      "archive_member": "RIGHTS_AND_ACCESS.txt",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/FETCH_EXCLUDED_INPUTS.txt",
+      "sha256": "ab2abdeb68b1520f5826d92ce7d02f1647b1cb82ad75227c12f979c74a52d8b3",
+      "bytes": 1932,
+      "archive_member": "FETCH_EXCLUDED_INPUTS.txt",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/EXCLUDED_UPSTREAM_ASSETS.json",
+      "sha256": "3a12325d0a94f5a2526dbee169a7d375cf96b99485346152e4b1f9962b57b6cb",
+      "bytes": 3237,
+      "archive_member": "EXCLUDED_UPSTREAM_ASSETS.json",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/MODEL_TRAINING_PROVENANCE.json",
+      "sha256": "bd9f26a360d8fafb06e5f08b1a29b6c8dd98f431802cc4c9b64502a966b69e31",
+      "bytes": 40584,
+      "archive_member": "MODEL_TRAINING_PROVENANCE.json",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/ASSET_MANIFEST.json",
+      "sha256": "d6dc49617f9ccef7a1b1b290b9ee90399288ce6a82024274243cba82c9e7c277",
+      "bytes": 531369,
+      "archive_member": "ASSET_MANIFEST.json",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/EXTENSION_INPUT_MANIFEST.json",
+      "sha256": "14f8633758826a66b697010621d7d1f77bfecfd5c6b6ac8a054dc487f222f0cc",
+      "bytes": 52995,
+      "archive_member": "EXTENSION_INPUT_MANIFEST.json",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    },
+    {
+      "path": "repository/EXTENSION_INVENTORY.json",
+      "sha256": "b1daff1b3a1c2df87bfadd37b908659bd12f9ce337735e86e058e02917f65f32",
+      "bytes": 31943,
+      "archive_member": "EXTENSION_INVENTORY.json",
+      "origin": "Portable replay entry/helper or environment/rights metadata",
+      "rights": "Code BSD-3-Clause; author-created derived assets CC BY-NC-SA 4.0; upstream rights retained"
+    }
+  ],
+  "excluded_from_browse_slice": [
+    {
+      "path": "revisions/20261018_no_human_closeout/evidence_audit/source_catalog_steering.npz",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/execution_recorded.log",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/execution_ricker.log",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-04_00_new_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-04_12_new_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-05_00_new_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-05_12_new_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-06_00_new_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-06_12_new_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-07_00_new_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-07_12_new_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/all_new_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-04_00_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-04_12_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-05_00_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-05_12_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-06_00_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-06_12_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-07_00_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-07_12_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/all_cases.parquet",
+      "reason": "Not an approved human-readable source/result extension"
+    }
+  ],
+  "release_metadata_assets": [
+    {
+      "path": "RELEASE_README_20261018.txt",
+      "sha256": "e69b956bfbc8206713653ae5130136f96622e25a07e99548eb5ff812b0160bb7",
+      "bytes": 3558
+    },
+    {
+      "path": "VERIFICATION_SUMMARY_20261018.json",
+      "sha256": "5df150a53604f66ce48f1f5620afaad6b38e2a2e4661f3b593e488a1488bd793",
+      "bytes": 2828
+    },
+    {
+      "path": "CoherencyGraph_BSSA_Scientific_20261018.zip.sha256",
+      "sha256": "898ac401cbcba3a69e4a0030795b9ab744465bbfb0b5cfb5124097c6bc10c6a2",
+      "bytes": 110
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "status": "ALL_OUTCOME_DEVELOPMENT_SUMMARY_NO_TUNING",
+  "parent_protocol_sha256": "cfef679230d0fd47dee36f0914def5e9fc01e68a35e8da2c137ae48612a397a3",
+  "recorded_rows": 23040,
+  "source_date_method_rows": 48,
+  "expanded_ricker_rows": 200,
+  "assets_sha256": {
+    "all_reference_cancellation_diagnostics.csv": "3b2e6208faf14a3e9ca32da6e928495e7d8b1378bb11a65aecced8666de2b098",
+    "expanded_ricker_frontier_all_dates.csv": "36859888c920183ab5cdf4442887f6649f80fab758bdda3f02a81b17e3441e13",
+    "expanded_ricker_frontier_counts.csv": "ccbff0de550cee96f8e0de8a42334870f6f2f59c7c016672c6688563e7b13c52",
+    "recorded_neural_paired_date_contrasts.csv": "b8cf4930923b608e1d253d121fcf1a59f2eb6bbc9da082a230a76bcd11b000c1",
+    "recorded_source_date_method.csv": "90858ae4f0f5904638db84efea3457d756813ea560f0831361356b0b053fbc2f",
+    "recorded_source_hour_method.csv": "8b56cb66ad989e8da5dbf38ef4fca9ff56e64b54f51aa60f28577a1a9cac11cb",
+    "recorded_source_method.csv": "1713273c5953e6e30fb7552b60baee35a9250f92dd754bbb1d26cb918e6ee663",
+    "recorded_tradeoff.pdf": "0ebfdb255947f6148e634b889e7923888cca0d4a22212fe71d60b2126ee1c34e",
+    "recorded_tradeoff.png": "59c141d9ec7a54352564e12524996b4c69b573380be78174c9c29081fd2a227d",
+    "SCIENTIFIC_SUMMARY.txt": "988be2eddf7facbc2be967700eb83e8cfb19b1aec24ae75d43354d4106e601dd"
+  },
+  "script_sha256": "e7b533619996f69813f1d558152c8d697bda6599b36e386184778de8a479cad4",
+  "human_visual_QA": false,
+  "population_inference": false
+}

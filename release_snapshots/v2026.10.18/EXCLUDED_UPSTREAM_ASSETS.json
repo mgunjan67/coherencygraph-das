@@ -1,0 +1,71 @@
+{
+  "files": [
+    {
+      "path": "DISPLAY_INVENTORY.json",
+      "bytes": 16182,
+      "sha256": "8f38ec553c2691dfb80c6693482331e5e89f04472412f3f9012d7ca6420c336c",
+      "reason": "Replaced documentation/private or raw file"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3980,
+      "sha256": "c4c7f1243233a44fdcf3c9cce88c77d24031f006c90b6b46f4763294f86e0873",
+      "reason": "Replaced documentation/private or raw file"
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-04_00/adapter_arrays.npz",
+      "bytes": 21758761,
+      "sha256": "eca0ee5eb4a8bad10fec952d1e74f1b6522e8c1e945a36dc8091d85f349b4ff9",
+      "reason": "Upstream waveform excerpt not redistributed"
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-04_12/adapter_arrays.npz",
+      "bytes": 21783343,
+      "sha256": "ae285e080c6c9f6e97d14747914ec6af48b2c2213bec1c7082ec6db7d97837df",
+      "reason": "Upstream waveform excerpt not redistributed"
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-05_00/adapter_arrays.npz",
+      "bytes": 21884956,
+      "sha256": "612bad5a0ac9c150362efbe51a5351ee7deb62072386444acc0ca30be4bb297f",
+      "reason": "Upstream waveform excerpt not redistributed"
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-05_12/adapter_arrays.npz",
+      "bytes": 21818987,
+      "sha256": "6395bcf037c16070e0238fc834f0934f31be62f61d4cae01e942a6f243b45200",
+      "reason": "Upstream waveform excerpt not redistributed"
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-06_00/adapter_arrays.npz",
+      "bytes": 21867527,
+      "sha256": "947c999f0c3185a2cd3292d3c5189711c6e37b55cef9042e88af9d4dbe413c4f",
+      "reason": "Upstream waveform excerpt not redistributed"
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-06_12/adapter_arrays.npz",
+      "bytes": 21828687,
+      "sha256": "9ae926dd17ce3de8d0e7fb36858996afb25fc09d06e0ca1a5757d28cea6f9e89",
+      "reason": "Upstream waveform excerpt not redistributed"
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-07_00/adapter_arrays.npz",
+      "bytes": 21834588,
+      "sha256": "b133f3f8eff1a0a0a4e8c43b47d4d39658a04160554468ddff6048b04359e243",
+      "reason": "Upstream waveform excerpt not redistributed"
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-07_12/adapter_arrays.npz",
+      "bytes": 21815703,
+      "sha256": "19045cd5cccb4646f2657f260b14e2aa4d6dcc7c14e6ec10ce0b22ab20ab1ed6",
+      "reason": "Upstream waveform excerpt not redistributed"
+    },
+    {
+      "path": "RIGHTS_AND_ACCESS.txt",
+      "bytes": 749,
+      "sha256": "a6af375676f58d294ac8550c502a70f2d619f124208d58294cdb4d8427a398f1",
+      "reason": "Replaced documentation/private or raw file"
+    }
+  ],
+  "explanation": "Excluded waveform-containing archives remain local only. Exact provider paths/hashes/reader retained. No upstream rights invented."
+}

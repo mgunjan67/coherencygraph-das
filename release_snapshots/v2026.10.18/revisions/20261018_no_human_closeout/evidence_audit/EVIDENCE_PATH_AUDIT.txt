@@ -1,0 +1,285 @@
+FINITE NO-HUMAN-LABEL EVIDENCE PATH AUDIT
+18 October 2026 | CoherencyGraph | BSSA candidate development
+
+DECISION
+
+CONDITIONAL GO for a fixed, recorded-component transplantation case study.
+NO GO for interpreting the same exercise as clean earthquake recovery, actual
+phase-arrival accuracy, untouched confirmation, continuous false-alarm control,
+earthquake prediction, or demonstrated Q1/BSSA significance.
+
+Two catalog-identified earthquake recording examples already exist in the
+complete cached source release. They are temporally separate from all ten
+previously exposed development background caches. Their exact digital arrays
+can be treated as known added components in a mathematically controlled mixture,
+without requiring newly created human phase labels. This changes the observable:
+it measures fidelity to the injected recorded component, not fidelity to an
+unknown clean physical earthquake signal. That distinction must be retained in
+the title, abstract, figure captions and conclusion wherever applicable.
+
+The main agent must freeze and authorize the exact bounded implementation before
+sample decoding or any experiment. This audit has not run that experiment.
+
+1. READ BOUNDARY AND REPRODUCIBLE SOURCE IDENTIFICATION
+
+Source archive:
+  revisions/20261004_detection_feasibility/sources/das-kefalonia-v2.zip
+  362,181,305 bytes
+  SHA256 7f38c3c65c21c66402e973c599c723e02d1fcdb1c1b0fcf47a84c4307b099674
+The compressed archive hash was independently recalculated and agrees with its
+existing acquisition receipt. No network waveform request was made.
+
+The four HDF5 members were opened through a capped file-like ZIP reader.
+Exactly 72,776 HDF header bytes were returned per member; total 291,104 bytes,
+well below the 5,000,000-byte returned-read cap per HDF. Header inspection took
+1.986 seconds, excluding interpreter startup. No HDF dataset [()] or slicing
+operation was called; waveform, RawDataTime and GPS/sample-quality arrays were
+not read. No HDF member or complete archive was extracted. ZIP's deflate codec
+may internally decompress/skip container bytes during seek; this is not a claim
+that only 291,104 compressed bytes were touched. No uncompressed waveform samples
+were decoded by HDF5. Full access accounting is in hdf_header_audit.json.
+
+Also inspected: archive README; das_class.py; main_plot_events.py;
+utils_filetime.py; three catalog tables; cable geometry; the existing exposure
+ledger and manuscript sources. No additional PhaseNet event pick file was opened.
+No calibration or recording-label 12--15 August assessment waveform was opened.
+
+Scripts in this directory:
+  audit_zip_headers.py -> hdf_header_audit.json
+  derive_eligibility.py -> source_eligibility.json
+  prepare_source_components.py prepare -> source_spec.json, source_seal.json,
+    source_catalog_steering.npz (metadata only, no model/waveform calls)
+  test_evidence_audit.py -> six unit tests, all passed (1.301 s test runtime)
+
+2. EXACT WAVEFORM HEADER ELIGIBILITY
+
+All four source members have:
+  RawData shape: 7500 time samples x 7750 recorded loci
+  RawData dtype: int32; dimension order explicitly time, locus
+  Output rate: 250 Hz; ping rate 5000 Hz; stored decimation factor 20
+  Units: rad * 2PI/2^16, not calibrated microstrain in this paper
+  Raw[0] StartLocusIndex: 0; acquisition StartLocusIndex: 0
+  Gauge: 10.209524154663086 m
+  Native pitch: 2.0419046878814697 m
+  HDF gzip chunk shape: 537 x 122, gzip level 4
+  Header Data Compromised: 0; GPS Enabled: 1; GPS Sync Guaranteed: 1
+The last three header flags are not verification of every sample's quality or
+independent proof of absolute clock accuracy; per-sample status arrays remain
+unread at this stage.
+
+The four filenames and actual UTC coverage (stop exclusive) are:
+  kefalonia_day2_2024-08-02T123942+0100.h5
+    2024-08-02T11:39:42.985600Z to 11:40:12.985600Z
+  kefalonia_day2_2024-08-02T124012+0100.h5
+    2024-08-02T11:40:12.985600Z to 11:40:42.985600Z
+  kefalonia_day2_2024-08-02T134342+0100.h5
+    2024-08-02T12:43:42.985600Z to 12:44:12.985600Z
+  kefalonia_day2_2024-08-02T134412+0100.h5
+    2024-08-02T12:44:12.985600Z to 12:44:42.985600Z
+Header PartEndTime is inclusive and is 0.004 s before the exclusive stops above.
+Both two-file pairs are contiguous according to these headers. Their sample
+timestamps/count continuity still require bounded QC if decoding is authorized.
+
+The shared existing ROI is recorded IDs 4000:5901:5 (381 channels). Every ID is
+present in the source geometry table under channel_number_recorded. Do not use
+geometry row index: its first represented recorded ID is 88. All 32-channel
+apertures should reuse the existing fixed selections, not search the examples
+for favorable channels. Geometry/source-code conventions support zero-based
+recorded column IDs; a plotting helper's +1 display labels do not alter columns.
+
+3. EVENT IDENTITIES, SUPPORTED CLASSIFICATION AND FIXED CROP OPTION
+
+Catalog_with_absolute_earthquake_locations.csv:
+  kef0131: origin 2024-08-02T11:39:56.593636Z
+    latitude 38.3748, longitude 20.4229, depth 6.15 km; ML 0.99 +/-0.12
+    Nobs 32, origin RMS 0.10 s, gap 200.63 degrees
+    location errors H_err 1.94, h_err 0.91, z_err 2.06 (catalog convention)
+    detection2024-08-02T11:39:59.163000Z; classification T
+  kef0140: origin 2024-08-02T12:43:46.505302Z
+    latitude 38.4075, longitude 20.4923, depth 2.87 km; ML 0.64 +/-0.14
+    Nobs 30, origin RMS 0.06 s, gap 181.99 degrees
+    location errors H_err 1.06, h_err 0.81, z_err 1.68 (catalog convention)
+    detection2024-08-02T12:43:47.160000Z; classification T
+Both are original jointly located events, not merely enhanced events assigned a
+template location. Their detection rows have blank noa_ids; do not invent an
+independent NOA event ID. Metadata support earthquake association, not a clean
+component or an exact S-onset label. No model output influenced this selection.
+
+The second pair also contains source-classified F detection kef0141 at
+12:43:57.155000Z, 9.995 s after kef0140's detection. F can represent non-seismic
+activity, coda triggers or duplicate phases; it does not establish a noise-only
+interval. Do not turn F into a clean background label or silently omit the fact.
+
+One finite, outcome-free crop option, NOT yet executed or finally approved:
+  First native sample at or after published detection minus 2 s;
+  retain exactly 1750 samples = 7 s, all 381 ROI channels.
+  kef0131: member123942, indices[3545,5295)
+    11:39:57.165600Z to 11:40:04.165600Z exclusive
+  kef0140: member134342, indices[544,2294)
+    12:43:45.161600Z to 12:43:52.161600Z exclusive
+These crops contain no other source catalog detection timestamp, and neither
+requires joining a second HDF member. Catalog incompleteness and ambient/coda
+content remain possible. The choice is detection centered, not S centered; the
+two origins have different offsets relative to detection. No actual phase
+preservation or timing accuracy is inferred by choosing this crop.
+
+4. TEMPORAL DISJOINTNESS AND EXPOSURE
+
+Header packet intervals for both source events do not overlap any of the ten
+existing development caches in DATA_EXPOSURE_LEDGER.csv. Those caches comprise
+the eight scheduled hours labeled 4--7 August and two earlier half-hour pilots.
+The exact joins and all ten cache intervals are in source_eligibility.json.
+The intended main comparison can use the eight scheduled hours without enlarging
+the original background selection; the extra pilots were checked only to establish
+no hidden temporal overlap. Disjoint time is not independent geology/instrument.
+
+Source sample exposure before this work is unknown. Treat all new source-case
+results as exploratory development. Two wavefields from one calendar day are two
+case studies, not independently representative earthquakes. Eight apertures,
+many insertion times and four background dates do not create independent source
+events. The four background-date clusters also remain previously exposed.
+The 48-hour protocol is unchanged; the disabled 96-hour assessment is untouched.
+
+5. WHAT THE RECORDED-COMPONENT TEST CAN MEASURE WITHOUT HUMAN LABELS
+
+Use the complete multichannel band-limited source snippet as z(t), including
+its recorded ambient content. Combine it with separately acquired background
+n(t) as x(t)=a*z(t)+n(t). Derive every method's covariance and weights solely
+from the same past background, before inserting z into the evaluation target.
+Apply the frozen linear filter separately to z and n as well as their sum.
+An additivity test then makes component accounting exact for the digital mixture.
+
+A desired scalar reference must be specified before outcomes, e.g. the common
+conventional steered sum of z under the same catalog-conditioned response.
+Then weighted-source distortion relative to that declared scalar reference and
+background rejection are measurable. This is fidelity relative to a recorded
+component/conventional projection. It is not true single-channel ground motion,
+calibrated strain, physical desired-SNR, or a separately observed clean earthquake.
+
+Preserve measured source amplitudes and relative phases across channels. Do not
+turn the real record into another rank-one Ricker/plane wave by imposing an ideal
+response. No automatic picker is required unless the retained claim specifically
+concerns phase accuracy. Catalog-based steering remains an assumption; source
+location does not determine exact apparent slowness at the cable. Any selected
+travel-time model, phase convention and delay sign must be frozen and shared.
+
+The strongest honest finite question is whether conclusions from ideal wavelet
+components remain qualitatively consistent when the added component has real
+recorded spatial complexity. Include neural, same-feature ridge, conventional,
+same-fraction measured-context and selected/strong measured-context comparators.
+Do not add a hybrid or tune loading/steering to rescue neural superiority.
+Report each source and background date separately, plus complete aggregation.
+If neural loses, retain the loss; the result can strengthen the negative-method
+evaluation paper, but not a claim of successful AI earthquake prediction.
+
+6. RESOURCE ARITHMETIC, NOT A RUNTIME PROMISE
+
+All four compressed HDF members sum339,679,587 bytes as files and337,241,133
+bytes inside ZIP. Full decoded RawData arrays would total930,000,000 bytes;
+there is no reason to decode all channels. Four full-time 381-channel ROIs total
+45,720,000 int32 logical bytes. The two proposed7-s ROIs total5,334,000 bytes;
+their25-Hz float64 versions total1,066,800 bytes. Two source cases x8 apertures
+x175 samples x32 channels in float64 total716,800 bytes.
+
+HDF chunk granularity matters: the proposed crops intersect68 chunks each and
+would decompress35,639,616 int32 bytes in total, not merely5,334,000 bytes.
+ZIP-level seeks may also scan much more compressed input. A bounded implementation
+can extract only the first HDF of each pair if needed (~171 MB files), then read
+only these crops plus explicitly justified resampling support. Do not unpack all
+archive data. Final filter resampling support and transient handling must be locked
+before compute. Reusing archived covariance predictions can avoid training, but
+the implementation must prove identical method inputs and correct phase mapping.
+
+No wall-time forecast follows from these byte counts. Measure the source decode
+and one finite deterministic case under a watchdog before a larger fixed batch.
+Source component tests do not require the continuous797-beam scan and must not
+inherit its detector estimand or untouched-validation language.
+
+The root requested extraction implementation, without authorizing its execution
+in this subtask. prepare_source_components.py has now sealed the source rules,
+exact two-event AK135 earliest S/s responses for every existing aperture and
+their source hashes. Horizontal ray parameters passed the same central finite-
+difference derivative check as the earlier event pilot. Delay shape is 2x8x32;
+no phase picks or waveform outcomes entered these metadata calculations.
+
+The optional extractor requires an exact SHA256-bound parent protocol under this
+revision with allow_source_sample_decode=true and assessment_96h_disabled=true.
+It streams and retains only each selected first HDF member (combined171,385,445
+bytes), verifies ZIP CRC32/size, computes each full-member SHA256, and decodes only
+the fixed native crop plus its timestamp/GPS status arrays. It rejects changed
+source hashes, coverage/grid errors, flagged samples, int32 rails and constant
+retained source channels. It writes both native/proc arrays and provenance;
+failure preserves partial evidence with no substitution. Bounds are300 s and
+300,000,000 scratch bytes. The parent run still needs its own external watchdog.
+
+RawDataTime has no unit attribute in the pinned HDF headers. The extractor permits
+only an exact match to the declared header-anchored4-ms grid under scale1(ns) or
+scale1000(us); it does not fit a clock offset or infer absolute clock accuracy.
+Both crop-local25-Hz output grids are documented separately from the relative
+component grid transplanted to the destination. The no-extra-neighbor resampling
+rule and existing line extrapolation are explicit offline boundary conventions,
+not a new latency/preservation guarantee. Extraction has NOT been run by this
+audit. Six tests include a rejected unauthorized parent-protocol call.
+
+7. COOK INLET FINDINGS TO PRESERVE
+
+The current paper's fixed-window covariance comparison uses93 development
+earthquakes and30 original source-separated validation earthquakes, excludes all
+257 previously examined earthquakes, keeps all30 paired events without replacement,
+and uses no phase picks for that fixed-window experiment. Earlier historical
+S-window models/assets are distinct and retain their pick source at
+https://doi.org/10.5281/zenodo.11642688. They must not be silently relabeled as the
+new fixed-window validation or overwritten by this Greek component experiment.
+
+The original primary dense-minus-sparse power-score contrast remains
+2.222377[2.068442,2.387612]dB. Preserve frozen cohort, bootstrap, pair masks,
+models and all primary values. This contrast is target/reference power, not
+desired-signal SNR or proof of useful filtering. Already established Greek
+synthetic-component losses versus strong context comparators and the adverse
+one-date marginal-tail result must stay visible rather than be replaced by a
+favorable real-recording illustration. Source: current saved manuscript and
+RESEARCH_REASSESSMENT_REPORT.txt, not new inference in this subtask.
+
+8. FINITE STOPPING AND CLAIM CLOSURE
+
+Technical source gate now closed at metadata level:
+  Exact eligible members/events, units, sample shapes, clocks, channel IDs,
+  overlap, exposure and byte limits are source-bound and machine-readable.
+Remaining objective QC before outcomes:
+  Actual requested sample/timestamp coverage; no compromised samples in retained
+  support; finite values and rails; declared resampling/transient support;
+  geometry mapping; model/feature hashes; pre-outcome protocol and resource cap.
+  If either source fails, stop/report the failed planned case; do not replace it.
+
+Scientific claim gate can close without new human labels only if the retained
+claim is digital-component preservation/rejection relative to a declared reference.
+If the manuscript retains actual phase accuracy, real clean-earthquake recovery,
+warning, or broad generalization, these two examples do not close it. Narrow the
+claim honestly or leave the stronger claim blocked with its exact evidence need.
+
+Editorial significance remains separate from computational validity. A transparent
+negative result with a robust comparator and recorded-component sensitivity check
+may be publishable, but neither two examples nor passing software tests certify
+that BSSA will send it to review. Do not promise a top-quartile acceptance outcome.
+
+9. PRIMARY SOURCE TRAIL
+
+Bocchini et al.(2026), Earth Syst.Sci.Data18,4677--4695:
+https://essd.copernicus.org/articles/18/4677/2026/
+https://doi.org/10.5194/essd-18-4677-2026
+The primary paper describes the instrument, UTC+1 filenames, channel geometry,
+manual event classification, joint catalog locations and independently acquired
+station picks. Its detector timestamp is not an exact phase onset. High-SNR
+source selection and the uncertain offshore geometry limit transfer claims.
+
+Pinned source release:
+https://zenodo.org/records/20558686
+https://doi.org/10.5281/zenodo.20558686
+README licenses datasetsCCBY4.0 and codeMIT; retain attribution and preserve the
+original provenance. Source main_plot_events.py explicitly states only two events
+are included as examples, but its configured catalog_284_earthquakes.csv is not
+present. Actual event identities above were resolved from released current catalog
+tables and HDF coverage instead of relying on that stale filename or guessing.
+
+No external contact, publication, account action, submission, spending, waveform
+download, model call or waveform sample decoding was performed by this audit.

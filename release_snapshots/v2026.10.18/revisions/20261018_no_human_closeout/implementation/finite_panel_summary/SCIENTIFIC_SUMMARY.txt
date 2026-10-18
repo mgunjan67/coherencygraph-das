@@ -1,0 +1,24 @@
+FINITE PANEL RESULTS: CONTROLLED DEVELOPMENT ONLY
+
+Recordedsource/background tables report all2 source earthquakes crossed with4 background dates.
+Sources share one recordingday; do not treat the8 crossed cells as8 independent earthquakes.
+Reference is the conventional steered output of the same known ADDED recorded component.
+It is not clean ground-motion truth; source/background may contain ambient or natural signals.
+Conventional zero reference error is defined algebraically, not evidence of best true recovery.
+No population CI, onsettolerance, superiority threshold or fitted combinedutility was added.
+
+Neural minus comparator date-cell contrasts: mean,min,max across8 crossed cells (descriptive):
+  ridge: gain+0.925794dB, range[+0.777882,+1.135358]
+  conventional: gain+5.409243dB, range[+4.312368,+7.628001]
+  context_0.25: gain-1.657278dB, range[-2.384869,-0.829861]
+  context_0.75: gain-5.115245dB, range[-6.017682,-3.971734]
+  lcmv_context_0.25: gain-0.943391dB, range[-1.659791,-0.261612]
+
+Expanded Ricker neural nondominance (four dates; marginal tails are not joint worstcase):
+  amplitude_minus: mean2/4; marginaltail0/4
+  amplitude_plus: mean1/4; marginaltail0/4
+  delay_minus: mean2/4; marginaltail0/4
+  delay_plus: mean2/4; marginaltail0/4
+
+All oldRickerprimaryvalues remain unchanged; the new10method panel is a separate follow-up.
+These results must retain any failure of neural superiority and do not establish earlywarning.

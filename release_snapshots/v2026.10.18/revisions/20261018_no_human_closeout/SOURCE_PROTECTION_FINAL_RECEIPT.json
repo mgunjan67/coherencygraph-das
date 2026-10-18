@@ -1,0 +1,1642 @@
+{
+  "status": "PASS_EXACT_RETAINED_SOURCE_AND_BASELINE_PROTECTION",
+  "checked_utc": "2026-10-18T11:00:33.844787+00:00",
+  "scope_seal_sha256": "2ed44b7fa8faf786e6578644b97c40278a2f3124341bcc5c84ace0f3f16ea969",
+  "manuscript_preservation_sha256": "04dd7eb360b5017c205083ccf6274715073ade2fcbc72ae39ea90ca2a5e33abc",
+  "protocol_sha256": "cfef679230d0fd47dee36f0914def5e9fc01e68a35e8da2c137ae48612a397a3",
+  "counts": {
+    "scope_sources": 53,
+    "scope_protected_baseline": 143,
+    "manuscript_protected_baseline": 71
+  },
+  "unique_files_hashed": 196,
+  "all_unchanged": true,
+  "mismatches": [],
+  "checks": {
+    "scope_sources": {
+      "count": 53,
+      "unchanged": 53,
+      "records": [
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\protocol.json",
+          "expected_sha256": "cfef679230d0fd47dee36f0914def5e9fc01e68a35e8da2c137ae48612a397a3",
+          "actual_sha256": "cfef679230d0fd47dee36f0914def5e9fc01e68a35e8da2c137ae48612a397a3",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\freeze_scope.py",
+          "expected_sha256": "ca90338819234b47d36a2947a7a9422ba811183c7e1a35550ab3612374222e1b",
+          "actual_sha256": "ca90338819234b47d36a2947a7a9422ba811183c7e1a35550ab3612374222e1b",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\benchmark_math_and_cache_metadata.py",
+          "expected_sha256": "63c62ab1c70e043f90fca21d46a13378e1871d7cf4727a71fc79644ffe05776d",
+          "actual_sha256": "63c62ab1c70e043f90fca21d46a13378e1871d7cf4727a71fc79644ffe05776d",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\benchmark_synthetic_pipeline.py",
+          "expected_sha256": "a4a7a7f3ca6cb92c6a3c7f052984694b3a7d2f5418f149f4319dac4830b3bab8",
+          "actual_sha256": "a4a7a7f3ca6cb92c6a3c7f052984694b3a7d2f5418f149f4319dac4830b3bab8",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\derivative_lcmv.py",
+          "expected_sha256": "d8ca2860bb4d3c0dad98750f66ce9d7909137eb36e6b021223ea151f701c3491",
+          "actual_sha256": "d8ca2860bb4d3c0dad98750f66ce9d7909137eb36e6b021223ea151f701c3491",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\execution_guard.py",
+          "expected_sha256": "d24fa085aee993ca4443b2086af497f6744e13465e2d4349ab2892a8484fb9ef",
+          "actual_sha256": "d24fa085aee993ca4443b2086af497f6744e13465e2d4349ab2892a8484fb9ef",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\prepare_ricker_execution_protocol.py",
+          "expected_sha256": "e6096f5ad1abd808a994bfaaafee2071ef52b6044e25d53d6456ab4f68e12dd8",
+          "actual_sha256": "e6096f5ad1abd808a994bfaaafee2071ef52b6044e25d53d6456ab4f68e12dd8",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\recorded_component_metrics.py",
+          "expected_sha256": "93513e8d1f9504a8c0b2da8b2f7b5bc0d392ab345a61bf01cfc2af5154c9a7c3",
+          "actual_sha256": "93513e8d1f9504a8c0b2da8b2f7b5bc0d392ab345a61bf01cfc2af5154c9a7c3",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\run_lcmv_ricker_extension.py",
+          "expected_sha256": "669899e2e9fe29e1026a4ffb5d1f330b45b526880f2d5892d2dccaea6ae019df",
+          "actual_sha256": "669899e2e9fe29e1026a4ffb5d1f330b45b526880f2d5892d2dccaea6ae019df",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\run_recorded_extension.py",
+          "expected_sha256": "0bf7286f04a30681ded9ed6e0e54732755f602b44219f030a13017a1c8479cf5",
+          "actual_sha256": "0bf7286f04a30681ded9ed6e0e54732755f602b44219f030a13017a1c8479cf5",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\summarize_finite_panels.py",
+          "expected_sha256": "e7b533619996f69813f1d558152c8d697bda6599b36e386184778de8a479cad4",
+          "actual_sha256": "e7b533619996f69813f1d558152c8d697bda6599b36e386184778de8a479cad4",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\test_derivative_lcmv.py",
+          "expected_sha256": "981f5077837144afb5c8b6ad2de1fd8d861bbec0b6d4624cb817ca53b8185334",
+          "actual_sha256": "981f5077837144afb5c8b6ad2de1fd8d861bbec0b6d4624cb817ca53b8185334",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\test_extension_gate.py",
+          "expected_sha256": "e46828cc01f7daa9bf4e7f1992e1be7c619b4e19e8a9daa2cc52beb475170b72",
+          "actual_sha256": "e46828cc01f7daa9bf4e7f1992e1be7c619b4e19e8a9daa2cc52beb475170b72",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\test_new_execution_guards.py",
+          "expected_sha256": "cd04b28dd14541c42a1828b5dc1b14f966cca241cac7623b914846dc0e6a5d8e",
+          "actual_sha256": "cd04b28dd14541c42a1828b5dc1b14f966cca241cac7623b914846dc0e6a5d8e",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\test_recorded_component_metrics.py",
+          "expected_sha256": "f9a6bdab9f3e4b4349c2beefd37a68d49381abd855d9c6a14870b6b016c81f4d",
+          "actual_sha256": "f9a6bdab9f3e4b4349c2beefd37a68d49381abd855d9c6a14870b6b016c81f4d",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\verify_recorded_direct_dft.py",
+          "expected_sha256": "ad87c4a49a36c04df83cbd8e16ef96de15890ac81bb4b4be14ac8ddbce1e9fd7",
+          "actual_sha256": "ad87c4a49a36c04df83cbd8e16ef96de15890ac81bb4b4be14ac8ddbce1e9fd7",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\watch_finite_panels.py",
+          "expected_sha256": "811073de3c14a4a234639ae688e16f580ff1e06b4d84b6ebe4e7f28767666613",
+          "actual_sha256": "811073de3c14a4a234639ae688e16f580ff1e06b4d84b6ebe4e7f28767666613",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\ricker_protocol.json",
+          "expected_sha256": "5f8a7be5367d6dc1779b74b2687b3314321a902fd730566c64edc6d6c55ac211",
+          "actual_sha256": "5f8a7be5367d6dc1779b74b2687b3314321a902fd730566c64edc6d6c55ac211",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\evidence_audit\\audit_zip_headers.py",
+          "expected_sha256": "e6e0e993388ae6ecaf6e27a172b757d1998b8833f058cae766cf194f5c1850d0",
+          "actual_sha256": "e6e0e993388ae6ecaf6e27a172b757d1998b8833f058cae766cf194f5c1850d0",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\evidence_audit\\derive_eligibility.py",
+          "expected_sha256": "561f7d53a8bc4cdcbbc108ce4780c67c7a6c95f4178ac85568fc62eec2206d5f",
+          "actual_sha256": "561f7d53a8bc4cdcbbc108ce4780c67c7a6c95f4178ac85568fc62eec2206d5f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\evidence_audit\\prepare_source_components.py",
+          "expected_sha256": "a9293dd08ad1ba2bda04e90a695f86b2cdbd00cee48d2b1ed2767ee83c112aeb",
+          "actual_sha256": "a9293dd08ad1ba2bda04e90a695f86b2cdbd00cee48d2b1ed2767ee83c112aeb",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\evidence_audit\\test_evidence_audit.py",
+          "expected_sha256": "33e5b7816c53e7fd695144e4ea4588807c44a03dd61b669327d237a3f8489f99",
+          "actual_sha256": "33e5b7816c53e7fd695144e4ea4588807c44a03dd61b669327d237a3f8489f99",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\evidence_audit\\source_spec.json",
+          "expected_sha256": "3a8bdd4575afa9f8573c74a903f1db50b2d7bce51055d793ad282c757c2757fb",
+          "actual_sha256": "3a8bdd4575afa9f8573c74a903f1db50b2d7bce51055d793ad282c757c2757fb",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\evidence_audit\\source_seal.json",
+          "expected_sha256": "47e18458a65399d735a1f8786a2764807f821e7b78f7688e2c32127171165b22",
+          "actual_sha256": "47e18458a65399d735a1f8786a2764807f821e7b78f7688e2c32127171165b22",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\evidence_audit\\source_catalog_steering.npz",
+          "expected_sha256": "eb28f8de60ba7beff0af3afb72a760953ac4b7b56071fe69f3e5517190775efc",
+          "actual_sha256": "eb28f8de60ba7beff0af3afb72a760953ac4b7b56071fe69f3e5517190775efc",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-04_00\\adapter_arrays.npz",
+          "expected_sha256": "eca0ee5eb4a8bad10fec952d1e74f1b6522e8c1e945a36dc8091d85f349b4ff9",
+          "actual_sha256": "eca0ee5eb4a8bad10fec952d1e74f1b6522e8c1e945a36dc8091d85f349b4ff9",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-04_00\\cases.parquet",
+          "expected_sha256": "5f4d874b54b8e5b56e2b5ad906d4ec86216d5c6a24c4feabf73680eedd16ab63",
+          "actual_sha256": "5f4d874b54b8e5b56e2b5ad906d4ec86216d5c6a24c4feabf73680eedd16ab63",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-04_00\\receipt.json",
+          "expected_sha256": "57646a161f138a9c5919a3f1644dea1d8b2c7c5aa424d38fd477044889670366",
+          "actual_sha256": "57646a161f138a9c5919a3f1644dea1d8b2c7c5aa424d38fd477044889670366",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-04_12\\adapter_arrays.npz",
+          "expected_sha256": "ae285e080c6c9f6e97d14747914ec6af48b2c2213bec1c7082ec6db7d97837df",
+          "actual_sha256": "ae285e080c6c9f6e97d14747914ec6af48b2c2213bec1c7082ec6db7d97837df",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-04_12\\cases.parquet",
+          "expected_sha256": "cd9daea6ae5c8c9d9e2287c45e5555fef09fa9533a3dd6154338bc42d94b77fd",
+          "actual_sha256": "cd9daea6ae5c8c9d9e2287c45e5555fef09fa9533a3dd6154338bc42d94b77fd",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-04_12\\receipt.json",
+          "expected_sha256": "731eb4cbcdeb253eee9e1b56947fbc1872dca0c1244b5950652db51d0b1a95f5",
+          "actual_sha256": "731eb4cbcdeb253eee9e1b56947fbc1872dca0c1244b5950652db51d0b1a95f5",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-05_00\\adapter_arrays.npz",
+          "expected_sha256": "612bad5a0ac9c150362efbe51a5351ee7deb62072386444acc0ca30be4bb297f",
+          "actual_sha256": "612bad5a0ac9c150362efbe51a5351ee7deb62072386444acc0ca30be4bb297f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-05_00\\cases.parquet",
+          "expected_sha256": "bc08e5bff5914d1de203d4f48b510b7ad7b87ad22d2e9e4c190d2368f606ff60",
+          "actual_sha256": "bc08e5bff5914d1de203d4f48b510b7ad7b87ad22d2e9e4c190d2368f606ff60",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-05_00\\receipt.json",
+          "expected_sha256": "6e90c9b946241308f81f55cff7e65b188479fe20d054d4d5d02627c742535218",
+          "actual_sha256": "6e90c9b946241308f81f55cff7e65b188479fe20d054d4d5d02627c742535218",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-05_12\\adapter_arrays.npz",
+          "expected_sha256": "6395bcf037c16070e0238fc834f0934f31be62f61d4cae01e942a6f243b45200",
+          "actual_sha256": "6395bcf037c16070e0238fc834f0934f31be62f61d4cae01e942a6f243b45200",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-05_12\\cases.parquet",
+          "expected_sha256": "13662b6caccc9e424444dad1dbbc7610f361d6df805898b899b6e2dee39b51d3",
+          "actual_sha256": "13662b6caccc9e424444dad1dbbc7610f361d6df805898b899b6e2dee39b51d3",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-05_12\\receipt.json",
+          "expected_sha256": "9b16c8f8b2860cababdb306770a954323e375faa829ed0172458113c3c67c78b",
+          "actual_sha256": "9b16c8f8b2860cababdb306770a954323e375faa829ed0172458113c3c67c78b",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-06_00\\adapter_arrays.npz",
+          "expected_sha256": "947c999f0c3185a2cd3292d3c5189711c6e37b55cef9042e88af9d4dbe413c4f",
+          "actual_sha256": "947c999f0c3185a2cd3292d3c5189711c6e37b55cef9042e88af9d4dbe413c4f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-06_00\\cases.parquet",
+          "expected_sha256": "cc0da1ec7b027379637e13082fead9497db6ac4509eb69947106049c3699f18f",
+          "actual_sha256": "cc0da1ec7b027379637e13082fead9497db6ac4509eb69947106049c3699f18f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-06_00\\receipt.json",
+          "expected_sha256": "9f34fff9e223ea538146d13830206c1d5d6e6636b2e2861735b538c70a6eafa3",
+          "actual_sha256": "9f34fff9e223ea538146d13830206c1d5d6e6636b2e2861735b538c70a6eafa3",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-06_12\\adapter_arrays.npz",
+          "expected_sha256": "9ae926dd17ce3de8d0e7fb36858996afb25fc09d06e0ca1a5757d28cea6f9e89",
+          "actual_sha256": "9ae926dd17ce3de8d0e7fb36858996afb25fc09d06e0ca1a5757d28cea6f9e89",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-06_12\\cases.parquet",
+          "expected_sha256": "fd068cd1840e7bb27f8f36d8083dee17f833917b000f49f5dc25af482444707c",
+          "actual_sha256": "fd068cd1840e7bb27f8f36d8083dee17f833917b000f49f5dc25af482444707c",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-06_12\\receipt.json",
+          "expected_sha256": "02ce8ca9e96d2b5a3e5cc3464faa85d171f794db9525194b0c1208119cc4aab1",
+          "actual_sha256": "02ce8ca9e96d2b5a3e5cc3464faa85d171f794db9525194b0c1208119cc4aab1",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-07_00\\adapter_arrays.npz",
+          "expected_sha256": "b133f3f8eff1a0a0a4e8c43b47d4d39658a04160554468ddff6048b04359e243",
+          "actual_sha256": "b133f3f8eff1a0a0a4e8c43b47d4d39658a04160554468ddff6048b04359e243",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-07_00\\cases.parquet",
+          "expected_sha256": "0146e2365ac506ae0f4f9c8e1988c36a529ed2415a35869412b879db910c4bf7",
+          "actual_sha256": "0146e2365ac506ae0f4f9c8e1988c36a529ed2415a35869412b879db910c4bf7",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-07_00\\receipt.json",
+          "expected_sha256": "aadf8b2f363bb4c42ad5c3d342bc3e9560ad389c9d460c21bf61d4644d066264",
+          "actual_sha256": "aadf8b2f363bb4c42ad5c3d342bc3e9560ad389c9d460c21bf61d4644d066264",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-07_12\\adapter_arrays.npz",
+          "expected_sha256": "19045cd5cccb4646f2657f260b14e2aa4d6dcc7c14e6ec10ce0b22ab20ab1ed6",
+          "actual_sha256": "19045cd5cccb4646f2657f260b14e2aa4d6dcc7c14e6ec10ce0b22ab20ab1ed6",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-07_12\\cases.parquet",
+          "expected_sha256": "cc1e39975f7d205394f594a6664b5bae7b3b3693f211af77e12ab39dfac19578",
+          "actual_sha256": "cc1e39975f7d205394f594a6664b5bae7b3b3693f211af77e12ab39dfac19578",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-07_12\\receipt.json",
+          "expected_sha256": "6db02c321bb7c4becfd7a508dd1f3c8bd4051cdb9ae14e35413dadb81f3b342f",
+          "actual_sha256": "6db02c321bb7c4becfd7a508dd1f3c8bd4051cdb9ae14e35413dadb81f3b342f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\frequency_filter.py",
+          "expected_sha256": "1d402e6a5d0a50b43053e39192efc69317be28212a7d150ea7130df1d63f8f46",
+          "actual_sha256": "1d402e6a5d0a50b43053e39192efc69317be28212a7d150ea7130df1d63f8f46",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\forecast_adapter.py",
+          "expected_sha256": "e2e27b328073717fd77c42abeb3dee781f37779accce79cd72f2b5b52c03059b",
+          "actual_sha256": "e2e27b328073717fd77c42abeb3dee781f37779accce79cd72f2b5b52c03059b",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\processing_core.py",
+          "expected_sha256": "27553614202f8af87c98f63261c881fd4c251c07ab98c77058fe5f029406298d",
+          "actual_sha256": "27553614202f8af87c98f63261c881fd4c251c07ab98c77058fe5f029406298d",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\DEVELOPMENT_PROTOCOL.json",
+          "expected_sha256": "102f37b46cc51892471b00f9332215f4f77e2ea5cab3fda5bd56912428b672eb",
+          "actual_sha256": "102f37b46cc51892471b00f9332215f4f77e2ea5cab3fda5bd56912428b672eb",
+          "unchanged": true
+        }
+      ]
+    },
+    "scope_protected_baseline": {
+      "count": 143,
+      "unchanged": 143,
+      "records": [
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\analyze_frontier_stability.py",
+          "expected_sha256": "cd91a4a110ffa873c0e563a1d240256a46da4678eb4a8617e79a473adb3b20b0",
+          "actual_sha256": "cd91a4a110ffa873c0e563a1d240256a46da4678eb4a8617e79a473adb3b20b0",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\BASELINE_PRESERVATION.json",
+          "expected_sha256": "46b7cf76d572cccc17f853cd5e494448df2a375f2f0a92a1e07e7cca375ce102",
+          "actual_sha256": "46b7cf76d572cccc17f853cd5e494448df2a375f2f0a92a1e07e7cca375ce102",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\build_and_review.py",
+          "expected_sha256": "d913416f4bcc9572082f145d5eb79ae983f56bbde655cc90e602a960aa988bc8",
+          "actual_sha256": "d913416f4bcc9572082f145d5eb79ae983f56bbde655cc90e602a960aa988bc8",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\build_checks.json",
+          "expected_sha256": "d382f88328f8c820028c234c5f25f506a93af82ca9faef4dfa60802ecf29374a",
+          "actual_sha256": "d382f88328f8c820028c234c5f25f506a93af82ca9faef4dfa60802ecf29374a",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\CLOSEOUT_ACCOUNTING_RECEIPT.json",
+          "expected_sha256": "9d540f54aa0c9ea87482a4773b7e3f578e4d278e519b44c2e1a904101c747de3",
+          "actual_sha256": "9d540f54aa0c9ea87482a4773b7e3f578e4d278e519b44c2e1a904101c747de3",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\attempt01_pre_inference_guard\\execution.log",
+          "expected_sha256": "7f68cda040ac396e71b190f13122e96026fe39a7a5e3e2e5363831f9001f3ec5",
+          "actual_sha256": "7f68cda040ac396e71b190f13122e96026fe39a7a5e3e2e5363831f9001f3ec5",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\attempt01_pre_inference_guard\\protocol.json",
+          "expected_sha256": "40b1688e9a4d215f20950636ed2f4999351a285399b1e55f9d93914607608cfe",
+          "actual_sha256": "40b1688e9a4d215f20950636ed2f4999351a285399b1e55f9d93914607608cfe",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\attempt01_pre_inference_guard\\protocol_seal.json",
+          "expected_sha256": "01ff6c363c08a36c1700005d13872d0eaf97c7e17ca88840953704820ba31bef",
+          "actual_sha256": "01ff6c363c08a36c1700005d13872d0eaf97c7e17ca88840953704820ba31bef",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\attempt01_pre_inference_guard\\run_event_pilot.py",
+          "expected_sha256": "3dc4701d6a7c80a8a41420b04b57101a25b22bf501c7f0221b9fe19736a2afdc",
+          "actual_sha256": "3dc4701d6a7c80a8a41420b04b57101a25b22bf501c7f0221b9fe19736a2afdc",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\attempt01_pre_inference_guard\\watch_event_pilot.py",
+          "expected_sha256": "4ea6cd56c65a10d3bea9b6a481861834c3489676b0d8e9d1a72cfce19e94f073",
+          "actual_sha256": "4ea6cd56c65a10d3bea9b6a481861834c3489676b0d8e9d1a72cfce19e94f073",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\attempt01_pre_inference_guard\\watchdog_receipt.json",
+          "expected_sha256": "4d8f533ff9fae8478abf7d33c44837ef1893513f174bda7895637d7208d4470c",
+          "actual_sha256": "4d8f533ff9fae8478abf7d33c44837ef1893513f174bda7895637d7208d4470c",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\catalog_steering.npz",
+          "expected_sha256": "d49146cfad22c9cd0b8d7d622c9dcc372cf6d7e7bebd48717a7c011ed6bd403e",
+          "actual_sha256": "d49146cfad22c9cd0b8d7d622c9dcc372cf6d7e7bebd48717a7c011ed6bd403e",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\execution.log",
+          "expected_sha256": "57492b22789ed08cfd06bdd3c574058f6afbef97b26fb238064202ff1d62d5a4",
+          "actual_sha256": "57492b22789ed08cfd06bdd3c574058f6afbef97b26fb238064202ff1d62d5a4",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\frame_log.jsonl",
+          "expected_sha256": "8efb4baa6fa989a5ace989d60bc5e33587c97e6f5a94263a5eb62567ae10b0cf",
+          "actual_sha256": "8efb4baa6fa989a5ace989d60bc5e33587c97e6f5a94263a5eb62567ae10b0cf",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\index.html",
+          "expected_sha256": "afd919dc21087d0454a18838703a54b8ed14511494735f66e6939fefc8535178",
+          "actual_sha256": "afd919dc21087d0454a18838703a54b8ed14511494735f66e6939fefc8535178",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\MEASURED_COST_AND_NEXT_GATE.txt",
+          "expected_sha256": "893b145a20a4b7e235d4a7aa50005426528eca866643c6debf93214ec197f939",
+          "actual_sha256": "893b145a20a4b7e235d4a7aa50005426528eca866643c6debf93214ec197f939",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\MEASURED_COST_PROPOSAL_OUTLINE.txt",
+          "expected_sha256": "f3bc9bf97b4cd3f9d7c7d13e14b59467f8b6d9f91ef27f8ebb4bf365277b63cc",
+          "actual_sha256": "f3bc9bf97b4cd3f9d7c7d13e14b59467f8b6d9f91ef27f8ebb4bf365277b63cc",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\pre_inference_repair_receipt.json",
+          "expected_sha256": "f4c8beb4d0ae0156cdaf35c3f6bec291b58048c451fc69bd23102ce56faf2163",
+          "actual_sha256": "f4c8beb4d0ae0156cdaf35c3f6bec291b58048c451fc69bd23102ce56faf2163",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\PREPARATION_LOG.txt",
+          "expected_sha256": "66c0fe5ff5d344a5ce1d86e77bf6bdada7f56d12c0a319cf255c8b1705d28d12",
+          "actual_sha256": "66c0fe5ff5d344a5ce1d86e77bf6bdada7f56d12c0a319cf255c8b1705d28d12",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\protocol.json",
+          "expected_sha256": "bc9e3e1936c56b9d545235f7a2ed05998082cafec24192b7fb622b8b266dff23",
+          "actual_sha256": "bc9e3e1936c56b9d545235f7a2ed05998082cafec24192b7fb622b8b266dff23",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\protocol_seal.json",
+          "expected_sha256": "c5f8a398b226811fdcbc91617b5b56dae94bba62a6841bbe87321e50fe18e111",
+          "actual_sha256": "c5f8a398b226811fdcbc91617b5b56dae94bba62a6841bbe87321e50fe18e111",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\receipt.json",
+          "expected_sha256": "db81c9fb486ad30a87d7b74ceef7fa76d3f11c788f0982cdb1fdb073962394ec",
+          "actual_sha256": "db81c9fb486ad30a87d7b74ceef7fa76d3f11c788f0982cdb1fdb073962394ec",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\repair_pre_inference_guard.py",
+          "expected_sha256": "b68883470a21d039c08735efbc8d68b8de9182aa8c5ddd65e442a2001566f9b2",
+          "actual_sha256": "b68883470a21d039c08735efbc8d68b8de9182aa8c5ddd65e442a2001566f9b2",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\run_event_pilot.py",
+          "expected_sha256": "3633c38f9ee6f4dc9fa7552d7ad19b18cb428cf8b627e82488c85409e7f59205",
+          "actual_sha256": "3633c38f9ee6f4dc9fa7552d7ad19b18cb428cf8b627e82488c85409e7f59205",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\SAVED_OUTPUT_VERIFICATION.json",
+          "expected_sha256": "eb0947182a83b0e35ae5bcb734660a6b09ccc5258e74fc95f67f7337cf1dc633",
+          "actual_sha256": "eb0947182a83b0e35ae5bcb734660a6b09ccc5258e74fc95f67f7337cf1dc633",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\station_and_raw_das.png",
+          "expected_sha256": "442b5da1d877609bebe22dc9269c1e47863905a667fb25f1f48fa73447aa8f26",
+          "actual_sha256": "442b5da1d877609bebe22dc9269c1e47863905a667fb25f1f48fa73447aa8f26",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\verify_pilot_outputs.py",
+          "expected_sha256": "07f2afe43b1744282dc2cd791f4977b9e330f86562819b194a64f44d29d0c507",
+          "actual_sha256": "07f2afe43b1744282dc2cd791f4977b9e330f86562819b194a64f44d29d0c507",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\watch_event_pilot.py",
+          "expected_sha256": "818a1013baa73026b5f83ca7fe124ea426c282a5d9848e7a390dda4bb35629dd",
+          "actual_sha256": "818a1013baa73026b5f83ca7fe124ea426c282a5d9848e7a390dda4bb35629dd",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\watchdog_receipt.json",
+          "expected_sha256": "1b0b69d759cc90457d1ed70631ecf319aa999b259a7052ae13898357e262975e",
+          "actual_sha256": "1b0b69d759cc90457d1ed70631ecf319aa999b259a7052ae13898357e262975e",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\waveform_outputs.npz",
+          "expected_sha256": "d923392335fe90ab1e88e3b606fcae13e1da08390da70c7e74ec50efb8ab2af8",
+          "actual_sha256": "d923392335fe90ab1e88e3b606fcae13e1da08390da70c7e74ec50efb8ab2af8",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\waveforms_blinded.png",
+          "expected_sha256": "689f121a30393200a1cfbc2ca5cef5e48ef1b00e9966254de479ea599022f152",
+          "actual_sha256": "689f121a30393200a1cfbc2ca5cef5e48ef1b00e9966254de479ea599022f152",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\event_pilot\\waveforms_identified.png",
+          "expected_sha256": "ad4bf70bd6b698cd108ce7e532984544b42357aaba054933a28b941773d14920",
+          "actual_sha256": "ad4bf70bd6b698cd108ce7e532984544b42357aaba054933a28b941773d14920",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\EVENT_PILOT_REVIEW_GUIDE.txt",
+          "expected_sha256": "7f87f4fed65bca107e180b59395118fbc6644837a7107f9d89561af4f28d6e19",
+          "actual_sha256": "7f87f4fed65bca107e180b59395118fbc6644837a7107f9d89561af4f28d6e19",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\EVENT_PILOT_VISUAL_REVIEW.txt",
+          "expected_sha256": "60175c08ba3fb0ef9127585e8243c6e0e1c3ba1ffe89f41b49e64a55841e9a26",
+          "actual_sha256": "60175c08ba3fb0ef9127585e8243c6e0e1c3ba1ffe89f41b49e64a55841e9a26",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\EVENT_ROUTE_APPROVAL.json",
+          "expected_sha256": "7ed82cf57e95d329a9dccaad468ce7c4736293ea91cb39a7b1af37696f3e1623",
+          "actual_sha256": "7ed82cf57e95d329a9dccaad468ce7c4736293ea91cb39a7b1af37696f3e1623",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\EVENT_WINDOW_FEASIBILITY.txt",
+          "expected_sha256": "cb0641369f6f6fe8e7e6443dd8425bacb5c8ea58ccb6397ac42975c3b1334abe",
+          "actual_sha256": "cb0641369f6f6fe8e7e6443dd8425bacb5c8ea58ccb6397ac42975c3b1334abe",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\continuous_data_qc.pdf",
+          "expected_sha256": "c20c7f7d3b2b446c3aa3774c5701f9b86d7234ce30211492aa7a3c4a599df2fc",
+          "actual_sha256": "c20c7f7d3b2b446c3aa3774c5701f9b86d7234ce30211492aa7a3c4a599df2fc",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\continuous_data_qc.png",
+          "expected_sha256": "b9d5c48da01b8aad998de0baa499f7bee9f2e3be45a91790d89d9b1b0829e155",
+          "actual_sha256": "b9d5c48da01b8aad998de0baa499f7bee9f2e3be45a91790d89d9b1b0829e155",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\continuous_filter_comparison.pdf",
+          "expected_sha256": "69ec565b7dafcc7ba92bb5d89b337cdc24af08c4fc558ffcf0c6ebd3cacec14a",
+          "actual_sha256": "69ec565b7dafcc7ba92bb5d89b337cdc24af08c4fc558ffcf0c6ebd3cacec14a",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\continuous_filter_comparison.png",
+          "expected_sha256": "ad6aa4544b144b9e0e81aa3bfcf0219e762dc681e858da1f192785175d057540",
+          "actual_sha256": "ad6aa4544b144b9e0e81aa3bfcf0219e762dc681e858da1f192785175d057540",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\data_quality_overview.pdf",
+          "expected_sha256": "483b3411a1ab084aadfeb9ce7c2e17d063265b9ffd1b39161889b733d7f0b37c",
+          "actual_sha256": "483b3411a1ab084aadfeb9ce7c2e17d063265b9ffd1b39161889b733d7f0b37c",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\data_quality_overview.png",
+          "expected_sha256": "2360be995323fd67a0a388aa8870eda938a59ba7dc9e03e23b13e2ee5e24d90a",
+          "actual_sha256": "2360be995323fd67a0a388aa8870eda938a59ba7dc9e03e23b13e2ee5e24d90a",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\decomposition.pdf",
+          "expected_sha256": "65b64019c546316eaa3e6f9c98dd777cdc4494a3def43dd43081b5931df34676",
+          "actual_sha256": "65b64019c546316eaa3e6f9c98dd777cdc4494a3def43dd43081b5931df34676",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\decomposition.png",
+          "expected_sha256": "f4477ed91cd19d60e84d1d03f379faeb8ec14a4215d2bc72769fe22df3663903",
+          "actual_sha256": "f4477ed91cd19d60e84d1d03f379faeb8ec14a4215d2bc72769fe22df3663903",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\frontier_stability.pdf",
+          "expected_sha256": "667db143c18d62d13c4ad6a046dc181566ea95612d8cd99ba22c9263a6868f2c",
+          "actual_sha256": "667db143c18d62d13c4ad6a046dc181566ea95612d8cd99ba22c9263a6868f2c",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\frontier_stability.png",
+          "expected_sha256": "909b9ddaee8298fea63951d33423e61a90e196057a422cb8bc00b9502bbf4863",
+          "actual_sha256": "909b9ddaee8298fea63951d33423e61a90e196057a422cb8bc00b9502bbf4863",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\gauge_support_controls.pdf",
+          "expected_sha256": "7615be1973360de997c070d906390159f52340952d3705b4cff1fc8c685d4660",
+          "actual_sha256": "7615be1973360de997c070d906390159f52340952d3705b4cff1fc8c685d4660",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\matrix_example.pdf",
+          "expected_sha256": "f05803a9c9b020de5cf916f1420e0375a0d1d91334051c17111917074031a8c5",
+          "actual_sha256": "f05803a9c9b020de5cf916f1420e0375a0d1d91334051c17111917074031a8c5",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\matrix_example.png",
+          "expected_sha256": "f1fea83e0f36c456027e72739816610361e21d3c023a74582fae076a01a7e9c4",
+          "actual_sha256": "f1fea83e0f36c456027e72739816610361e21d3c023a74582fae076a01a7e9c4",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\original_comparisons.pdf",
+          "expected_sha256": "0114b420d52ad1748938c0766c2791e395038b7b48783ae1095e2085864ed70d",
+          "actual_sha256": "0114b420d52ad1748938c0766c2791e395038b7b48783ae1095e2085864ed70d",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\original_comparisons.png",
+          "expected_sha256": "7d73930ac5ca96d9d5d30f728bcfc0fd2f5982c22ff9344f5ec785f8db8e660b",
+          "actual_sha256": "7d73930ac5ca96d9d5d30f728bcfc0fd2f5982c22ff9344f5ec785f8db8e660b",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\raw_wavefield_example.pdf",
+          "expected_sha256": "45bf4eec7089d3193a0d4516581042173bf801146ac9aae35fd84a21271cca07",
+          "actual_sha256": "45bf4eec7089d3193a0d4516581042173bf801146ac9aae35fd84a21271cca07",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\reference_sensitivity.pdf",
+          "expected_sha256": "8f863de7886d84ffe0c3233847e0ac1f2b00b5715b8587557824e85d612afa02",
+          "actual_sha256": "8f863de7886d84ffe0c3233847e0ac1f2b00b5715b8587557824e85d612afa02",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\reference_sensitivity.png",
+          "expected_sha256": "f14d939f0f771973a544fa3e597a349bc07986d87ef3b9b92a7b9bc7a20bdfa9",
+          "actual_sha256": "f14d939f0f771973a544fa3e597a349bc07986d87ef3b9b92a7b9bc7a20bdfa9",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\regularization_tradeoff.pdf",
+          "expected_sha256": "b0830a6af2c88a5c86ec119ddb114f9fb2045a873d74c08457209ad0606ed4a1",
+          "actual_sha256": "b0830a6af2c88a5c86ec119ddb114f9fb2045a873d74c08457209ad0606ed4a1",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\regularization_tradeoff.png",
+          "expected_sha256": "e46b5dd88554e3734a9c6d7fa842338107cdcebe3e028724f9db2c89d1ec2dce",
+          "actual_sha256": "e46b5dd88554e3734a9c6d7fa842338107cdcebe3e028724f9db2c89d1ec2dce",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\resampling_boundary_audit.pdf",
+          "expected_sha256": "b7d408d7a6c75fe388a2950f96336f23c7c27c3856e0bceeac656acca37969c3",
+          "actual_sha256": "b7d408d7a6c75fe388a2950f96336f23c7c27c3856e0bceeac656acca37969c3",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\residual_repeatability.pdf",
+          "expected_sha256": "6bd7ab70c6186c8cd287348e2c857fe10c211b85dc92dc432b6ff7f2b9f1b621",
+          "actual_sha256": "6bd7ab70c6186c8cd287348e2c857fe10c211b85dc92dc432b6ff7f2b9f1b621",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\source_geometry.pdf",
+          "expected_sha256": "d72e44ceb62402f85a269ff070a99e358620a6e171cb0d83d857b4b7db6e495f",
+          "actual_sha256": "d72e44ceb62402f85a269ff070a99e358620a6e171cb0d83d857b4b7db6e495f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\source_geometry.png",
+          "expected_sha256": "1ef9385b9c82e9e49c830f155c90a3189fffdee7d2074b845d1c318c39bbabd6",
+          "actual_sha256": "1ef9385b9c82e9e49c830f155c90a3189fffdee7d2074b845d1c318c39bbabd6",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\synthetic_diagnostic.pdf",
+          "expected_sha256": "3dc5ff45ebdfc09bbca5def29f8c9a4bb2eda34e81dfc5384b5c889253865d4e",
+          "actual_sha256": "3dc5ff45ebdfc09bbca5def29f8c9a4bb2eda34e81dfc5384b5c889253865d4e",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\synthetic_diagnostic.png",
+          "expected_sha256": "349931d8644dfd8b63c0ccf07bcf579eb41bab7690f85b9ba0cddf2d9f626056",
+          "actual_sha256": "349931d8644dfd8b63c0ccf07bcf579eb41bab7690f85b9ba0cddf2d9f626056",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\training_controls.pdf",
+          "expected_sha256": "bd95a2de3ddcd7fa9b161a706cb13e9cf401119b6236f416f534e6a406c315c5",
+          "actual_sha256": "bd95a2de3ddcd7fa9b161a706cb13e9cf401119b6236f416f534e6a406c315c5",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\training_controls.png",
+          "expected_sha256": "339a33c23f4dae02e0bf5ba7c4b8956097952739f064b7fd2f07d96a386f5c39",
+          "actual_sha256": "339a33c23f4dae02e0bf5ba7c4b8956097952739f064b7fd2f07d96a386f5c39",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\frontier_stability\\archived_summary_reproduction.csv",
+          "expected_sha256": "697718e28ae74a7b3340c6975cddc20e85ab2b08011a00339e29330791d12edf",
+          "actual_sha256": "697718e28ae74a7b3340c6975cddc20e85ab2b08011a00339e29330791d12edf",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\frontier_stability\\date_frontiers.csv",
+          "expected_sha256": "3421f44dbd9c75f18560666a26d91dde84dd3f178436fb0fd467d93c1959f753",
+          "actual_sha256": "3421f44dbd9c75f18560666a26d91dde84dd3f178436fb0fd467d93c1959f753",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\frontier_stability\\date_method_metrics.csv",
+          "expected_sha256": "f42b99dd1602421b6ee521d24b0b7ba16c3964ab827b41b54449e6f22e9579c9",
+          "actual_sha256": "f42b99dd1602421b6ee521d24b0b7ba16c3964ab827b41b54449e6f22e9579c9",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\frontier_stability\\exact_paired_fractions.csv",
+          "expected_sha256": "19736b920cac53c9d3d1561bf3a7189087b90a3f614b0d4b45ddfc78ea4dce04",
+          "actual_sha256": "19736b920cac53c9d3d1561bf3a7189087b90a3f614b0d4b45ddfc78ea4dce04",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\frontier_stability\\frontier_date_stability.csv",
+          "expected_sha256": "e9882581933c1a48aa42261762178ede41aa8102472127d91df8d416fb41e564",
+          "actual_sha256": "e9882581933c1a48aa42261762178ede41aa8102472127d91df8d416fb41e564",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\frontier_stability\\metric_formula_checks.csv",
+          "expected_sha256": "40a2959f385de5aa56019d5692a48a43f11869ec0c203cc39c3b15bf9bc8ec95",
+          "actual_sha256": "40a2959f385de5aa56019d5692a48a43f11869ec0c203cc39c3b15bf9bc8ec95",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\frontier_stability\\paired_date_direction_ranges.csv",
+          "expected_sha256": "fb99da8d2aaeebd330f44e14c0e87cbccc23d612a254601a02e55723a1e24f17",
+          "actual_sha256": "fb99da8d2aaeebd330f44e14c0e87cbccc23d612a254601a02e55723a1e24f17",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\frontier_stability\\source_inputs.json",
+          "expected_sha256": "b505a49bff5738a97af9d20b0dfba65dcb5230a6103e638347170fa5c3b20ddd",
+          "actual_sha256": "b505a49bff5738a97af9d20b0dfba65dcb5230a6103e638347170fa5c3b20ddd",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\frontier_stability\\summary.json",
+          "expected_sha256": "2db5249c8c7beed9fc216de84301b535ff87d27593ff5b7142eaa3d783c06050",
+          "actual_sha256": "2db5249c8c7beed9fc216de84301b535ff87d27593ff5b7142eaa3d783c06050",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\frontier_stability\\verification_receipt.json",
+          "expected_sha256": "975d2206cba03e309c96b278e981ed9d1f30c419cce2849672cacdddaa9e869b",
+          "actual_sha256": "975d2206cba03e309c96b278e981ed9d1f30c419cce2849672cacdddaa9e869b",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\FRONTIER_STABILITY_INTERPRETATION.txt",
+          "expected_sha256": "a16c858ae2fb484524f61d0b66b2643907113f80b7f633752f1cf288dfaf3889",
+          "actual_sha256": "a16c858ae2fb484524f61d0b66b2643907113f80b7f633752f1cf288dfaf3889",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\frontier_stability_tests.xml",
+          "expected_sha256": "4b0d3d370c42fe6a5cb8ca3813188a870e54330d8d6979b4ff28eed063d5dc16",
+          "actual_sha256": "4b0d3d370c42fe6a5cb8ca3813188a870e54330d8d6979b4ff28eed063d5dc16",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\frontier_stability_tests_verified.xml",
+          "expected_sha256": "e8f5dd0f0d3fea0313fad8c2cb5ca0c19ebe786b7d49637e4396b2a54afdb38d",
+          "actual_sha256": "e8f5dd0f0d3fea0313fad8c2cb5ca0c19ebe786b7d49637e4396b2a54afdb38d",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\generate_manuscript_evidence.py",
+          "expected_sha256": "2c242a356d1fac232066dc931a55937d04b962b070f520380ece1f64c314c365",
+          "actual_sha256": "2c242a356d1fac232066dc931a55937d04b962b070f520380ece1f64c314c365",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\INDEPENDENT_STABILITY_REVIEW.txt",
+          "expected_sha256": "33b76478b6adf731d93c3c9775f62144751afe12e34bdddbb24b9ce081c5ed87",
+          "actual_sha256": "33b76478b6adf731d93c3c9775f62144751afe12e34bdddbb24b9ce081c5ed87",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\INDEPENDENT_STABILITY_REVIEW_RECEIPT.json",
+          "expected_sha256": "7f4567e4c291568eda290335c1307d16b4777775e7ad1e3854cf02ef4f4a8282",
+          "actual_sha256": "7f4567e4c291568eda290335c1307d16b4777775e7ad1e3854cf02ef4f4a8282",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\integration_tests.xml",
+          "expected_sha256": "5837260f93eacb5c0d20233b1d0301f7b8715241e7d62187ff9c394d3e8dedcb",
+          "actual_sha256": "5837260f93eacb5c0d20233b1d0301f7b8715241e7d62187ff9c394d3e8dedcb",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\integration_tests_verified.xml",
+          "expected_sha256": "f240a1e6c5bbea1ad1a7820853ec4d96e811dadecc7e8b4403e0db0db7153667",
+          "actual_sha256": "f240a1e6c5bbea1ad1a7820853ec4d96e811dadecc7e8b4403e0db0db7153667",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\LITERATURE_SOLUTIONS.txt",
+          "expected_sha256": "e8c76ca557e46e50b4f30a9b4dcaff5dd45e2a4d82a7083a5d602dfa69898fc2",
+          "actual_sha256": "e8c76ca557e46e50b4f30a9b4dcaff5dd45e2a4d82a7083a5d602dfa69898fc2",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\LOW_RESOURCE_EVIDENCE_OPTIONS.txt",
+          "expected_sha256": "30cf8ed330725a134310346bb08de065f5f6631ce3824f6a76dd3eae3f15607c",
+          "actual_sha256": "30cf8ed330725a134310346bb08de065f5f6631ce3824f6a76dd3eae3f15607c",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\MAIN_VISUAL_REVIEW.txt",
+          "expected_sha256": "9de0f777be2b0689255e861de8ae0598c1a12a1c19a291c9f9c90620e99e2bc1",
+          "actual_sha256": "9de0f777be2b0689255e861de8ae0598c1a12a1c19a291c9f9c90620e99e2bc1",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\body.tex",
+          "expected_sha256": "e724b368b1d2145e837dd4d14a473844f4e971a13b0e445c345758efe1c37be3",
+          "actual_sha256": "e724b368b1d2145e837dd4d14a473844f4e971a13b0e445c345758efe1c37be3",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\bounded_body.tex",
+          "expected_sha256": "77fdf7140472dba0e1e49701da000c9c98aaa0d1cabd7fed74926f6690ad8927",
+          "actual_sha256": "77fdf7140472dba0e1e49701da000c9c98aaa0d1cabd7fed74926f6690ad8927",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\bounded_core_results.tex",
+          "expected_sha256": "c8c36fa85004e87605fd2ab6de6a2413cdf7dc03d951d0f766b84d65b6107dc0",
+          "actual_sha256": "c8c36fa85004e87605fd2ab6de6a2413cdf7dc03d951d0f766b84d65b6107dc0",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\bssa_references.tex",
+          "expected_sha256": "d9456304f4c97c0905974d97a616a89fa56ce42622f44f41a3d92314dde94bba",
+          "actual_sha256": "d9456304f4c97c0905974d97a616a89fa56ce42622f44f41a3d92314dde94bba",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\continuous_filter_supplement.tex",
+          "expected_sha256": "e760146141301da2bc0b34d011fc6dfa8bee1c93946d287f9d48c06816a5461d",
+          "actual_sha256": "e760146141301da2bc0b34d011fc6dfa8bee1c93946d287f9d48c06816a5461d",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\detection_main.tex",
+          "expected_sha256": "ab6f0e985e629dd771582c91c55d19cd4ec213b6557c79a765c1606816c5596b",
+          "actual_sha256": "ab6f0e985e629dd771582c91c55d19cd4ec213b6557c79a765c1606816c5596b",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\detection_supplement.tex",
+          "expected_sha256": "0aaed33f6fc159a88d9d281f2914bb236ac4715f23a82ff61fc2d9e87996a2b1",
+          "actual_sha256": "0aaed33f6fc159a88d9d281f2914bb236ac4715f23a82ff61fc2d9e87996a2b1",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\diagnostic_results.tex",
+          "expected_sha256": "095c3d91cbf49f2262bc66d02306b30c22119b8239d28396c90c3342e31fe2d2",
+          "actual_sha256": "095c3d91cbf49f2262bc66d02306b30c22119b8239d28396c90c3342e31fe2d2",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\diagnostic_supplement.tex",
+          "expected_sha256": "c5fc16d0afe6a6f51780bf9167c45928eec5d979d8ad6f3abcf190e45019209f",
+          "actual_sha256": "c5fc16d0afe6a6f51780bf9167c45928eec5d979d8ad6f3abcf190e45019209f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\extended_diagnostic_figures.tex",
+          "expected_sha256": "0e55970e77d03ca2c66ecc13ecdefb9e2fd197622e1c62709bef51d324302d14",
+          "actual_sha256": "0e55970e77d03ca2c66ecc13ecdefb9e2fd197622e1c62709bef51d324302d14",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\gauge_support_supplement.tex",
+          "expected_sha256": "01a50817c732927b68b6eb89643975d91fcdbbc0b58e656eb7f4af5319e01288",
+          "actual_sha256": "01a50817c732927b68b6eb89643975d91fcdbbc0b58e656eb7f4af5319e01288",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_abstract.tex",
+          "expected_sha256": "e334e0e8ba035b4583ddec3b9a05cf060b00b7aa8e78fd6fe0775df914b1fb6f",
+          "actual_sha256": "e334e0e8ba035b4583ddec3b9a05cf060b00b7aa8e78fd6fe0775df914b1fb6f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_all_comparisons.tex",
+          "expected_sha256": "5dfe2431da524cfc86b91550e494adaa3bf8306f7b8163fafa16cb877bc26f59",
+          "actual_sha256": "5dfe2431da524cfc86b91550e494adaa3bf8306f7b8163fafa16cb877bc26f59",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_cohort_summary.tex",
+          "expected_sha256": "6e26a56912096b44de5ac36f7565c1d36c1d5fcbe921dbaccecf3c77c39072a9",
+          "actual_sha256": "6e26a56912096b44de5ac36f7565c1d36c1d5fcbe921dbaccecf3c77c39072a9",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_cohort_table.tex",
+          "expected_sha256": "dced62f07ff1069d61ecdcb9b034f6744cae35119ed2abb4f47d7d9736ee81f8",
+          "actual_sha256": "dced62f07ff1069d61ecdcb9b034f6744cae35119ed2abb4f47d7d9736ee81f8",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_conclusion.tex",
+          "expected_sha256": "59197adcda411e658943169efdc06f79e55ba5c01c1ea56d3009101a621385ee",
+          "actual_sha256": "59197adcda411e658943169efdc06f79e55ba5c01c1ea56d3009101a621385ee",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_cross_runtime_verification.tex",
+          "expected_sha256": "92c5956947005999328c895b3dc8634b642a6398b7215670d8d00f87eb4baf63",
+          "actual_sha256": "92c5956947005999328c895b3dc8634b642a6398b7215670d8d00f87eb4baf63",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_detection_ablation.tex",
+          "expected_sha256": "b81de1216e57c60c1e8a051f2083c479f863a754968e1985569534c084d0edad",
+          "actual_sha256": "b81de1216e57c60c1e8a051f2083c479f863a754968e1985569534c084d0edad",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_detection_numbers.tex",
+          "expected_sha256": "439be1a5cb243ff1fe9499a1f2f104b2bda0e8c7da6d4b61b1187d0a3c58f36c",
+          "actual_sha256": "439be1a5cb243ff1fe9499a1f2f104b2bda0e8c7da6d4b61b1187d0a3c58f36c",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_detection_table.tex",
+          "expected_sha256": "60a2cc437b8c5f8a100d13a43f84ba2b635bfe8e97aa3bb527c4ac1531e16510",
+          "actual_sha256": "60a2cc437b8c5f8a100d13a43f84ba2b635bfe8e97aa3bb527c4ac1531e16510",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_filter_results.tex",
+          "expected_sha256": "7efae02cef95f162e8888d7fe6b590801245b66fea5276cda29f82f85011c90f",
+          "actual_sha256": "7efae02cef95f162e8888d7fe6b590801245b66fea5276cda29f82f85011c90f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_filter_table.tex",
+          "expected_sha256": "b3a716047d039850d83e3fce3389397eebd44164d8b06e29ed58d2fe7ff60adc",
+          "actual_sha256": "b3a716047d039850d83e3fce3389397eebd44164d8b06e29ed58d2fe7ff60adc",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_gauge_results.tex",
+          "expected_sha256": "a798f035fbd51dcd2aa68ce1853b717da544b2ceedd50de9de029619cca0c9ca",
+          "actual_sha256": "a798f035fbd51dcd2aa68ce1853b717da544b2ceedd50de9de029619cca0c9ca",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_gauge_table.tex",
+          "expected_sha256": "1cb76c4edb8f6551d1aee63fe8ba6d5038149c1fe2a4bc162572ca7be933d8f8",
+          "actual_sha256": "1cb76c4edb8f6551d1aee63fe8ba6d5038149c1fe2a4bc162572ca7be933d8f8",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_historical_audit_table.tex",
+          "expected_sha256": "8864b661edaebea1141a31143fae5ebf4563863f74b6069fc0adcae63a59a48f",
+          "actual_sha256": "8864b661edaebea1141a31143fae5ebf4563863f74b6069fc0adcae63a59a48f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_inventory.tex",
+          "expected_sha256": "08fdb57b68c95a03fbe4b8b1610f3b64d293ccce41e80378c79c455c7fff658b",
+          "actual_sha256": "08fdb57b68c95a03fbe4b8b1610f3b64d293ccce41e80378c79c455c7fff658b",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_mismatch_tables.tex",
+          "expected_sha256": "28203fb75cb79722bf5b67f3cb981b6845b5ead7c7f37256d1b88aa73a3b97ec",
+          "actual_sha256": "28203fb75cb79722bf5b67f3cb981b6845b5ead7c7f37256d1b88aa73a3b97ec",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_mse_table.tex",
+          "expected_sha256": "8140c247ee35657628d01b7ab6b69f1d590901a444afb492fdd0095a90011713",
+          "actual_sha256": "8140c247ee35657628d01b7ab6b69f1d590901a444afb492fdd0095a90011713",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_numbers.tex",
+          "expected_sha256": "1b9c8818e4ab9fde7d6097d51b8c2e473e7ad185120e5b218092498d758a0e13",
+          "actual_sha256": "1b9c8818e4ab9fde7d6097d51b8c2e473e7ad185120e5b218092498d758a0e13",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_power_interpretation.tex",
+          "expected_sha256": "adfed33f5d5cb8b999aaeec666b9b986e438555d9a0490ea0aabd32295fbfd79",
+          "actual_sha256": "adfed33f5d5cb8b999aaeec666b9b986e438555d9a0490ea0aabd32295fbfd79",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_power_terms_reassessment.tex",
+          "expected_sha256": "572460af8a869f73ef76fbc9652319aab29ca50f1c3742b9633bdcd4fdbd45e0",
+          "actual_sha256": "572460af8a869f73ef76fbc9652319aab29ca50f1c3742b9633bdcd4fdbd45e0",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_quality_sensitivity.tex",
+          "expected_sha256": "38968662310e8c69483db1718306a6adb318209cd6fb5a68fa02284610bba1c2",
+          "actual_sha256": "38968662310e8c69483db1718306a6adb318209cd6fb5a68fa02284610bba1c2",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_repeatability_results.tex",
+          "expected_sha256": "bc0ab16877aa9210e499727f535c1521c035a31268ee5fa0779e94e162d30c77",
+          "actual_sha256": "bc0ab16877aa9210e499727f535c1521c035a31268ee5fa0779e94e162d30c77",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_repeatability_table.tex",
+          "expected_sha256": "e9929f049c6a4dc1aff5b3a889c1552bae5a2386423e1462434e5249612815c8",
+          "actual_sha256": "e9929f049c6a4dc1aff5b3a889c1552bae5a2386423e1462434e5249612815c8",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_same_fraction_reassessment.tex",
+          "expected_sha256": "f71e28b6ba8454904c42e4939b1539c8af559bfd8f7e449395caf75261738348",
+          "actual_sha256": "f71e28b6ba8454904c42e4939b1539c8af559bfd8f7e449395caf75261738348",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_stability_results.tex",
+          "expected_sha256": "b5ea55748df8a98b412103f7ad7ba02f9c8c1350a279a1020ba214e4527cbedb",
+          "actual_sha256": "b5ea55748df8a98b412103f7ad7ba02f9c8c1350a279a1020ba214e4527cbedb",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_stability_table.tex",
+          "expected_sha256": "cec13bac3904dd86ca3e255d49d25e6d9c50b41d0c931e764a86bfe5891e7344",
+          "actual_sha256": "cec13bac3904dd86ca3e255d49d25e6d9c50b41d0c931e764a86bfe5891e7344",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_training_table.tex",
+          "expected_sha256": "8560f7158fc58eea87a9446ea9074d1486da89fc5caf1b5de0fae096457b4f1b",
+          "actual_sha256": "8560f7158fc58eea87a9446ea9074d1486da89fc5caf1b5de0fae096457b4f1b",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\main.tex",
+          "expected_sha256": "44d72a5f11b69577574d29a3b051101c1561d5a77e25eb49b60dd597335db97d",
+          "actual_sha256": "44d72a5f11b69577574d29a3b051101c1561d5a77e25eb49b60dd597335db97d",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\main_evidence_table.tex",
+          "expected_sha256": "0daa38bad746ac31f0cfe6aabb8abfcafaa2abef13b63186fd72d464f45f8e60",
+          "actual_sha256": "0daa38bad746ac31f0cfe6aabb8abfcafaa2abef13b63186fd72d464f45f8e60",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\repeatability_supplement.tex",
+          "expected_sha256": "5abb5c7568510f6d686ce8fba0848e4a8dae96c479db59b585574175d0ef2cf9",
+          "actual_sha256": "5abb5c7568510f6d686ce8fba0848e4a8dae96c479db59b585574175d0ef2cf9",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\stability_supplement.tex",
+          "expected_sha256": "6309d866402a15af62d03540a13adf585ef13bc7c6f23593c809e0c62ad76be2",
+          "actual_sha256": "6309d866402a15af62d03540a13adf585ef13bc7c6f23593c809e0c62ad76be2",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\supplement.tex",
+          "expected_sha256": "919eea6d58083c89345db75ae11dd3030f1b8fae237b968a0409cc3cd1efae1e",
+          "actual_sha256": "919eea6d58083c89345db75ae11dd3030f1b8fae237b968a0409cc3cd1efae1e",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\MANUSCRIPT_EVIDENCE_RECEIPT.json",
+          "expected_sha256": "4d2feb003922e11e02289f08848e77ec01c7b405324e78a3a8550184013a6b66",
+          "actual_sha256": "4d2feb003922e11e02289f08848e77ec01c7b405324e78a3a8550184013a6b66",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\output\\pdf\\CoherencyGraph_BSSA_Research_Draft_20261013.pdf",
+          "expected_sha256": "bee7f3e63d75f8f66b3e78f6ee2dd62cdade4c32218c76b6ca7e146551a89226",
+          "actual_sha256": "bee7f3e63d75f8f66b3e78f6ee2dd62cdade4c32218c76b6ca7e146551a89226",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\output\\pdf\\CoherencyGraph_BSSA_Supplement_20261013.pdf",
+          "expected_sha256": "4194e3b308da0799a95596c7e964a27ee1e461812ba11b068d585903c0f2bab2",
+          "actual_sha256": "4194e3b308da0799a95596c7e964a27ee1e461812ba11b068d585903c0f2bab2",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\PILOT_CODE_REVIEW.txt",
+          "expected_sha256": "6fe745747c85cf6200bf315e33e7a8d761d26214d1fcc12b2ecf3ea9f54658f1",
+          "actual_sha256": "6fe745747c85cf6200bf315e33e7a8d761d26214d1fcc12b2ecf3ea9f54658f1",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\power_term_reproduction.csv",
+          "expected_sha256": "8afcf9bb24e1f5df25c8af14b2fe6b90ac2686dc0dc44bac827f8266c797b351",
+          "actual_sha256": "8afcf9bb24e1f5df25c8af14b2fe6b90ac2686dc0dc44bac827f8266c797b351",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\preserve_and_prepare.py",
+          "expected_sha256": "2b5e055c575a0a6690e92046859e000f433803fadbd720b546c20a859fa9a87e",
+          "actual_sha256": "2b5e055c575a0a6690e92046859e000f433803fadbd720b546c20a859fa9a87e",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\record_closeout_accounting.py",
+          "expected_sha256": "0ddcd201175e31b7cea7582863bd3c2eec5748afdeb0e66ee1d939358f233bbc",
+          "actual_sha256": "0ddcd201175e31b7cea7582863bd3c2eec5748afdeb0e66ee1d939358f233bbc",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\RESEARCH_REASSESSMENT_REPORT.txt",
+          "expected_sha256": "66fbcd6f17fe3398ff536557a65adfd903b50f7ed1ed713cb4c058fc0fe35f17",
+          "actual_sha256": "66fbcd6f17fe3398ff536557a65adfd903b50f7ed1ed713cb4c058fc0fe35f17",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\SCIENTIFIC_AUDIT.txt",
+          "expected_sha256": "8156cd71569c703ff6b5b73ce130004935f4253694a1c92f662327d35385be78",
+          "actual_sha256": "8156cd71569c703ff6b5b73ce130004935f4253694a1c92f662327d35385be78",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\SUPPLEMENT_VISUAL_REVIEW.txt",
+          "expected_sha256": "684b6dd1d7b35da09d56ace8799046e46349a76d0cb8c9b56bc0bcdba3de819e",
+          "actual_sha256": "684b6dd1d7b35da09d56ace8799046e46349a76d0cb8c9b56bc0bcdba3de819e",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\test_frontier_stability.py",
+          "expected_sha256": "56f5aec0a2ce0887f9d96ca6394011bb6cb14860af7746b624ba06e7f31c2cc8",
+          "actual_sha256": "56f5aec0a2ce0887f9d96ca6394011bb6cb14860af7746b624ba06e7f31c2cc8",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\test_manuscript_integration.py",
+          "expected_sha256": "bfcac40ab741324948128bb504f64368442440e84401ac31b45d4a5631f8e06a",
+          "actual_sha256": "bfcac40ab741324948128bb504f64368442440e84401ac31b45d4a5631f8e06a",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\verify_closeout.py",
+          "expected_sha256": "fbd1015414449177f90fdc712018e823a210daa7c628d54ab257835df5f8db6e",
+          "actual_sha256": "fbd1015414449177f90fdc712018e823a210daa7c628d54ab257835df5f8db6e",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\verify_stability_independently.py",
+          "expected_sha256": "7ba636b517a79721887ce3ab7d8830479f04719408a1e0941307d68f75c7e3d8",
+          "actual_sha256": "7ba636b517a79721887ce3ab7d8830479f04719408a1e0941307d68f75c7e3d8",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\REASSESSMENT_ASSET_MANIFEST.json",
+          "expected_sha256": "136ec0c7c87b3fc5fbe64bea95429148588a88db0b2cf9b3fa4e5bf5eb05dff0",
+          "actual_sha256": "136ec0c7c87b3fc5fbe64bea95429148588a88db0b2cf9b3fa4e5bf5eb05dff0",
+          "unchanged": true
+        }
+      ]
+    },
+    "manuscript_protected_baseline": {
+      "count": 71,
+      "unchanged": 71,
+      "records": [
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\body.tex",
+          "expected_sha256": "e724b368b1d2145e837dd4d14a473844f4e971a13b0e445c345758efe1c37be3",
+          "actual_sha256": "e724b368b1d2145e837dd4d14a473844f4e971a13b0e445c345758efe1c37be3",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\bounded_body.tex",
+          "expected_sha256": "77fdf7140472dba0e1e49701da000c9c98aaa0d1cabd7fed74926f6690ad8927",
+          "actual_sha256": "77fdf7140472dba0e1e49701da000c9c98aaa0d1cabd7fed74926f6690ad8927",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\bounded_core_results.tex",
+          "expected_sha256": "c8c36fa85004e87605fd2ab6de6a2413cdf7dc03d951d0f766b84d65b6107dc0",
+          "actual_sha256": "c8c36fa85004e87605fd2ab6de6a2413cdf7dc03d951d0f766b84d65b6107dc0",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\bssa_references.tex",
+          "expected_sha256": "d9456304f4c97c0905974d97a616a89fa56ce42622f44f41a3d92314dde94bba",
+          "actual_sha256": "d9456304f4c97c0905974d97a616a89fa56ce42622f44f41a3d92314dde94bba",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\continuous_filter_supplement.tex",
+          "expected_sha256": "e760146141301da2bc0b34d011fc6dfa8bee1c93946d287f9d48c06816a5461d",
+          "actual_sha256": "e760146141301da2bc0b34d011fc6dfa8bee1c93946d287f9d48c06816a5461d",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\detection_main.tex",
+          "expected_sha256": "ab6f0e985e629dd771582c91c55d19cd4ec213b6557c79a765c1606816c5596b",
+          "actual_sha256": "ab6f0e985e629dd771582c91c55d19cd4ec213b6557c79a765c1606816c5596b",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\detection_supplement.tex",
+          "expected_sha256": "0aaed33f6fc159a88d9d281f2914bb236ac4715f23a82ff61fc2d9e87996a2b1",
+          "actual_sha256": "0aaed33f6fc159a88d9d281f2914bb236ac4715f23a82ff61fc2d9e87996a2b1",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\diagnostic_results.tex",
+          "expected_sha256": "095c3d91cbf49f2262bc66d02306b30c22119b8239d28396c90c3342e31fe2d2",
+          "actual_sha256": "095c3d91cbf49f2262bc66d02306b30c22119b8239d28396c90c3342e31fe2d2",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\diagnostic_supplement.tex",
+          "expected_sha256": "c5fc16d0afe6a6f51780bf9167c45928eec5d979d8ad6f3abcf190e45019209f",
+          "actual_sha256": "c5fc16d0afe6a6f51780bf9167c45928eec5d979d8ad6f3abcf190e45019209f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\extended_diagnostic_figures.tex",
+          "expected_sha256": "0e55970e77d03ca2c66ecc13ecdefb9e2fd197622e1c62709bef51d324302d14",
+          "actual_sha256": "0e55970e77d03ca2c66ecc13ecdefb9e2fd197622e1c62709bef51d324302d14",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\gauge_support_supplement.tex",
+          "expected_sha256": "01a50817c732927b68b6eb89643975d91fcdbbc0b58e656eb7f4af5319e01288",
+          "actual_sha256": "01a50817c732927b68b6eb89643975d91fcdbbc0b58e656eb7f4af5319e01288",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_abstract.tex",
+          "expected_sha256": "e334e0e8ba035b4583ddec3b9a05cf060b00b7aa8e78fd6fe0775df914b1fb6f",
+          "actual_sha256": "e334e0e8ba035b4583ddec3b9a05cf060b00b7aa8e78fd6fe0775df914b1fb6f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_all_comparisons.tex",
+          "expected_sha256": "5dfe2431da524cfc86b91550e494adaa3bf8306f7b8163fafa16cb877bc26f59",
+          "actual_sha256": "5dfe2431da524cfc86b91550e494adaa3bf8306f7b8163fafa16cb877bc26f59",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_cohort_summary.tex",
+          "expected_sha256": "6e26a56912096b44de5ac36f7565c1d36c1d5fcbe921dbaccecf3c77c39072a9",
+          "actual_sha256": "6e26a56912096b44de5ac36f7565c1d36c1d5fcbe921dbaccecf3c77c39072a9",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_cohort_table.tex",
+          "expected_sha256": "dced62f07ff1069d61ecdcb9b034f6744cae35119ed2abb4f47d7d9736ee81f8",
+          "actual_sha256": "dced62f07ff1069d61ecdcb9b034f6744cae35119ed2abb4f47d7d9736ee81f8",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_conclusion.tex",
+          "expected_sha256": "59197adcda411e658943169efdc06f79e55ba5c01c1ea56d3009101a621385ee",
+          "actual_sha256": "59197adcda411e658943169efdc06f79e55ba5c01c1ea56d3009101a621385ee",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_cross_runtime_verification.tex",
+          "expected_sha256": "92c5956947005999328c895b3dc8634b642a6398b7215670d8d00f87eb4baf63",
+          "actual_sha256": "92c5956947005999328c895b3dc8634b642a6398b7215670d8d00f87eb4baf63",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_detection_ablation.tex",
+          "expected_sha256": "b81de1216e57c60c1e8a051f2083c479f863a754968e1985569534c084d0edad",
+          "actual_sha256": "b81de1216e57c60c1e8a051f2083c479f863a754968e1985569534c084d0edad",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_detection_numbers.tex",
+          "expected_sha256": "439be1a5cb243ff1fe9499a1f2f104b2bda0e8c7da6d4b61b1187d0a3c58f36c",
+          "actual_sha256": "439be1a5cb243ff1fe9499a1f2f104b2bda0e8c7da6d4b61b1187d0a3c58f36c",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_detection_table.tex",
+          "expected_sha256": "60a2cc437b8c5f8a100d13a43f84ba2b635bfe8e97aa3bb527c4ac1531e16510",
+          "actual_sha256": "60a2cc437b8c5f8a100d13a43f84ba2b635bfe8e97aa3bb527c4ac1531e16510",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_filter_results.tex",
+          "expected_sha256": "7efae02cef95f162e8888d7fe6b590801245b66fea5276cda29f82f85011c90f",
+          "actual_sha256": "7efae02cef95f162e8888d7fe6b590801245b66fea5276cda29f82f85011c90f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_filter_table.tex",
+          "expected_sha256": "b3a716047d039850d83e3fce3389397eebd44164d8b06e29ed58d2fe7ff60adc",
+          "actual_sha256": "b3a716047d039850d83e3fce3389397eebd44164d8b06e29ed58d2fe7ff60adc",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_gauge_results.tex",
+          "expected_sha256": "a798f035fbd51dcd2aa68ce1853b717da544b2ceedd50de9de029619cca0c9ca",
+          "actual_sha256": "a798f035fbd51dcd2aa68ce1853b717da544b2ceedd50de9de029619cca0c9ca",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_gauge_table.tex",
+          "expected_sha256": "1cb76c4edb8f6551d1aee63fe8ba6d5038149c1fe2a4bc162572ca7be933d8f8",
+          "actual_sha256": "1cb76c4edb8f6551d1aee63fe8ba6d5038149c1fe2a4bc162572ca7be933d8f8",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_historical_audit_table.tex",
+          "expected_sha256": "8864b661edaebea1141a31143fae5ebf4563863f74b6069fc0adcae63a59a48f",
+          "actual_sha256": "8864b661edaebea1141a31143fae5ebf4563863f74b6069fc0adcae63a59a48f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_inventory.tex",
+          "expected_sha256": "08fdb57b68c95a03fbe4b8b1610f3b64d293ccce41e80378c79c455c7fff658b",
+          "actual_sha256": "08fdb57b68c95a03fbe4b8b1610f3b64d293ccce41e80378c79c455c7fff658b",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_mismatch_tables.tex",
+          "expected_sha256": "28203fb75cb79722bf5b67f3cb981b6845b5ead7c7f37256d1b88aa73a3b97ec",
+          "actual_sha256": "28203fb75cb79722bf5b67f3cb981b6845b5ead7c7f37256d1b88aa73a3b97ec",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_mse_table.tex",
+          "expected_sha256": "8140c247ee35657628d01b7ab6b69f1d590901a444afb492fdd0095a90011713",
+          "actual_sha256": "8140c247ee35657628d01b7ab6b69f1d590901a444afb492fdd0095a90011713",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_numbers.tex",
+          "expected_sha256": "1b9c8818e4ab9fde7d6097d51b8c2e473e7ad185120e5b218092498d758a0e13",
+          "actual_sha256": "1b9c8818e4ab9fde7d6097d51b8c2e473e7ad185120e5b218092498d758a0e13",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_power_interpretation.tex",
+          "expected_sha256": "adfed33f5d5cb8b999aaeec666b9b986e438555d9a0490ea0aabd32295fbfd79",
+          "actual_sha256": "adfed33f5d5cb8b999aaeec666b9b986e438555d9a0490ea0aabd32295fbfd79",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_power_terms_reassessment.tex",
+          "expected_sha256": "572460af8a869f73ef76fbc9652319aab29ca50f1c3742b9633bdcd4fdbd45e0",
+          "actual_sha256": "572460af8a869f73ef76fbc9652319aab29ca50f1c3742b9633bdcd4fdbd45e0",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_quality_sensitivity.tex",
+          "expected_sha256": "38968662310e8c69483db1718306a6adb318209cd6fb5a68fa02284610bba1c2",
+          "actual_sha256": "38968662310e8c69483db1718306a6adb318209cd6fb5a68fa02284610bba1c2",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_repeatability_results.tex",
+          "expected_sha256": "bc0ab16877aa9210e499727f535c1521c035a31268ee5fa0779e94e162d30c77",
+          "actual_sha256": "bc0ab16877aa9210e499727f535c1521c035a31268ee5fa0779e94e162d30c77",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_repeatability_table.tex",
+          "expected_sha256": "e9929f049c6a4dc1aff5b3a889c1552bae5a2386423e1462434e5249612815c8",
+          "actual_sha256": "e9929f049c6a4dc1aff5b3a889c1552bae5a2386423e1462434e5249612815c8",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_same_fraction_reassessment.tex",
+          "expected_sha256": "f71e28b6ba8454904c42e4939b1539c8af559bfd8f7e449395caf75261738348",
+          "actual_sha256": "f71e28b6ba8454904c42e4939b1539c8af559bfd8f7e449395caf75261738348",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_stability_results.tex",
+          "expected_sha256": "b5ea55748df8a98b412103f7ad7ba02f9c8c1350a279a1020ba214e4527cbedb",
+          "actual_sha256": "b5ea55748df8a98b412103f7ad7ba02f9c8c1350a279a1020ba214e4527cbedb",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_stability_table.tex",
+          "expected_sha256": "cec13bac3904dd86ca3e255d49d25e6d9c50b41d0c931e764a86bfe5891e7344",
+          "actual_sha256": "cec13bac3904dd86ca3e255d49d25e6d9c50b41d0c931e764a86bfe5891e7344",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\generated_training_table.tex",
+          "expected_sha256": "8560f7158fc58eea87a9446ea9074d1486da89fc5caf1b5de0fae096457b4f1b",
+          "actual_sha256": "8560f7158fc58eea87a9446ea9074d1486da89fc5caf1b5de0fae096457b4f1b",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\main.tex",
+          "expected_sha256": "44d72a5f11b69577574d29a3b051101c1561d5a77e25eb49b60dd597335db97d",
+          "actual_sha256": "44d72a5f11b69577574d29a3b051101c1561d5a77e25eb49b60dd597335db97d",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\main_evidence_table.tex",
+          "expected_sha256": "0daa38bad746ac31f0cfe6aabb8abfcafaa2abef13b63186fd72d464f45f8e60",
+          "actual_sha256": "0daa38bad746ac31f0cfe6aabb8abfcafaa2abef13b63186fd72d464f45f8e60",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\repeatability_supplement.tex",
+          "expected_sha256": "5abb5c7568510f6d686ce8fba0848e4a8dae96c479db59b585574175d0ef2cf9",
+          "actual_sha256": "5abb5c7568510f6d686ce8fba0848e4a8dae96c479db59b585574175d0ef2cf9",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\stability_supplement.tex",
+          "expected_sha256": "6309d866402a15af62d03540a13adf585ef13bc7c6f23593c809e0c62ad76be2",
+          "actual_sha256": "6309d866402a15af62d03540a13adf585ef13bc7c6f23593c809e0c62ad76be2",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\manuscript\\supplement.tex",
+          "expected_sha256": "919eea6d58083c89345db75ae11dd3030f1b8fae237b968a0409cc3cd1efae1e",
+          "actual_sha256": "919eea6d58083c89345db75ae11dd3030f1b8fae237b968a0409cc3cd1efae1e",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\continuous_data_qc.pdf",
+          "expected_sha256": "c20c7f7d3b2b446c3aa3774c5701f9b86d7234ce30211492aa7a3c4a599df2fc",
+          "actual_sha256": "c20c7f7d3b2b446c3aa3774c5701f9b86d7234ce30211492aa7a3c4a599df2fc",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\continuous_data_qc.png",
+          "expected_sha256": "b9d5c48da01b8aad998de0baa499f7bee9f2e3be45a91790d89d9b1b0829e155",
+          "actual_sha256": "b9d5c48da01b8aad998de0baa499f7bee9f2e3be45a91790d89d9b1b0829e155",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\continuous_filter_comparison.pdf",
+          "expected_sha256": "69ec565b7dafcc7ba92bb5d89b337cdc24af08c4fc558ffcf0c6ebd3cacec14a",
+          "actual_sha256": "69ec565b7dafcc7ba92bb5d89b337cdc24af08c4fc558ffcf0c6ebd3cacec14a",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\continuous_filter_comparison.png",
+          "expected_sha256": "ad6aa4544b144b9e0e81aa3bfcf0219e762dc681e858da1f192785175d057540",
+          "actual_sha256": "ad6aa4544b144b9e0e81aa3bfcf0219e762dc681e858da1f192785175d057540",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\data_quality_overview.pdf",
+          "expected_sha256": "483b3411a1ab084aadfeb9ce7c2e17d063265b9ffd1b39161889b733d7f0b37c",
+          "actual_sha256": "483b3411a1ab084aadfeb9ce7c2e17d063265b9ffd1b39161889b733d7f0b37c",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\data_quality_overview.png",
+          "expected_sha256": "2360be995323fd67a0a388aa8870eda938a59ba7dc9e03e23b13e2ee5e24d90a",
+          "actual_sha256": "2360be995323fd67a0a388aa8870eda938a59ba7dc9e03e23b13e2ee5e24d90a",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\decomposition.pdf",
+          "expected_sha256": "65b64019c546316eaa3e6f9c98dd777cdc4494a3def43dd43081b5931df34676",
+          "actual_sha256": "65b64019c546316eaa3e6f9c98dd777cdc4494a3def43dd43081b5931df34676",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\decomposition.png",
+          "expected_sha256": "f4477ed91cd19d60e84d1d03f379faeb8ec14a4215d2bc72769fe22df3663903",
+          "actual_sha256": "f4477ed91cd19d60e84d1d03f379faeb8ec14a4215d2bc72769fe22df3663903",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\frontier_stability.pdf",
+          "expected_sha256": "667db143c18d62d13c4ad6a046dc181566ea95612d8cd99ba22c9263a6868f2c",
+          "actual_sha256": "667db143c18d62d13c4ad6a046dc181566ea95612d8cd99ba22c9263a6868f2c",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\frontier_stability.png",
+          "expected_sha256": "909b9ddaee8298fea63951d33423e61a90e196057a422cb8bc00b9502bbf4863",
+          "actual_sha256": "909b9ddaee8298fea63951d33423e61a90e196057a422cb8bc00b9502bbf4863",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\gauge_support_controls.pdf",
+          "expected_sha256": "7615be1973360de997c070d906390159f52340952d3705b4cff1fc8c685d4660",
+          "actual_sha256": "7615be1973360de997c070d906390159f52340952d3705b4cff1fc8c685d4660",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\matrix_example.pdf",
+          "expected_sha256": "f05803a9c9b020de5cf916f1420e0375a0d1d91334051c17111917074031a8c5",
+          "actual_sha256": "f05803a9c9b020de5cf916f1420e0375a0d1d91334051c17111917074031a8c5",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\matrix_example.png",
+          "expected_sha256": "f1fea83e0f36c456027e72739816610361e21d3c023a74582fae076a01a7e9c4",
+          "actual_sha256": "f1fea83e0f36c456027e72739816610361e21d3c023a74582fae076a01a7e9c4",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\original_comparisons.pdf",
+          "expected_sha256": "0114b420d52ad1748938c0766c2791e395038b7b48783ae1095e2085864ed70d",
+          "actual_sha256": "0114b420d52ad1748938c0766c2791e395038b7b48783ae1095e2085864ed70d",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\original_comparisons.png",
+          "expected_sha256": "7d73930ac5ca96d9d5d30f728bcfc0fd2f5982c22ff9344f5ec785f8db8e660b",
+          "actual_sha256": "7d73930ac5ca96d9d5d30f728bcfc0fd2f5982c22ff9344f5ec785f8db8e660b",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\raw_wavefield_example.pdf",
+          "expected_sha256": "45bf4eec7089d3193a0d4516581042173bf801146ac9aae35fd84a21271cca07",
+          "actual_sha256": "45bf4eec7089d3193a0d4516581042173bf801146ac9aae35fd84a21271cca07",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\reference_sensitivity.pdf",
+          "expected_sha256": "8f863de7886d84ffe0c3233847e0ac1f2b00b5715b8587557824e85d612afa02",
+          "actual_sha256": "8f863de7886d84ffe0c3233847e0ac1f2b00b5715b8587557824e85d612afa02",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\reference_sensitivity.png",
+          "expected_sha256": "f14d939f0f771973a544fa3e597a349bc07986d87ef3b9b92a7b9bc7a20bdfa9",
+          "actual_sha256": "f14d939f0f771973a544fa3e597a349bc07986d87ef3b9b92a7b9bc7a20bdfa9",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\regularization_tradeoff.pdf",
+          "expected_sha256": "b0830a6af2c88a5c86ec119ddb114f9fb2045a873d74c08457209ad0606ed4a1",
+          "actual_sha256": "b0830a6af2c88a5c86ec119ddb114f9fb2045a873d74c08457209ad0606ed4a1",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\regularization_tradeoff.png",
+          "expected_sha256": "e46b5dd88554e3734a9c6d7fa842338107cdcebe3e028724f9db2c89d1ec2dce",
+          "actual_sha256": "e46b5dd88554e3734a9c6d7fa842338107cdcebe3e028724f9db2c89d1ec2dce",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\resampling_boundary_audit.pdf",
+          "expected_sha256": "b7d408d7a6c75fe388a2950f96336f23c7c27c3856e0bceeac656acca37969c3",
+          "actual_sha256": "b7d408d7a6c75fe388a2950f96336f23c7c27c3856e0bceeac656acca37969c3",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\residual_repeatability.pdf",
+          "expected_sha256": "6bd7ab70c6186c8cd287348e2c857fe10c211b85dc92dc432b6ff7f2b9f1b621",
+          "actual_sha256": "6bd7ab70c6186c8cd287348e2c857fe10c211b85dc92dc432b6ff7f2b9f1b621",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\source_geometry.pdf",
+          "expected_sha256": "d72e44ceb62402f85a269ff070a99e358620a6e171cb0d83d857b4b7db6e495f",
+          "actual_sha256": "d72e44ceb62402f85a269ff070a99e358620a6e171cb0d83d857b4b7db6e495f",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\source_geometry.png",
+          "expected_sha256": "1ef9385b9c82e9e49c830f155c90a3189fffdee7d2074b845d1c318c39bbabd6",
+          "actual_sha256": "1ef9385b9c82e9e49c830f155c90a3189fffdee7d2074b845d1c318c39bbabd6",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\synthetic_diagnostic.pdf",
+          "expected_sha256": "3dc5ff45ebdfc09bbca5def29f8c9a4bb2eda34e81dfc5384b5c889253865d4e",
+          "actual_sha256": "3dc5ff45ebdfc09bbca5def29f8c9a4bb2eda34e81dfc5384b5c889253865d4e",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\synthetic_diagnostic.png",
+          "expected_sha256": "349931d8644dfd8b63c0ccf07bcf579eb41bab7690f85b9ba0cddf2d9f626056",
+          "actual_sha256": "349931d8644dfd8b63c0ccf07bcf579eb41bab7690f85b9ba0cddf2d9f626056",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\training_controls.pdf",
+          "expected_sha256": "bd95a2de3ddcd7fa9b161a706cb13e9cf401119b6236f416f534e6a406c315c5",
+          "actual_sha256": "bd95a2de3ddcd7fa9b161a706cb13e9cf401119b6236f416f534e6a406c315c5",
+          "unchanged": true
+        },
+        {
+          "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\figures\\training_controls.png",
+          "expected_sha256": "339a33c23f4dae02e0bf5ba7c4b8956097952739f064b7fd2f07d96a386f5c39",
+          "actual_sha256": "339a33c23f4dae02e0bf5ba7c4b8956097952739f064b7fd2f07d96a386f5c39",
+          "unchanged": true
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 1.8246339000179432,
+  "glob_or_seal_regeneration": false,
+  "new_training": false,
+  "raw_acquisition": false,
+  "protection_metadata_unchanged": true
+}

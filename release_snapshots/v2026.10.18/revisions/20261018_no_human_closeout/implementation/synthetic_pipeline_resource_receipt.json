@@ -1,0 +1,41 @@
+{
+  "status": "SYNTHETIC_PIPELINE_TIMING_NOT_FIELD_RESULTS",
+  "no_recorded_payload_opened": true,
+  "no_models_loaded": true,
+  "thread_environment": 2,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.4.4",
+  "worker_rss_at_finish_bytes": 38719488,
+  "source_sha256": {
+    "benchmark_synthetic_pipeline.py": "a4a7a7f3ca6cb92c6a3c7f052984694b3a7d2f5418f149f4319dac4830b3bab8",
+    "derivative_lcmv.py": "d8ca2860bb4d3c0dad98750f66ce9d7909137eb36e6b021223ea151f701c3491",
+    "recorded_component_metrics.py": "93513e8d1f9504a8c0b2da8b2f7b5bc0d392ab345a61bf01cfc2af5154c9a7c3"
+  },
+  "transplant": {
+    "synthetic_source_templates": 2,
+    "apertures": 8,
+    "methods": 6,
+    "rows": 96,
+    "seconds": 0.22339940001256764,
+    "full_8hour_30cutoff_rows": 23040,
+    "linear_compute_seconds": 53.61585600301623
+  },
+  "ricker_new_comparator": {
+    "apertures": 8,
+    "slopes": 3,
+    "wavelets": 3,
+    "conditions": 5,
+    "rows": 360,
+    "seconds": 0.32082160003483295,
+    "full_8hour_30cutoff_rows": 86400,
+    "linear_compute_seconds": 76.99718400835991
+  },
+  "excluded_costs": [
+    "field archive hashing/decompression",
+    "source template acquisition/extraction",
+    "table/plot generation",
+    "independent verification",
+    "hardware contention"
+  ],
+  "scaling_warning": "One synthetic timed group; linear arithmetic scenarios, not validated field throughput or a delivery promise"
+}

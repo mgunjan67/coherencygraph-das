@@ -1,0 +1,33 @@
+{
+  "status": "PASS_INDEPENDENT_CODE_DIRECT_DFT_NOT_HUMAN_REVIEW",
+  "cases_replayed": 384,
+  "metrics_per_case": 12,
+  "numeric_comparisons": 4608,
+  "maximum_scaled_errors": {
+    "recorded_component_output_power": 3.7361238452616185e-14,
+    "background_output_power": 3.641517609101855e-14,
+    "conventional_reference_output_power": 2.664466590787907e-14,
+    "recorded_component_input_power": 7.446292921301176e-15,
+    "background_input_power": 1.2896069675224466e-14,
+    "recorded_component_relative_mse": 3.2395142301990934e-14,
+    "output_error_power": 3.932741825200173e-14,
+    "reference_to_input_power_ratio": 1.0547118733938987e-15,
+    "component_input_ratio_db": 4.839184608584901e-14,
+    "component_output_ratio_db": 2.013944566670034e-13,
+    "component_ratio_gain_db": 1.3855583347321954e-13,
+    "component_power_relative_reference_db": 1.6356360710290119e-13
+  },
+  "tolerance": 2e-08,
+  "all_case_linearity_checks": 23040,
+  "all_case_linearity_maximum": 1.6423338989019761e-15,
+  "elapsed_seconds": 17.923645300033968,
+  "verifier_sha256": "53e5d03ff0e095c74c33a9fd73d3632c74dbb71dbe5c4cf37c091d09eac9e8a7",
+  "case_sha256": "362f161da2205ce050b520d3a6d4f201cf904329c495ab30763d3409c3ef4782",
+  "parent_protocol_sha256": "cfef679230d0fd47dee36f0914def5e9fc01e68a35e8da2c137ae48612a397a3",
+  "independence": "No scoring/filter/LCMVhelper import; explicit full175pointDFT and direct32channelmatrixsolve; separate code, not human replication",
+  "verifier_version": "v2_pre_arithmetic_complex128_semantics",
+  "frozen_v1_verifier_sha256": "ad87c4a49a36c04df83cbd8e16ef96de15890ac81bb4b4be14ac8ddbce1e9fd7",
+  "retained_v1_failure_sha256": "0f47b2d00ad8c7cf2ac9738f9c5eba36ea3dc514b4b0b9fd7ab0b410b52af9aa",
+  "fix_scope": "Only pre-arithmetic context/kernel dtype conversion. FullDFT, directsolve, all384cases/12metrics and2e-8tolerance unchanged. Saved field results untouched.",
+  "failure_history_retained": true
+}

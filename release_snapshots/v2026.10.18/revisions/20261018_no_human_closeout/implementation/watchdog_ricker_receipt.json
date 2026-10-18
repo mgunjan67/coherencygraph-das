@@ -1,0 +1,20 @@
+{
+  "status": "RESOURCE_WATCHDOG_PASS",
+  "panel": "ricker",
+  "returncode": 0,
+  "stopped_reason": null,
+  "elapsed_seconds": 91.01408900000388,
+  "previous_panel_seconds": 0.0,
+  "panel_remaining_cap_seconds": 900.0,
+  "combined_cap_seconds": 1800,
+  "sampled_combined_peak_rss_bytes": 626802688,
+  "combined_new_scientific_scratch_peak_bytes": 6970479,
+  "sampling_interval_seconds": 0.2,
+  "worker_pid": 28416,
+  "watchdog_pid": 10516,
+  "protocol_sha256": "cfef679230d0fd47dee36f0914def5e9fc01e68a35e8da2c137ae48612a397a3",
+  "scope_seal_sha256": "2ed44b7fa8faf786e6578644b97c40278a2f3124341bcc5c84ace0f3f16ea969",
+  "watchdog_sha256": "811073de3c14a4a234639ae688e16f580ff1e06b4d84b6ebe4e7f28767666613",
+  "log_sha256": "3fc0f2392b59fb4c316295ea384fc3e3ab207e894bb50c4af4f4a6dabdbb8a52",
+  "completed_utc": "2026-10-18T10:10:54.016012+00:00"
+}

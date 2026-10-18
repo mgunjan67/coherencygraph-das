@@ -1,0 +1,161 @@
+{
+  "status": "FROZEN_DEVELOPMENT_COMPARATOR",
+  "purpose": "Close the missing established steering-uncertainty comparator in the exposed known-component evaluation, not force neural superiority",
+  "exposure": "All four development recording dates and existing outcomes have been inspected; post-hoc follow-up, not untouched or confirmatory",
+  "blocks": [
+    "2024-08-04_00",
+    "2024-08-04_12",
+    "2024-08-05_00",
+    "2024-08-05_12",
+    "2024-08-06_00",
+    "2024-08-06_12",
+    "2024-08-07_00",
+    "2024-08-07_12"
+  ],
+  "input_root": "D:/das_research/das-coherencygraph/revisions/20261010_forecast_processing/development_outcomes",
+  "inputs_per_block": [
+    "adapter_arrays.npz",
+    "cases.parquet",
+    "receipt.json"
+  ],
+  "verify_prior_receipt_hashes_before_load": true,
+  "model_retraining": false,
+  "model_inference_or_ridge_projection": false,
+  "manual_labels_required": false,
+  "primary_cohort_or_values_changed": false,
+  "new_baseline": {
+    "name": "derivative_lcmv_context_0.25",
+    "type": "Established first-order derivative-constrained LCMV, not novel worst-case robust MVDR",
+    "covariance": "Exactly archived context_matrix(context,0.25)",
+    "additional_loading": 0.001,
+    "constraint_convention": "C^H w=g; filtered output w^H x",
+    "constraints": "C=[exp(-2*pi*i*f*tau), q*exp(-2*pi*i*f*tau)], g=[1,0]",
+    "q": "(channel_index-15.5)/15.5 for the archived linear-index response design only",
+    "optimization_or_parameter_grid": false,
+    "failure": "Any nonfinite input/output, invalid PSD covariance, rank-deficient constraint, Cholesky failure or residual above1e-9 stops run"
+  },
+  "unchanged_design": {
+    "cutoffs": {
+      "first_seconds": 120,
+      "last_seconds": 3600,
+      "step_seconds": 120
+    },
+    "apertures": 8,
+    "channels_per_aperture": 32,
+    "output_samples": 175,
+    "sample_rate_hz": 25,
+    "bands_hz": [
+      [
+        0.5,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        4,
+        8
+      ]
+    ],
+    "reference_seconds_relative_cutoff": [
+      -19.5,
+      -14.5
+    ],
+    "context_seconds_relative_cutoff": [
+      -14,
+      0
+    ],
+    "output_seconds_relative_cutoff": [
+      1,
+      8
+    ],
+    "assumed_delay_seconds_per_channel": [
+      -0.004,
+      0,
+      0.004
+    ],
+    "ricker_central_frequency_hz": [
+      1,
+      2,
+      4
+    ],
+    "ricker_center_seconds": 3.5,
+    "response_conditions": [
+      "matched",
+      "delay_minus",
+      "delay_plus",
+      "amplitude_minus",
+      "amplitude_plus"
+    ],
+    "delay_perturbations_seconds_per_channel": [
+      0,
+      -0.001,
+      0.001,
+      0,
+      0
+    ],
+    "amplitude_gradient": [
+      0,
+      0,
+      0,
+      -0.2,
+      0.2
+    ],
+    "signal_amplitude_rule": "Exactly sqrt(mean_band(trace(context))/32), unchanged",
+    "reference": "Common bandlimited unshifted injected Ricker waveform",
+    "recorded_background_caveat": "May contain real natural seismic signal; not identified as pure noise"
+  },
+  "expected_new_rows": 86400,
+  "expected_unchanged_old_rows": 777600,
+  "expected_filter_weight_calls": 5760,
+  "full_case_key": [
+    "block",
+    "cutoff",
+    "aperture",
+    "delay_step",
+    "wavelet_hz",
+    "condition",
+    "method"
+  ],
+  "completeness": "All blocks/cases required, no replacement or favorable complete-case analysis",
+  "endpoints": {
+    "primary_descriptive": "Neural minus derivative-LCMV paired component-SNR gain and desired-waveform relative MSE, every response condition; no single post-hoc utility score",
+    "aggregation": "Equal design average within recording hour, equal two-hour average within date, four date clusters",
+    "tail": "NumPy Type7 q05 component-SNR gain and q95 desired-relative-MSE within each date/condition/method",
+    "tail_caveat": "Marginal quantiles, not joint worst-case protection or earthquake probability",
+    "mean_and_tail_frontiers": "All old non-oracle methods plus fixed new comparator; tolerance1e-12 numerical only",
+    "matched_oracle_note": "Matched desired preservation is algebraically imposed for every unit-response method; near-zero MSE is not learned recovery"
+  },
+  "stopping": "One added comparator once; preserve negative/null outcomes and stop. No new loading/radius/derivative/model search or hybrid rescue",
+  "execution_budget_proposal": {
+    "wall_seconds": 900,
+    "process_tree_rss_bytes": 3221225472,
+    "new_scratch_bytes": 1073741824,
+    "blockwise_checkpoint": true,
+    "note": "Conservative proposed cap; measured41.32s weight-only arithmetic is not an end-to-end duration guarantee"
+  },
+  "forbidden_claims": [
+    "untouched held-out validation",
+    "real earthquake onset accuracy",
+    "clean real earthquake SNR",
+    "false-alarm rate",
+    "earthquake prediction",
+    "early warning latency",
+    "novel LCMV algorithm"
+  ],
+  "assessment_96h_disabled": true,
+  "existing_48h_protocol_unchanged": true,
+  "external_actions_authorized": false,
+  "parent_protocol": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\protocol.json",
+  "parent_protocol_sha256": "cfef679230d0fd47dee36f0914def5e9fc01e68a35e8da2c137ae48612a397a3",
+  "scope_seal_required": true,
+  "execution_source_sha256": {
+    "run_lcmv_ricker_extension.py": "669899e2e9fe29e1026a4ffb5d1f330b45b526880f2d5892d2dccaea6ae019df",
+    "derivative_lcmv.py": "d8ca2860bb4d3c0dad98750f66ce9d7909137eb36e6b021223ea151f701c3491"
+  }
+}

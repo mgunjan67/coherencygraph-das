@@ -1,0 +1,20 @@
+{
+  "status": "RESOURCE_WATCHDOG_PASS",
+  "panel": "recorded",
+  "returncode": 0,
+  "stopped_reason": null,
+  "elapsed_seconds": 64.95754989999114,
+  "previous_panel_seconds": 91.01408900000388,
+  "panel_remaining_cap_seconds": 900.0,
+  "combined_cap_seconds": 1800,
+  "sampled_combined_peak_rss_bytes": 292032512,
+  "combined_new_scientific_scratch_peak_bytes": 9668238,
+  "sampling_interval_seconds": 0.2,
+  "worker_pid": 12872,
+  "watchdog_pid": 8440,
+  "protocol_sha256": "cfef679230d0fd47dee36f0914def5e9fc01e68a35e8da2c137ae48612a397a3",
+  "scope_seal_sha256": "2ed44b7fa8faf786e6578644b97c40278a2f3124341bcc5c84ace0f3f16ea969",
+  "watchdog_sha256": "811073de3c14a4a234639ae688e16f580ff1e06b4d84b6ebe4e7f28767666613",
+  "log_sha256": "8c1e8496faec3d83a3456ec4006b81903695c4b71957f6a3d7e66a19b75d1a5b",
+  "completed_utc": "2026-10-18T10:12:17.609352+00:00"
+}

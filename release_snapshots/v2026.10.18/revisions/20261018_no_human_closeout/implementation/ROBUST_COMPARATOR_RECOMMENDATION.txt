@@ -1,0 +1,233 @@
+FINITE PROCESSING COMPARATOR: DEVELOPMENT IMPLEMENTATION, NOT FIELD RESULTS
+18 October 2026
+
+Recommendation
+--------------
+Add ONE established non-neural comparator: first-order derivative-constrained
+LCMV, using the unchanged context_0.25 covariance and 0.001 trace-scaled loading.
+Do not add another neural architecture, retrain checkpoints, hunt uncertainty
+radii, optimize a hybrid, or score the disabled 96-hour assessment.
+
+Why this is the highest-value missing comparison
+-----------------------------------------------
+The present manuscript's strongest remaining neural result is a descriptive
+preservation/rejection operating point under response mismatch, NOT superiority
+in matched SNR. All ordinary MVDR comparators protect only one assumed response.
+An established response-uncertainty-aware processor directly tests whether that
+tradeoff requires learned covariance or is obtained by imposing a local response
+constraint on measured covariance. It can legitimately weaken the neural claim.
+That is a useful falsification, not a method selected to rescue the paper.
+
+This comparison does not itself prove real-earthquake recovery or BSSA significance.
+Its objective is to close a named comparator gap in an already exposed evaluation.
+
+Mathematical definition, fixed before any new field outcome
+---------------------------------------------------------
+For each archived active Fourier frequency f, assume a_j=exp(-2*pi*i*f*tau_j).
+Use q_j=(j-15.5)/15.5 for the existing 32-channel linear-index injection design.
+Set C=[a,q*a], g=[1,0], and solve
+
+  min w^H R_loaded w subject to C^H w=g,
+  w=R_loaded^-1 C (C^H R_loaded^-1 C)^-1 g.
+
+R_loaded is the existing context_0.25 matrix plus 0.001*trace(R)/32*I.
+Cholesky solves are used; no inverse/pseudoinverse or constraint-dropping fallback.
+One numerical constraint-refinement step preserves the same KKT subspace.
+
+The additional complex null constraint has a direct, limited physical meaning:
+  - Response a*(1+alpha*q) is preserved exactly for any scalar alpha.
+  - For response a*exp(-2*pi*i*f*epsilon*q), the first delay derivative vanishes.
+  - An explicit quadratic remainder bound is implemented and tested.
+  - This is NOT immunity to arbitrary DAS amplitude/delay variation, scattering,
+    near-field waves, or waveform mixtures. It consumes one spatial degree of
+    freedom and may increase recorded-background leakage.
+
+q is a normalized index coordinate only because the archived designed responses
+use channel-index gradients. A real geographical steering study would require
+measured ENU tangent constraints, with independent noncollinear tangents retained.
+It must not silently reuse q as a claimed real ray/geometry uncertainty model.
+
+Prior art and source verification
+--------------------------------
+The framework and derivative constraints are established; no methodological
+novelty should be claimed for this helper.
+
+Frost, O. L. (1972). An algorithm for linearly constrained adaptive array
+processing. Proceedings of the IEEE 60(8), 926-935.
+https://doi.org/10.1109/PROC.1972.8817
+Publisher DOI resolved to IEEE document1450747; publisher full text was not
+available through the web reader.
+
+Er, M. H. and A. Cantoni (1983). Derivative constraints for broadband element
+space antenna array processors. IEEE Transactions on Acoustics, Speech, and
+Signal Processing 31(6), 1378-1393. DOI10.1109/TASSP.1983.1164219.
+Author-institution primary abstract/bibliography inspected:
+https://research-repository.uwa.edu.au/en/publications/derivative-constraints-for-broadband-element-space-antenna-array-/
+The source explicitly describes the robustness/array-gain tradeoff.
+
+This helper is not an implementation of Lorenz/Boyd's ellipsoidal worst-case
+robust MVDR. Calling it that would be inaccurate.
+
+Implemented files and tests
+--------------------------
+  derivative_lcmv.py
+  test_derivative_lcmv.py
+  derivative_lcmv_tests.xml
+  benchmark_math_and_cache_metadata.py
+  math_benchmark_and_cache_inventory.json
+  SAVED_COMPONENT_COMPARATOR_PROTOCOL_PROPOSAL.json
+
+All21 mathematical tests PASS. They cover closed-form MVDR equivalence for three
+seeds, complex constraint convention, exact linear-amplitude preservation,
+quadratic delay error and a deterministic error bound, KKT stationarity and
+feasible perturbations, basis/scale invariance, white covariance, low-rank loaded
+covariance, invalid-input failures, Fourier support, full-waveform preservation,
+and invalid-coordinate/missing-band failures.
+
+Initial engineering test failed the strict 1e-12 tangent residual check on a
+rank-one covariance loaded at0.001: residual2.59e-12. A same-subspace algebraic
+constraint-refinement step resolved it; no field output was observed or selected,
+no mathematical constraint/tolerance was relaxed, and all21 tests then passed.
+Tests use synthetic matrices/wavelets only, not a new scientific field experiment.
+
+Exact cached inputs and measured resource envelope
+-------------------------------------------------
+All assets are under
+D:\das_research\das-coherencygraph\revisions\20261010_forecast_processing\development_outcomes
+
+Eight fixed blocks, each with adapter_arrays.npz and receipt.json:
+2024-08-04_00,2024-08-04_12,2024-08-05_00,2024-08-05_12,
+2024-08-06_00,2024-08-06_12,2024-08-07_00,2024-08-07_12.
+
+Total compressed size174,592,552 bytes. ZIP/NPY headers, not array payloads,
+were inspected. Each contains:
+  features(30,8,135)float32;
+  context(30,8,4,32,32)complex64;
+  background(30,175,381)float64;
+  neural_kernel/ridge_kernel(30,8,4,32,32)complex128;
+  cutoffs(30,)int64; starts(8,)int64.
+Historical archive hashes and current receipt hashes are in the JSON inventory.
+Archive hashes were NOT recomputed for this header-only preparation; the run gate
+must verify them before loading payloads. One archive's decoded member volume is
+about55.5 MB, so blockwise processing avoids loading all eight at once.
+
+The old3-seed checkpoints and257-mode ridge projection are already represented
+in the saved neural/ridge kernels. Their exact archived source locations are:
+  revisions/20261003_scientific_revision/models/common_localinput_seed{19,43,71}.pt
+  revisions/20261010_forecast_processing/matched_ridge_extended/common_localinput_ridge_f64.npz
+  src/coherencygraph_das/covariance_numerics.py: geometry_fit/fit_grid
+The old projection constructs a31-lag real/imag design against257 Fourier modes
+and checks a1e-8 convergence gap. It must NOT be rerun or relaxed merely for this
+comparator. Its archived kernels are the scientific inputs, hash-bound above.
+
+Pure synthetic benchmark,20 fixed repeats after one declared warm-up, two thread
+environment, NumPy2.4.4, Python3.12.14:
+  archived175sample/32channel MVDR weights mean0.000925 s;
+  derivative LCMV weights mean0.007173 s, max0.007896 s.
+For the unchanged full old design,5,760 extra weight calls imply41.32 s of
+weight-solve time ONLY. Decompression, component FFT/metrics, I/O, plot/report
+creation and independent verification were NOT included or measured here.
+
+The earlier actual event pilot took196.905 s for64frames/eightapertures/fivemethods;
+170.200 s was forecast/projection. Reusing saved kernels avoids that cost, but
+does not turn this synthetic weight benchmark into an end-to-end runtime promise.
+No network/acquisition/paid-compute cost is needed for the saved-array comparator.
+
+Finite primary recommendation for root approval/freeze
+-----------------------------------------------------
+Use every old development block/cutoff/aperture/design once, adding only the new
+LCMV row set. Exact new rows86,400 (8*30*8*3slopes*3wavelets*5responseconditions).
+Join to the777,600 immutable existing case rows by the complete design keys.
+Do not recompute or replace original values; independently replay a prespecified
+old-method fixture to check exact input/filter compatibility before new scoring.
+The candidate protocol JSON specifies all design fields and failures.
+
+Report all four conditions of response mismatch and matched response, mean and
+Type7 q05-SNR/q95-MSE tails, neural-minus-LCMV paired date results, all four dates,
+and nondominance relative to the expanded fixed grid. Four dates are descriptive
+development clusters, not independent confirmation; confidence intervals cannot
+manufacture deployment generalization. No practical superiority threshold is
+introduced after inspecting these results.
+
+Stop after this one comparator, irrespective of outcome. If it removes the
+neural operating-point advantage, remove that advantage from the manuscript;
+do not search second/third derivatives, loading grids or a neural+LCMV hybrid.
+If it does not, retain the bounded point with explicit tested-response limits.
+In neither branch is a claim of real earthquake timing/SNR or early warning
+automatically authorized. Original Cookprimary and old Greekresults remain intact.
+
+Real recorded-wavefield transplantation: feasibility and limits
+--------------------------------------------------------------
+This can avoid manual phase labels ONLY if the endpoint is reframed as recovery
+of a known ADDED recorded wavefield, not accuracy of an unknown real S onset.
+All32-channel empirical samples of a fixed source window are retained separately
+and added linearly to a disjoint recorded target/background; the exact added array
+is known even when it includes source-window background. Filter the added and
+background arrays separately with the same frozen past-only weights, as above.
+
+The scientific statement must be "recorded-wavefield recovery in a controlled
+transplant", not clean-earthquake ground truth or real deployment success.
+The source window contains its own unseparated natural background; no analyst
+can label that clean signal without evidence. Background target windows likewise
+need not be earthquake-free. A common unweighted reference output is a fixed
+linear functional of the known component, not unknown clean strain.
+
+Source-eligibility assessment is owned by the separate data audit. This helper
+does NOT nominate attractive waveforms or bypass its exclusions. If only one
+eligible earthquake exists, eight apertures or eight backgrounds cannot be
+reported as eight independent earthquakes. Source/background blocks, amplitude
+convention, catalog-guided response and all exclusions must be frozen before the
+first comparison. No unlabeled waveform may be silently called manual truth.
+
+Current state
+-------------
+Pure-math comparator and tests are ready for parent review. No field array payload,
+model inference, transplant, larger experiment, manuscript scientific edit,
+download, publication or96hour evaluation occurred in this subtask. Parent owns
+the finite scientific scope and execution gate; this document is not execution
+approval or a submission-readiness verdict.
+
+Parent-requested implementation addendum
+---------------------------------------
+Implemented recorded_component_metrics.py and nine additional synthetic tests.
+The helper retains exact added-component/background/reference/input powers,
+relative output error, conventional-reference/input power ratio and component-
+ratio gain. It never infers clean earthquake SNR or phase timing from mixtures.
+Amplitude-scaling invariance, linear decomposition, exact reference output,
+scalar-amplification non-improvement, near-cancelled reference retention and
+undefined/nonfinite/support failures are tested. Five source/reference power
+denominators must be positive; exactzero produces an explicit failure, not case
+exclusion. Nearzero is retained with its reference/input ratio visible.
+
+Implemented run_lcmv_ricker_extension.py, GATED and NOT EXECUTED. It requires an
+explicit frozen protocol SHA256, statusFROZEN_DEVELOPMENT_COMPARATOR, the exact
+eight development blocks, and hashes of itself/derivative_lcmv.py in
+execution_source_sha256. It verifies archive/case historical hashes before any
+array load; reproduces405 fixed first-cutoff/aperture old rows per block at scaled
+tolerance1e-9; produces86,400 new-only rows; and joins only for separate expanded
+date/condition summaries. Originalcase files are never modified. Seven new gate
+tests reject proposal, changed hash/source/scope, assessment unlock and row count;
+valid explicit binding passes without field reads. All37 current math/metric/gate
+tests PASS in processing_math_tests.xml.
+
+The helper permits ROOT's proposed controlled2-recorded-template by8background-
+hour design without phase-label invention. Source metadata/extraction/eligibility
+and final protocol freeze remain ROOT's separate responsibility. Use every fixed
+source/aperture and all six methods, not chosen source outputs. Two earthquakes
+and one source date do not support broad independent-earthquake generalization.
+
+End-to-end SYNTHETIC compute-path benchmark (benchmark_synthetic_pipeline.py):
+  transplant2templates*8apertures*6methods=96rows:0.2233994 s;
+  linear8hours*30cutoffs arithmetic=23,040rows:53.615856 s;
+  RickernewLCMV8apertures*3slopes*3wavelets*5conditions=360rows:0.3208216 s;
+  linear8hours*30cutoffs arithmetic=86,400rows:76.997184 s.
+Combined arithmetic compute scenario130.61304 s, about2.18min. These use random
+covariance/template proxies solely for dimensions and CPU paths, NOT neural
+forecasts or fielddata. Hashing/decompression, sourceextraction, storedcase fixture
+checks, filewriting, plotting/independent verification and hardware contention are
+excluded. Reasonable finite cap proposed900s total,3GiB process-tree RSS and512MiB
+new scratch; root must provide an external owned-process watchdog because the
+runner's internal checks are only sampled workerRSS between processing groups.
+
+No scientific field result or recorded-template comparison was run in this
+subtask. Nothing here establishes efficacy or changes manuscript findings.

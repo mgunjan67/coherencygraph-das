@@ -1,0 +1,61 @@
+{
+  "release_version": "v2026.10.18",
+  "status": "VERIFIED_LOCAL_PAYLOAD_PREPARED_FOR_PUBLIC_RELEASE",
+  "scientific_archive": {
+    "filename": "CoherencyGraph_BSSA_Scientific_20261018.zip",
+    "bytes": 1283661034,
+    "sha256": "97fa609a70fe0c6691c0e74e0eb6c8d933cff16708efa93209eac05f1eacaa3c",
+    "zip_members": 2460,
+    "individually_hashed_payload_files": 2459,
+    "manifest_sha256": "d6dc49617f9ccef7a1b1b290b9ee90399288ce6a82024274243cba82c9e7c277",
+    "all_crc_and_individual_hashes_pass": true
+  },
+  "verification_date_utc": "2026-10-18T11:10:12.357930+00:00",
+  "tests": {
+    "unique_tests": 53,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "later_production_subset_rerun": 7,
+    "subset_is_not_additional_unique_tests": true,
+    "initial_environment_setup_failure_retained": true
+  },
+  "direct_dft": {
+    "cases": 384,
+    "metrics_per_case": 12,
+    "comparisons": 4608,
+    "maximum_scaled_discrepancy": 2.013944566670034e-13,
+    "unchanged_tolerance": 2e-08,
+    "all_case_linearity_checks": 23040,
+    "maximum_linearity_discrepancy": 1.6423338989019761e-15,
+    "retained_first_verifier_failure": true,
+    "correction": "Pre-arithmetic complex128 conversion order; no scientific output, case or tolerance change"
+  },
+  "clean_zip_replay": {
+    "fresh_archive_extraction": true,
+    "exit_code": 0,
+    "core_derived_reductions": true,
+    "all_four_date_frontiers": true,
+    "finite_extension_scalar_tables": true,
+    "narrow_archived_inference_smoke": true,
+    "inference_maximum_absolute_kernel_error": 5.6438223896708836e-08,
+    "fresh_dependency_install": false,
+    "full_raw_to_training_regeneration": false,
+    "independent_human_replication": false,
+    "raw_waveform_acquisition": false,
+    "new_model_training": false
+  },
+  "interpretation_limits": [
+    "Target/reference power is not desired-earthquake SNR.",
+    "Recorded components retain ambient content; conventional-reference error is not clean physical truth.",
+    "Two same-day source recordings crossed with four exposed development dates do not establish deployment generalization.",
+    "No untouched-held-out, human-phase-label, early-warning, earthquake-prediction or false-alarm claim is made."
+  ],
+  "rights": {
+    "code": "BSD-3-Clause",
+    "author_created_derived_assets": "CC BY-NC-SA 4.0",
+    "upstream": "Source-provider and third-party rights remain unchanged; excluded raw/decoded source excerpts are not redistributed"
+  },
+  "dated_receipt_note": "Public/unpublished flags in archived execution receipts record their prepublication state; hosting metadata establishes later publication. Frozen receipts are not rewritten.",
+  "public_text_scope": "Code, configurations, derived results and verification only; private manuscript prose/source/cover-letter/submission assets excluded"
+}

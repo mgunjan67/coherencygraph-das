@@ -1,0 +1,187 @@
+{
+  "status": "PASS_CLEAN_DIRECTORY_EXTENSION_REPLAY",
+  "checked_utc": "2026-10-18T10:23:42.219238+00:00",
+  "copy": "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\reproducibility\\extension_clean__rvefwoh",
+  "exit_code": 0,
+  "elapsed_seconds": 3.9861481999978423,
+  "copied_inputs": [
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-04_00/cases.parquet",
+      "sha256": "5f4d874b54b8e5b56e2b5ad906d4ec86216d5c6a24c4feabf73680eedd16ab63",
+      "bytes": 4346764
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-04_12/cases.parquet",
+      "sha256": "cd9daea6ae5c8c9d9e2287c45e5555fef09fa9533a3dd6154338bc42d94b77fd",
+      "bytes": 4352630
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-05_00/cases.parquet",
+      "sha256": "bc08e5bff5914d1de203d4f48b510b7ad7b87ad22d2e9e4c190d2368f606ff60",
+      "bytes": 4352224
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-05_12/cases.parquet",
+      "sha256": "13662b6caccc9e424444dad1dbbc7610f361d6df805898b899b6e2dee39b51d3",
+      "bytes": 4351625
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-06_00/cases.parquet",
+      "sha256": "cc0da1ec7b027379637e13082fead9497db6ac4509eb69947106049c3699f18f",
+      "bytes": 4360292
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-06_12/cases.parquet",
+      "sha256": "fd068cd1840e7bb27f8f36d8083dee17f833917b000f49f5dc25af482444707c",
+      "bytes": 4337163
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-07_00/cases.parquet",
+      "sha256": "0146e2365ac506ae0f4f9c8e1988c36a529ed2415a35869412b879db910c4bf7",
+      "bytes": 4348772
+    },
+    {
+      "path": "revisions/20261010_forecast_processing/development_outcomes/2024-08-07_12/cases.parquet",
+      "sha256": "cc1e39975f7d205394f594a6664b5bae7b3b3693f211af77e12ab39dfac19578",
+      "bytes": 4353758
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/all_new_cases.parquet",
+      "sha256": "661a0c5e0f1f7baae78ed0b2229493111a7351793d0e5bf56bb2aa7574a63558",
+      "bytes": 3510112
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/expanded_date_condition_table.csv",
+      "sha256": "230fe82783905bda392f42f2592ab03aee39b4af1a34007819fa4d33ae6b42a4",
+      "bytes": 24401
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/all_cases.parquet",
+      "sha256": "362f161da2205ce050b520d3a6d4f201cf904329c495ab30763d3409c3ef4782",
+      "bytes": 1786308
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/all_reference_cancellation_diagnostics.csv",
+      "sha256": "3b2e6208faf14a3e9ca32da6e928495e7d8b1378bb11a65aecced8666de2b098",
+      "bytes": 1531
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/expanded_ricker_frontier_all_dates.csv",
+      "sha256": "36859888c920183ab5cdf4442887f6649f80fab758bdda3f02a81b17e3441e13",
+      "bytes": 26015
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/expanded_ricker_frontier_counts.csv",
+      "sha256": "ccbff0de550cee96f8e0de8a42334870f6f2f59c7c016672c6688563e7b13c52",
+      "bytes": 1306
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_neural_paired_date_contrasts.csv",
+      "sha256": "b8cf4930923b608e1d253d121fcf1a59f2eb6bbc9da082a230a76bcd11b000c1",
+      "bytes": 2988
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_source_date_method.csv",
+      "sha256": "90858ae4f0f5904638db84efea3457d756813ea560f0831361356b0b053fbc2f",
+      "bytes": 6991
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_source_hour_method.csv",
+      "sha256": "8b56cb66ad989e8da5dbf38ef4fca9ff56e64b54f51aa60f28577a1a9cac11cb",
+      "bytes": 15108
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_source_method.csv",
+      "sha256": "1713273c5953e6e30fb7552b60baee35a9250f92dd754bbb1d26cb918e6ee663",
+      "bytes": 1767
+    }
+  ],
+  "raw_or_processed_waveforms": false,
+  "fresh_dependency_install": false,
+  "original_workspace_imports": false,
+  "scorer_or_summary_imported": false,
+  "numeric_receipt": {
+    "status": "PASS_PORTABLE_TWO_PANEL_SAVED_TABLE_REPLAY",
+    "checks": {
+      "ricker": {
+        "status": "PASS",
+        "old_rows": 777600,
+        "new_rows": 86400,
+        "combined_rows": 864000,
+        "date_condition_method_rows": 200,
+        "frontier_count_rows": 40,
+        "formula_maximum_scaled_difference": 0.0,
+        "csv_comparisons": [
+          {
+            "file": "expanded_date_condition_table.csv",
+            "rows": 200,
+            "maximum_scaled_difference": 3.4359387623781764e-16
+          },
+          {
+            "file": "expanded_ricker_frontier_all_dates.csv",
+            "rows": 200,
+            "maximum_scaled_difference": 3.866900505709095e-16
+          },
+          {
+            "file": "expanded_ricker_frontier_counts.csv",
+            "rows": 40,
+            "maximum_scaled_difference": 0.0
+          }
+        ],
+        "original_rows_replaced": false
+      },
+      "recorded": {
+        "status": "PASS",
+        "rows": 23040,
+        "source_events": 2,
+        "source_recording_dates": 1,
+        "background_dates": 4,
+        "hour_method_rows": 96,
+        "date_method_rows": 48,
+        "source_method_rows": 12,
+        "cancellation_rows": 16,
+        "paired_contrast_rows": 40,
+        "formula_maximum_scaled_difference": 0.0,
+        "maximum_retained_linearity_scaled_error": 1.6423338989019761e-15,
+        "csv_comparisons": [
+          {
+            "file": "recorded_source_hour_method.csv",
+            "rows": 96,
+            "maximum_scaled_difference": 2.3887740384166384e-16
+          },
+          {
+            "file": "recorded_source_date_method.csv",
+            "rows": 48,
+            "maximum_scaled_difference": 2.1359857136985814e-16
+          },
+          {
+            "file": "recorded_source_method.csv",
+            "rows": 12,
+            "maximum_scaled_difference": 2.3303391191961955e-16
+          },
+          {
+            "file": "all_reference_cancellation_diagnostics.csv",
+            "rows": 16,
+            "maximum_scaled_difference": 2.2018158290334677e-16
+          },
+          {
+            "file": "recorded_neural_paired_date_contrasts.csv",
+            "rows": 40,
+            "maximum_scaled_difference": 2.1826908458815859e-16
+          }
+        ],
+        "interpretation": "Known added recorded-wavefield component relative to conventional output, not clean earthquake recovery or independent eight-event evidence."
+      }
+    },
+    "tolerance": 1e-10,
+    "elapsed_seconds": 2.0624272999702953,
+    "scorer_or_summary_imported": false,
+    "raw_or_processed_waveforms_read": false,
+    "filters_reexecuted": false,
+    "new_training": false,
+    "new_acquisition": false,
+    "heldout_assessment": false,
+    "independent_human_replication": false,
+    "scope": "Recompute derived statistics/formulas/frontiers from saved scalar Parquets; waveform-to-case replay is separate and was not rerun."
+  }
+}

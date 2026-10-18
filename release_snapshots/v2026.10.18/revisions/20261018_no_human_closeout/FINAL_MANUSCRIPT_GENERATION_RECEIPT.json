@@ -1,0 +1,104 @@
+{
+  "status": "GENERATED_FROM_VERIFIED_FIXED_PANEL_OUTPUTS",
+  "abstract_words": 237,
+  "primary_values_changed": false,
+  "new_population_inference": false,
+  "recorded_comparisons": {
+    "context_0.25": {
+      "gain_mean": -1.6572775866360394,
+      "gain_min": -2.3848694348835995,
+      "gain_max": -0.8298606847889565,
+      "error_mean": -0.17659618056068696,
+      "error_min": -0.2443235249075999,
+      "error_max": -0.1121888437970526
+    },
+    "context_0.75": {
+      "gain_mean": -5.115244682064242,
+      "gain_min": -6.017682454978846,
+      "gain_max": -3.971733895830311,
+      "error_mean": -0.8951909206060384,
+      "error_min": -1.0727546194778022,
+      "error_max": -0.6785084140719582
+    },
+    "conventional": {
+      "gain_mean": 5.409242939256384,
+      "gain_min": 4.3123676376024855,
+      "gain_max": 7.628000846674787,
+      "error_mean": 0.27516019128647734,
+      "error_min": 0.2025635245603727,
+      "error_max": 0.3710613492463419
+    },
+    "lcmv_context_0.25": {
+      "gain_mean": -0.9433909018276684,
+      "gain_min": -1.659791247309928,
+      "gain_max": -0.261612364790876,
+      "error_mean": -0.13558966155497398,
+      "error_min": -0.2524697430069429,
+      "error_max": -0.0506452870584319
+    },
+    "ridge": {
+      "gain_mean": 0.9257941532615793,
+      "gain_min": 0.7778815335164122,
+      "gain_max": 1.1353583640833644,
+      "error_mean": 0.027869558107058434,
+      "error_min": 0.0079754716529314,
+      "error_max": 0.054415465971334
+    }
+  },
+  "cancellation_ratio_range": [
+    0.0158175097084625,
+    0.3288360050352567
+  ],
+  "expanded_neural_frontier": [
+    {
+      "condition": "amplitude_minus",
+      "method": "neural",
+      "mean_nondominated_dates": 2,
+      "tail_nondominated_dates": 0
+    },
+    {
+      "condition": "amplitude_plus",
+      "method": "neural",
+      "mean_nondominated_dates": 1,
+      "tail_nondominated_dates": 0
+    },
+    {
+      "condition": "delay_minus",
+      "method": "neural",
+      "mean_nondominated_dates": 2,
+      "tail_nondominated_dates": 0
+    },
+    {
+      "condition": "delay_plus",
+      "method": "neural",
+      "mean_nondominated_dates": 2,
+      "tail_nondominated_dates": 0
+    }
+  ],
+  "independent_replay_max_scaled_error": 2.013944566670034e-13,
+  "input_sha256": {
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\protocol.json": "cfef679230d0fd47dee36f0914def5e9fc01e68a35e8da2c137ae48612a397a3",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\finite_panel_summary\\SUMMARY_RECEIPT.json": "2b54c2563b8c2664c01df527e8c7e96e22609effa2b3fe37b21efd9bb02e4528",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\recorded_component_results\\DIRECT_DFT_VERIFICATION.json": "849bfe9c23885f16d75d8ce259e144a20e8fc9ccbea67e46b61da4bb5377cb69",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\DIRECT_DFT_V1_FAILURE.json": "0f47b2d00ad8c7cf2ac9738f9c5eba36ea3dc514b4b0b9fd7ab0b410b52af9aa",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\recorded_component_results\\receipt.json": "912eca6ba089715a8256edc3f3b053edaaad1bb450374e77fe1f4c428d5a0569",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\lcmv_ricker_results\\receipt.json": "fbf01b2e5ea69f36d6e3a714a7f9820bd49ed9919545268093221442b7dd19a0",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261013_research_reassessment\\MANUSCRIPT_EVIDENCE_RECEIPT.json": "4d2feb003922e11e02289f08848e77ec01c7b405324e78a3a8550184013a6b66",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20260922_unseen_validation\\validation\\paired_comparisons.csv": "7684da6508769d021e9a823242317086ad7953edf6f120a8be7d58e0e0e086b0",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\finite_panel_summary\\all_reference_cancellation_diagnostics.csv": "3b2e6208faf14a3e9ca32da6e928495e7d8b1378bb11a65aecced8666de2b098",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\finite_panel_summary\\expanded_ricker_frontier_all_dates.csv": "36859888c920183ab5cdf4442887f6649f80fab758bdda3f02a81b17e3441e13",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\finite_panel_summary\\expanded_ricker_frontier_counts.csv": "ccbff0de550cee96f8e0de8a42334870f6f2f59c7c016672c6688563e7b13c52",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\finite_panel_summary\\recorded_neural_paired_date_contrasts.csv": "b8cf4930923b608e1d253d121fcf1a59f2eb6bbc9da082a230a76bcd11b000c1",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\finite_panel_summary\\recorded_source_date_method.csv": "90858ae4f0f5904638db84efea3457d756813ea560f0831361356b0b053fbc2f",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\finite_panel_summary\\recorded_source_hour_method.csv": "8b56cb66ad989e8da5dbf38ef4fca9ff56e64b54f51aa60f28577a1a9cac11cb",
+    "D:\\das_research\\das-coherencygraph\\revisions\\20261018_no_human_closeout\\implementation\\finite_panel_summary\\recorded_source_method.csv": "1713273c5953e6e30fb7552b60baee35a9250f92dd754bbb1d26cb918e6ee663"
+  },
+  "output_sha256": {
+    "generated_extension_results.tex": "52f8b9d4953194be7263a06e99cde8689eda1ff2e3a64bcad28116941c0820fb",
+    "generated_extension_discussion.tex": "161cc793daab05d6d3c4b8e791324756fcc2ba45e42125c4c1bec6fa8f9d1ed8",
+    "generated_extension_supplement_results.tex": "6bcbf3d623e1e3fedc3fdd0ad720fcb8df89df92bce97572caf218d3f65015f7",
+    "generated_abstract.tex": "84d1224d3744358750852353e86264a7d0ee85a49e6151e3f61cb554fb3b06a2",
+    "generated_conclusion.tex": "e01ceabc5f0c50fe4551488ec7241819a0b18ed6c2ef5f0fec53eb71e7ebc42f"
+  },
+  "generator_sha256": "05cc0b67addbdf6b091a39495f11abb688504715dbea85a063f3bc4191740545"
+}

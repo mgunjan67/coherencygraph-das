@@ -1,0 +1,6 @@
+Unpublished local scientific candidate; no new public link or DOI is claimed.
+Code BSD-3-Clause. Author-created derived statistics/checkpoints retain recorded CC BY-NC-SA 4.0 restrictions.
+Native raw waveforms, adapter_arrays.npz and time-series excerpts with unverified upstream redistribution rights are excluded.
+Existing scalar cases, statistical feature fixture and model outputs are distinct from waveform samples; upstream terms remain applicable.
+Use provider URLs/ranges and hashes to obtain excluded inputs from the provider. No automatic acquisition is run by replay.
+Manuscript sources, cover letters, private submission files and credentials are excluded.

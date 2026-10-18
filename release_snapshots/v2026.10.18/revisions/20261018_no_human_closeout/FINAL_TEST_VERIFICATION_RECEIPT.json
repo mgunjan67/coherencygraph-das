@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "reports": {
+    "FINAL_TESTS_PASS.xml": {
+      "tests": 53,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "2bc32477eeb1a7c6174627fe60f001ee98e66756b511f72b0d2f464ea8f8882f"
+    },
+    "FINAL_PRODUCTION_TESTS.xml": {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "0279f59515a89f4c32258e5658b73d18bab331e162acfd09715b2a92e406e672"
+    },
+    "FINAL_TESTS.xml": {
+      "tests": 53,
+      "failures": 0,
+      "errors": 7,
+      "skipped": 0,
+      "sha256": "88d6550c355c5b46b16948ecfebf433d5fa05c211e675e8661d44265c4892188"
+    }
+  },
+  "retained_initial_environment_failure": "Initial default Windows temporary-directory fixture setup was inaccessible. Seven setup errors, no scientific assertion failures. Workspace-local temporary directory rerun passed all 53; original XML retained locally under its hash.",
+  "note": "Seven production tests are a later subset rerun, not seven additional unique tests. AI-assisted software checks are not human waveform review."
+}

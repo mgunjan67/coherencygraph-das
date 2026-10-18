@@ -1,0 +1,826 @@
+{
+  "status": "SYNTHETIC_MATH_BENCHMARK_AND_HEADER_INVENTORY_ONLY",
+  "no_field_payload_loaded": true,
+  "no_models_loaded": true,
+  "no_waveform_experiment_run": true,
+  "source_sha256": {
+    "benchmark_math_and_cache_metadata.py": "63c62ab1c70e043f90fca21d46a13378e1871d7cf4727a71fc79644ffe05776d",
+    "derivative_lcmv.py": "d8ca2860bb4d3c0dad98750f66ce9d7909137eb36e6b021223ea151f701c3491"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.4.4",
+  "thread_count_environment": 2,
+  "process_rss_at_finish_bytes": 38035456,
+  "elapsed_seconds": 0.34476639999775216,
+  "timing": {
+    "archived_mvdr": {
+      "repeats": 20,
+      "mean_seconds": 0.0009249950002413243,
+      "median_seconds": 0.0009044000180438161,
+      "maximum_seconds": 0.0013805999769829214,
+      "samples": 175,
+      "channels": 32,
+      "bands": 4
+    },
+    "derivative_lcmv": {
+      "repeats": 20,
+      "mean_seconds": 0.007172954999259673,
+      "median_seconds": 0.007102549978299066,
+      "maximum_seconds": 0.00789549999171868,
+      "samples": 175,
+      "channels": 32,
+      "bands": 4
+    }
+  },
+  "inventory": [
+    {
+      "block": "2024-08-04_00",
+      "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-04_00\\adapter_arrays.npz",
+      "bytes": 21758761,
+      "historical_sha256": "eca0ee5eb4a8bad10fec952d1e74f1b6522e8c1e945a36dc8091d85f349b4ff9",
+      "receipt_sha256": "57646a161f138a9c5919a3f1644dea1d8b2c7c5aa424d38fd477044889670366",
+      "archive_hash_recomputed": false,
+      "members": [
+        {
+          "name": "features.npy",
+          "shape": [
+            30,
+            8,
+            135
+          ],
+          "dtype": "float32",
+          "decoded_member_bytes": 129728,
+          "compressed_bytes": 119350,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "context.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex64",
+          "decoded_member_bytes": 7864448,
+          "compressed_bytes": 5115330,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "background.npy",
+          "shape": [
+            30,
+            175,
+            381
+          ],
+          "dtype": "float64",
+          "decoded_member_bytes": 16002128,
+          "compressed_bytes": 15162922,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "neural_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 680434,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "ridge_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 679594,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "cutoffs.npy",
+          "shape": [
+            30
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 368,
+          "compressed_bytes": 165,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "starts.npy",
+          "shape": [
+            8
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 192,
+          "compressed_bytes": 90,
+          "header_only_no_array_payload_loaded": true
+        }
+      ]
+    },
+    {
+      "block": "2024-08-04_12",
+      "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-04_12\\adapter_arrays.npz",
+      "bytes": 21783343,
+      "historical_sha256": "ae285e080c6c9f6e97d14747914ec6af48b2c2213bec1c7082ec6db7d97837df",
+      "receipt_sha256": "731eb4cbcdeb253eee9e1b56947fbc1872dca0c1244b5950652db51d0b1a95f5",
+      "archive_hash_recomputed": false,
+      "members": [
+        {
+          "name": "features.npy",
+          "shape": [
+            30,
+            8,
+            135
+          ],
+          "dtype": "float32",
+          "decoded_member_bytes": 129728,
+          "compressed_bytes": 119286,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "context.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex64",
+          "decoded_member_bytes": 7864448,
+          "compressed_bytes": 5146739,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "background.npy",
+          "shape": [
+            30,
+            175,
+            381
+          ],
+          "dtype": "float64",
+          "decoded_member_bytes": 16002128,
+          "compressed_bytes": 15156652,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "neural_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 680061,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "ridge_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 679474,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "cutoffs.npy",
+          "shape": [
+            30
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 368,
+          "compressed_bytes": 165,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "starts.npy",
+          "shape": [
+            8
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 192,
+          "compressed_bytes": 90,
+          "header_only_no_array_payload_loaded": true
+        }
+      ]
+    },
+    {
+      "block": "2024-08-05_00",
+      "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-05_00\\adapter_arrays.npz",
+      "bytes": 21884956,
+      "historical_sha256": "612bad5a0ac9c150362efbe51a5351ee7deb62072386444acc0ca30be4bb297f",
+      "receipt_sha256": "6e90c9b946241308f81f55cff7e65b188479fe20d054d4d5d02627c742535218",
+      "archive_hash_recomputed": false,
+      "members": [
+        {
+          "name": "features.npy",
+          "shape": [
+            30,
+            8,
+            135
+          ],
+          "dtype": "float32",
+          "decoded_member_bytes": 129728,
+          "compressed_bytes": 119280,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "context.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex64",
+          "decoded_member_bytes": 7864448,
+          "compressed_bytes": 5147289,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "background.npy",
+          "shape": [
+            30,
+            175,
+            381
+          ],
+          "dtype": "float64",
+          "decoded_member_bytes": 16002128,
+          "compressed_bytes": 15257157,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "neural_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 680077,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "ridge_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 680022,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "cutoffs.npy",
+          "shape": [
+            30
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 368,
+          "compressed_bytes": 165,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "starts.npy",
+          "shape": [
+            8
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 192,
+          "compressed_bytes": 90,
+          "header_only_no_array_payload_loaded": true
+        }
+      ]
+    },
+    {
+      "block": "2024-08-05_12",
+      "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-05_12\\adapter_arrays.npz",
+      "bytes": 21818987,
+      "historical_sha256": "6395bcf037c16070e0238fc834f0934f31be62f61d4cae01e942a6f243b45200",
+      "receipt_sha256": "9b16c8f8b2860cababdb306770a954323e375faa829ed0172458113c3c67c78b",
+      "archive_hash_recomputed": false,
+      "members": [
+        {
+          "name": "features.npy",
+          "shape": [
+            30,
+            8,
+            135
+          ],
+          "dtype": "float32",
+          "decoded_member_bytes": 129728,
+          "compressed_bytes": 119368,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "context.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex64",
+          "decoded_member_bytes": 7864448,
+          "compressed_bytes": 5151104,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "background.npy",
+          "shape": [
+            30,
+            175,
+            381
+          ],
+          "dtype": "float64",
+          "decoded_member_bytes": 16002128,
+          "compressed_bytes": 15186567,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "neural_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 680747,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "ridge_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 680070,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "cutoffs.npy",
+          "shape": [
+            30
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 368,
+          "compressed_bytes": 165,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "starts.npy",
+          "shape": [
+            8
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 192,
+          "compressed_bytes": 90,
+          "header_only_no_array_payload_loaded": true
+        }
+      ]
+    },
+    {
+      "block": "2024-08-06_00",
+      "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-06_00\\adapter_arrays.npz",
+      "bytes": 21867527,
+      "historical_sha256": "947c999f0c3185a2cd3292d3c5189711c6e37b55cef9042e88af9d4dbe413c4f",
+      "receipt_sha256": "9f34fff9e223ea538146d13830206c1d5d6e6636b2e2861735b538c70a6eafa3",
+      "archive_hash_recomputed": false,
+      "members": [
+        {
+          "name": "features.npy",
+          "shape": [
+            30,
+            8,
+            135
+          ],
+          "dtype": "float32",
+          "decoded_member_bytes": 129728,
+          "compressed_bytes": 119311,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "context.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex64",
+          "decoded_member_bytes": 7864448,
+          "compressed_bytes": 5135143,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "background.npy",
+          "shape": [
+            30,
+            175,
+            381
+          ],
+          "dtype": "float64",
+          "decoded_member_bytes": 16002128,
+          "compressed_bytes": 15250243,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "neural_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 681219,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "ridge_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 680480,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "cutoffs.npy",
+          "shape": [
+            30
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 368,
+          "compressed_bytes": 165,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "starts.npy",
+          "shape": [
+            8
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 192,
+          "compressed_bytes": 90,
+          "header_only_no_array_payload_loaded": true
+        }
+      ]
+    },
+    {
+      "block": "2024-08-06_12",
+      "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-06_12\\adapter_arrays.npz",
+      "bytes": 21828687,
+      "historical_sha256": "9ae926dd17ce3de8d0e7fb36858996afb25fc09d06e0ca1a5757d28cea6f9e89",
+      "receipt_sha256": "02ce8ca9e96d2b5a3e5cc3464faa85d171f794db9525194b0c1208119cc4aab1",
+      "archive_hash_recomputed": false,
+      "members": [
+        {
+          "name": "features.npy",
+          "shape": [
+            30,
+            8,
+            135
+          ],
+          "dtype": "float32",
+          "decoded_member_bytes": 129728,
+          "compressed_bytes": 119089,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "context.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex64",
+          "decoded_member_bytes": 7864448,
+          "compressed_bytes": 5166818,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "background.npy",
+          "shape": [
+            30,
+            175,
+            381
+          ],
+          "dtype": "float64",
+          "decoded_member_bytes": 16002128,
+          "compressed_bytes": 15183619,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "neural_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 678878,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "ridge_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 679152,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "cutoffs.npy",
+          "shape": [
+            30
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 368,
+          "compressed_bytes": 165,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "starts.npy",
+          "shape": [
+            8
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 192,
+          "compressed_bytes": 90,
+          "header_only_no_array_payload_loaded": true
+        }
+      ]
+    },
+    {
+      "block": "2024-08-07_00",
+      "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-07_00\\adapter_arrays.npz",
+      "bytes": 21834588,
+      "historical_sha256": "b133f3f8eff1a0a0a4e8c43b47d4d39658a04160554468ddff6048b04359e243",
+      "receipt_sha256": "aadf8b2f363bb4c42ad5c3d342bc3e9560ad389c9d460c21bf61d4644d066264",
+      "archive_hash_recomputed": false,
+      "members": [
+        {
+          "name": "features.npy",
+          "shape": [
+            30,
+            8,
+            135
+          ],
+          "dtype": "float32",
+          "decoded_member_bytes": 129728,
+          "compressed_bytes": 119059,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "context.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex64",
+          "decoded_member_bytes": 7864448,
+          "compressed_bytes": 5152216,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "background.npy",
+          "shape": [
+            30,
+            175,
+            381
+          ],
+          "dtype": "float64",
+          "decoded_member_bytes": 16002128,
+          "compressed_bytes": 15204684,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "neural_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 678415,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "ridge_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 679083,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "cutoffs.npy",
+          "shape": [
+            30
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 368,
+          "compressed_bytes": 165,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "starts.npy",
+          "shape": [
+            8
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 192,
+          "compressed_bytes": 90,
+          "header_only_no_array_payload_loaded": true
+        }
+      ]
+    },
+    {
+      "block": "2024-08-07_12",
+      "path": "D:\\das_research\\das-coherencygraph\\revisions\\20261010_forecast_processing\\development_outcomes\\2024-08-07_12\\adapter_arrays.npz",
+      "bytes": 21815703,
+      "historical_sha256": "19045cd5cccb4646f2657f260b14e2aa4d6dcc7c14e6ec10ce0b22ab20ab1ed6",
+      "receipt_sha256": "6db02c321bb7c4becfd7a508dd1f3c8bd4051cdb9ae14e35413dadb81f3b342f",
+      "archive_hash_recomputed": false,
+      "members": [
+        {
+          "name": "features.npy",
+          "shape": [
+            30,
+            8,
+            135
+          ],
+          "dtype": "float32",
+          "decoded_member_bytes": 129728,
+          "compressed_bytes": 119134,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "context.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex64",
+          "decoded_member_bytes": 7864448,
+          "compressed_bytes": 5150948,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "background.npy",
+          "shape": [
+            30,
+            175,
+            381
+          ],
+          "dtype": "float64",
+          "decoded_member_bytes": 16002128,
+          "compressed_bytes": 15186077,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "neural_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 679012,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "ridge_kernel.npy",
+          "shape": [
+            30,
+            8,
+            4,
+            32,
+            32
+          ],
+          "dtype": "complex128",
+          "decoded_member_bytes": 15728768,
+          "compressed_bytes": 679401,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "cutoffs.npy",
+          "shape": [
+            30
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 368,
+          "compressed_bytes": 165,
+          "header_only_no_array_payload_loaded": true
+        },
+        {
+          "name": "starts.npy",
+          "shape": [
+            8
+          ],
+          "dtype": "int64",
+          "decoded_member_bytes": 192,
+          "compressed_bytes": 90,
+          "header_only_no_array_payload_loaded": true
+        }
+      ]
+    }
+  ],
+  "archive_bytes_total": 174592552,
+  "hypothetical_full_old_design_new_baseline": {
+    "independent_dates": 4,
+    "recording_hours": 8,
+    "cutoffs_per_hour": 30,
+    "apertures": 8,
+    "assumed_slopes": 3,
+    "wavelets": 3,
+    "response_conditions": 5,
+    "new_metric_rows": 86400,
+    "filter_weight_calls": 5760,
+    "synthetic_measured_weight_only_seconds": 41.31622079573572,
+    "excluded_costs": [
+      "archive decompression",
+      "source-component construction",
+      "component FFT/metrics",
+      "table/figure writing",
+      "independent verification"
+    ],
+    "execution_authorized_by_this_file": false
+  }
+}

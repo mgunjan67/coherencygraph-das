@@ -1,3 +1,13 @@
+## Verified scientific release v2026.10.18
+
+The current code/data/model reproducibility payload is [the v2026.10.18 release](https://github.com/mgunjan67/coherencygraph-das/releases/tag/v2026.10.18). Download and extract `CoherencyGraph_BSSA_Scientific_20261018.zip` before running the portable replay; the source checkout alone is not the complete model/data package.
+
+Browse the [versioned source and scalar-result snapshot](release_snapshots/v2026.10.18/) and its [release README](release_snapshots/v2026.10.18/RELEASE_README_20261018.txt). Private manuscript sources, cover letters and submission files are excluded. Upstream waveform excerpts with unverified redistribution rights are also excluded. Software and derived assets retain their distinct recorded licenses.
+
+The scientific ZIP is immutable: SHA256 `97fa609a70fe0c6691c0e74e0eb6c8d933cff16708efa93209eac05f1eacaa3c`. Dated local/prepublication flags inside its receipts describe their creation time, not later hosting status. These bounded processing evaluations do not establish earthquake prediction or early-warning capability. Earlier releases remain available unchanged.
+
+---
+
 # CoherencyGraph-DAS
 
 ## Current fixed-window validation release

@@ -1,0 +1,1865 @@
+{
+  "status": "METADATA_ONLY_NO_SAMPLE_DECODING",
+  "date": "2026-10-18",
+  "archive": "revisions\\20261004_detection_feasibility\\sources\\das-kefalonia-v2.zip",
+  "metadata_returned_byte_cap_per_hdf": 5000000,
+  "zip_seek_caveat": "ZIP deflate skip/decompression is possible; no HDF dataset samples read and no member extracted.",
+  "dataset_sample_reads": 0,
+  "members": [
+    {
+      "member": "das-kefalonia-v2/data_example/kefalonia_day2_2024-08-02T123942+0100.h5",
+      "file_bytes": 84655844,
+      "zip_compressed_bytes": 84032772,
+      "zip_crc32": "7a129da5",
+      "datasets": {
+        "Acquisition/Raw[0]/Custom/GpBits": {
+          "shape": [
+            7500
+          ],
+          "dtype": "uint8",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 7500,
+          "attrs": {
+            "Description": "0x01 = Data modified post-acquisition\n0x02 = Data compromised\n"
+          }
+        },
+        "Acquisition/Raw[0]/Custom/GpsStatus": {
+          "shape": [
+            7500
+          ],
+          "dtype": "uint8",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 7500,
+          "attrs": {
+            "Description": "0x01 = GPS Mode\n0x02 = GPS Sync Guaranteed\n0x04 = Time modified post-acquisition\n"
+          }
+        },
+        "Acquisition/Raw[0]/Custom/PpsOffset": {
+          "shape": [
+            7500
+          ],
+          "dtype": "uint32",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 30000,
+          "attrs": {
+            "Units": "CSU"
+          }
+        },
+        "Acquisition/Raw[0]/Custom/SampleCount": {
+          "shape": [
+            7500
+          ],
+          "dtype": "int64",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 60000,
+          "attrs": {}
+        },
+        "Acquisition/Raw[0]/RawData": {
+          "shape": [
+            7500,
+            7750
+          ],
+          "dtype": "int32",
+          "chunks": [
+            537,
+            122
+          ],
+          "compression": "gzip",
+          "compression_opts": 4,
+          "logical_bytes": 232500000,
+          "attrs": {
+            "Count": 58125000,
+            "Dimensions": [
+              "time",
+              "locus"
+            ],
+            "PartEndTime": "2024-08-02T11:40:12.981600Z",
+            "PartStartTime": "2024-08-02T11:39:42.985600Z",
+            "StartIndex": 147502500
+          }
+        },
+        "Acquisition/Raw[0]/RawDataTime": {
+          "shape": [
+            7500
+          ],
+          "dtype": "int64",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 60000,
+          "attrs": {
+            "Count": 7500,
+            "PartEndTime": "2024-08-02T11:40:12.981600Z",
+            "PartStartTime": "2024-08-02T11:39:42.985600Z",
+            "StartIndex": 147502500,
+            "StartTime": "2024-07-26T15:46:12.985600Z"
+          }
+        }
+      },
+      "groups": {
+        "Acquisition": {
+          "attrs": {
+            "AcquisitionId": "3cd5ead8-9429-469b-89c0-100046ed899c",
+            "GaugeLength": 10.209524154663086,
+            "GaugeLengthUnit": "m",
+            "MaximumFrequency": 125.0,
+            "MinimumFrequency": 0.0,
+            "NumberOfLoci": 7750,
+            "PulseRate": 5000.0,
+            "PulseWidth": 50.0,
+            "PulseWidthUnit": "ns",
+            "SpatialSamplingInterval": 2.0419046878814697,
+            "SpatialSamplingIntervalUnit": "m",
+            "StartLocusIndex": 0,
+            "TriggeredMeasurement": "false",
+            "VendorCode": "OptaSense IU Setup 1.8.6 c9c23ad2ab20eb82641984e0e1205500228e9fba",
+            "schemaVersion": "2.0",
+            "uuid": "3cd5ead8-9429-469b-89c0-100046ed899c"
+          }
+        },
+        "Acquisition/Custom": {
+          "attrs": {
+            "ADC Clock (MHz)": 1000,
+            "Acquisition Start (CSU)": 0,
+            "CSU Resolution (ns)": 1,
+            "Carrier Separation (CSU)": 348,
+            "CustomSchemaVersion": 5,
+            "Data Compromised": 0,
+            "Data Format": 0,
+            "Data Schema": "3.0",
+            "Data Width (Bits)": 32,
+            "Decimation Factor": 20,
+            "FPGA Data Sub Type": 0,
+            "FPGA Data Type": 9,
+            "FPGA Drawing Number": 7804701,
+            "FPGA Image in Set": 0,
+            "FPGA Version": "2.2",
+            "Fibre Refractive Index": 1.4681999683380127,
+            "Firmware Version": "2.0.1",
+            "GPS Enabled": 1,
+            "GPS Sync Guaranteed": 1,
+            "Gauge Length (CSU)": 0,
+            "Header Schema": "3.0",
+            "Input Channel Pitch (CSU)": 1,
+            "Input Mux. Position": 0,
+            "Laser Wavelength (nm)": 1550,
+            "Num Carriers": 2,
+            "Num Elements Per Channel": 1,
+            "Num Output Channels": 7750,
+            "Num Time Samples": 1,
+            "Output Channel Pitch (CSU)": 20.0,
+            "Output Channel Start (CSU)": 0,
+            "Payload Type": 0,
+            "Phase Fractional Width (Bits)": 16,
+            "Ping Period (CSU)": 200000,
+            "Product Drawing Number": 7800001,
+            "Pulse Layout": 14,
+            "Pulse Width (CSU)": 50,
+            "Synthetic Gauge Length (CSU)": 100,
+            "Unit Serial Number": 10027,
+            "User Data Type": 1087,
+            "Variant": 25
+          }
+        },
+        "Acquisition/Raw[0]": {
+          "attrs": {
+            "NumberOfLoci": 7750,
+            "OutputDataRate": 250.0,
+            "RawDataUnit": "rad * 2PI/2^16",
+            "RawDescription": "Diversity Processed Phase Dual Pulse Balanced. Ocp 20",
+            "StartLocusIndex": 0,
+            "uuid": "e924e3a7-4d62-4c0f-be2d-9eab161238df"
+          }
+        },
+        "Acquisition/Raw[0]/Custom": {
+          "attrs": {}
+        }
+      },
+      "root_attrs": {
+        "uuid": "e86eaade-b847-4f3e-951f-95fd2155fa67"
+      },
+      "hdf_header_bytes_returned": 72776,
+      "hdf_header_read_calls": 58,
+      "hdf_header_seek_calls": 62,
+      "hdf_header_ranges": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          48
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          96,
+          512
+        ],
+        [
+          800,
+          104
+        ],
+        [
+          136,
+          544
+        ],
+        [
+          680,
+          512
+        ],
+        [
+          1608,
+          328
+        ],
+        [
+          904,
+          512
+        ],
+        [
+          1936,
+          1200
+        ],
+        [
+          944,
+          544
+        ],
+        [
+          1488,
+          512
+        ],
+        [
+          3840,
+          328
+        ],
+        [
+          3136,
+          512
+        ],
+        [
+          4168,
+          2840
+        ],
+        [
+          3176,
+          544
+        ],
+        [
+          3720,
+          512
+        ],
+        [
+          7008,
+          512
+        ],
+        [
+          8744,
+          472
+        ],
+        [
+          7048,
+          544
+        ],
+        [
+          7592,
+          512
+        ],
+        [
+          8416,
+          328
+        ],
+        [
+          7712,
+          512
+        ],
+        [
+          7752,
+          544
+        ],
+        [
+          8296,
+          512
+        ],
+        [
+          9488,
+          328
+        ],
+        [
+          10360,
+          512
+        ],
+        [
+          64192,
+          112
+        ],
+        [
+          61960,
+          2096
+        ],
+        [
+          10088,
+          512
+        ],
+        [
+          64056,
+          136
+        ],
+        [
+          59864,
+          2096
+        ],
+        [
+          9816,
+          512
+        ],
+        [
+          57768,
+          2096
+        ],
+        [
+          9216,
+          512
+        ],
+        [
+          55672,
+          2096
+        ],
+        [
+          10904,
+          512
+        ],
+        [
+          66728,
+          304
+        ],
+        [
+          11200,
+          2616
+        ],
+        [
+          16432,
+          2616
+        ],
+        [
+          13816,
+          2616
+        ],
+        [
+          19048,
+          2616
+        ],
+        [
+          21664,
+          2616
+        ],
+        [
+          24280,
+          2616
+        ],
+        [
+          26896,
+          2616
+        ],
+        [
+          29512,
+          2616
+        ],
+        [
+          32128,
+          2616
+        ],
+        [
+          34744,
+          2616
+        ],
+        [
+          37360,
+          2616
+        ],
+        [
+          39976,
+          2616
+        ],
+        [
+          42592,
+          2616
+        ],
+        [
+          45208,
+          2616
+        ],
+        [
+          47824,
+          2616
+        ],
+        [
+          50440,
+          2616
+        ],
+        [
+          53056,
+          2616
+        ],
+        [
+          10632,
+          512
+        ],
+        [
+          66400,
+          328
+        ],
+        [
+          64304,
+          2096
+        ]
+      ],
+      "seconds": 0.47770279995165765
+    },
+    {
+      "member": "das-kefalonia-v2/data_example/kefalonia_day2_2024-08-02T124012+0100.h5",
+      "file_bytes": 83608223,
+      "zip_compressed_bytes": 82974064,
+      "zip_crc32": "7e10afb7",
+      "datasets": {
+        "Acquisition/Raw[0]/Custom/GpBits": {
+          "shape": [
+            7500
+          ],
+          "dtype": "uint8",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 7500,
+          "attrs": {
+            "Description": "0x01 = Data modified post-acquisition\n0x02 = Data compromised\n"
+          }
+        },
+        "Acquisition/Raw[0]/Custom/GpsStatus": {
+          "shape": [
+            7500
+          ],
+          "dtype": "uint8",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 7500,
+          "attrs": {
+            "Description": "0x01 = GPS Mode\n0x02 = GPS Sync Guaranteed\n0x04 = Time modified post-acquisition\n"
+          }
+        },
+        "Acquisition/Raw[0]/Custom/PpsOffset": {
+          "shape": [
+            7500
+          ],
+          "dtype": "uint32",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 30000,
+          "attrs": {
+            "Units": "CSU"
+          }
+        },
+        "Acquisition/Raw[0]/Custom/SampleCount": {
+          "shape": [
+            7500
+          ],
+          "dtype": "int64",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 60000,
+          "attrs": {}
+        },
+        "Acquisition/Raw[0]/RawData": {
+          "shape": [
+            7500,
+            7750
+          ],
+          "dtype": "int32",
+          "chunks": [
+            537,
+            122
+          ],
+          "compression": "gzip",
+          "compression_opts": 4,
+          "logical_bytes": 232500000,
+          "attrs": {
+            "Count": 58125000,
+            "Dimensions": [
+              "time",
+              "locus"
+            ],
+            "PartEndTime": "2024-08-02T11:40:42.981600Z",
+            "PartStartTime": "2024-08-02T11:40:12.985600Z",
+            "StartIndex": 147510000
+          }
+        },
+        "Acquisition/Raw[0]/RawDataTime": {
+          "shape": [
+            7500
+          ],
+          "dtype": "int64",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 60000,
+          "attrs": {
+            "Count": 7500,
+            "PartEndTime": "2024-08-02T11:40:42.981600Z",
+            "PartStartTime": "2024-08-02T11:40:12.985600Z",
+            "StartIndex": 147510000,
+            "StartTime": "2024-07-26T15:46:12.985600Z"
+          }
+        }
+      },
+      "groups": {
+        "Acquisition": {
+          "attrs": {
+            "AcquisitionId": "3cd5ead8-9429-469b-89c0-100046ed899c",
+            "GaugeLength": 10.209524154663086,
+            "GaugeLengthUnit": "m",
+            "MaximumFrequency": 125.0,
+            "MinimumFrequency": 0.0,
+            "NumberOfLoci": 7750,
+            "PulseRate": 5000.0,
+            "PulseWidth": 50.0,
+            "PulseWidthUnit": "ns",
+            "SpatialSamplingInterval": 2.0419046878814697,
+            "SpatialSamplingIntervalUnit": "m",
+            "StartLocusIndex": 0,
+            "TriggeredMeasurement": "false",
+            "VendorCode": "OptaSense IU Setup 1.8.6 c9c23ad2ab20eb82641984e0e1205500228e9fba",
+            "schemaVersion": "2.0",
+            "uuid": "3cd5ead8-9429-469b-89c0-100046ed899c"
+          }
+        },
+        "Acquisition/Custom": {
+          "attrs": {
+            "ADC Clock (MHz)": 1000,
+            "Acquisition Start (CSU)": 0,
+            "CSU Resolution (ns)": 1,
+            "Carrier Separation (CSU)": 348,
+            "CustomSchemaVersion": 5,
+            "Data Compromised": 0,
+            "Data Format": 0,
+            "Data Schema": "3.0",
+            "Data Width (Bits)": 32,
+            "Decimation Factor": 20,
+            "FPGA Data Sub Type": 0,
+            "FPGA Data Type": 9,
+            "FPGA Drawing Number": 7804701,
+            "FPGA Image in Set": 0,
+            "FPGA Version": "2.2",
+            "Fibre Refractive Index": 1.4681999683380127,
+            "Firmware Version": "2.0.1",
+            "GPS Enabled": 1,
+            "GPS Sync Guaranteed": 1,
+            "Gauge Length (CSU)": 0,
+            "Header Schema": "3.0",
+            "Input Channel Pitch (CSU)": 1,
+            "Input Mux. Position": 0,
+            "Laser Wavelength (nm)": 1550,
+            "Num Carriers": 2,
+            "Num Elements Per Channel": 1,
+            "Num Output Channels": 7750,
+            "Num Time Samples": 1,
+            "Output Channel Pitch (CSU)": 20.0,
+            "Output Channel Start (CSU)": 0,
+            "Payload Type": 0,
+            "Phase Fractional Width (Bits)": 16,
+            "Ping Period (CSU)": 200000,
+            "Product Drawing Number": 7800001,
+            "Pulse Layout": 14,
+            "Pulse Width (CSU)": 50,
+            "Synthetic Gauge Length (CSU)": 100,
+            "Unit Serial Number": 10027,
+            "User Data Type": 1087,
+            "Variant": 25
+          }
+        },
+        "Acquisition/Raw[0]": {
+          "attrs": {
+            "NumberOfLoci": 7750,
+            "OutputDataRate": 250.0,
+            "RawDataUnit": "rad * 2PI/2^16",
+            "RawDescription": "Diversity Processed Phase Dual Pulse Balanced. Ocp 20",
+            "StartLocusIndex": 0,
+            "uuid": "e924e3a7-4d62-4c0f-be2d-9eab161238df"
+          }
+        },
+        "Acquisition/Raw[0]/Custom": {
+          "attrs": {}
+        }
+      },
+      "root_attrs": {
+        "uuid": "2e35ad50-0a19-4072-952a-e99694277385"
+      },
+      "hdf_header_bytes_returned": 72776,
+      "hdf_header_read_calls": 58,
+      "hdf_header_seek_calls": 62,
+      "hdf_header_ranges": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          48
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          96,
+          512
+        ],
+        [
+          800,
+          104
+        ],
+        [
+          136,
+          544
+        ],
+        [
+          680,
+          512
+        ],
+        [
+          1608,
+          328
+        ],
+        [
+          904,
+          512
+        ],
+        [
+          1936,
+          1200
+        ],
+        [
+          944,
+          544
+        ],
+        [
+          1488,
+          512
+        ],
+        [
+          3840,
+          328
+        ],
+        [
+          3136,
+          512
+        ],
+        [
+          4168,
+          2840
+        ],
+        [
+          3176,
+          544
+        ],
+        [
+          3720,
+          512
+        ],
+        [
+          7008,
+          512
+        ],
+        [
+          8744,
+          472
+        ],
+        [
+          7048,
+          544
+        ],
+        [
+          7592,
+          512
+        ],
+        [
+          8416,
+          328
+        ],
+        [
+          7712,
+          512
+        ],
+        [
+          7752,
+          544
+        ],
+        [
+          8296,
+          512
+        ],
+        [
+          9488,
+          328
+        ],
+        [
+          10360,
+          512
+        ],
+        [
+          64192,
+          112
+        ],
+        [
+          61960,
+          2096
+        ],
+        [
+          10088,
+          512
+        ],
+        [
+          64056,
+          136
+        ],
+        [
+          59864,
+          2096
+        ],
+        [
+          9816,
+          512
+        ],
+        [
+          57768,
+          2096
+        ],
+        [
+          9216,
+          512
+        ],
+        [
+          55672,
+          2096
+        ],
+        [
+          10904,
+          512
+        ],
+        [
+          66728,
+          304
+        ],
+        [
+          11200,
+          2616
+        ],
+        [
+          16432,
+          2616
+        ],
+        [
+          13816,
+          2616
+        ],
+        [
+          19048,
+          2616
+        ],
+        [
+          21664,
+          2616
+        ],
+        [
+          24280,
+          2616
+        ],
+        [
+          26896,
+          2616
+        ],
+        [
+          29512,
+          2616
+        ],
+        [
+          32128,
+          2616
+        ],
+        [
+          34744,
+          2616
+        ],
+        [
+          37360,
+          2616
+        ],
+        [
+          39976,
+          2616
+        ],
+        [
+          42592,
+          2616
+        ],
+        [
+          45208,
+          2616
+        ],
+        [
+          47824,
+          2616
+        ],
+        [
+          50440,
+          2616
+        ],
+        [
+          53056,
+          2616
+        ],
+        [
+          10632,
+          512
+        ],
+        [
+          66400,
+          328
+        ],
+        [
+          64304,
+          2096
+        ]
+      ],
+      "seconds": 0.4587345999898389
+    },
+    {
+      "member": "das-kefalonia-v2/data_example/kefalonia_day2_2024-08-02T134342+0100.h5",
+      "file_bytes": 86729601,
+      "zip_compressed_bytes": 86158103,
+      "zip_crc32": "709ab328",
+      "datasets": {
+        "Acquisition/Raw[0]/Custom/GpBits": {
+          "shape": [
+            7500
+          ],
+          "dtype": "uint8",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 7500,
+          "attrs": {
+            "Description": "0x01 = Data modified post-acquisition\n0x02 = Data compromised\n"
+          }
+        },
+        "Acquisition/Raw[0]/Custom/GpsStatus": {
+          "shape": [
+            7500
+          ],
+          "dtype": "uint8",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 7500,
+          "attrs": {
+            "Description": "0x01 = GPS Mode\n0x02 = GPS Sync Guaranteed\n0x04 = Time modified post-acquisition\n"
+          }
+        },
+        "Acquisition/Raw[0]/Custom/PpsOffset": {
+          "shape": [
+            7500
+          ],
+          "dtype": "uint32",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 30000,
+          "attrs": {
+            "Units": "CSU"
+          }
+        },
+        "Acquisition/Raw[0]/Custom/SampleCount": {
+          "shape": [
+            7500
+          ],
+          "dtype": "int64",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 60000,
+          "attrs": {}
+        },
+        "Acquisition/Raw[0]/RawData": {
+          "shape": [
+            7500,
+            7750
+          ],
+          "dtype": "int32",
+          "chunks": [
+            537,
+            122
+          ],
+          "compression": "gzip",
+          "compression_opts": 4,
+          "logical_bytes": 232500000,
+          "attrs": {
+            "Count": 58125000,
+            "Dimensions": [
+              "time",
+              "locus"
+            ],
+            "PartEndTime": "2024-08-02T12:44:12.981600Z",
+            "PartStartTime": "2024-08-02T12:43:42.985600Z",
+            "StartIndex": 148462500
+          }
+        },
+        "Acquisition/Raw[0]/RawDataTime": {
+          "shape": [
+            7500
+          ],
+          "dtype": "int64",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 60000,
+          "attrs": {
+            "Count": 7500,
+            "PartEndTime": "2024-08-02T12:44:12.981600Z",
+            "PartStartTime": "2024-08-02T12:43:42.985600Z",
+            "StartIndex": 148462500,
+            "StartTime": "2024-07-26T15:46:12.985600Z"
+          }
+        }
+      },
+      "groups": {
+        "Acquisition": {
+          "attrs": {
+            "AcquisitionId": "3cd5ead8-9429-469b-89c0-100046ed899c",
+            "GaugeLength": 10.209524154663086,
+            "GaugeLengthUnit": "m",
+            "MaximumFrequency": 125.0,
+            "MinimumFrequency": 0.0,
+            "NumberOfLoci": 7750,
+            "PulseRate": 5000.0,
+            "PulseWidth": 50.0,
+            "PulseWidthUnit": "ns",
+            "SpatialSamplingInterval": 2.0419046878814697,
+            "SpatialSamplingIntervalUnit": "m",
+            "StartLocusIndex": 0,
+            "TriggeredMeasurement": "false",
+            "VendorCode": "OptaSense IU Setup 1.8.6 c9c23ad2ab20eb82641984e0e1205500228e9fba",
+            "schemaVersion": "2.0",
+            "uuid": "3cd5ead8-9429-469b-89c0-100046ed899c"
+          }
+        },
+        "Acquisition/Custom": {
+          "attrs": {
+            "ADC Clock (MHz)": 1000,
+            "Acquisition Start (CSU)": 0,
+            "CSU Resolution (ns)": 1,
+            "Carrier Separation (CSU)": 348,
+            "CustomSchemaVersion": 5,
+            "Data Compromised": 0,
+            "Data Format": 0,
+            "Data Schema": "3.0",
+            "Data Width (Bits)": 32,
+            "Decimation Factor": 20,
+            "FPGA Data Sub Type": 0,
+            "FPGA Data Type": 9,
+            "FPGA Drawing Number": 7804701,
+            "FPGA Image in Set": 0,
+            "FPGA Version": "2.2",
+            "Fibre Refractive Index": 1.4681999683380127,
+            "Firmware Version": "2.0.1",
+            "GPS Enabled": 1,
+            "GPS Sync Guaranteed": 1,
+            "Gauge Length (CSU)": 0,
+            "Header Schema": "3.0",
+            "Input Channel Pitch (CSU)": 1,
+            "Input Mux. Position": 0,
+            "Laser Wavelength (nm)": 1550,
+            "Num Carriers": 2,
+            "Num Elements Per Channel": 1,
+            "Num Output Channels": 7750,
+            "Num Time Samples": 1,
+            "Output Channel Pitch (CSU)": 20.0,
+            "Output Channel Start (CSU)": 0,
+            "Payload Type": 0,
+            "Phase Fractional Width (Bits)": 16,
+            "Ping Period (CSU)": 200000,
+            "Product Drawing Number": 7800001,
+            "Pulse Layout": 14,
+            "Pulse Width (CSU)": 50,
+            "Synthetic Gauge Length (CSU)": 100,
+            "Unit Serial Number": 10027,
+            "User Data Type": 1087,
+            "Variant": 25
+          }
+        },
+        "Acquisition/Raw[0]": {
+          "attrs": {
+            "NumberOfLoci": 7750,
+            "OutputDataRate": 250.0,
+            "RawDataUnit": "rad * 2PI/2^16",
+            "RawDescription": "Diversity Processed Phase Dual Pulse Balanced. Ocp 20",
+            "StartLocusIndex": 0,
+            "uuid": "e924e3a7-4d62-4c0f-be2d-9eab161238df"
+          }
+        },
+        "Acquisition/Raw[0]/Custom": {
+          "attrs": {}
+        }
+      },
+      "root_attrs": {
+        "uuid": "e5809c6d-d1df-4a76-bfed-809ed300592e"
+      },
+      "hdf_header_bytes_returned": 72776,
+      "hdf_header_read_calls": 58,
+      "hdf_header_seek_calls": 62,
+      "hdf_header_ranges": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          48
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          96,
+          512
+        ],
+        [
+          800,
+          104
+        ],
+        [
+          136,
+          544
+        ],
+        [
+          680,
+          512
+        ],
+        [
+          1608,
+          328
+        ],
+        [
+          904,
+          512
+        ],
+        [
+          1936,
+          1200
+        ],
+        [
+          944,
+          544
+        ],
+        [
+          1488,
+          512
+        ],
+        [
+          3840,
+          328
+        ],
+        [
+          3136,
+          512
+        ],
+        [
+          4168,
+          2840
+        ],
+        [
+          3176,
+          544
+        ],
+        [
+          3720,
+          512
+        ],
+        [
+          7008,
+          512
+        ],
+        [
+          8744,
+          472
+        ],
+        [
+          7048,
+          544
+        ],
+        [
+          7592,
+          512
+        ],
+        [
+          8416,
+          328
+        ],
+        [
+          7712,
+          512
+        ],
+        [
+          7752,
+          544
+        ],
+        [
+          8296,
+          512
+        ],
+        [
+          9488,
+          328
+        ],
+        [
+          10360,
+          512
+        ],
+        [
+          64192,
+          112
+        ],
+        [
+          61960,
+          2096
+        ],
+        [
+          10088,
+          512
+        ],
+        [
+          64056,
+          136
+        ],
+        [
+          59864,
+          2096
+        ],
+        [
+          9816,
+          512
+        ],
+        [
+          57768,
+          2096
+        ],
+        [
+          9216,
+          512
+        ],
+        [
+          55672,
+          2096
+        ],
+        [
+          10904,
+          512
+        ],
+        [
+          66728,
+          304
+        ],
+        [
+          11200,
+          2616
+        ],
+        [
+          16432,
+          2616
+        ],
+        [
+          13816,
+          2616
+        ],
+        [
+          19048,
+          2616
+        ],
+        [
+          21664,
+          2616
+        ],
+        [
+          24280,
+          2616
+        ],
+        [
+          26896,
+          2616
+        ],
+        [
+          29512,
+          2616
+        ],
+        [
+          32128,
+          2616
+        ],
+        [
+          34744,
+          2616
+        ],
+        [
+          37360,
+          2616
+        ],
+        [
+          39976,
+          2616
+        ],
+        [
+          42592,
+          2616
+        ],
+        [
+          45208,
+          2616
+        ],
+        [
+          47824,
+          2616
+        ],
+        [
+          50440,
+          2616
+        ],
+        [
+          53056,
+          2616
+        ],
+        [
+          10632,
+          512
+        ],
+        [
+          66400,
+          328
+        ],
+        [
+          64304,
+          2096
+        ]
+      ],
+      "seconds": 0.5190003999741748
+    },
+    {
+      "member": "das-kefalonia-v2/data_example/kefalonia_day2_2024-08-02T134412+0100.h5",
+      "file_bytes": 84685919,
+      "zip_compressed_bytes": 84076194,
+      "zip_crc32": "df187e0b",
+      "datasets": {
+        "Acquisition/Raw[0]/Custom/GpBits": {
+          "shape": [
+            7500
+          ],
+          "dtype": "uint8",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 7500,
+          "attrs": {
+            "Description": "0x01 = Data modified post-acquisition\n0x02 = Data compromised\n"
+          }
+        },
+        "Acquisition/Raw[0]/Custom/GpsStatus": {
+          "shape": [
+            7500
+          ],
+          "dtype": "uint8",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 7500,
+          "attrs": {
+            "Description": "0x01 = GPS Mode\n0x02 = GPS Sync Guaranteed\n0x04 = Time modified post-acquisition\n"
+          }
+        },
+        "Acquisition/Raw[0]/Custom/PpsOffset": {
+          "shape": [
+            7500
+          ],
+          "dtype": "uint32",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 30000,
+          "attrs": {
+            "Units": "CSU"
+          }
+        },
+        "Acquisition/Raw[0]/Custom/SampleCount": {
+          "shape": [
+            7500
+          ],
+          "dtype": "int64",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 60000,
+          "attrs": {}
+        },
+        "Acquisition/Raw[0]/RawData": {
+          "shape": [
+            7500,
+            7750
+          ],
+          "dtype": "int32",
+          "chunks": [
+            537,
+            122
+          ],
+          "compression": "gzip",
+          "compression_opts": 4,
+          "logical_bytes": 232500000,
+          "attrs": {
+            "Count": 58125000,
+            "Dimensions": [
+              "time",
+              "locus"
+            ],
+            "PartEndTime": "2024-08-02T12:44:42.981600Z",
+            "PartStartTime": "2024-08-02T12:44:12.985600Z",
+            "StartIndex": 148470000
+          }
+        },
+        "Acquisition/Raw[0]/RawDataTime": {
+          "shape": [
+            7500
+          ],
+          "dtype": "int64",
+          "chunks": [
+            7500
+          ],
+          "compression": "gzip",
+          "compression_opts": 1,
+          "logical_bytes": 60000,
+          "attrs": {
+            "Count": 7500,
+            "PartEndTime": "2024-08-02T12:44:42.981600Z",
+            "PartStartTime": "2024-08-02T12:44:12.985600Z",
+            "StartIndex": 148470000,
+            "StartTime": "2024-07-26T15:46:12.985600Z"
+          }
+        }
+      },
+      "groups": {
+        "Acquisition": {
+          "attrs": {
+            "AcquisitionId": "3cd5ead8-9429-469b-89c0-100046ed899c",
+            "GaugeLength": 10.209524154663086,
+            "GaugeLengthUnit": "m",
+            "MaximumFrequency": 125.0,
+            "MinimumFrequency": 0.0,
+            "NumberOfLoci": 7750,
+            "PulseRate": 5000.0,
+            "PulseWidth": 50.0,
+            "PulseWidthUnit": "ns",
+            "SpatialSamplingInterval": 2.0419046878814697,
+            "SpatialSamplingIntervalUnit": "m",
+            "StartLocusIndex": 0,
+            "TriggeredMeasurement": "false",
+            "VendorCode": "OptaSense IU Setup 1.8.6 c9c23ad2ab20eb82641984e0e1205500228e9fba",
+            "schemaVersion": "2.0",
+            "uuid": "3cd5ead8-9429-469b-89c0-100046ed899c"
+          }
+        },
+        "Acquisition/Custom": {
+          "attrs": {
+            "ADC Clock (MHz)": 1000,
+            "Acquisition Start (CSU)": 0,
+            "CSU Resolution (ns)": 1,
+            "Carrier Separation (CSU)": 348,
+            "CustomSchemaVersion": 5,
+            "Data Compromised": 0,
+            "Data Format": 0,
+            "Data Schema": "3.0",
+            "Data Width (Bits)": 32,
+            "Decimation Factor": 20,
+            "FPGA Data Sub Type": 0,
+            "FPGA Data Type": 9,
+            "FPGA Drawing Number": 7804701,
+            "FPGA Image in Set": 0,
+            "FPGA Version": "2.2",
+            "Fibre Refractive Index": 1.4681999683380127,
+            "Firmware Version": "2.0.1",
+            "GPS Enabled": 1,
+            "GPS Sync Guaranteed": 1,
+            "Gauge Length (CSU)": 0,
+            "Header Schema": "3.0",
+            "Input Channel Pitch (CSU)": 1,
+            "Input Mux. Position": 0,
+            "Laser Wavelength (nm)": 1550,
+            "Num Carriers": 2,
+            "Num Elements Per Channel": 1,
+            "Num Output Channels": 7750,
+            "Num Time Samples": 1,
+            "Output Channel Pitch (CSU)": 20.0,
+            "Output Channel Start (CSU)": 0,
+            "Payload Type": 0,
+            "Phase Fractional Width (Bits)": 16,
+            "Ping Period (CSU)": 200000,
+            "Product Drawing Number": 7800001,
+            "Pulse Layout": 14,
+            "Pulse Width (CSU)": 50,
+            "Synthetic Gauge Length (CSU)": 100,
+            "Unit Serial Number": 10027,
+            "User Data Type": 1087,
+            "Variant": 25
+          }
+        },
+        "Acquisition/Raw[0]": {
+          "attrs": {
+            "NumberOfLoci": 7750,
+            "OutputDataRate": 250.0,
+            "RawDataUnit": "rad * 2PI/2^16",
+            "RawDescription": "Diversity Processed Phase Dual Pulse Balanced. Ocp 20",
+            "StartLocusIndex": 0,
+            "uuid": "e924e3a7-4d62-4c0f-be2d-9eab161238df"
+          }
+        },
+        "Acquisition/Raw[0]/Custom": {
+          "attrs": {}
+        }
+      },
+      "root_attrs": {
+        "uuid": "39c104c2-8451-4ce4-938e-ea6bdd7fa38f"
+      },
+      "hdf_header_bytes_returned": 72776,
+      "hdf_header_read_calls": 58,
+      "hdf_header_seek_calls": 62,
+      "hdf_header_ranges": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          48
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          96,
+          512
+        ],
+        [
+          800,
+          104
+        ],
+        [
+          136,
+          544
+        ],
+        [
+          680,
+          512
+        ],
+        [
+          1608,
+          328
+        ],
+        [
+          904,
+          512
+        ],
+        [
+          1936,
+          1200
+        ],
+        [
+          944,
+          544
+        ],
+        [
+          1488,
+          512
+        ],
+        [
+          3840,
+          328
+        ],
+        [
+          3136,
+          512
+        ],
+        [
+          4168,
+          2840
+        ],
+        [
+          3176,
+          544
+        ],
+        [
+          3720,
+          512
+        ],
+        [
+          7008,
+          512
+        ],
+        [
+          8744,
+          472
+        ],
+        [
+          7048,
+          544
+        ],
+        [
+          7592,
+          512
+        ],
+        [
+          8416,
+          328
+        ],
+        [
+          7712,
+          512
+        ],
+        [
+          7752,
+          544
+        ],
+        [
+          8296,
+          512
+        ],
+        [
+          9488,
+          328
+        ],
+        [
+          10360,
+          512
+        ],
+        [
+          64192,
+          112
+        ],
+        [
+          61960,
+          2096
+        ],
+        [
+          10088,
+          512
+        ],
+        [
+          64056,
+          136
+        ],
+        [
+          59864,
+          2096
+        ],
+        [
+          9816,
+          512
+        ],
+        [
+          57768,
+          2096
+        ],
+        [
+          9216,
+          512
+        ],
+        [
+          55672,
+          2096
+        ],
+        [
+          10904,
+          512
+        ],
+        [
+          66728,
+          304
+        ],
+        [
+          11200,
+          2616
+        ],
+        [
+          16432,
+          2616
+        ],
+        [
+          13816,
+          2616
+        ],
+        [
+          19048,
+          2616
+        ],
+        [
+          21664,
+          2616
+        ],
+        [
+          24280,
+          2616
+        ],
+        [
+          26896,
+          2616
+        ],
+        [
+          29512,
+          2616
+        ],
+        [
+          32128,
+          2616
+        ],
+        [
+          34744,
+          2616
+        ],
+        [
+          37360,
+          2616
+        ],
+        [
+          39976,
+          2616
+        ],
+        [
+          42592,
+          2616
+        ],
+        [
+          45208,
+          2616
+        ],
+        [
+          47824,
+          2616
+        ],
+        [
+          50440,
+          2616
+        ],
+        [
+          53056,
+          2616
+        ],
+        [
+          10632,
+          512
+        ],
+        [
+          66400,
+          328
+        ],
+        [
+          64304,
+          2096
+        ]
+      ],
+      "seconds": 0.4990014000213705
+    }
+  ],
+  "metadata_sources": {
+    "README.md": {
+      "bytes": 3921,
+      "sha256": "727a21f3256cfb60f27bce4f539d6695badfef26495a19c3fabab8a33d0c391d"
+    },
+    "Codes/das_class.py": {
+      "bytes": 9373,
+      "sha256": "dea185830eed5928d54238102a95228390baa61b84ddfb8e9fb808be1fb5e227"
+    },
+    "Codes/main_plot_events.py": {
+      "bytes": 5418,
+      "sha256": "2a941da316b3a249c9277a547e0a975c69be374f9617401f28f9c14bfaeb14fa"
+    },
+    "Codes/utils_filetime.py": {
+      "bytes": 2319,
+      "sha256": "5d4bd68de51b76536956cceec9ee0c4d05c36f5be02fa28660b68341023e277e"
+    },
+    "Catalog_with_absolute_earthquake_locations.csv": {
+      "bytes": 39599,
+      "sha256": "9535da7adae8853685a44737ebdad1121bda72ab92c8250ada37acdd28630acf"
+    },
+    "Enhanced_earthquake_catalog.csv": {
+      "bytes": 244451,
+      "sha256": "8c6d254d9e7874286976175cd9ee8d7072cec1b130c41a552e16161596a330df"
+    },
+    "list_of_detections.csv": {
+      "bytes": 488288,
+      "sha256": "89ef30add4127f8c6fbf3aff099656e80db58dfc7b3f876d6bc704a0ffe9d7ec"
+    }
+  },
+  "catalog_rows_with_origin_or_detection_in_example_members": {
+    "Catalog_with_absolute_earthquake_locations.csv": [
+      {
+        "event_id": "kef0131",
+        "id_nlloc": "20240802113956",
+        "origin": "2024-08-02T11:39:56.593636Z",
+        "longitude": "20.4229",
+        "latitude": "38.3748",
+        "depth": "6.15",
+        "Nobs": "32",
+        "gap": "200.63",
+        "RMS": "0.1",
+        "H_err": "1.94",
+        "h_err": "0.91",
+        "z_err": "2.06",
+        "ML": "0.99",
+        "ML_std": "0.12",
+        "overlapping_members": [
+          "das-kefalonia-v2/data_example/kefalonia_day2_2024-08-02T123942+0100.h5"
+        ]
+      },
+      {
+        "event_id": "kef0140",
+        "id_nlloc": "20240802124346",
+        "origin": "2024-08-02T12:43:46.505302Z",
+        "longitude": "20.4923",
+        "latitude": "38.4075",
+        "depth": "2.87",
+        "Nobs": "30",
+        "gap": "181.99",
+        "RMS": "0.06",
+        "H_err": "1.06",
+        "h_err": "0.81",
+        "z_err": "1.68",
+        "ML": "0.64",
+        "ML_std": "0.14",
+        "overlapping_members": [
+          "das-kefalonia-v2/data_example/kefalonia_day2_2024-08-02T134342+0100.h5"
+        ]
+      }
+    ],
+    "Enhanced_earthquake_catalog.csv": [
+      {
+        "event_id": "kef0131",
+        "amplitude": "0.0021729",
+        "ML": "0.99",
+        "reference": "",
+        "CCC": "",
+        "detection_time": "2024-08-02T11:39:59.163000Z",
+        "latitude": "38.3748",
+        "longitude": "20.4229",
+        "depth": "6.15",
+        "overlapping_members": [
+          "das-kefalonia-v2/data_example/kefalonia_day2_2024-08-02T123942+0100.h5"
+        ]
+      },
+      {
+        "event_id": "kef0140",
+        "amplitude": "0.0028085",
+        "ML": "0.64",
+        "reference": "",
+        "CCC": "",
+        "detection_time": "2024-08-02T12:43:47.160000Z",
+        "latitude": "38.4075",
+        "longitude": "20.4923",
+        "depth": "2.87",
+        "overlapping_members": [
+          "das-kefalonia-v2/data_example/kefalonia_day2_2024-08-02T134342+0100.h5"
+        ]
+      }
+    ],
+    "list_of_detections.csv": [
+      {
+        "ID": "kef0131",
+        "Detection_Time": "2024-08-02T11:39:59.163000Z",
+        "classification": "T",
+        "trim_mean_amplitude (microstrain)": "0.0015044018998412",
+        "snr_db_mean": "17.2217234398468",
+        "noa_ids": "",
+        "overlapping_members": [
+          "das-kefalonia-v2/data_example/kefalonia_day2_2024-08-02T123942+0100.h5"
+        ]
+      },
+      {
+        "ID": "kef0140",
+        "Detection_Time": "2024-08-02T12:43:47.160000Z",
+        "classification": "T",
+        "trim_mean_amplitude (microstrain)": "0.00192898193290543",
+        "snr_db_mean": "19.861871245464",
+        "noa_ids": "",
+        "overlapping_members": [
+          "das-kefalonia-v2/data_example/kefalonia_day2_2024-08-02T134342+0100.h5"
+        ]
+      },
+      {
+        "ID": "kef0141",
+        "Detection_Time": "2024-08-02T12:43:57.155000Z",
+        "classification": "F",
+        "trim_mean_amplitude (microstrain)": "",
+        "snr_db_mean": "",
+        "noa_ids": "",
+        "overlapping_members": [
+          "das-kefalonia-v2/data_example/kefalonia_day2_2024-08-02T134342+0100.h5"
+        ]
+      }
+    ]
+  },
+  "seconds": 1.9863434999715537,
+  "returned_hdf_metadata_bytes_total": 291104
+}

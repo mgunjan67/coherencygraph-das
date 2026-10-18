@@ -1,0 +1,453 @@
+{
+  "scope": "Current candidate display/numerical mapping, not a public manuscript",
+  "documents": {
+    "main": {
+      "figures": [
+        {
+          "label": "fig:raw",
+          "number": "1",
+          "page": 5,
+          "files": [
+            {
+              "file": "raw_wavefield_example.pdf",
+              "sha256": "45bf4eec7089d3193a0d4516581042173bf801146ac9aae35fd84a21271cca07"
+            }
+          ]
+        },
+        {
+          "label": "fig:original",
+          "number": "2",
+          "page": 13,
+          "files": [
+            {
+              "file": "original_comparisons.pdf",
+              "sha256": "0114b420d52ad1748938c0766c2791e395038b7b48783ae1095e2085864ed70d"
+            }
+          ]
+        },
+        {
+          "label": "fig:filter",
+          "number": "3",
+          "page": 18,
+          "files": [
+            {
+              "file": "continuous_filter_comparison.pdf",
+              "sha256": "69ec565b7dafcc7ba92bb5d89b337cdc24af08c4fc558ffcf0c6ebd3cacec14a"
+            }
+          ]
+        },
+        {
+          "label": "fig:tradeoff",
+          "number": "4",
+          "page": 19,
+          "files": [
+            {
+              "file": "regularization_tradeoff.pdf",
+              "sha256": "b0830a6af2c88a5c86ec119ddb114f9fb2045a873d74c08457209ad0606ed4a1"
+            }
+          ]
+        },
+        {
+          "label": "fig:recorded",
+          "number": "5",
+          "page": 20,
+          "files": [
+            {
+              "file": "recorded_components_and_tradeoff.pdf",
+              "sha256": "04f4388a1f47cdf42a1e596c05ab407066e36efb8066a4eaec86006dbfcbb61b"
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "label": "tab:evidence",
+          "number": "1",
+          "page": 12
+        },
+        {
+          "label": "tab:filter",
+          "number": "2",
+          "page": 16
+        },
+        {
+          "label": "tab:expanded_frontier",
+          "number": "3",
+          "page": 17
+        }
+      ],
+      "figure_count": 5,
+      "table_count": 3,
+      "uncited_display_labels": [],
+      "first_display_references": [
+        "fig:raw",
+        "fig:original",
+        "tab:evidence",
+        "tab:filter",
+        "fig:filter",
+        "fig:tradeoff",
+        "tab:expanded_frontier",
+        "fig:recorded"
+      ],
+      "source_file_hashes": {
+        "main.tex": "45280efb96c2a5ac2ae0708db25bed43ab91820690e334c3f4f64afdf48dfd23",
+        "generated_numbers.tex": "1b9c8818e4ab9fde7d6097d51b8c2e473e7ad185120e5b218092498d758a0e13",
+        "generated_abstract.tex": "84d1224d3744358750852353e86264a7d0ee85a49e6151e3f61cb554fb3b06a2",
+        "submission_body.tex": "7ee8fe5dde09618f0494711f3a5750cd01e741afc32cddf414e2d5cefdd3eb97",
+        "generated_extension_methods.tex": "10b1f13452daf7f1b17402513eab91f5ed602bc66f2e8f035e6f47b3468f2778",
+        "main_evidence_table.tex": "88513739e1c0e53f708eada7ff7ef59d0cb5b94f78db984d4daa24c919b7814b",
+        "generated_filter_results.tex": "ff6913aff8a7807d2358f55c7e0df8eae9036bdf595a80a7ba7b2f5e50cfc8ab",
+        "generated_same_fraction_reassessment.tex": "f71e28b6ba8454904c42e4939b1539c8af559bfd8f7e449395caf75261738348",
+        "generated_filter_table.tex": "622a39d86b26fd50fdedcdd4b5f36c95f9dfc2783b40759cbf80ac8c82964ac9",
+        "generated_extension_results.tex": "52f8b9d4953194be7263a06e99cde8689eda1ff2e3a64bcad28116941c0820fb",
+        "generated_extension_discussion.tex": "161cc793daab05d6d3c4b8e791324756fcc2ba45e42125c4c1bec6fa8f9d1ed8",
+        "generated_conclusion.tex": "e01ceabc5f0c50fe4551488ec7241819a0b18ed6c2ef5f0fec53eb71e7ebc42f",
+        "bssa_references.tex": "e58332af605a02b260e809be069e605206c82ba070039810aa354d1c8141dd3b"
+      }
+    },
+    "supplement": {
+      "figures": [
+        {
+          "label": "fig:quality",
+          "number": "S1",
+          "page": 5,
+          "files": [
+            {
+              "file": "data_quality_overview.pdf",
+              "sha256": "483b3411a1ab084aadfeb9ce7c2e17d063265b9ffd1b39161889b733d7f0b37c"
+            }
+          ]
+        },
+        {
+          "label": "fig:repeatability",
+          "number": "S2",
+          "page": 24,
+          "files": [
+            {
+              "file": "residual_repeatability.pdf",
+              "sha256": "6bd7ab70c6186c8cd287348e2c857fe10c211b85dc92dc432b6ff7f2b9f1b621"
+            }
+          ]
+        },
+        {
+          "label": "fig:gauge_support",
+          "number": "S3",
+          "page": 27,
+          "files": [
+            {
+              "file": "gauge_support_controls.pdf",
+              "sha256": "7615be1973360de997c070d906390159f52340952d3705b4cff1fc8c685d4660"
+            }
+          ]
+        },
+        {
+          "label": "fig:continuousqc",
+          "number": "S4",
+          "page": 30,
+          "files": [
+            {
+              "file": "continuous_data_qc.pdf",
+              "sha256": "c20c7f7d3b2b446c3aa3774c5701f9b86d7234ce30211492aa7a3c4a599df2fc"
+            }
+          ]
+        },
+        {
+          "label": "fig:resampling",
+          "number": "S5",
+          "page": 31,
+          "files": [
+            {
+              "file": "resampling_boundary_audit.pdf",
+              "sha256": "b7d408d7a6c75fe388a2950f96336f23c7c27c3856e0bceeac656acca37969c3"
+            }
+          ]
+        },
+        {
+          "label": "fig:matrix",
+          "number": "S6",
+          "page": 39,
+          "files": [
+            {
+              "file": "matrix_example.pdf",
+              "sha256": "f05803a9c9b020de5cf916f1420e0375a0d1d91334051c17111917074031a8c5"
+            }
+          ]
+        },
+        {
+          "label": "fig:decomposition",
+          "number": "S7",
+          "page": 40,
+          "files": [
+            {
+              "file": "decomposition.pdf",
+              "sha256": "65b64019c546316eaa3e6f9c98dd777cdc4494a3def43dd43081b5931df34676"
+            }
+          ]
+        },
+        {
+          "label": "fig:controls",
+          "number": "S8",
+          "page": 41,
+          "files": [
+            {
+              "file": "training_controls.pdf",
+              "sha256": "bd95a2de3ddcd7fa9b161a706cb13e9cf401119b6236f416f534e6a406c315c5"
+            }
+          ]
+        },
+        {
+          "label": "fig:synthetic",
+          "number": "S9",
+          "page": 42,
+          "files": [
+            {
+              "file": "synthetic_diagnostic.pdf",
+              "sha256": "3dc5ff45ebdfc09bbca5def29f8c9a4bb2eda34e81dfc5384b5c889253865d4e"
+            }
+          ]
+        },
+        {
+          "label": "fig:stability",
+          "number": "S10",
+          "page": 46,
+          "files": [
+            {
+              "file": "frontier_stability.pdf",
+              "sha256": "667db143c18d62d13c4ad6a046dc181566ea95612d8cd99ba22c9263a6868f2c"
+            }
+          ]
+        },
+        {
+          "label": "fig:geography",
+          "number": "S11",
+          "page": 51,
+          "files": [
+            {
+              "file": "source_geometry.pdf",
+              "sha256": "d72e44ceb62402f85a269ff070a99e358620a6e171cb0d83d857b4b7db6e495f"
+            }
+          ]
+        },
+        {
+          "label": "fig:reference",
+          "number": "S12",
+          "page": 52,
+          "files": [
+            {
+              "file": "reference_sensitivity.pdf",
+              "sha256": "8f863de7886d84ffe0c3233847e0ac1f2b00b5715b8587557824e85d612afa02"
+            }
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "label": "tab:events",
+          "number": "S1",
+          "page": 2
+        },
+        {
+          "label": "tab:training",
+          "number": "S2",
+          "page": 7
+        },
+        {
+          "label": "tab:allcomparisons",
+          "number": "S3",
+          "page": 8
+        },
+        {
+          "label": "tab:mse",
+          "number": "S4",
+          "page": 9
+        },
+        {
+          "label": "tab:audit",
+          "number": "S5",
+          "page": 11
+        },
+        {
+          "label": "tab:inventory",
+          "number": "S6",
+          "page": 14
+        },
+        {
+          "label": "tab:ranks",
+          "number": "S7",
+          "page": 16
+        },
+        {
+          "label": "tab:terms",
+          "number": "S8",
+          "page": 17
+        },
+        {
+          "label": "tab:ctrl",
+          "number": "S9",
+          "page": 17
+        },
+        {
+          "label": "tab:seeds",
+          "number": "S10",
+          "page": 18
+        },
+        {
+          "label": "tab:gauge",
+          "number": "S11",
+          "page": 18
+        },
+        {
+          "label": "tab:synthetic",
+          "number": "S12",
+          "page": 19
+        },
+        {
+          "label": "tab:repeatability",
+          "number": "S13",
+          "page": 23
+        },
+        {
+          "label": "tab:gauge_support",
+          "number": "S14",
+          "page": 26
+        },
+        {
+          "label": "tab:gauge_support_strata",
+          "number": "S15",
+          "page": 28
+        },
+        {
+          "label": "tab:filter-delay-minus",
+          "number": "S16",
+          "page": 34
+        },
+        {
+          "label": "tab:filter-delay-plus",
+          "number": "S17",
+          "page": 35
+        },
+        {
+          "label": "tab:filter-amplitude-minus",
+          "number": "S18",
+          "page": 36
+        },
+        {
+          "label": "tab:filter-amplitude-plus",
+          "number": "S19",
+          "page": 37
+        },
+        {
+          "label": "tab:stability",
+          "number": "S20",
+          "page": 45
+        },
+        {
+          "label": "tab:recorded_sources",
+          "number": "S21",
+          "page": 53
+        },
+        {
+          "label": "tab:all_extended_frontiers",
+          "number": "S22",
+          "page": 54
+        },
+        {
+          "label": "tab:lcmv_date_means",
+          "number": "S23",
+          "page": 55
+        },
+        {
+          "label": "tab:lcmv_date_tails",
+          "number": "S24",
+          "page": 56
+        },
+        {
+          "label": "tab:recorded_all_methods",
+          "number": "S25",
+          "page": 57
+        },
+        {
+          "label": "tab:recorded_date_contrasts",
+          "number": "S26",
+          "page": 58
+        },
+        {
+          "label": "tab:recorded_reference_cancellation",
+          "number": "S27",
+          "page": 59
+        }
+      ],
+      "figure_count": 12,
+      "table_count": 27,
+      "uncited_display_labels": [],
+      "first_display_references": [
+        "tab:events",
+        "fig:quality",
+        "tab:training",
+        "tab:allcomparisons",
+        "tab:mse",
+        "tab:audit",
+        "tab:inventory",
+        "tab:ranks",
+        "tab:terms",
+        "tab:ctrl",
+        "tab:seeds",
+        "tab:gauge",
+        "tab:synthetic",
+        "tab:repeatability",
+        "fig:repeatability",
+        "tab:gauge_support",
+        "tab:gauge_support_strata",
+        "fig:gauge_support",
+        "fig:continuousqc",
+        "fig:resampling",
+        "tab:filter-delay-minus",
+        "tab:filter-delay-plus",
+        "tab:filter-amplitude-minus",
+        "tab:filter-amplitude-plus",
+        "fig:matrix",
+        "fig:decomposition",
+        "fig:controls",
+        "fig:synthetic",
+        "tab:stability",
+        "fig:stability",
+        "tab:recorded_sources",
+        "tab:all_extended_frontiers",
+        "tab:lcmv_date_means",
+        "tab:lcmv_date_tails",
+        "tab:recorded_all_methods",
+        "tab:recorded_date_contrasts",
+        "tab:recorded_reference_cancellation",
+        "fig:geography",
+        "fig:reference"
+      ],
+      "source_file_hashes": {
+        "supplement.tex": "27f8c4e9b00837bc70c2ed79f91a541880540a9b2bee00a77d9d951068bf0e3d",
+        "longtable_compat.tex": "52933fc4112beeaf6e11e64b3b24aefaa883da767370b1dd3c4caf288331bfa4",
+        "generated_numbers.tex": "1b9c8818e4ab9fde7d6097d51b8c2e473e7ad185120e5b218092498d758a0e13",
+        "generated_cohort_table.tex": "dced62f07ff1069d61ecdcb9b034f6744cae35119ed2abb4f47d7d9736ee81f8",
+        "generated_cohort_summary.tex": "6e26a56912096b44de5ac36f7565c1d36c1d5fcbe921dbaccecf3c77c39072a9",
+        "generated_quality_sensitivity.tex": "38968662310e8c69483db1718306a6adb318209cd6fb5a68fa02284610bba1c2",
+        "generated_training_table.tex": "8560f7158fc58eea87a9446ea9074d1486da89fc5caf1b5de0fae096457b4f1b",
+        "generated_all_comparisons.tex": "5dfe2431da524cfc86b91550e494adaa3bf8306f7b8163fafa16cb877bc26f59",
+        "generated_mse_table.tex": "8140c247ee35657628d01b7ab6b69f1d590901a444afb492fdd0095a90011713",
+        "generated_historical_audit_table.tex": "8864b661edaebea1141a31143fae5ebf4563863f74b6069fc0adcae63a59a48f",
+        "generated_inventory.tex": "08fdb57b68c95a03fbe4b8b1610f3b64d293ccce41e80378c79c455c7fff658b",
+        "diagnostic_supplement.tex": "1559796b698ea0c4bc1984c9534f9f33c610a50b8455f4f7ca468da06bedc3a2",
+        "repeatability_supplement.tex": "d58443c5fb346c86ed2c34ae63c158be62430ab32ca2089d9d3af4ab3bf11cc4",
+        "generated_cross_runtime_verification.tex": "92c5956947005999328c895b3dc8634b642a6398b7215670d8d00f87eb4baf63",
+        "generated_repeatability_table.tex": "e9929f049c6a4dc1aff5b3a889c1552bae5a2386423e1462434e5249612815c8",
+        "gauge_support_supplement.tex": "d7a92e0ce306646c3e413d71f7abf21c1a7878fc1b3802bdc057c4b0523e9ec3",
+        "generated_gauge_table.tex": "1cb76c4edb8f6551d1aee63fe8ba6d5038149c1fe2a4bc162572ca7be933d8f8",
+        "continuous_filter_supplement.tex": "0affb1b926b36b8d0d75e5a85492aaa68312f3b518fe322040fadaeae4a7bd81",
+        "generated_mismatch_tables.tex": "28203fb75cb79722bf5b67f3cb981b6845b5ead7c7f37256d1b88aa73a3b97ec",
+        "extended_diagnostic_figures.tex": "aa1cd7715da6aa547747237353767b7d60358b305215841513104c4b5300ce99",
+        "stability_supplement.tex": "8c9b9ad34c115e2c791bcae35e0345b1a34e44344d2712cd9d363eeb183e2642",
+        "generated_stability_table.tex": "cec13bac3904dd86ca3e255d49d25e6d9c50b41d0c931e764a86bfe5891e7344",
+        "extension_supplement.tex": "937b146db42f08ee05f67e8b9b6ae64385380cc18a120357c25066116dbe4f4b",
+        "generated_extension_supplement_results.tex": "6bcbf3d623e1e3fedc3fdd0ad720fcb8df89df92bce97572caf218d3f65015f7",
+        "retained_cook_displays.tex": "6177959c0e67495dc93b5150e8310c2fc161c03d34514eb78b2fd87d952ab894"
+      }
+    }
+  }
+}

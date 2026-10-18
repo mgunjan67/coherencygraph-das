@@ -1,0 +1,14 @@
+{
+  "status": "FAILED_VERIFIER_PRECISION_SEMANTICS_NOT_FIELD_RESULT_MUTATION",
+  "source_event": "kef0131",
+  "background_block": "2024-08-04_00",
+  "cutoff_index": 0,
+  "aperture": 0,
+  "method": "context_0.75",
+  "metric": "background_output_power",
+  "observed_scaled_discrepancy": 4.893634992038551e-8,
+  "unchanged_tolerance": 2e-8,
+  "cause": "Archived context matrices are complex64. The original scientific context_matrix converts to complex128 before arithmetic, but the independent verifier multiplied the complex64 off-diagonal by 0.75 before upcasting. Forecast powers/square roots had the analogous precision-order discrepancy.",
+  "independent_diagnosis": "Converting context to complex128 before arithmetic reduced the same first-case discrepancy to 3.5893e-15 without changing saved field outputs, solver, DFT or tolerance.",
+  "closure": "Retain sealed v1 unchanged. Execute a separately identified v2 wrapper using the same full-DFT/direct-solve logic and exactly the original pre-arithmetic precision semantics. Verify all384 predefined cases and12metrics at the unchanged tolerance."
+}

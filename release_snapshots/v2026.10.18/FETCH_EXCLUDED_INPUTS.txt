@@ -1,0 +1,21 @@
+SAVED-TABLE REPLAY AND ARCHIVED INFERENCE SMOKE DO NOT REQUIRE THE EXCLUDED WAVEFORMS.
+
+For original waveform extraction, consult revisions/20261010_research_session/development_acquisition_plan.json,
+development_acquisition_summary.json and development/<block>/packet_<index>.json.
+These retain provider URLs, acquisition labels, exact packet timing, byte ranges and retained-ROI hashes.
+range_reader.py contains the original range reader; acquire_development.py contains the exposed development plan.
+Do not treat filename UTC+1 labels as UTC sample timestamps; use provider nanosecond metadata.
+Obtain data only from the original provider under its terms, map explicit local paths, verify hashes,
+then use the archived offset-safe adapter and filtering source. No acquisition occurs by default.
+Processed adapter_arrays.npz can be reconstructed from those sources with the archived protocol; its full
+raw-to-filter regeneration was not repeated in this closeout. Existing receipts are historical provenance.
+Input provider landing URLs are recorded in verification/public_links/PUBLIC_LINK_VERIFICATION.json,
+including access failures or restrictions; a resolved DOI does not establish waveform redistribution rights.
+
+If the October18 recorded-wavefield extension is included, its example source archive is the public
+supporting repository https://doi.org/10.5281/zenodo.20558686 (das-kefalonia-v2.zip).
+revisions/20261018_no_human_closeout/evidence_audit/source_spec.json records exact ZIP members,
+source-archive SHA256, selected native indices, sample times, metadata and component construction.
+Its prepare_source_components.py is the archived preparation recipe. Decoded source arrays are excluded
+conservatively from this bundle. Obtain original examples under their upstream terms; do not assume
+those terms also license the separate continuous raw archive. No new example download is run by replay.

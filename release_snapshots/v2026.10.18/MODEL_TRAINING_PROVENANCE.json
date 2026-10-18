@@ -1,0 +1,1246 @@
+{
+  "scope": "Archived checkpoints and selection metadata; not independently retrained.",
+  "checkpoint_count": 32,
+  "missing_matching_json": [],
+  "models": [
+    {
+      "checkpoint": "revisions/20260922_unseen_validation/development/models/dense_recurrence_seed19.pt",
+      "sha256": "1b0da1394d4680f36a489098fb631d58e60ce439ab4c96da2b99f6d1f5380a5f",
+      "bytes": 985675,
+      "metadata": "revisions/20260922_unseen_validation/development/models/dense_recurrence_seed19.json",
+      "recorded_fields": {
+        "tag": "dense",
+        "seed": 19,
+        "selected_epoch": 19,
+        "validation_event_mse": 0.0731511190533638,
+        "checkpoint_sha256": "1b0da1394d4680f36a489098fb631d58e60ce439ab4c96da2b99f6d1f5380a5f",
+        "device": "cuda"
+      },
+      "training_history_entries": 31,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "selected_epoch",
+        "validation_event_mse",
+        "history",
+        "refit_loss",
+        "training_events",
+        "internal_validation_events",
+        "checkpoint_sha256",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20260922_unseen_validation/development/models/dense_recurrence_seed43.pt",
+      "sha256": "ea451a89067d7b62e5a31496bc338d3d0bb64c32a78c6d00d4902624580c2fcf",
+      "bytes": 985675,
+      "metadata": "revisions/20260922_unseen_validation/development/models/dense_recurrence_seed43.json",
+      "recorded_fields": {
+        "tag": "dense",
+        "seed": 43,
+        "selected_epoch": 14,
+        "validation_event_mse": 0.0765829086303711,
+        "checkpoint_sha256": "ea451a89067d7b62e5a31496bc338d3d0bb64c32a78c6d00d4902624580c2fcf",
+        "device": "cuda"
+      },
+      "training_history_entries": 26,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "selected_epoch",
+        "validation_event_mse",
+        "history",
+        "refit_loss",
+        "training_events",
+        "internal_validation_events",
+        "checkpoint_sha256",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20260922_unseen_validation/development/models/dense_recurrence_seed71.pt",
+      "sha256": "ceea276491bd19b11535c0bd842ab715d609895d5d08b95bd0fc9889285f5e4d",
+      "bytes": 985675,
+      "metadata": "revisions/20260922_unseen_validation/development/models/dense_recurrence_seed71.json",
+      "recorded_fields": {
+        "tag": "dense",
+        "seed": 71,
+        "selected_epoch": 16,
+        "validation_event_mse": 0.07059963047504425,
+        "checkpoint_sha256": "ceea276491bd19b11535c0bd842ab715d609895d5d08b95bd0fc9889285f5e4d",
+        "device": "cuda"
+      },
+      "training_history_entries": 28,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "selected_epoch",
+        "validation_event_mse",
+        "history",
+        "refit_loss",
+        "training_events",
+        "internal_validation_events",
+        "checkpoint_sha256",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20260922_unseen_validation/development/models/sparse_recurrence_seed19.pt",
+      "sha256": "3a131117eb13bd6f8d50600108221bacccc1d8dfc5f2517202c55d8c83e0b1a8",
+      "bytes": 931961,
+      "metadata": "revisions/20260922_unseen_validation/development/models/sparse_recurrence_seed19.json",
+      "recorded_fields": {
+        "tag": "sparse",
+        "seed": 19,
+        "selected_epoch": 19,
+        "validation_event_mse": 0.048337023705244064,
+        "checkpoint_sha256": "3a131117eb13bd6f8d50600108221bacccc1d8dfc5f2517202c55d8c83e0b1a8",
+        "device": "cuda"
+      },
+      "training_history_entries": 31,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "selected_epoch",
+        "validation_event_mse",
+        "history",
+        "refit_loss",
+        "training_events",
+        "internal_validation_events",
+        "checkpoint_sha256",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20260922_unseen_validation/development/models/sparse_recurrence_seed43.pt",
+      "sha256": "57b94f10f88e603fec1122c07e50f0e3c9cdb0ab9443381174b10fc10dfcf2f6",
+      "bytes": 931961,
+      "metadata": "revisions/20260922_unseen_validation/development/models/sparse_recurrence_seed43.json",
+      "recorded_fields": {
+        "tag": "sparse",
+        "seed": 43,
+        "selected_epoch": 17,
+        "validation_event_mse": 0.05245304852724075,
+        "checkpoint_sha256": "57b94f10f88e603fec1122c07e50f0e3c9cdb0ab9443381174b10fc10dfcf2f6",
+        "device": "cuda"
+      },
+      "training_history_entries": 29,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "selected_epoch",
+        "validation_event_mse",
+        "history",
+        "refit_loss",
+        "training_events",
+        "internal_validation_events",
+        "checkpoint_sha256",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20260922_unseen_validation/development/models/sparse_recurrence_seed71.pt",
+      "sha256": "54cce92ee04bf5c49ccedc56051d50981e5a3a62676f5a94cb7efa97518b50c5",
+      "bytes": 931961,
+      "metadata": "revisions/20260922_unseen_validation/development/models/sparse_recurrence_seed71.json",
+      "recorded_fields": {
+        "tag": "sparse",
+        "seed": 71,
+        "selected_epoch": 18,
+        "validation_event_mse": 0.04539170861244202,
+        "checkpoint_sha256": "54cce92ee04bf5c49ccedc56051d50981e5a3a62676f5a94cb7efa97518b50c5",
+        "device": "cuda"
+      },
+      "training_history_entries": 30,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "selected_epoch",
+        "validation_event_mse",
+        "history",
+        "refit_loss",
+        "training_events",
+        "internal_validation_events",
+        "checkpoint_sha256",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_dense_seed19.pt",
+      "sha256": "4812f6d09819b1cd7682f5822136eeccb7cd1a2017006967aecc05e7212b95d4",
+      "bytes": 985427,
+      "metadata": "revisions/20261003_scientific_revision/models/common_dense_seed19.json",
+      "recorded_fields": {
+        "tag": "common_dense",
+        "seed": 19,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "4812f6d09819b1cd7682f5822136eeccb7cd1a2017006967aecc05e7212b95d4",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_dense_seed43.pt",
+      "sha256": "4319d0f811d56da7a4dfc175a556f3ba0e825562716ab4205056481e0e38be09",
+      "bytes": 985427,
+      "metadata": "revisions/20261003_scientific_revision/models/common_dense_seed43.json",
+      "recorded_fields": {
+        "tag": "common_dense",
+        "seed": 43,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "4319d0f811d56da7a4dfc175a556f3ba0e825562716ab4205056481e0e38be09",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_dense_seed71.pt",
+      "sha256": "db20993f1a9b09e138e007101e92c76336ebc0a1ec1c2114a09e71420a9d8c00",
+      "bytes": 985427,
+      "metadata": "revisions/20261003_scientific_revision/models/common_dense_seed71.json",
+      "recorded_fields": {
+        "tag": "common_dense",
+        "seed": 71,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "db20993f1a9b09e138e007101e92c76336ebc0a1ec1c2114a09e71420a9d8c00",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_localinput_seed19.pt",
+      "sha256": "189bf6f4b874b90de191567f3961f11aa8950e1826d505905518aab61ba22a08",
+      "bytes": 985721,
+      "metadata": "revisions/20261003_scientific_revision/models/common_localinput_seed19.json",
+      "recorded_fields": {
+        "tag": "common_localinput",
+        "seed": 19,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "189bf6f4b874b90de191567f3961f11aa8950e1826d505905518aab61ba22a08",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_localinput_seed43.pt",
+      "sha256": "d626d19bb8caa54015a528dc5caa59ea782a00958d4e4dc9d3145903189ecbe0",
+      "bytes": 985721,
+      "metadata": "revisions/20261003_scientific_revision/models/common_localinput_seed43.json",
+      "recorded_fields": {
+        "tag": "common_localinput",
+        "seed": 43,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "d626d19bb8caa54015a528dc5caa59ea782a00958d4e4dc9d3145903189ecbe0",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_localinput_seed71.pt",
+      "sha256": "712259cef83498ceb49b707775a33eb72262d917ef08a46c5484b3ae25ed1214",
+      "bytes": 985721,
+      "metadata": "revisions/20261003_scientific_revision/models/common_localinput_seed71.json",
+      "recorded_fields": {
+        "tag": "common_localinput",
+        "seed": 71,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "712259cef83498ceb49b707775a33eb72262d917ef08a46c5484b3ae25ed1214",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_pairweighted_seed19.pt",
+      "sha256": "a3bd6b9779f67bb5bfbcd302df3c0a755866c8617ddaf4f5ef12d5c9f3e92f74",
+      "bytes": 985813,
+      "metadata": "revisions/20261003_scientific_revision/models/common_pairweighted_seed19.json",
+      "recorded_fields": {
+        "tag": "common_pairweighted",
+        "seed": 19,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "a3bd6b9779f67bb5bfbcd302df3c0a755866c8617ddaf4f5ef12d5c9f3e92f74",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_pairweighted_seed43.pt",
+      "sha256": "a402945a819c36e3bf22f34b27e0b66e14c4096923d3a27ae98c2d55d26e12d5",
+      "bytes": 985813,
+      "metadata": "revisions/20261003_scientific_revision/models/common_pairweighted_seed43.json",
+      "recorded_fields": {
+        "tag": "common_pairweighted",
+        "seed": 43,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "a402945a819c36e3bf22f34b27e0b66e14c4096923d3a27ae98c2d55d26e12d5",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_pairweighted_seed71.pt",
+      "sha256": "2e91d2ed9ec4b2c2bfcf4a6a74f7e29dfb6889816316c191c9b04fe706effd8c",
+      "bytes": 985813,
+      "metadata": "revisions/20261003_scientific_revision/models/common_pairweighted_seed71.json",
+      "recorded_fields": {
+        "tag": "common_pairweighted",
+        "seed": 71,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "2e91d2ed9ec4b2c2bfcf4a6a74f7e29dfb6889816316c191c9b04fe706effd8c",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_short_seed19.pt",
+      "sha256": "4747f13b5a9ab099682cf07b1d5e5aaeed3edf55cde0487dce0ddd975cca1a15",
+      "bytes": 931667,
+      "metadata": "revisions/20261003_scientific_revision/models/common_short_seed19.json",
+      "recorded_fields": {
+        "tag": "common_short",
+        "seed": 19,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "4747f13b5a9ab099682cf07b1d5e5aaeed3edf55cde0487dce0ddd975cca1a15",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_short_seed43.pt",
+      "sha256": "b9112afed8de4733d197415db158158e686e277f08beded156be3a72e0e6ea3b",
+      "bytes": 931667,
+      "metadata": "revisions/20261003_scientific_revision/models/common_short_seed43.json",
+      "recorded_fields": {
+        "tag": "common_short",
+        "seed": 43,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "b9112afed8de4733d197415db158158e686e277f08beded156be3a72e0e6ea3b",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_short_seed71.pt",
+      "sha256": "78bf612fe47d8e875cd63f9b5f8b0ce302e5d31b1d8fe4e4a4af15692b8b1d28",
+      "bytes": 931667,
+      "metadata": "revisions/20261003_scientific_revision/models/common_short_seed71.json",
+      "recorded_fields": {
+        "tag": "common_short",
+        "seed": 71,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "78bf612fe47d8e875cd63f9b5f8b0ce302e5d31b1d8fe4e4a4af15692b8b1d28",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_sparse_seed19.pt",
+      "sha256": "80962ec313d22f85aaa6b3372f7e650de962a58ba24dc719d03d9236a44e00d5",
+      "bytes": 931713,
+      "metadata": "revisions/20261003_scientific_revision/models/common_sparse_seed19.json",
+      "recorded_fields": {
+        "tag": "common_sparse",
+        "seed": 19,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "80962ec313d22f85aaa6b3372f7e650de962a58ba24dc719d03d9236a44e00d5",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_sparse_seed43.pt",
+      "sha256": "8af2af2bce8d5048a3d04f90667cec8f5b922c5e534e703ea7ad1dd39d9bcd60",
+      "bytes": 931713,
+      "metadata": "revisions/20261003_scientific_revision/models/common_sparse_seed43.json",
+      "recorded_fields": {
+        "tag": "common_sparse",
+        "seed": 43,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "8af2af2bce8d5048a3d04f90667cec8f5b922c5e534e703ea7ad1dd39d9bcd60",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_sparse_seed71.pt",
+      "sha256": "d893117e6a13cf2beb34b7cd0ff5964591653532c84763b321d525ff25d8f2a7",
+      "bytes": 931713,
+      "metadata": "revisions/20261003_scientific_revision/models/common_sparse_seed71.json",
+      "recorded_fields": {
+        "tag": "common_sparse",
+        "seed": 71,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "d893117e6a13cf2beb34b7cd0ff5964591653532c84763b321d525ff25d8f2a7",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_spread_seed19.pt",
+      "sha256": "d471cc6df2b24b89838900b02ec43667b53dfd06ac00a58f2514314cb5e414b2",
+      "bytes": 931713,
+      "metadata": "revisions/20261003_scientific_revision/models/common_spread_seed19.json",
+      "recorded_fields": {
+        "tag": "common_spread",
+        "seed": 19,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "d471cc6df2b24b89838900b02ec43667b53dfd06ac00a58f2514314cb5e414b2",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_spread_seed43.pt",
+      "sha256": "f5b573e39cc6a16482495b033f9b8ddfecb0eb5241b51590ec3129268abc8eae",
+      "bytes": 931713,
+      "metadata": "revisions/20261003_scientific_revision/models/common_spread_seed43.json",
+      "recorded_fields": {
+        "tag": "common_spread",
+        "seed": 43,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "f5b573e39cc6a16482495b033f9b8ddfecb0eb5241b51590ec3129268abc8eae",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261003_scientific_revision/models/common_spread_seed71.pt",
+      "sha256": "b93c0b255286dc37c39f796cb275a736d5a4e2b850c765ae1707d41f1ce02dc4",
+      "bytes": 931713,
+      "metadata": "revisions/20261003_scientific_revision/models/common_spread_seed71.json",
+      "recorded_fields": {
+        "tag": "common_spread",
+        "seed": 71,
+        "plan_sha256": "87b12a78fa6a3f510c9d66de23b58d306636771b5cdfb2848af38289aab4e0f6",
+        "checkpoint_sha256": "b93c0b255286dc37c39f796cb275a736d5a4e2b850c765ae1707d41f1ce02dc4",
+        "evidence_status": "post-hoc fixed budget; no validation tuning",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "epochs",
+        "history",
+        "lags",
+        "pair_weighted",
+        "local_input",
+        "training_events",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "evidence_status",
+        "device"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261010_research_session/gauge_overlap/models/anchor_dense_seed19.pt",
+      "sha256": "a7cf217be28ba53c53f35ea8a3bceeb1745ec2afa721183008bf5df83c04f0f2",
+      "bytes": 985427,
+      "metadata": "revisions/20261010_research_session/gauge_overlap/models/anchor_dense_seed19.json",
+      "recorded_fields": {
+        "tag": "anchor_dense",
+        "seed": 19,
+        "plan_sha256": "0a806bc4ce303aaace0b6cb34b8181fce3881762ec547b2613f3e13e3857fa70",
+        "checkpoint_sha256": "a7cf217be28ba53c53f35ea8a3bceeb1745ec2afa721183008bf5df83c04f0f2",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "lags",
+        "epochs",
+        "history",
+        "training_events",
+        "seconds",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "device",
+        "post_hoc"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261010_research_session/gauge_overlap/models/anchor_short_seed19.pt",
+      "sha256": "aae321a394db63adcb2f3d1da9fc0a958e776149d465bc87db638045bae6d5bb",
+      "bytes": 931667,
+      "metadata": "revisions/20261010_research_session/gauge_overlap/models/anchor_short_seed19.json",
+      "recorded_fields": {
+        "tag": "anchor_short",
+        "seed": 19,
+        "plan_sha256": "0a806bc4ce303aaace0b6cb34b8181fce3881762ec547b2613f3e13e3857fa70",
+        "checkpoint_sha256": "aae321a394db63adcb2f3d1da9fc0a958e776149d465bc87db638045bae6d5bb",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "lags",
+        "epochs",
+        "history",
+        "training_events",
+        "seconds",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "device",
+        "post_hoc"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261010_research_session/gauge_overlap/models/nonoverlap_dense_seed19.pt",
+      "sha256": "477d6efa32a099eeda1c3859574e5fa7d3f400753b171ce3a9213a00e41eba26",
+      "bytes": 981515,
+      "metadata": "revisions/20261010_research_session/gauge_overlap/models/nonoverlap_dense_seed19.json",
+      "recorded_fields": {
+        "tag": "nonoverlap_dense",
+        "seed": 19,
+        "plan_sha256": "0a806bc4ce303aaace0b6cb34b8181fce3881762ec547b2613f3e13e3857fa70",
+        "checkpoint_sha256": "477d6efa32a099eeda1c3859574e5fa7d3f400753b171ce3a9213a00e41eba26",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "lags",
+        "epochs",
+        "history",
+        "training_events",
+        "seconds",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "device",
+        "post_hoc"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261010_research_session/gauge_overlap/models/nonoverlap_dense_seed43.pt",
+      "sha256": "1d3670eb040f94d7483bf984623f7c2edf7fa4293d3aa3f2bece45e77f37a150",
+      "bytes": 981515,
+      "metadata": "revisions/20261010_research_session/gauge_overlap/models/nonoverlap_dense_seed43.json",
+      "recorded_fields": {
+        "tag": "nonoverlap_dense",
+        "seed": 43,
+        "plan_sha256": "0a806bc4ce303aaace0b6cb34b8181fce3881762ec547b2613f3e13e3857fa70",
+        "checkpoint_sha256": "1d3670eb040f94d7483bf984623f7c2edf7fa4293d3aa3f2bece45e77f37a150",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "lags",
+        "epochs",
+        "history",
+        "training_events",
+        "seconds",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "device",
+        "post_hoc"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261010_research_session/gauge_overlap/models/nonoverlap_dense_seed71.pt",
+      "sha256": "52c5eaaa6ca1c18288781398f3e36b608ef793261d1b3e3810be4d55e13a079c",
+      "bytes": 981515,
+      "metadata": "revisions/20261010_research_session/gauge_overlap/models/nonoverlap_dense_seed71.json",
+      "recorded_fields": {
+        "tag": "nonoverlap_dense",
+        "seed": 71,
+        "plan_sha256": "0a806bc4ce303aaace0b6cb34b8181fce3881762ec547b2613f3e13e3857fa70",
+        "checkpoint_sha256": "52c5eaaa6ca1c18288781398f3e36b608ef793261d1b3e3810be4d55e13a079c",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "lags",
+        "epochs",
+        "history",
+        "training_events",
+        "seconds",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "device",
+        "post_hoc"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261010_research_session/gauge_overlap/models/nonoverlap_five_seed19.pt",
+      "sha256": "041cc2e87705c134de8a3625e336d688e020d22168f629f5fe081ceea9a27e25",
+      "bytes": 931869,
+      "metadata": "revisions/20261010_research_session/gauge_overlap/models/nonoverlap_five_seed19.json",
+      "recorded_fields": {
+        "tag": "nonoverlap_five",
+        "seed": 19,
+        "plan_sha256": "0a806bc4ce303aaace0b6cb34b8181fce3881762ec547b2613f3e13e3857fa70",
+        "checkpoint_sha256": "041cc2e87705c134de8a3625e336d688e020d22168f629f5fe081ceea9a27e25",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "lags",
+        "epochs",
+        "history",
+        "training_events",
+        "seconds",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "device",
+        "post_hoc"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261010_research_session/gauge_overlap/models/nonoverlap_five_seed43.pt",
+      "sha256": "ebfe3766cdfdd88f4afac42970e55d5568db5fd42acde602344f6f583c97ef6b",
+      "bytes": 931869,
+      "metadata": "revisions/20261010_research_session/gauge_overlap/models/nonoverlap_five_seed43.json",
+      "recorded_fields": {
+        "tag": "nonoverlap_five",
+        "seed": 43,
+        "plan_sha256": "0a806bc4ce303aaace0b6cb34b8181fce3881762ec547b2613f3e13e3857fa70",
+        "checkpoint_sha256": "ebfe3766cdfdd88f4afac42970e55d5568db5fd42acde602344f6f583c97ef6b",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "lags",
+        "epochs",
+        "history",
+        "training_events",
+        "seconds",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "device",
+        "post_hoc"
+      ]
+    },
+    {
+      "checkpoint": "revisions/20261010_research_session/gauge_overlap/models/nonoverlap_five_seed71.pt",
+      "sha256": "7a9f0944431b4adb29d1a58c18c385cd72a2783baf30fdec31f149a57d70b5c8",
+      "bytes": 931869,
+      "metadata": "revisions/20261010_research_session/gauge_overlap/models/nonoverlap_five_seed71.json",
+      "recorded_fields": {
+        "tag": "nonoverlap_five",
+        "seed": 71,
+        "plan_sha256": "0a806bc4ce303aaace0b6cb34b8181fce3881762ec547b2613f3e13e3857fa70",
+        "checkpoint_sha256": "7a9f0944431b4adb29d1a58c18c385cd72a2783baf30fdec31f149a57d70b5c8",
+        "device": "cuda"
+      },
+      "training_history_entries": 20,
+      "recorded_keys": [
+        "tag",
+        "seed",
+        "lags",
+        "epochs",
+        "history",
+        "training_events",
+        "seconds",
+        "checkpoint_sha256",
+        "prediction_sha256",
+        "plan_sha256",
+        "device",
+        "post_hoc"
+      ]
+    }
+  ],
+  "ridge_checkpoint_count": 5,
+  "ridge_models": [
+    {
+      "checkpoint": "revisions/20260922_unseen_validation/development/models/dense_full_ridge.npz",
+      "sha256": "ffafadce7ddccd984f880e42f2c3bb66bef9545f4cfa4e996bede8da7df02811",
+      "bytes": 7968352,
+      "metadata": "revisions/20260922_unseen_validation/development/models/dense_full_ridge.json",
+      "arrays": {
+        "coef": {
+          "shape": [
+            1984,
+            1080
+          ],
+          "dtype": "float32"
+        },
+        "intercept": {
+          "shape": [
+            1984
+          ],
+          "dtype": "float32"
+        },
+        "mean": {
+          "shape": [
+            1,
+            1,
+            135
+          ],
+          "dtype": "float32"
+        },
+        "std": {
+          "shape": [
+            1,
+            1,
+            135
+          ],
+          "dtype": "float32"
+        },
+        "lags": {
+          "shape": [
+            31
+          ],
+          "dtype": "int64"
+        },
+        "alpha": {
+          "shape": [],
+          "dtype": "int64"
+        }
+      },
+      "recorded_keys": [
+        "tag",
+        "alpha",
+        "grid",
+        "training_events",
+        "checkpoint_sha256"
+      ],
+      "recorded_fields": {
+        "alpha": 1000
+      }
+    },
+    {
+      "checkpoint": "revisions/20260922_unseen_validation/development/models/dense_full_ridge_f64.npz",
+      "sha256": "6994239c77e073f71bf66eec4821a812ccae867ce37c04db617757c810d8f308",
+      "bytes": 16424857,
+      "metadata": "revisions/20260922_unseen_validation/development/models/dense_full_ridge_f64.json",
+      "arrays": {
+        "coef": {
+          "shape": [
+            1984,
+            1080
+          ],
+          "dtype": "float64"
+        },
+        "intercept": {
+          "shape": [
+            1984
+          ],
+          "dtype": "float64"
+        },
+        "mean": {
+          "shape": [
+            1,
+            1,
+            135
+          ],
+          "dtype": "float32"
+        },
+        "std": {
+          "shape": [
+            1,
+            1,
+            135
+          ],
+          "dtype": "float32"
+        },
+        "lags": {
+          "shape": [
+            31
+          ],
+          "dtype": "int64"
+        },
+        "alpha": {
+          "shape": [],
+          "dtype": "int64"
+        }
+      },
+      "recorded_keys": [
+        "tag",
+        "alpha",
+        "grid",
+        "training_events",
+        "checkpoint_sha256",
+        "solver",
+        "numerical_note"
+      ],
+      "recorded_fields": {
+        "alpha": 1000
+      }
+    },
+    {
+      "checkpoint": "revisions/20260922_unseen_validation/development/models/sparse_full_ridge.npz",
+      "sha256": "cd8f99506194c130884c0cb985cb8c9c75f4397e161919005f7461290e833c9f",
+      "bytes": 1288660,
+      "metadata": "revisions/20260922_unseen_validation/development/models/sparse_full_ridge.json",
+      "arrays": {
+        "coef": {
+          "shape": [
+            320,
+            1080
+          ],
+          "dtype": "float32"
+        },
+        "intercept": {
+          "shape": [
+            320
+          ],
+          "dtype": "float32"
+        },
+        "mean": {
+          "shape": [
+            1,
+            1,
+            135
+          ],
+          "dtype": "float32"
+        },
+        "std": {
+          "shape": [
+            1,
+            1,
+            135
+          ],
+          "dtype": "float32"
+        },
+        "lags": {
+          "shape": [
+            5
+          ],
+          "dtype": "int64"
+        },
+        "alpha": {
+          "shape": [],
+          "dtype": "int64"
+        }
+      },
+      "recorded_keys": [
+        "tag",
+        "alpha",
+        "grid",
+        "training_events",
+        "checkpoint_sha256"
+      ],
+      "recorded_fields": {
+        "alpha": 1000
+      }
+    },
+    {
+      "checkpoint": "revisions/20260922_unseen_validation/development/models/sparse_full_ridge_f64.npz",
+      "sha256": "93956edc529d69ebe14baa6879d92206296b9bc14852bb9ebb9008764721f243",
+      "bytes": 2651736,
+      "metadata": "revisions/20260922_unseen_validation/development/models/sparse_full_ridge_f64.json",
+      "arrays": {
+        "coef": {
+          "shape": [
+            320,
+            1080
+          ],
+          "dtype": "float64"
+        },
+        "intercept": {
+          "shape": [
+            320
+          ],
+          "dtype": "float64"
+        },
+        "mean": {
+          "shape": [
+            1,
+            1,
+            135
+          ],
+          "dtype": "float32"
+        },
+        "std": {
+          "shape": [
+            1,
+            1,
+            135
+          ],
+          "dtype": "float32"
+        },
+        "lags": {
+          "shape": [
+            5
+          ],
+          "dtype": "int64"
+        },
+        "alpha": {
+          "shape": [],
+          "dtype": "int64"
+        }
+      },
+      "recorded_keys": [
+        "tag",
+        "alpha",
+        "grid",
+        "training_events",
+        "checkpoint_sha256",
+        "solver",
+        "numerical_note"
+      ],
+      "recorded_fields": {
+        "alpha": 1000
+      }
+    },
+    {
+      "checkpoint": "revisions/20261010_forecast_processing/matched_ridge_extended/common_localinput_ridge_f64.npz",
+      "sha256": "b422fd2915bac5c517e04fed90c75aa6511376b1098bd368e7851ef075d1b828",
+      "bytes": 16488709,
+      "metadata": "revisions/20261010_forecast_processing/matched_ridge_extended/common_localinput_ridge_f64.json",
+      "arrays": {
+        "coef": {
+          "shape": [
+            1984,
+            1080
+          ],
+          "dtype": "float64"
+        },
+        "intercept": {
+          "shape": [
+            1984
+          ],
+          "dtype": "float64"
+        },
+        "mean": {
+          "shape": [
+            1,
+            1,
+            135
+          ],
+          "dtype": "float32"
+        },
+        "std": {
+          "shape": [
+            1,
+            1,
+            135
+          ],
+          "dtype": "float32"
+        },
+        "lags": {
+          "shape": [
+            31
+          ],
+          "dtype": "int64"
+        },
+        "alpha": {
+          "shape": [],
+          "dtype": "<U7"
+        }
+      },
+      "recorded_keys": [
+        "status",
+        "started_utc",
+        "finished_utc",
+        "reason",
+        "supersedes_for_future_processing",
+        "prior_fit_preserved",
+        "original_grid_maximum_score_difference",
+        "alpha_grid",
+        "selected_alpha",
+        "selected_mean_only",
+        "finite_upper_boundary_selected",
+        "training_events",
+        "fold_scores",
+        "original_model_sha256",
+        "input_cache_hashes",
+        "source_records_sha256",
+        "code_sha256",
+        "helper_sha256",
+        "checkpoint_sha256",
+        "greek_processing_outcomes_read",
+        "old_validation_read",
+        "heldout_accessed",
+        "projection_required"
+      ],
+      "recorded_fields": {
+        "selected_alpha": 10000.0
+      }
+    }
+  ],
+  "full_training_regeneration_performed": false,
+  "source_tree": "src/coherencygraph_das plus original numerical scripts/configurations in revisions",
+  "inference_smoke_scope": "Three local-input seeds and both route flags, one fixed exposed feature case."
+}

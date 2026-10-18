@@ -1,0 +1,19 @@
+{
+  "status": "PASS_EXPOSED_DEVELOPMENT_COMPARATOR",
+  "rows": 10800,
+  "elapsed_total_seconds": 53.65811280003982,
+  "fixture": {
+    "rows": 405,
+    "maximum_scaled_errors": {
+      "background_output_power": 0.0,
+      "signal_output_power": 4.38872995174218e-16,
+      "input_snr_db": 0.0,
+      "output_snr_db": 1.7208456881689926e-15,
+      "snr_gain_db": 3.0052624628368684e-16,
+      "signal_relative_mse": 2.0816681711721685e-17,
+      "signal_power_ratio_db": 1.9394208461420703e-15
+    },
+    "tolerance": 1e-09
+  },
+  "case_sha256": "0518c07e5823a1f9be66b1feb021fa0d1ba39c166b9e2e799eeb73c03a343585"
+}

@@ -1,0 +1,496 @@
+{
+  "status": "EXPLICIT_EXTENSION_INCLUDED",
+  "manifest_sha256": "14f8633758826a66b697010621d7d1f77bfecfd5c6b6ac8a054dc487f222f0cc",
+  "files": [
+    {
+      "path": "revisions/20261018_no_human_closeout/build_recorded_display.py",
+      "sha256": "f17c5919323cc2cf9b079c926a8eeb880b0482f17c43b319b382f4b39b7e8595",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset. Figure style changed for official panel-label/font guidance; no numerical output changed."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/evidence_audit/audit_zip_headers.py",
+      "sha256": "e6e0e993388ae6ecaf6e27a172b757d1998b8833f058cae766cf194f5c1850d0",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/evidence_audit/derive_eligibility.py",
+      "sha256": "561f7d53a8bc4cdcbbc108ce4780c67c7a6c95f4178ac85568fc62eec2206d5f",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/evidence_audit/EVIDENCE_PATH_AUDIT.txt",
+      "sha256": "92995f4ac1ac07dd82031aac9a88bb243db2bc8dfab8826bd61dbd024907896a",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/evidence_audit/hdf_header_audit.json",
+      "sha256": "10892a9745553dec227036f4d219e9a3fb98e1b0609963f7b28ecadae8f20ee1",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/evidence_audit/prepare_source_components.py",
+      "sha256": "a9293dd08ad1ba2bda04e90a695f86b2cdbd00cee48d2b1ed2767ee83c112aeb",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/evidence_audit/source_catalog_steering.npz",
+      "sha256": "eb28f8de60ba7beff0af3afb72a760953ac4b7b56071fe69f3e5517190775efc",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/evidence_audit/source_eligibility.json",
+      "sha256": "ec4cb24db9e86f8ae15e9e6bf21116c55137e53137d9a5a00dbcdc3e138d42ca",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/evidence_audit/source_seal.json",
+      "sha256": "47e18458a65399d735a1f8786a2764807f821e7b78f7688e2c32127171165b22",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/evidence_audit/source_spec.json",
+      "sha256": "3a8bdd4575afa9f8573c74a903f1db50b2d7bce51055d793ad282c757c2757fb",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/evidence_audit/test_evidence_audit.py",
+      "sha256": "33e5b7816c53e7fd695144e4ea4588807c44a03dd61b669327d237a3f8489f99",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/freeze_scope.py",
+      "sha256": "ca90338819234b47d36a2947a7a9422ba811183c7e1a35550ab3612374222e1b",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/benchmark_math_and_cache_metadata.py",
+      "sha256": "63c62ab1c70e043f90fca21d46a13378e1871d7cf4727a71fc79644ffe05776d",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/benchmark_synthetic_pipeline.py",
+      "sha256": "a4a7a7f3ca6cb92c6a3c7f052984694b3a7d2f5418f149f4319dac4830b3bab8",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/derivative_lcmv.py",
+      "sha256": "d8ca2860bb4d3c0dad98750f66ce9d7909137eb36e6b021223ea151f701c3491",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/derivative_lcmv_tests.xml",
+      "sha256": "9498bab3c839fc9e74ce812089437be55e0f96c31498fd8ecb4050c90365fab8",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/DIRECT_DFT_V1_FAILURE.json",
+      "sha256": "0f47b2d00ad8c7cf2ac9738f9c5eba36ea3dc514b4b0b9fd7ab0b410b52af9aa",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/execution_guard.py",
+      "sha256": "d24fa085aee993ca4443b2086af497f6744e13465e2d4349ab2892a8484fb9ef",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/execution_recorded.log",
+      "sha256": "8c1e8496faec3d83a3456ec4006b81903695c4b71957f6a3d7e66a19b75d1a5b",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/execution_ricker.log",
+      "sha256": "3fc0f2392b59fb4c316295ea384fc3e3ab207e894bb50c4af4f4a6dabdbb8a52",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/all_reference_cancellation_diagnostics.csv",
+      "sha256": "3b2e6208faf14a3e9ca32da6e928495e7d8b1378bb11a65aecced8666de2b098",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/expanded_ricker_frontier_all_dates.csv",
+      "sha256": "36859888c920183ab5cdf4442887f6649f80fab758bdda3f02a81b17e3441e13",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/expanded_ricker_frontier_counts.csv",
+      "sha256": "ccbff0de550cee96f8e0de8a42334870f6f2f59c7c016672c6688563e7b13c52",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_neural_paired_date_contrasts.csv",
+      "sha256": "b8cf4930923b608e1d253d121fcf1a59f2eb6bbc9da082a230a76bcd11b000c1",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_source_date_method.csv",
+      "sha256": "90858ae4f0f5904638db84efea3457d756813ea560f0831361356b0b053fbc2f",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_source_hour_method.csv",
+      "sha256": "8b56cb66ad989e8da5dbf38ef4fca9ff56e64b54f51aa60f28577a1a9cac11cb",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/recorded_source_method.csv",
+      "sha256": "1713273c5953e6e30fb7552b60baee35a9250f92dd754bbb1d26cb918e6ee663",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/SCIENTIFIC_SUMMARY.txt",
+      "sha256": "988be2eddf7facbc2be967700eb83e8cfb19b1aec24ae75d43354d4106e601dd",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/finite_panel_summary/SUMMARY_RECEIPT.json",
+      "sha256": "2b54c2563b8c2664c01df527e8c7e96e22609effa2b3fe37b21efd9bb02e4528",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-04_00_new_cases.parquet",
+      "sha256": "27756348aa60918e2a1a8513518d785f724777035001ffedb9281ac1d7df59a3",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-04_00_receipt.json",
+      "sha256": "ae6608c14ae3d80eb37e7c264b93551f318bb1933da0f3d33e6ee73fb1bd4e50",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-04_12_new_cases.parquet",
+      "sha256": "cf3d5f83862a5b2f6df9a60669b77caaa9400b44b3abc6b95930bc5345019ed5",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-04_12_receipt.json",
+      "sha256": "0ec278c872d97ca108f000f9ab94e3ee79aca8a7f29d897a42d762c7343619eb",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-05_00_new_cases.parquet",
+      "sha256": "747f3ce96d7b462f53157e2284bf49c9a0a03ffd5183cbe1470f51799edd74eb",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-05_00_receipt.json",
+      "sha256": "97357ac56b4f89fe35de72832d92e35f7fb57d88a6cb984ce9470ecf09b97de5",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-05_12_new_cases.parquet",
+      "sha256": "1112eb21e77c7d2e7a720fc71886eaead1c108ba745dba72ccc2051919cd2730",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-05_12_receipt.json",
+      "sha256": "f051ef2268d0e4c73b7fd6cd49c62afa69cc31ef052ad93af3fded23c1637761",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-06_00_new_cases.parquet",
+      "sha256": "0518c07e5823a1f9be66b1feb021fa0d1ba39c166b9e2e799eeb73c03a343585",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-06_00_receipt.json",
+      "sha256": "2497b327c537c6936070318e5c03af8faf697ec3b770abb900fd9e77eaa37066",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-06_12_new_cases.parquet",
+      "sha256": "a4556b7768e32e314f325c6cb9fad4a91fbdfadc4500923dfa43d52386bed95a",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-06_12_receipt.json",
+      "sha256": "5993f614eb3c7088e14bd0d276b4dedbb7c2de6717052ba844ae4867e943d538",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-07_00_new_cases.parquet",
+      "sha256": "7baac46d7c2d14f16ebb21422ac8e8338063caaba40f18229a2e2107cc3a7df8",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-07_00_receipt.json",
+      "sha256": "e2271d72d905faa99f0ca24b25a2d4215f7b233b80949bc73b0ff3fc66d4587e",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-07_12_new_cases.parquet",
+      "sha256": "f1fcf6b5b31c4326f72e0354970767a7ad3a923a811aa3154920b404806679db",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/2024-08-07_12_receipt.json",
+      "sha256": "7c98843e5d6550ffdfdd537046298dd273d7c486719d291133e486fd3d3ee285",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/all_new_cases.parquet",
+      "sha256": "661a0c5e0f1f7baae78ed0b2229493111a7351793d0e5bf56bb2aa7574a63558",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/expanded_date_condition_table.csv",
+      "sha256": "230fe82783905bda392f42f2592ab03aee39b4af1a34007819fa4d33ae6b42a4",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/lcmv_ricker_results/receipt.json",
+      "sha256": "fbf01b2e5ea69f36d6e3a714a7f9820bd49ed9919545268093221442b7dd19a0",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/math_benchmark_and_cache_inventory.json",
+      "sha256": "5c06db19c935c54a414524da86fd615aa83e7b1c0f7e30998f02e88d656264f8",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/prepare_ricker_execution_protocol.py",
+      "sha256": "e6096f5ad1abd808a994bfaaafee2071ef52b6044e25d53d6456ab4f68e12dd8",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/processing_math_tests.xml",
+      "sha256": "98da83c1cf3a942dd9b1a9af348bbcccadf45a17b65ea69c94417b2e617f02c1",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_metrics.py",
+      "sha256": "93513e8d1f9504a8c0b2da8b2f7b5bc0d392ab345a61bf01cfc2af5154c9a7c3",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-04_00_cases.parquet",
+      "sha256": "96bad332cc2f05ccd90f80aa607867d6bad5084e1204b6d993229a4519f10051",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-04_00_receipt.json",
+      "sha256": "0f65c7cf355406ddc097002b4f0a5e89652895c481ad1c2e9bd1ceb81f418f73",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-04_12_cases.parquet",
+      "sha256": "fcf82ba675e0cbb5fdb8734dae37f66c5b93eaac1c78f4e8d694a6270712fe21",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-04_12_receipt.json",
+      "sha256": "2183bcac2a9719679781d1b4ccc3e739fad0b0d2bb8f2b9c9369cb876fc84a7d",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-05_00_cases.parquet",
+      "sha256": "6e101375ed74d44f2b5384ced7844ef0c683180d934c4b0f7370fcf3778b6bb3",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-05_00_receipt.json",
+      "sha256": "5a68c26266e36c95fcb2029963eeea388bb533ee50cd3cfd67c4e34577b3d6f2",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-05_12_cases.parquet",
+      "sha256": "a9ad7a27a69348d6295a54ecb841f7ba4d31c26b6cb53f776cd600ade7b5dbf8",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-05_12_receipt.json",
+      "sha256": "d9483fe6404811515ecc93dc20b7851aff82276a8526d0ee25a0c14085243947",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-06_00_cases.parquet",
+      "sha256": "0c1265b069edac84e781cd2a94bc3eebeee348749d59d8ba0790cde32818c896",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-06_00_receipt.json",
+      "sha256": "f01d344957b926b06a299a2605ca4a51448b3dafe5eb28af5e0d533b12a29b38",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-06_12_cases.parquet",
+      "sha256": "601680a9fa54623416e398e340333e4ca9f61d33d8dd2e8cd0e28b6d92e73211",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-06_12_receipt.json",
+      "sha256": "132c74b595649f0248f879869f4ee7363a9b78ee8563ecc849fea0a6e5f1c8b8",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-07_00_cases.parquet",
+      "sha256": "06e5ca0436ff10bf64585d7ad1330a70769d823e97dd5fe8ba8f7c894e6f4422",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-07_00_receipt.json",
+      "sha256": "2be3c98bd85775f4ac18a2a68b224bea9c28c282590736465a5bdc60cb6f2d15",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-07_12_cases.parquet",
+      "sha256": "b81265797e56a47f98c9f857502383d7ac623683d3d4fa0c9ac59e3882388964",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/2024-08-07_12_receipt.json",
+      "sha256": "b2ff30baaeccf96c6884e8698ee593fd10a8b22a414a80924d7704efa3557cc8",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/all_cases.parquet",
+      "sha256": "362f161da2205ce050b520d3a6d4f201cf904329c495ab30763d3409c3ef4782",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/DIRECT_DFT_VERIFICATION.json",
+      "sha256": "849bfe9c23885f16d75d8ce259e144a20e8fc9ccbea67e46b61da4bb5377cb69",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/recorded_component_results/receipt.json",
+      "sha256": "912eca6ba089715a8256edc3f3b053edaaad1bb450374e77fe1f4c428d5a0569",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/ricker_protocol.json",
+      "sha256": "5f8a7be5367d6dc1779b74b2687b3314321a902fd730566c64edc6d6c55ac211",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/ROBUST_COMPARATOR_RECOMMENDATION.txt",
+      "sha256": "f0fd032841de0b8f9130dfb9a5c91a37b71f260366c2c0170fb1bea8687ca655",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/run_lcmv_ricker_extension.py",
+      "sha256": "669899e2e9fe29e1026a4ffb5d1f330b45b526880f2d5892d2dccaea6ae019df",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/run_recorded_extension.py",
+      "sha256": "0bf7286f04a30681ded9ed6e0e54732755f602b44219f030a13017a1c8479cf5",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/SAVED_COMPONENT_COMPARATOR_PROTOCOL_PROPOSAL.json",
+      "sha256": "5d84f1ef4a50ee10521ffa6f4740e797257cbf22e9d7d83c677affd71c0f5db2",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/summarize_finite_panels.py",
+      "sha256": "e7b533619996f69813f1d558152c8d697bda6599b36e386184778de8a479cad4",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/synthetic_pipeline_resource_receipt.json",
+      "sha256": "e3f383c0c62272370131bc61d388c994864bdf7a4c0287f9eff57be97e1dc149",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/test_derivative_lcmv.py",
+      "sha256": "981f5077837144afb5c8b6ad2de1fd8d861bbec0b6d4624cb817ca53b8185334",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/test_extension_gate.py",
+      "sha256": "e46828cc01f7daa9bf4e7f1992e1be7c619b4e19e8a9daa2cc52beb475170b72",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/test_new_execution_guards.py",
+      "sha256": "cd04b28dd14541c42a1828b5dc1b14f966cca241cac7623b914846dc0e6a5d8e",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/test_recorded_component_metrics.py",
+      "sha256": "f9a6bdab9f3e4b4349c2beefd37a68d49381abd855d9c6a14870b6b016c81f4d",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/verify_recorded_direct_dft.py",
+      "sha256": "ad87c4a49a36c04df83cbd8e16ef96de15890ac81bb4b4be14ac8ddbce1e9fd7",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/verify_recorded_direct_dft_v2.py",
+      "sha256": "53e5d03ff0e095c74c33a9fd73d3632c74dbb71dbe5c4cf37c091d09eac9e8a7",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/watch_finite_panels.py",
+      "sha256": "811073de3c14a4a234639ae688e16f580ff1e06b4d84b6ebe4e7f28767666613",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/watchdog_recorded_receipt.json",
+      "sha256": "5f17305f03e36f84e7c83e546178446cde87b58aee8eb609e4e98540e80734bd",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/implementation/watchdog_ricker_receipt.json",
+      "sha256": "1a4195e2ae76edb3b3405003d2455915a05ec4ec691b0a9822288dee2d1a507f",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/independent_review/DFT_PRECISION_DIAGNOSIS.md",
+      "sha256": "737b87334ac0d9abd1c50e58d169186506a495ab37cb9d8f5a85988e8899e3b4",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/independent_review/OUTCOME_NUMERICAL_REVIEW.md",
+      "sha256": "3161b961c7b7d7eb5f9b4f139294018d0e934d103062bf3ed910916342141c93",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/independent_review/PRE_RESULT_SCIENTIFIC_GATE.md",
+      "sha256": "2e1029314defe5077db96d8bb70716369e46dd5887dd7281d4353332c23509a3",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/protocol.json",
+      "sha256": "cfef679230d0fd47dee36f0914def5e9fc01e68a35e8da2c137ae48612a397a3",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/scope_seal.json",
+      "sha256": "2ed44b7fa8faf786e6578644b97c40278a2f3124341bcc5c84ace0f3f16ea969",
+      "scope": "Finite extension code/configuration/scalar result/provenance. No raw or decoded time-series asset."
+    },
+    {
+      "path": "verification/finite_extension/ORIGINAL_WORKSPACE_REPLAY_RECEIPT.json",
+      "sha256": "483bc47d1dc0f4524d98a493cdff47c43e60b32b90cf33f7fcc4302128cdadd3",
+      "scope": "Independent scalar replay receipt before final packaging."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/FINAL_DISPLAY_INVENTORY.json",
+      "sha256": "594aa0b14705d6bc02c5c7899cc9a05d3a4fbd689214725b2237f0cfbfbea067",
+      "scope": "Numerical/display inventory or clean replay receipt; no manuscript prose."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/FINAL_MANUSCRIPT_GENERATION_RECEIPT.json",
+      "sha256": "7e447d8bba38fe47c90025974352b0f3c839888b29694773c1bf531660b1cab3",
+      "scope": "Numerical/display inventory or clean replay receipt; no manuscript prose."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/reproducibility/extension_clean__rvefwoh/CLEAN_EXTENSION_RECEIPT.json",
+      "sha256": "122f66c2a44e17f32a39af3b616c473789fac57aa7fb521c6be75248c09aab1b",
+      "scope": "Numerical/display inventory or clean replay receipt; no manuscript prose."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/SOURCE_PROTECTION_FINAL_RECEIPT.json",
+      "sha256": "575cd5b606ec7bee0dd852f56519adc047b75360c1f6889c905646e2f14cfce3",
+      "scope": "Numerical/display inventory or clean replay receipt; no manuscript prose."
+    },
+    {
+      "path": "revisions/20261018_no_human_closeout/FINAL_TEST_VERIFICATION_RECEIPT.json",
+      "sha256": "95340454e42b6341463882f28d3fa9bf847d743756cb87adbda1d94760a2785f",
+      "scope": "Numerical/display inventory or clean replay receipt; no manuscript prose."
+    }
+  ]
+}

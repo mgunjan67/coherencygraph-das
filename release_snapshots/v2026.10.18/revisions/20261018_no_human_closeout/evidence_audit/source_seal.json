@@ -1,0 +1,6 @@
+{
+  "source_spec_sha256": "3a8bdd4575afa9f8573c74a903f1db50b2d7bce51055d793ad282c757c2757fb",
+  "source_runner_sha256": "a9293dd08ad1ba2bda04e90a695f86b2cdbd00cee48d2b1ed2767ee83c112aeb",
+  "steering_sha256": "eb28f8de60ba7beff0af3afb72a760953ac4b7b56071fe69f3e5517190775efc",
+  "sealed_before_sample_reads": true
+}
